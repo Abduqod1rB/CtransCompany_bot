@@ -1,0 +1,143 @@
+package org.example;
+/*
+ *User:t.me/abu_org tt:@abu_ed1t
+ *Date:2/9/2024 *Time:9:24 AM
+ */
+
+import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
+import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardButton;
+import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MyBotServiceUz {
+    public SendMessage asosiyMenuUz(Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Asosiy Menu");
+        ReplyKeyboardMarkup reply = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+        KeyboardRow row = new KeyboardRow();
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardRow row2 = new KeyboardRow();
+        KeyboardRow row3 = new KeyboardRow();
+        KeyboardRow row4 = new KeyboardRow();
+        KeyboardRow row5 = new KeyboardRow();
+        KeyboardRow row6 = new KeyboardRow();
+        KeyboardButton button = new KeyboardButton();
+        button.setText("\uD83D\uDECDBuyurtma berish");
+        row.add(button);
+        rowList.add(row);
+        KeyboardButton button1 = new KeyboardButton();
+        button1.setText("\uD83D\uDCDDQo'llanma");
+        row1.add(button1);
+        rowList.add(row1);
+        KeyboardButton button2 = new KeyboardButton();
+        button2.setText("\uD83D\uDCB5Valyuta kursi");
+        row1.add(button2);
+        KeyboardButton button3 = new KeyboardButton();
+        button3.setText("\uD83D\uDD10Nega biz bilan xavfsiz");
+        row2.add(button3);
+        rowList.add(row2);
+        KeyboardButton button4 = new KeyboardButton();
+        button4.setText("\uD83D\uDCC8CTRANS ishini ko'rib chiqish");
+        row2.add(button4);
+        KeyboardButton button5 = new KeyboardButton();
+        button5.setText("⏰Yetkazib berish muddati");
+        row3.add(button5);
+        rowList.add(row3);
+        KeyboardButton button6 = new KeyboardButton();
+        button6.setText("\uD83D\uDC68\u200D\uD83D\uDCBBMenejer bilan bog'lanish");
+        row3.add(button6);
+        KeyboardButton button7 = new KeyboardButton();
+        button7.setText("\uD83D\uDCCBXizmatlar");
+        row4.add(button7);
+        rowList.add(row4);
+        KeyboardButton button8 = new KeyboardButton();
+        button8.setText("\uD83D\uDCACIzoh qoldirish");
+        row4.add(button8);
+        KeyboardButton button9 = new KeyboardButton();
+        button9.setText("\uD83E\uDDEEKalkulyator");
+        row5.add(button9);
+        rowList.add(row5);
+        KeyboardButton button10 = new KeyboardButton();
+        button10.setText("⚙\uFE0FSozlamalar");
+        row6.add(button10);
+        rowList.add(row6);
+        reply.setKeyboard(rowList);
+        reply.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(reply);
+        return sendMessage;
+    }
+    public SendMessage kontaktYuborishUz(Long chatId) {
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("\uD83D\uDCDE Ro'yxatdan o'tish uchun telefon raqamingizni kiriting. \n" +
+                " \n" +
+                " Raqamni +998********* shaklida yuboring.");
+        ReplyKeyboardMarkup reply = new ReplyKeyboardMarkup();
+
+        List<KeyboardRow> rows = new ArrayList<>();
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardButton button1 = new KeyboardButton();
+        button1.setRequestContact(true);
+        button1.setText("☎\uFE0F Telefon raqamni yuborish");
+        row1.add(button1);
+        rows.add(row1);
+        reply.setKeyboard(rows);
+        reply.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(reply);
+        return sendMessage;
+    }
+    public SendMessage izohQoldirishUz(Long chatId) {
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setText("Izoh qoldiring. Sizning fikringiz biz uchun muhim");
+        sendMessage.setChatId(chatId);
+        ReplyKeyboardMarkup reply = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rows = new ArrayList<>();
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardButton button1 = new KeyboardButton();
+        button1.setText("⬅\uFE0FOrqaga");
+        row1.add(button1);
+        rows.add(row1);
+        reply.setKeyboard(rows);
+        reply.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(reply);
+        return sendMessage;
+    }
+    public SendMessage izohQabulQilindiUz(Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("✅Izohingiz qabul qilindi");
+        return sendMessage;
+    }
+    public SendMessage kankulator(Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("O'zingizga kerakli transportni tanglang");
+        ReplyKeyboardMarkup reply = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rows = new ArrayList<>();
+        KeyboardRow row = new KeyboardRow();
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardButton button = new KeyboardButton();
+        button.setText("✈\uFE0FHavo transporti");
+        row.add(button);
+        rows.add(row);
+        KeyboardButton button1 = new KeyboardButton();
+        button1.setText("\uD83D\uDE88Temir yo'l transporti");
+        row.add(button1);
+        KeyboardButton button2 = new KeyboardButton();
+        button2.setText("\uD83D\uDE98Avtomobil transporti");
+        row1.add(button2);
+        rows.add(row1);
+        KeyboardButton button3 = new KeyboardButton();
+        button3.setText("\uD83D\uDEF3Dengiz transporti");
+        row1.add(button3);
+        reply.setKeyboard(rows);
+        reply.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(reply);
+        return sendMessage;
+    }
+}
