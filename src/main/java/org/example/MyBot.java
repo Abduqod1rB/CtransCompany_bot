@@ -12,7 +12,6 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 
 public class MyBot extends TelegramLongPollingBot {
-
     private final MyBotService myBotService = new MyBotService();
     private final MyBotServiceUz myBotServiceUz = new MyBotServiceUz();
     private final MyBotServiceRus myBotServiceRus = new MyBotServiceRus();
