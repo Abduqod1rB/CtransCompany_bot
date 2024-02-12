@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MyBotServiceRus {
-    public SendMessage asosiyMenuUz(Long chatId){
+    public SendMessage asosiyMenuRus(Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
         sendMessage.setText("Asosiy Menu");
