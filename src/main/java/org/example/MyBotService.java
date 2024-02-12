@@ -32,9 +32,6 @@ public class MyBotService {
         button2.setText("English languange\uD83C\uDDFA\uD83C\uDDF8");
         row1.add(button2);
         rowList.add(row1);
-        KeyboardButton button3 = new KeyboardButton();
-        button3.setText("中国语文科\uD83C\uDDE8\uD83C\uDDF3");
-        row1.add(button3);
         reply.setKeyboard(rowList);
         reply.setResizeKeyboard(true);
         sendMessage.setReplyMarkup(reply);

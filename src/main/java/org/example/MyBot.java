@@ -17,7 +17,6 @@ public class MyBot extends TelegramLongPollingBot {
     private final MyBotServiceUz myBotServiceUz = new MyBotServiceUz();
     private final MyBotServiceRus myBotServiceRus = new MyBotServiceRus();
     private final MyBotServiceEng myBotServiceEng = new MyBotServiceEng();
-    private final MyBotServiceChn myBotServiceChn = new MyBotServiceChn();
 
     @Override
     public void onUpdateReceived(Update update) {
@@ -59,13 +58,6 @@ public class MyBot extends TelegramLongPollingBot {
                                 throw new RuntimeException(e);
                             }
                         }
-                        case "chn" -> {
-                            try {
-                                execute(myBotServiceChn.asosiyMenuChn(chatId));
-                            } catch (TelegramApiException e) {
-                                throw new RuntimeException(e);
-                            }
-                        }
                     }
 
                 }
@@ -91,14 +83,6 @@ public class MyBot extends TelegramLongPollingBot {
                     try {
                         DB.users.get(id).setCurrentLanguage("en");
                         execute(myBotServiceEng.kontaktYuborishEng(chatId));
-                    } catch (TelegramApiException e) {
-                        throw new RuntimeException(e);
-                    }
-                }
-                case "中国语文科\uD83C\uDDE8\uD83C\uDDF3" -> {
-                    try {
-                        DB.users.get(id).setCurrentLanguage("chn");
-                        execute(myBotServiceChn.kontaktYuborishChn(chatId));
                     } catch (TelegramApiException e) {
                         throw new RuntimeException(e);
                     }
@@ -131,14 +115,6 @@ public class MyBot extends TelegramLongPollingBot {
                  }
                  DB.users.get(id).setCurrentPosition("comment");
             }
-            else if(text.equals("\uD83D\uDCAC發表評論")) {
-                 try {
-                     execute(myBotServiceChn.izohQoldirishChn(chatId));
-                 } catch (TelegramApiException e) {
-                     throw new RuntimeException(e);
-                 }
-                 DB.users.get(id).setCurrentPosition("comment");
-            }
             else if(DB.users.get(id).getCurrentPosition().equals("comment")){
                 switch (DB.users.get(id).getCurrentLanguage()){
                     case "uz" -> {
@@ -161,14 +137,6 @@ public class MyBot extends TelegramLongPollingBot {
                         try {
                             execute(myBotServiceEng.izohQabulQilindiEng(chatId));
                             execute(myBotServiceEng.asosiyMenuEng(chatId));
-                        } catch (TelegramApiException e) {
-                            throw new RuntimeException(e);
-                        }
-                    }
-                    case "chn" -> {
-                        try {
-                            execute(myBotServiceChn.izohQabulQilindiChn(chatId));
-                            execute(myBotServiceChn.asosiyMenuChn(chatId));
                         } catch (TelegramApiException e) {
                             throw new RuntimeException(e);
                         }
@@ -274,17 +242,8 @@ public class MyBot extends TelegramLongPollingBot {
                         throw new RuntimeException(e);
                     }
                 }
-                case "chn" -> {
-                    try {
-                        execute(myBotServiceChn.asosiyMenuChn(chatId));
-                        execute(sendMessage);
-                    } catch (TelegramApiException e) {
-                        throw new RuntimeException(e);
-                    }
-                }
             }
         }
-
     }
 
     @Override
