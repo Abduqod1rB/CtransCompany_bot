@@ -12,7 +12,6 @@ public class Main {
         telegramBotsApi.registerBot(new MyBot());
         System.out.println("Run...");
 
-
         /*Scanner scanner = new Scanner(System.in);
         Scanner scanner1 = new Scanner(System.in);
         System.out.println("Enter kg");

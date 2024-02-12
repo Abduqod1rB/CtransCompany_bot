@@ -17,6 +17,9 @@ public class User {
     private String phoneNumber;
     private String currentPosition;
     private String currentLanguage;
+    private double kg;
+    private double volume;
+    private String sendType;
 
     @Override
     public String toString() {

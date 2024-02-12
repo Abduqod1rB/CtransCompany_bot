@@ -31,7 +31,7 @@ public class DB {
     }
 
     static void addUser(String name, String curr_lan, String curr_pos, String phoneNumber) {
-        User newUser = new User(name, curr_lan, curr_pos, phoneNumber);
+        User newUser = new User(name, curr_lan, curr_pos, phoneNumber, 0, 0, "");
         int index = 0;
         int l = 0, r = users.size() - 1;
 

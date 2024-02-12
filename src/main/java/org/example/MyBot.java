@@ -185,6 +185,58 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
+            if(text.equals("✈\uFE0FHavo transporti")){
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.setChatId(chatId);
+                sendMessage.setText("Yukning og'irligi (kg): ");
+                DB.users.get(id).setCurrentPosition("kg");
+                DB.users.get(id).setSendType("Air");
+                try {
+                    execute(sendMessage);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+            else if(DB.users.get(id).getCurrentPosition().equals("kg")){
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.setChatId(chatId);
+                try {
+                    DB.users.get(id).setKg(Double.parseDouble(text));
+                    sendMessage.setText("Yuk hajmi (m3): ");
+                    DB.users.get(id).setCurrentPosition("volume");
+                }catch (Exception e){
+                    sendMessage.setText("Butun sonda kiriting");
+                }
+                try {
+                    execute(sendMessage);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+            else if(DB.users.get(id).getCurrentPosition().equals("volume")){
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.setChatId(chatId);
+                try {
+                    DB.users.get(id).setVolume(Double.parseDouble(text));
+                    double volume = DB.users.get(id).getVolume(), kg = DB.users.get(id).getKg();
+                    switch (DB.users.get(id).getSendType()){
+                        case "Air" -> {
+                             //   sendMessage.setText(String.valueOf()));
+
+                        }
+                    }
+                    DB.users.get(id).setCurrentPosition("start");
+
+                }catch (Exception e){
+                    sendMessage.setText("Butun sonda kiriting");
+                }
+                try {
+                    execute(sendMessage);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+
         }
 
         if (update.hasMessage() && update.getMessage().hasContact()) {
