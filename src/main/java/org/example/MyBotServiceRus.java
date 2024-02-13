@@ -106,5 +106,29 @@ public class MyBotServiceRus {
         sendMessage.setText("✅Ваш комментарий принят");
         return sendMessage;
     }
+    public SendMessage kankulatorRus(Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Выберите транспорт, который вам нужен");
+        ReplyKeyboardMarkup reply = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rows = new ArrayList<>();
+        KeyboardRow row = new KeyboardRow();
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardButton button = new KeyboardButton();
+        button.setText("✈\uFE0FВоздушный");
+        row.add(button);
+        rows.add(row);
+        KeyboardButton button1 = new KeyboardButton();
+        button1.setText("\uD83D\uDE88Железнодорожный транспорт");
+        row.add(button1);
+        KeyboardButton button2 = new KeyboardButton();
+        button2.setText("\uD83D\uDE98Автомобильный транспорт");
+        row1.add(button2);
+        rows.add(row1);
+        reply.setKeyboard(rows);
+        reply.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(reply);
+        return sendMessage;
+    }
 
 }
