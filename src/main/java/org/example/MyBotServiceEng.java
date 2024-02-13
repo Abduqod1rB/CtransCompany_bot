@@ -58,7 +58,6 @@ public class MyBotServiceEng {
         rowList.add(row3);
         rowList.add(row4);
         rowList.add(row5);
-
         replyKeyboardMarkUp.setKeyboard(rowList);
         replyKeyboardMarkUp.setResizeKeyboard(true);
         sendMessage.setReplyMarkup(replyKeyboardMarkUp);
@@ -77,7 +76,7 @@ public class MyBotServiceEng {
         KeyboardButton button1 = new KeyboardButton();
 
         button1.setRequestContact(true);
-        button1.setText("☎️\uFE0F Send phone number");
+        button1.setText("☎️\uFE0FSend phone number");
         row1.add(button1);
         rows.add(row1);
 
