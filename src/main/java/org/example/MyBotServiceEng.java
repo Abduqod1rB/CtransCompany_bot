@@ -303,11 +303,9 @@ public class MyBotServiceEng {
         row1.add(button2);
         rows.add(row);
         rows.add(row1);
-
         replyKeyboardMarkUp.setKeyboard(rows);
         replyKeyboardMarkUp.setResizeKeyboard(true);
         sendMessage.setReplyMarkup(replyKeyboardMarkUp);
-
         return sendMessage;
     }
 }

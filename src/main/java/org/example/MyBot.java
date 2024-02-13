@@ -95,7 +95,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
                 DB.users.get(id).setCurrentPosition("comment");
-
             }
             else if(text.equals("\uD83D\uDCACОставить комментарий")){
                 try {
@@ -202,6 +201,8 @@ public class MyBot extends TelegramLongPollingBot {
                     e.printStackTrace();
                 }
             }
+
+
 
         }
 
