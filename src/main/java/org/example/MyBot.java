@@ -152,6 +152,13 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
+            if (text.equals("kankulatorRus")){
+                try {
+                    execute(myBotServiceRus.kankulatorRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
             if(text.equals("✈\uFE0FHavo transporti")){
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
@@ -189,7 +196,6 @@ public class MyBot extends TelegramLongPollingBot {
                     switch (DB.users.get(id).getSendType()){
                         case "Air" -> {
                              //   sendMessage.setText(String.valueOf()));
-
                         }
                     }
                     DB.users.get(id).setCurrentPosition("start");
