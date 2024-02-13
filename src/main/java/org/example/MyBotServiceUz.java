@@ -124,9 +124,6 @@ public class MyBotServiceUz {
         button2.setText("\uD83D\uDE98Avtomobil transporti");
         row1.add(button2);
         rows.add(row1);
-        KeyboardButton button3 = new KeyboardButton();
-        button3.setText("\uD83D\uDEF3Dengiz transporti");
-        row1.add(button3);
         reply.setKeyboard(rows);
         reply.setResizeKeyboard(true);
         sendMessage.setReplyMarkup(reply);
