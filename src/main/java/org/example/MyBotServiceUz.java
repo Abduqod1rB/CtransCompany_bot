@@ -129,6 +129,53 @@ public class MyBotServiceUz {
         sendMessage.setReplyMarkup(reply);
         return sendMessage;
     }
+    public SendMessage xizmatlar(Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        KeyboardRow row1 = new KeyboardRow();
+        List<KeyboardRow> rowList = new ArrayList<>();
+        KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
+        KeyboardButton button3 = new KeyboardButton();
+        //1.Sedan,2.Krossover,3.Xetchbek,4.Mikroavtobus
+        button1.setText("✈️Havo transporti");button2.setText("\uD83D\uDE98Avtomobil transporti");
+        button3.setText("\uD83D\uDE88Temir yo'l transporti");
+
+        row1.add(button1);row1.add(button2);row1.add(button3);
+
+        rowList.add(row1);
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+        return sendMessage;
+    }
+    public SendMessage xitoydanmashinalar(Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardRow row2 = new KeyboardRow();
+        List<KeyboardRow> rowList = new ArrayList<>();
+        KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
+        KeyboardButton button3 = new KeyboardButton();
+        KeyboardButton button4 = new KeyboardButton();
+        //1.Sedan,2.Krossover,3.Xetchbek,4.Mikroavtobus
+        button1.setText("Sedan");button2.setText("Krossover");
+        button3.setText("Xetchbek");button4.setText("Mikroavtobus");
+
+        row1.add(button1);row1.add(button2);
+        row2.add(button3);row2.add(button4);
+
+        rowList.add(row1);rowList.add(row2);
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+        return sendMessage;
+    }
 
 
 }
