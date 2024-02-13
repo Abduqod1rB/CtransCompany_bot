@@ -159,19 +159,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
-            if (text.equals("✈\uFE0FВоздушный")){
-                SendMessage sendMessage = new SendMessage();
-                sendMessage.setChatId(chatId);
-                sendMessage.setText("Вес груза(кг): ");
-                DB.users.get(id).setCurrentPosition("kg");
-                DB.users.get(id).setSendType("Air");
-                try {
-                    execute(sendMessage);
-                } catch (Exception e) {
-                   e.printStackTrace();
-                }
-            }
             if(text.equals("✈\uFE0FHavo transporti")){
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
