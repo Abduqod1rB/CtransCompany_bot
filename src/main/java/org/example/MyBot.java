@@ -152,21 +152,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("kankulatorRus")){
-                try {
-                    execute(myBotServiceRus.kankulatorRus(chatId));
-                } catch (TelegramApiException e) {
-                    throw new RuntimeException(e);
-                }
-            }
-
-            if (text.equals("АвтоИзКитая")){
-                try {
-                    execute(myBotServiceRus.АвтоИзКитая(chatId));
-                } catch (TelegramApiException e) {
-                    throw new RuntimeException(e);
-                }
-            }
             if(text.equals("✈\uFE0FHavo transporti")){
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
