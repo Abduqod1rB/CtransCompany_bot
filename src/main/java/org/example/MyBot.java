@@ -58,7 +58,6 @@ public class MyBot extends TelegramLongPollingBot {
                             }
                         }
                     }
-
                 }
             }
             switch (text) {
@@ -87,7 +86,6 @@ public class MyBot extends TelegramLongPollingBot {
                     }
                 }
             }
-
             if(text.equals("\uD83D\uDCACIzoh qoldirish")){
                 try {
                     execute(myBotServiceUz.izohQoldirishUz(chatId));
@@ -103,7 +101,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
                  DB.users.get(id).setCurrentPosition("comment");
-
             }
             else if(text.equals("\uD83D\uDCACLeave a comment")){
                  try {
@@ -201,9 +198,6 @@ public class MyBot extends TelegramLongPollingBot {
                     e.printStackTrace();
                 }
             }
-
-
-
         }
 
         if (update.hasMessage() && update.getMessage().hasContact()) {
