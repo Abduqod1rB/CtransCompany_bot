@@ -131,4 +131,36 @@ public class MyBotServiceRus {
         return sendMessage;
     }
 
+    public SendMessage АвтоИзКитая (Long chatId){
+        SendMessage sendMessage=new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("");
+        ReplyKeyboardMarkup reply = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rows=new ArrayList<>();
+        KeyboardRow row = new KeyboardRow();
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardButton button = new KeyboardButton();
+        button.setText("Седан");
+        row.add(button);
+        rows.add(row);
+        KeyboardButton button1=new KeyboardButton();
+        button1.setText("Кроссовер");
+        row.add(button1);
+        rows.add(row);
+        KeyboardButton button2=new KeyboardButton();
+        button2.setText("Хетчбек");
+        row1.add(button2);
+        rows.add(row1);
+        KeyboardButton button3 = new KeyboardButton();
+        button3.setText("Минивэн");
+        row1.add(button3);
+        rows.add(row1);
+        reply.setKeyboard(rows);
+        reply.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(reply);
+        return sendMessage;
+
+
+    }
+
 }
