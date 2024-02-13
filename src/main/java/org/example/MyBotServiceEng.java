@@ -1,8 +1,4 @@
 package org.example;
-/*
- *User:t.me/abu_org tt:@abu_ed1t
- *Date:2/9/2024 *Time:9:25 AM
- */
 
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
@@ -13,6 +9,47 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MyBotServiceEng {
+
+    public SendMessage sedanEng(Long chatId){
+
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("select the sedan type");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+        KeyboardRow row = new KeyboardRow();
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardRow row2 = new KeyboardRow();
+        KeyboardRow row3 = new KeyboardRow();
+        KeyboardRow row4 = new KeyboardRow();
+        KeyboardRow row5 = new KeyboardRow();
+        KeyboardRow row6 = new KeyboardRow();
+
+        KeyboardButton button = new KeyboardButton();
+        KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
+        KeyboardButton button3 = new KeyboardButton();
+        KeyboardButton button4 = new KeyboardButton();
+        KeyboardButton button5 = new KeyboardButton();
+        KeyboardButton button6 = new KeyboardButton();
+        KeyboardButton button7 = new KeyboardButton();
+        KeyboardButton button8 = new KeyboardButton();
+        KeyboardButton button9 = new KeyboardButton();
+        KeyboardButton button10 = new KeyboardButton();
+        KeyboardButton button11 = new KeyboardButton();
+        KeyboardButton button12 = new KeyboardButton();
+        KeyboardButton button13 = new KeyboardButton();
+        KeyboardButton button14 = new KeyboardButton();
+
+        button.setText("BYD Seal");
+        button1.setText("BYD Han");
+        button2.setText("Chevrolet Monza 1.5L Atmo");
+        button3.setText("Chevrolet Monza 1.3L Turbo");
+        button4.setText("Honda Crider 1.0L Turbo");
+
+        return sendMessage;
+    }
 
     public SendMessage crossoverEng(Long chatId){
 
