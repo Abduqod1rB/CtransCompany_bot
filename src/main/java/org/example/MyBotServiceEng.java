@@ -13,6 +13,76 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MyBotServiceEng {
+
+    public SendMessage servicesEng(Long chatId){
+
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Select the type of service.");
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+
+        KeyboardRow row = new KeyboardRow();
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardRow row2 = new KeyboardRow();
+        KeyboardButton button = new KeyboardButton();
+        KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
+        KeyboardButton button3 = new KeyboardButton();
+        KeyboardButton button4 = new KeyboardButton();
+        button.setText("Air transportation");
+        button1.setText("Auto transportation");
+        button2.setText("Railway transportation");
+        button3.setText("Werehouse services in Yiwu and Gungzhou");
+        button4.setText("Customs Clearance services");
+        row.add(button);
+        row.add(button1);
+        row1.add(button2);
+        row1.add(button3);
+        row2.add(button4);
+        rowList.add(row);
+        rowList.add(row1);
+        rowList.add(row2);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendMessage;
+    }
+
+    public SendMessage carsFromChinaEng(Long chatId){
+
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("choose your type car");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+        KeyboardRow row = new KeyboardRow();
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardButton button = new KeyboardButton();
+        KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
+        KeyboardButton button3 = new KeyboardButton();
+        button.setText("Sedan");
+        button1.setText("Crossover");
+        button2.setText("Hatchback");
+        button3.setText("Minivan");
+        row.add(button);
+        row.add(button1);
+        row1.add(button2);
+        row1.add(button3);
+        rowList.add(row);
+        rowList.add(row1);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendMessage;
+    }
+
     public SendMessage asosiyMenuEng(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
