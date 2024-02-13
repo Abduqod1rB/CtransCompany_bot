@@ -16,7 +16,7 @@ public class MyBotService {
     public SendMessage languangeMenu(Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("\uD83C\uDDFA\uD83C\uDDFFTilni tanlang" + "\n" + "\uD83C\uDDF7\uD83C\uDDFAВыберите язык" + "\n" + "\uD83C\uDDFA\uD83C\uDDF8Choose languange" + "\n" + "\uD83C\uDDE8\uD83C\uDDF3選擇一種語言");
+        sendMessage.setText("\uD83C\uDDFA\uD83C\uDDFFTilni tanlang" + "\n" + "\uD83C\uDDF7\uD83C\uDDFAВыберите язык" + "\n" + "\uD83C\uDDFA\uD83C\uDDF8Choose languange");
         ReplyKeyboardMarkup reply = new ReplyKeyboardMarkup();
         List<KeyboardRow> rowList = new ArrayList<>();
         KeyboardRow row = new KeyboardRow();
