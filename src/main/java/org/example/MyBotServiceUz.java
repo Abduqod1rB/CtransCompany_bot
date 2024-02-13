@@ -176,6 +176,25 @@ public class MyBotServiceUz {
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
         return sendMessage;
     }
+    public SendMessage sozlamalar(Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
 
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        KeyboardRow row1 = new KeyboardRow();
 
+        List<KeyboardRow> rowList = new ArrayList<>();
+        KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
+
+        button1.setText("Tilni almashtirish");button2.setText("☎️Telefon raqamini alashtirish");
+
+        row1.add(button1);row1.add(button2);
+
+        rowList.add(row1);
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+        return sendMessage;
+    }
 }
