@@ -5,10 +5,13 @@ package org.example;
  */
 
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+import org.telegram.telegrambots.meta.api.methods.send.SendPhoto;
+import org.telegram.telegrambots.meta.api.objects.InputFile;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardButton;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -410,5 +413,21 @@ public class MyBotServiceUz {
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
 
         return sendMessage;
+    }
+    public SendPhoto aboutUsUz(Long chatId) {
+
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/images/content/about-01.webp"));
+        sendPhoto.setCaption("<b>BIZ HAQIMIZDA</b>\n" +
+                "<b>Butun dunyo bo'ylab logistika xizmatlari sohasida tajriba</b>\n" +
+                "\n" +
+                "Biz butun dunyo bo'ylab eng yaxshi yuk tashish va transport bitimlarini taqdim etishdan faxrlanamiz." +
+                " \n" +
+                "✅100%Kompensatsiya          ✅Onlayn kuzatish\n" +
+                "✅Tajribali jamoa            ✅Yuklarni sug'urta qilish\n" +
+                "✅24/7 qo'llab-quvvatlash    ✅Xavfsiz omborxona");
+
+        return sendPhoto;
     }
 }
