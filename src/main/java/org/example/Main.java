@@ -14,12 +14,5 @@ public class        Main {
         telegramBotsApi.registerBot(new MyBot());
         System.out.println("Run...");
 
-        Costs.fill();
-        System.out.println(Collections.singletonList(Costs.RailWaySmallAmount));
-        System.out.println(Collections.singletonList(Costs.RailWayBigAmount));
-        System.out.println(Collections.singletonList(Costs.CarSmallAmount));
-        System.out.println(Collections.singletonList(Costs.CarBigAmount));
-
-
     }
 }
