@@ -197,4 +197,52 @@ public class MyBotServiceUz {
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
         return sendMessage;
     }
+//    public SendMessage sedanUz(Long chatId){
+//
+//        SendMessage sendMessage = new SendMessage();
+//        sendMessage.setChatId(chatId);
+//        sendMessage.setText("Sedanni tanlang");
+//
+//        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+//        List<KeyboardRow> rowList = new ArrayList<>();
+//        KeyboardRow row1 = new KeyboardRow();
+//        KeyboardRow row2 = new KeyboardRow();
+//        KeyboardRow row3 = new KeyboardRow();
+//        KeyboardRow row4 = new KeyboardRow();
+//        KeyboardRow row5 = new KeyboardRow();
+//        KeyboardRow row6 = new KeyboardRow();
+//
+//        KeyboardButton button1 = new KeyboardButton();
+//        KeyboardButton button2 = new KeyboardButton();
+//        KeyboardButton button3 = new KeyboardButton();
+//        KeyboardButton button4 = new KeyboardButton();
+//        KeyboardButton button5 = new KeyboardButton();
+//        KeyboardButton button6 = new KeyboardButton();
+//        KeyboardButton button7 = new KeyboardButton();
+//        KeyboardButton button8 = new KeyboardButton();
+//        KeyboardButton button9 = new KeyboardButton();
+//        KeyboardButton button10 = new KeyboardButton();
+//        KeyboardButton button11 = new KeyboardButton();
+//        KeyboardButton button12 = new KeyboardButton();
+//        KeyboardButton button13 = new KeyboardButton();
+//        KeyboardButton button14 = new KeyboardButton();
+//
+//        button1.setText("BYD Seal");
+//        button2.setText("BYD Han");
+//        button3.setText("Chevrolet Monza 1.5L Atmo");
+//        button4.setText("Chevrolet Monza 1.3L Turbo");
+//        button5.setText("Honda Crider 1.0L Turbo");
+//
+//        row1.add(button1);row1.add(button2);
+//        row2.add(button3);row2.add(button4);
+//        row3.add(button5);
+//
+//        rowList.add(row1);rowList.add(row2);rowList.add(row3);rowList.add(row4);rowList.add(row5);
+//
+//        replyKeyboardMarkup.setResizeKeyboard(true);
+//        replyKeyboardMarkup.setKeyboard(rowList);
+//        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+//
+//        return sendMessage;
+//    }
 }
