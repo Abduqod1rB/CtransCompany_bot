@@ -1,16 +1,28 @@
 package org.example;
 
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+import org.telegram.telegrambots.meta.api.methods.send.SendPhoto;
+import org.telegram.telegrambots.meta.api.objects.InputFile;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardButton;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
 public class MyBotServiceEng {
 
-    public SendMessage minivanEng(Long chatId){
+    public SendPhoto aboutUsEng(Long chatId) {
+
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile(new File("D:\\My_Telegram_bots\\CTRANS_bot\\image\\aboutUs.")));
+
+        return null;
+    }
+
+    public SendMessage minivanEng(Long chatId) {
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -38,7 +50,7 @@ public class MyBotServiceEng {
         return sendMessage;
     }
 
-    public SendMessage hatchBackEng(Long chatId){
+    public SendMessage hatchBackEng(Long chatId) {
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -70,7 +82,7 @@ public class MyBotServiceEng {
         return sendMessage;
     }
 
-    public SendMessage sedanEng(Long chatId){
+    public SendMessage sedanEng(Long chatId) {
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -125,7 +137,7 @@ public class MyBotServiceEng {
         return sendMessage;
     }
 
-    public SendMessage crossoverEng(Long chatId){
+    public SendMessage crossoverEng(Long chatId) {
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -225,7 +237,7 @@ public class MyBotServiceEng {
         return sendMessage;
     }
 
-    public SendMessage servicesEng(Long chatId){
+    public SendMessage servicesEng(Long chatId) {
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -262,7 +274,7 @@ public class MyBotServiceEng {
         return sendMessage;
     }
 
-    public SendMessage carsFromChinaEng(Long chatId){
+    public SendMessage carsFromChinaEng(Long chatId) {
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
