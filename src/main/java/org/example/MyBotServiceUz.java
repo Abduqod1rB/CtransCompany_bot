@@ -197,52 +197,71 @@ public class MyBotServiceUz {
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
         return sendMessage;
     }
-//    public SendMessage sedanUz(Long chatId){
-//
-//        SendMessage sendMessage = new SendMessage();
-//        sendMessage.setChatId(chatId);
-//        sendMessage.setText("Sedanni tanlang");
-//
-//        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
-//        List<KeyboardRow> rowList = new ArrayList<>();
-//        KeyboardRow row1 = new KeyboardRow();
-//        KeyboardRow row2 = new KeyboardRow();
-//        KeyboardRow row3 = new KeyboardRow();
-//        KeyboardRow row4 = new KeyboardRow();
-//        KeyboardRow row5 = new KeyboardRow();
-//        KeyboardRow row6 = new KeyboardRow();
-//
-//        KeyboardButton button1 = new KeyboardButton();
-//        KeyboardButton button2 = new KeyboardButton();
-//        KeyboardButton button3 = new KeyboardButton();
-//        KeyboardButton button4 = new KeyboardButton();
-//        KeyboardButton button5 = new KeyboardButton();
-//        KeyboardButton button6 = new KeyboardButton();
-//        KeyboardButton button7 = new KeyboardButton();
-//        KeyboardButton button8 = new KeyboardButton();
-//        KeyboardButton button9 = new KeyboardButton();
-//        KeyboardButton button10 = new KeyboardButton();
-//        KeyboardButton button11 = new KeyboardButton();
-//        KeyboardButton button12 = new KeyboardButton();
-//        KeyboardButton button13 = new KeyboardButton();
-//        KeyboardButton button14 = new KeyboardButton();
-//
-//        button1.setText("BYD Seal");
-//        button2.setText("BYD Han");
-//        button3.setText("Chevrolet Monza 1.5L Atmo");
-//        button4.setText("Chevrolet Monza 1.3L Turbo");
-//        button5.setText("Honda Crider 1.0L Turbo");
-//
-//        row1.add(button1);row1.add(button2);
-//        row2.add(button3);row2.add(button4);
-//        row3.add(button5);
-//
-//        rowList.add(row1);rowList.add(row2);rowList.add(row3);rowList.add(row4);rowList.add(row5);
-//
-//        replyKeyboardMarkup.setResizeKeyboard(true);
-//        replyKeyboardMarkup.setKeyboard(rowList);
-//        sendMessage.setReplyMarkup(replyKeyboardMarkup);
-//
-//        return sendMessage;
-//    }
+    public SendMessage sedanUz(Long chatId){
+
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Sedanni tanlang");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardRow row2 = new KeyboardRow();
+        KeyboardRow row3 = new KeyboardRow();
+        KeyboardRow row4 = new KeyboardRow();
+        KeyboardRow row5 = new KeyboardRow();
+        KeyboardRow row6 = new KeyboardRow();
+        KeyboardRow row7 = new KeyboardRow();
+        KeyboardRow row8 = new KeyboardRow();
+
+        KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
+        KeyboardButton button3 = new KeyboardButton();
+        KeyboardButton button4 = new KeyboardButton();
+        KeyboardButton button5 = new KeyboardButton();
+        KeyboardButton button6 = new KeyboardButton();
+        KeyboardButton button7 = new KeyboardButton();
+        KeyboardButton button8 = new KeyboardButton();
+        KeyboardButton button9 = new KeyboardButton();
+        KeyboardButton button10 = new KeyboardButton();
+        KeyboardButton button11 = new KeyboardButton();
+        KeyboardButton button12 = new KeyboardButton();
+        KeyboardButton button13 = new KeyboardButton();
+        KeyboardButton button14 = new KeyboardButton();
+        KeyboardButton button15 = new KeyboardButton();
+
+        button1.setText("BYD Seal");
+        button2.setText("BYD Han");
+        button3.setText("Chevrolet Monza 1.5L Atmo");
+        button4.setText("Chevrolet Monza 1.3L Turbo");
+        button5.setText("Honda Crider 1.0L Turbo");
+        button6.setText("LeapMotor C01");
+        button7.setText("HiPhi Z");
+        button8.setText("IM Motors L7");
+        button9.setText("Geometry G6");
+        button10.setText("BMW i3 eDrive40");
+        button11.setText("BMW i4 eDrive35");
+        button12.setText("BMW i5 eDrive40");
+        button13.setText("Neta S");
+        button14.setText("Neta Gt");
+        button15.setText("Zeeker 007");
+
+        row1.add(button1);row1.add(button2);
+        row2.add(button3);row2.add(button4);
+        row3.add(button5);row3.add(button6);
+        row4.add(button7);row4.add(button8);
+        row5.add(button9);row5.add(button10);
+        row6.add(button11);row6.add(button12);
+        row7.add(button13);row7.add(button14);
+        row8.add(button15);
+
+        rowList.add(row1);rowList.add(row2);rowList.add(row3);rowList.add(row4);
+        rowList.add(row5);rowList.add(row6);rowList.add(row7);rowList.add(row8);
+
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        replyKeyboardMarkup.setKeyboard(rowList);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendMessage;
+    }
 }
