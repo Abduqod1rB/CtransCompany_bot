@@ -264,4 +264,96 @@ public class MyBotServiceUz {
 
         return sendMessage;
     }
+    public SendMessage crossoverUz(Long chatId) {
+
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Krossoverni tanlang");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardRow row2 = new KeyboardRow();
+        KeyboardRow row3 = new KeyboardRow();
+        KeyboardRow row4 = new KeyboardRow();
+        KeyboardRow row5 = new KeyboardRow();
+        KeyboardRow row6 = new KeyboardRow();
+        KeyboardRow row7 = new KeyboardRow();
+        KeyboardRow row8 = new KeyboardRow();
+        KeyboardRow row9 = new KeyboardRow();
+        KeyboardRow row10 = new KeyboardRow();
+        KeyboardRow row11 = new KeyboardRow();
+        KeyboardRow row12 = new KeyboardRow();
+
+        KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
+        KeyboardButton button3 = new KeyboardButton();
+        KeyboardButton button4 = new KeyboardButton();
+        KeyboardButton button5 = new KeyboardButton();
+        KeyboardButton button6 = new KeyboardButton();
+        KeyboardButton button7 = new KeyboardButton();
+        KeyboardButton button8 = new KeyboardButton();
+        KeyboardButton button9 = new KeyboardButton();
+        KeyboardButton button10 = new KeyboardButton();
+        KeyboardButton button11 = new KeyboardButton();
+        KeyboardButton button12 = new KeyboardButton();
+        KeyboardButton button13 = new KeyboardButton();
+        KeyboardButton button14 = new KeyboardButton();
+        KeyboardButton button15 = new KeyboardButton();
+        KeyboardButton button16 = new KeyboardButton();
+        KeyboardButton button17 = new KeyboardButton();
+        KeyboardButton button18 = new KeyboardButton();
+        KeyboardButton button19 = new KeyboardButton();
+        KeyboardButton button20 = new KeyboardButton();
+        KeyboardButton button21 = new KeyboardButton();
+        KeyboardButton button22 = new KeyboardButton();
+        KeyboardButton button23 = new KeyboardButton();
+
+        button1.setText("BYD Song Plus Champion Edition");
+        button2.setText("BYD Tang EV");
+        button3.setText("BYD Yuan Plus EV");
+        button4.setText("Zeeker 001");
+        button5.setText("Zeeker X");
+        button6.setText("LeapMotor C11");
+        button7.setText("Geely Geometry E");
+        button8.setText("Denza N7");
+        button9.setText("HiPhi Y");
+        button10.setText("NIO ES8");
+        button11.setText("NIO EC7");
+        button12.setText("LI Auto L7");
+        button13.setText("LI Auto L9");
+        button14.setText("IM Motors LS7");
+        button15.setText("Geometry M6");
+        button16.setText("LI Auto L8");
+        button17.setText("Avatr 11");
+        button18.setText("HiPhi X");
+        button19.setText("LI Auto One");
+        button20.setText("Lynk&Co 09EM-P");
+        button21.setText("Chevrolet Seeker");
+        button22.setText("BYD Song L");
+        button23.setText("BYD Yangwang U8");
+
+        row1.add(button1);row1.add(button2);
+        row2.add(button3);row2.add(button4);
+        row3.add(button5);row3.add(button6);
+        row4.add(button7);row4.add(button8);
+        row5.add(button9);row5.add(button10);
+        row6.add(button11);row6.add(button12);
+        row7.add(button13);row7.add(button14);
+        row8.add(button15);row8.add(button16);
+        row9.add(button17);row9.add(button18);
+        row10.add(button19);row10.add(button20);
+        row11.add(button21);row11.add(button22);
+        row12.add(button23);
+
+        rowList.add(row1);rowList.add(row2);rowList.add(row3);rowList.add(row4);rowList.add(row5);rowList.add(row6);
+        rowList.add(row7);rowList.add(row8);rowList.add(row9);rowList.add(row10);rowList.add(row11);rowList.add(row12);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendMessage;
+    }
 }
