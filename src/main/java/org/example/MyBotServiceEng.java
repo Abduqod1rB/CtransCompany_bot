@@ -113,13 +113,25 @@ public class MyBotServiceEng {
         return sendMessage;
     }
 
+
     public SendPhoto aboutUsEng(Long chatId) {
 
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(new File("D:\\My_Telegram_bots\\CTRANS_bot\\image\\aboutUs.")));
+        sendPhoto.setPhoto(new InputFile(new File("D:\\My_Telegram_bots\\CTRANS_bot\\image\\aboutUs.png")));
+        sendPhoto.setCaption("ABOUT US\n" +
+                "<b>Experience in the field of</b>\n" +
+                "<b>logistics services around the</b>\n" +
+                "<b>world.<b>\n" +
+                " \n" +
+                "We pride ourselves on providing the best shipping and\n" +
+                "transportation deals around the world.\n" +
+                " \n" +
+                "✅100% Compensation ✅Online tracking\n" +
+                "✅Experienced Team  ✅Cargo insurance\n" +
+                "✅Support 24/7      ✅Safe warehouse");
 
-        return null;
+        return sendPhoto;
     }
 
     public SendMessage minivanEng(Long chatId) {
@@ -197,6 +209,7 @@ public class MyBotServiceEng {
         KeyboardRow row4 = new KeyboardRow();
         KeyboardRow row5 = new KeyboardRow();
         KeyboardRow row6 = new KeyboardRow();
+        KeyboardRow row7 = new KeyboardRow();
 
         KeyboardButton button = new KeyboardButton();
         KeyboardButton button1 = new KeyboardButton();
@@ -229,6 +242,31 @@ public class MyBotServiceEng {
         button12.setText("Neta S");
         button13.setText("Neta Gt");
         button14.setText("Zeeker 007");
+
+        row.add(button);
+        row.add(button1);
+        row1.add(button2);
+        row1.add(button3);
+        row2.add(button4);
+        row2.add(button5);
+        row3.add(button6);
+        row3.add(button7);
+        row4.add(button8);
+        row4.add(button9);
+        row5.add(button10);
+        row5.add(button11);
+        row6.add(button12);
+        row6.add(button13);
+        row7.add(button14);
+
+        rowList.add(row);
+        rowList.add(row1);
+        rowList.add(row2);
+        rowList.add(row3);
+        rowList.add(row4);
+        rowList.add(row5);
+        rowList.add(row6);
+        rowList.add(row7);
 
         replyKeyboardMarkup.setKeyboard(rowList);
         replyKeyboardMarkup.setResizeKeyboard(true);
@@ -329,6 +367,19 @@ public class MyBotServiceEng {
         row10.add(button20);
         row10.add(button21);
         row11.add(button22);
+
+        rowList.add(row);
+        rowList.add(row1);
+        rowList.add(row2);
+        rowList.add(row3);
+        rowList.add(row4);
+        rowList.add(row5);
+        rowList.add(row6);
+        rowList.add(row7);
+        rowList.add(row8);
+        rowList.add(row9);
+        rowList.add(row10);
+        rowList.add(row11);
 
         replyKeyboardMarkup.setKeyboard(rowList);
         replyKeyboardMarkup.setResizeKeyboard(true);
