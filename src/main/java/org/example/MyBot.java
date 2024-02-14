@@ -184,7 +184,7 @@ public class MyBot extends TelegramLongPollingBot {
                     double volume = DB.users.get(id).getVolume(), kg = DB.users.get(id).getKg();
                     switch (DB.users.get(id).getSendType()){
                         case "Air" -> {
-                             //   sendMessage.setText(String.valueOf()));
+                             //sendMessage.setText(String.valueOf()));
                         }
                     }
                     DB.users.get(id).setCurrentPosition("start");
