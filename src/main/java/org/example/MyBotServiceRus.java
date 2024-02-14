@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MyBotServiceRus {
-    public SendMessage sedanEng(Long chatId){
+    public SendMessage sedanRus(Long chatId){
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -67,7 +67,7 @@ public class MyBotServiceRus {
 
         return sendMessage;
     }
-    public SendMessage crossoverEng(Long chatId){
+    public SendMessage crossoverRus(Long chatId){
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -166,7 +166,7 @@ public class MyBotServiceRus {
 
         return sendMessage;
     }
-    public SendMessage servicesEng(Long chatId){
+    public SendMessage servicesRus(Long chatId){
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -202,7 +202,7 @@ public class MyBotServiceRus {
 
         return sendMessage;
     }
-    public SendMessage carsFromChinaEng(Long chatId){
+    public SendMessage carsFromChinaRus(Long chatId){
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
