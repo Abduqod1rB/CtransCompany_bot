@@ -367,5 +367,8 @@ public class MyBotServiceRus {
         sendMessage.setReplyMarkup(reply);
         return sendMessage;
     }
-    //star
+    //star hjghjbjhbjgjgvjcvfmfgf
+
+
+
 }
