@@ -142,7 +142,7 @@ public class MyBotServiceUz {
         KeyboardButton button4 = new KeyboardButton();
         KeyboardButton button5 = new KeyboardButton();
         button1.setText("✈️Havo transporti");button2.setText("\uD83D\uDE98Avtomobil transporti");
-        button3.setText("\uD83D\uDE88Temir yo'l transporti"); button4.setText("Yivu va Guanchjou da ombor xizmatlari");
+        button3.setText("\uD83D\uDE88Temir yo'l transporti");button4.setText("Yivu va Guanchjou da ombor xizmatlari");
         button5.setText("Bojxona rasmiylashtiruvi xizmatlari");
         row.add(button1);row.add(button2);row.add(button3);
         row1.add(button4);row1.add(button5);

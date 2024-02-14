@@ -12,6 +12,106 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MyBotServiceEng {
+    public SendMessage asosiyMenuEng(Long chatId) {
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Main menu");
+        ReplyKeyboardMarkup replyKeyboardMarkUp = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+        KeyboardRow row = new KeyboardRow();
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardRow row2 = new KeyboardRow();
+        KeyboardRow row3 = new KeyboardRow();
+        KeyboardRow row4 = new KeyboardRow();
+        KeyboardRow row5 = new KeyboardRow();
+        KeyboardButton button = new KeyboardButton();
+        KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
+        KeyboardButton button3 = new KeyboardButton();
+        KeyboardButton button4 = new KeyboardButton();
+        KeyboardButton button5 = new KeyboardButton();
+        KeyboardButton button6 = new KeyboardButton();
+        KeyboardButton button7 = new KeyboardButton();
+        KeyboardButton button8 = new KeyboardButton();
+        button.setText("\uD83D\uDE9AServices");
+        button1.setText("\uD83D\uDE99Cars from China");
+        button2.setText("⏰Delivery time");
+        button3.setText("☎️\uFE0Fcontact us");
+        button4.setText("\uD83C\uDFDBCurrency rates");
+        button5.setText("\uD83E\uDDEECalculator");
+        button6.setText("ℹ️\uFE0Fabout Us");
+        button7.setText("\uD83D\uDCACLeave a comment");
+        button8.setText("⚙️\uFE0FSettings");
+        row.add(button);
+        row1.add(button1);
+        row2.add(button2);
+        row2.add(button3);
+        row3.add(button4);
+        row3.add(button5);
+        row4.add(button6);
+        row4.add(button7);
+        row5.add(button8);
+        rowList.add(row);
+        rowList.add(row1);
+        rowList.add(row2);
+        rowList.add(row3);
+        rowList.add(row4);
+        rowList.add(row5);
+        replyKeyboardMarkUp.setKeyboard(rowList);
+        replyKeyboardMarkUp.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkUp);
+        return sendMessage;
+    }
+
+    public SendMessage kontaktYuborishEng(Long chatId) {
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("\uD83D\uDCDE Enter your phone number to register. \n" +
+                " \n" +
+                " Send the number as +998***********.");
+        ReplyKeyboardMarkup replyKeyboardMarkUp = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rows = new ArrayList<>();
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardButton button1 = new KeyboardButton();
+
+        button1.setRequestContact(true);
+        button1.setText("☎️\uFE0FSend phone number");
+        row1.add(button1);
+        rows.add(row1);
+
+        replyKeyboardMarkUp.setKeyboard(rows);
+        replyKeyboardMarkUp.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkUp);
+
+        return sendMessage;
+    }
+
+    public SendMessage izohQoldirishEng(Long chatId) {
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setText("Leave a comment. Your opinion is important to us");
+        sendMessage.setChatId(chatId);
+        ReplyKeyboardMarkup replyKeyboardMarkUp = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rows = new ArrayList<>();
+
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardButton button1 = new KeyboardButton();
+        button1.setText("⬅️\uFE0FBack");
+        row1.add(button1);
+        rows.add(row1);
+
+        replyKeyboardMarkUp.setKeyboard(rows);
+        replyKeyboardMarkUp.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkUp);
+
+        return sendMessage;
+    }
+
+    public SendMessage izohQabulQilindiEng(Long chatId) {
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("✅Your comment has been accepted");
+        return sendMessage;
+    }
 
     public SendPhoto aboutUsEng(Long chatId) {
 
@@ -306,106 +406,7 @@ public class MyBotServiceEng {
         return sendMessage;
     }
 
-    public SendMessage asosiyMenuEng(Long chatId) {
-        SendMessage sendMessage = new SendMessage();
-        sendMessage.setChatId(chatId);
-        sendMessage.setText("Main menu");
-        ReplyKeyboardMarkup replyKeyboardMarkUp = new ReplyKeyboardMarkup();
-        List<KeyboardRow> rowList = new ArrayList<>();
-        KeyboardRow row = new KeyboardRow();
-        KeyboardRow row1 = new KeyboardRow();
-        KeyboardRow row2 = new KeyboardRow();
-        KeyboardRow row3 = new KeyboardRow();
-        KeyboardRow row4 = new KeyboardRow();
-        KeyboardRow row5 = new KeyboardRow();
-        KeyboardButton button = new KeyboardButton();
-        KeyboardButton button1 = new KeyboardButton();
-        KeyboardButton button2 = new KeyboardButton();
-        KeyboardButton button3 = new KeyboardButton();
-        KeyboardButton button4 = new KeyboardButton();
-        KeyboardButton button5 = new KeyboardButton();
-        KeyboardButton button6 = new KeyboardButton();
-        KeyboardButton button7 = new KeyboardButton();
-        KeyboardButton button8 = new KeyboardButton();
-        button.setText("\uD83D\uDE9AServices");
-        button1.setText("\uD83D\uDE99Cars from China");
-        button2.setText("⏰Delivery time");
-        button3.setText("☎️\uFE0Fcontact us");
-        button4.setText("\uD83C\uDFDBCurrency rates");
-        button5.setText("\uD83E\uDDEECalculator");
-        button6.setText("ℹ️\uFE0Fabout Us");
-        button7.setText("\uD83D\uDCACLeave a comment");
-        button8.setText("⚙️\uFE0FSettings");
-        row.add(button);
-        row1.add(button1);
-        row2.add(button2);
-        row2.add(button3);
-        row3.add(button4);
-        row3.add(button5);
-        row4.add(button6);
-        row4.add(button7);
-        row5.add(button8);
-        rowList.add(row);
-        rowList.add(row1);
-        rowList.add(row2);
-        rowList.add(row3);
-        rowList.add(row4);
-        rowList.add(row5);
-        replyKeyboardMarkUp.setKeyboard(rowList);
-        replyKeyboardMarkUp.setResizeKeyboard(true);
-        sendMessage.setReplyMarkup(replyKeyboardMarkUp);
-        return sendMessage;
-    }
 
-    public SendMessage kontaktYuborishEng(Long chatId) {
-        SendMessage sendMessage = new SendMessage();
-        sendMessage.setChatId(chatId);
-        sendMessage.setText("\uD83D\uDCDE Enter your phone number to register. \n" +
-                " \n" +
-                " Send the number as +998***********.");
-        ReplyKeyboardMarkup replyKeyboardMarkUp = new ReplyKeyboardMarkup();
-        List<KeyboardRow> rows = new ArrayList<>();
-        KeyboardRow row1 = new KeyboardRow();
-        KeyboardButton button1 = new KeyboardButton();
-
-        button1.setRequestContact(true);
-        button1.setText("☎️\uFE0FSend phone number");
-        row1.add(button1);
-        rows.add(row1);
-
-        replyKeyboardMarkUp.setKeyboard(rows);
-        replyKeyboardMarkUp.setResizeKeyboard(true);
-        sendMessage.setReplyMarkup(replyKeyboardMarkUp);
-
-        return sendMessage;
-    }
-
-    public SendMessage izohQoldirishEng(Long chatId) {
-        SendMessage sendMessage = new SendMessage();
-        sendMessage.setText("Leave a comment. Your opinion is important to us");
-        sendMessage.setChatId(chatId);
-        ReplyKeyboardMarkup replyKeyboardMarkUp = new ReplyKeyboardMarkup();
-        List<KeyboardRow> rows = new ArrayList<>();
-
-        KeyboardRow row1 = new KeyboardRow();
-        KeyboardButton button1 = new KeyboardButton();
-        button1.setText("⬅️\uFE0FBack");
-        row1.add(button1);
-        rows.add(row1);
-
-        replyKeyboardMarkUp.setKeyboard(rows);
-        replyKeyboardMarkUp.setResizeKeyboard(true);
-        sendMessage.setReplyMarkup(replyKeyboardMarkUp);
-
-        return sendMessage;
-    }
-
-    public SendMessage izohQabulQilindiEng(Long chatId) {
-        SendMessage sendMessage = new SendMessage();
-        sendMessage.setChatId(chatId);
-        sendMessage.setText("✅Your comment has been accepted");
-        return sendMessage;
-    }
 
     public SendMessage kanlkulyator(Long chatId) {
         SendMessage sendMessage = new SendMessage();

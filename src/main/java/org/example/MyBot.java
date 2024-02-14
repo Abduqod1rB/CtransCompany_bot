@@ -198,7 +198,6 @@ public class MyBot extends TelegramLongPollingBot {
                     e.printStackTrace();
                 }
             }
-
         }
 
         if (update.hasMessage() && update.getMessage().hasContact()) {
