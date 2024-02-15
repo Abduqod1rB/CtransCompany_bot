@@ -499,7 +499,7 @@ public class MyBotServiceEng {
 
 
 
-    public SendMessage kanlkulyator(Long chatId) {
+    public SendMessage kanlkulyatorEng(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
         sendMessage.setText("Choose the transport you need");
@@ -532,7 +532,7 @@ public class MyBotServiceEng {
         return sendMessage;
     }
 
-    public SendMessage settingsEng (Long chatId){
+    public SendMessage settingsEng(Long chatId){
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
