@@ -95,7 +95,7 @@ public class MyBotServiceRus {
 
         KeyboardRow row1 = new KeyboardRow();
         KeyboardButton button1 = new KeyboardButton();
-        button1.setText("⬅️\uFE0FBack");
+        button1.setText("⬅️\uFE0FНазад");
         row1.add(button1);
         rows.add(row1);
 
@@ -150,7 +150,7 @@ public class MyBotServiceRus {
 
         button.setText("Denza D9");
         button1.setText("Zeeker 009");
-        button2.setText("⬅️\uFE0FBack");
+        button2.setText("⬅️\uFE0FНазад");
 
         row.add(button);
         row.add(button1);
@@ -184,7 +184,7 @@ public class MyBotServiceRus {
         button.setText("Neta S");
         button1.setText("Neta Gt");
         button2.setText("Zeeker 007");
-        button3.setText("⬅️\uFE0FBack");
+        button3.setText("⬅️\uFE0FНазад");
 
         row.add(button);
         row.add(button1);
@@ -251,7 +251,7 @@ public class MyBotServiceRus {
         button12.setText("Neta S");
         button13.setText("Neta Gt");
         button14.setText("Zeeker 007");
-        button15.setText("⬅️\uFE0FBack");
+        button15.setText("⬅️\uFE0FНазад");
 
         row.add(button);
         row.add(button1);
@@ -356,7 +356,7 @@ public class MyBotServiceRus {
         button20.setText("Chevrolet Seeker");
         button21.setText("BYD Song L");
         button22.setText("BYD Yangwang U8");
-        button23.setText("⬅️\uFE0FBack");
+        button23.setText("⬅️\uFE0FНазад");
 
 
         row.add(button);
@@ -426,8 +426,8 @@ public class MyBotServiceRus {
         button2.setText("Железнодорожные перевозки");
         button3.setText("Складовые услуги в Иу и Гуанчжоу");
         button4.setText("Услуги таможеннего оформления");
-        button5.setText("⬅️\uFE0FBack");
-        row.add(button);
+        button5.setText("⬅️\uFE0FНазад");
+        row.add(button); 
         row.add(button1);
         row1.add(button2);
         row1.add(button3);
@@ -464,7 +464,7 @@ public class MyBotServiceRus {
         button1.setText("Кросовер");
         button2.setText("Хетчбек");
         button3.setText("Минивэн");
-        button4.setText("⬅️\uFE0FBack");
+        button4.setText("⬅️\uFE0FНазад");
         row.add(button);
         row.add(button1);
         row1.add(button2);
@@ -498,7 +498,7 @@ public class MyBotServiceRus {
         button.setText("✈️\uFE0FАвиаперевозки");
         button1.setText("\uD83D\uDE88Железнодорожные перевозки");
         button2.setText("\uD83D\uDE98Автоперевозки");
-        button3.setText("⬅️\uFE0FBack");
+        button3.setText("⬅️\uFE0FНазад");
         row.add(button);
         row.add(button1);
         row1.add(button2);
