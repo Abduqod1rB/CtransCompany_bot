@@ -5,10 +5,13 @@ package org.example;
  */
 
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+import org.telegram.telegrambots.meta.api.methods.send.SendPhoto;
+import org.telegram.telegrambots.meta.api.objects.InputFile;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardButton;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -176,6 +179,255 @@ public class MyBotServiceUz {
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
         return sendMessage;
     }
+    public SendMessage sozlamalar(Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
 
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        KeyboardRow row1 = new KeyboardRow();
 
+        List<KeyboardRow> rowList = new ArrayList<>();
+        KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
+
+        button1.setText("Tilni almashtirish");button2.setText("☎️Telefon raqamini alashtirish");
+
+        row1.add(button1);row1.add(button2);
+
+        rowList.add(row1);
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+        return sendMessage;
+    }
+    public SendMessage sedanUz(Long chatId){
+
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Sedanni tanlang");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardRow row2 = new KeyboardRow();
+        KeyboardRow row3 = new KeyboardRow();
+        KeyboardRow row4 = new KeyboardRow();
+        KeyboardRow row5 = new KeyboardRow();
+        KeyboardRow row6 = new KeyboardRow();
+        KeyboardRow row7 = new KeyboardRow();
+        KeyboardRow row8 = new KeyboardRow();
+
+        KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
+        KeyboardButton button3 = new KeyboardButton();
+        KeyboardButton button4 = new KeyboardButton();
+        KeyboardButton button5 = new KeyboardButton();
+        KeyboardButton button6 = new KeyboardButton();
+        KeyboardButton button7 = new KeyboardButton();
+        KeyboardButton button8 = new KeyboardButton();
+        KeyboardButton button9 = new KeyboardButton();
+        KeyboardButton button10 = new KeyboardButton();
+        KeyboardButton button11 = new KeyboardButton();
+        KeyboardButton button12 = new KeyboardButton();
+        KeyboardButton button13 = new KeyboardButton();
+        KeyboardButton button14 = new KeyboardButton();
+        KeyboardButton button15 = new KeyboardButton();
+
+        button1.setText("BYD Seal");
+        button2.setText("BYD Han");
+        button3.setText("Chevrolet Monza 1.5L Atmo");
+        button4.setText("Chevrolet Monza 1.3L Turbo");
+        button5.setText("Honda Crider 1.0L Turbo");
+        button6.setText("LeapMotor C01");
+        button7.setText("HiPhi Z");
+        button8.setText("IM Motors L7");
+        button9.setText("Geometry G6");
+        button10.setText("BMW i3 eDrive40");
+        button11.setText("BMW i4 eDrive35");
+        button12.setText("BMW i5 eDrive40");
+        button13.setText("Neta S");
+        button14.setText("Neta Gt");
+        button15.setText("Zeeker 007");
+
+        row1.add(button1);row1.add(button2);
+        row2.add(button3);row2.add(button4);
+        row3.add(button5);row3.add(button6);
+        row4.add(button7);row4.add(button8);
+        row5.add(button9);row5.add(button10);
+        row6.add(button11);row6.add(button12);
+        row7.add(button13);row7.add(button14);
+        row8.add(button15);
+
+        rowList.add(row1);rowList.add(row2);rowList.add(row3);rowList.add(row4);
+        rowList.add(row5);rowList.add(row6);rowList.add(row7);rowList.add(row8);
+
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        replyKeyboardMarkup.setKeyboard(rowList);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendMessage;
+    }
+    public SendMessage crossoverUz(Long chatId) {
+
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Krossoverni tanlang");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardRow row2 = new KeyboardRow();
+        KeyboardRow row3 = new KeyboardRow();
+        KeyboardRow row4 = new KeyboardRow();
+        KeyboardRow row5 = new KeyboardRow();
+        KeyboardRow row6 = new KeyboardRow();
+        KeyboardRow row7 = new KeyboardRow();
+        KeyboardRow row8 = new KeyboardRow();
+        KeyboardRow row9 = new KeyboardRow();
+        KeyboardRow row10 = new KeyboardRow();
+        KeyboardRow row11 = new KeyboardRow();
+        KeyboardRow row12 = new KeyboardRow();
+
+        KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
+        KeyboardButton button3 = new KeyboardButton();
+        KeyboardButton button4 = new KeyboardButton();
+        KeyboardButton button5 = new KeyboardButton();
+        KeyboardButton button6 = new KeyboardButton();
+        KeyboardButton button7 = new KeyboardButton();
+        KeyboardButton button8 = new KeyboardButton();
+        KeyboardButton button9 = new KeyboardButton();
+        KeyboardButton button10 = new KeyboardButton();
+        KeyboardButton button11 = new KeyboardButton();
+        KeyboardButton button12 = new KeyboardButton();
+        KeyboardButton button13 = new KeyboardButton();
+        KeyboardButton button14 = new KeyboardButton();
+        KeyboardButton button15 = new KeyboardButton();
+        KeyboardButton button16 = new KeyboardButton();
+        KeyboardButton button17 = new KeyboardButton();
+        KeyboardButton button18 = new KeyboardButton();
+        KeyboardButton button19 = new KeyboardButton();
+        KeyboardButton button20 = new KeyboardButton();
+        KeyboardButton button21 = new KeyboardButton();
+        KeyboardButton button22 = new KeyboardButton();
+        KeyboardButton button23 = new KeyboardButton();
+
+        button1.setText("BYD Song Plus Champion Edition");
+        button2.setText("BYD Tang EV");
+        button3.setText("BYD Yuan Plus EV");
+        button4.setText("Zeeker 001");
+        button5.setText("Zeeker X");
+        button6.setText("LeapMotor C11");
+        button7.setText("Geely Geometry E");
+        button8.setText("Denza N7");
+        button9.setText("HiPhi Y");
+        button10.setText("NIO ES8");
+        button11.setText("NIO EC7");
+        button12.setText("LI Auto L7");
+        button13.setText("LI Auto L9");
+        button14.setText("IM Motors LS7");
+        button15.setText("Geometry M6");
+        button16.setText("LI Auto L8");
+        button17.setText("Avatr 11");
+        button18.setText("HiPhi X");
+        button19.setText("LI Auto One");
+        button20.setText("Lynk&Co 09EM-P");
+        button21.setText("Chevrolet Seeker");
+        button22.setText("BYD Song L");
+        button23.setText("BYD Yangwang U8");
+
+        row1.add(button1);row1.add(button2);
+        row2.add(button3);row2.add(button4);
+        row3.add(button5);row3.add(button6);
+        row4.add(button7);row4.add(button8);
+        row5.add(button9);row5.add(button10);
+        row6.add(button11);row6.add(button12);
+        row7.add(button13);row7.add(button14);
+        row8.add(button15);row8.add(button16);
+        row9.add(button17);row9.add(button18);
+        row10.add(button19);row10.add(button20);
+        row11.add(button21);row11.add(button22);
+        row12.add(button23);
+
+        rowList.add(row1);rowList.add(row2);rowList.add(row3);rowList.add(row4);rowList.add(row5);rowList.add(row6);
+        rowList.add(row7);rowList.add(row8);rowList.add(row9);rowList.add(row10);rowList.add(row11);rowList.add(row12);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendMessage;
+    }
+    public SendMessage hatchBackUz(Long chatId) {
+
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Xetchbekni tanlang");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
+        KeyboardButton button3 = new KeyboardButton();
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardRow row2 = new KeyboardRow();
+        List<KeyboardRow> rowList = new ArrayList<>();
+
+        button1.setText("Neta S");
+        button2.setText("Neta Gt");
+        button3.setText("Zeeker 007");
+
+        row1.add(button1);row1.add(button2);
+        row2.add(button3);
+
+        rowList.add(row1);rowList.add(row2);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendMessage;
+    }
+    public SendMessage minivanUz(Long chatId) {
+
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Minivanni tanlang");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+        KeyboardRow row = new KeyboardRow();
+
+        KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
+
+        button1.setText("Denza D9");
+        button2.setText("Zeeker 009");
+
+        row.add(button1);row.add(button2);
+
+        rowList.add(row);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendMessage;
+    }
+    public SendPhoto aboutUsUz(Long chatId) {
+
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/images/content/about-01.webp"));
+        sendPhoto.setCaption("<b>BIZ HAQIMIZDA</b>\n" +
+                "<b>Butun dunyo bo'ylab logistika xizmatlari sohasida tajriba</b>\n" +
+                "\n" +
+                "Biz butun dunyo bo'ylab eng yaxshi yuk tashish va transport bitimlarini taqdim etishdan faxrlanamiz." +
+                " \n" +
+                "✅100%Kompensatsiya          ✅Onlayn kuzatish\n" +
+                "✅Tajribali jamoa            ✅Yuklarni sug'urta qilish\n" +
+                "✅24/7 qo'llab-quvvatlash    ✅Xavfsiz omborxona");
+
+        return sendPhoto;
+    }
 }

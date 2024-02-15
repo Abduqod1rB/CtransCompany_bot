@@ -119,17 +119,17 @@ public class MyBotServiceRus {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile(new File("D:\\My_Telegram_bots\\CTRANS_bot\\image\\aboutUs.png")));
-        sendPhoto.setCaption("ABOUT US\n" +
-                "<b>Experience in the field of</b>\n" +
-                "<b>logistics services around the</b>\n" +
-                "<b>world.<b>\n" +
+        sendPhoto.setCaption("О НАС\n" +
+                    "<b>Опыт работы в сфере</b>\n" +
+                "<b>логистических услуг по</b>\n" +
+                "<b>всему миру.<b>\n" +
                 " \n" +
-                "We pride ourselves on providing the best shipping and\n" +
-                "transportation deals around the world.\n" +
+                "Мы гордимся тем, что предоставляем лучшие\n" +
+                "предложения по доставке и транспортировке по всему миру.\n" +
                 " \n" +
-                "✅100% Compensation ✅Online tracking\n" +
-                "✅Experienced Team  ✅Cargo insurance\n" +
-                "✅Support 24/7      ✅Safe warehouse");
+                "✅100 % Компенсации ✅Поддержка 24/7\n" +
+                "✅Опытная команда  ✅Страхование грузов\n" +
+                "✅Поддержка 24/7      ✅Безопасный склад");
 
         return sendPhoto;
     }
@@ -138,7 +138,7 @@ public class MyBotServiceRus {
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("select the minivan type");
+            sendMessage.setText("Выберите тип минивэна");
 
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         List<KeyboardRow> rowList = new ArrayList<>();
@@ -166,7 +166,7 @@ public class MyBotServiceRus {
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("select the hatchback type");
+        sendMessage.setText("Выберите тип хэтчбека");
 
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         List<KeyboardRow> rowList = new ArrayList<>();
@@ -198,7 +198,7 @@ public class MyBotServiceRus {
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("select the sedan type");
+        sendMessage.setText("Выберите тип седана");
 
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         List<KeyboardRow> rowList = new ArrayList<>();
@@ -279,7 +279,7 @@ public class MyBotServiceRus {
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("select the crossover type");
+        sendMessage.setText("Выберите тип кроссовера");
 
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         List<KeyboardRow> rowList = new ArrayList<>();
@@ -392,7 +392,7 @@ public class MyBotServiceRus {
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("Select the type of service.");
+        sendMessage.setText("Выберите тип услуги");
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         List<KeyboardRow> rowList = new ArrayList<>();
 
@@ -404,11 +404,11 @@ public class MyBotServiceRus {
         KeyboardButton button2 = new KeyboardButton();
         KeyboardButton button3 = new KeyboardButton();
         KeyboardButton button4 = new KeyboardButton();
-        button.setText("Air transportation");
-        button1.setText("Auto transportation");
-        button2.setText("Railway transportation");
-        button3.setText("Werehouse services in Yiwu and Gungzhou");
-        button4.setText("Customs Clearance services");
+        button.setText("Авиаперевозки");
+        button1.setText("Автоперевозки");
+        button2.setText("Железнодорожные перевозки");
+        button3.setText("Складовые услуги в Иу и Гуанчжоу");
+        button4.setText("Услуги таможеннего оформления");
         row.add(button);
         row.add(button1);
         row1.add(button2);
@@ -429,7 +429,7 @@ public class MyBotServiceRus {
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("choose your type car");
+        sendMessage.setText("Выберите свой тип автомобиля");
 
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         List<KeyboardRow> rowList = new ArrayList<>();
@@ -439,10 +439,10 @@ public class MyBotServiceRus {
         KeyboardButton button1 = new KeyboardButton();
         KeyboardButton button2 = new KeyboardButton();
         KeyboardButton button3 = new KeyboardButton();
-        button.setText("Sedan");
-        button1.setText("Crossover");
-        button2.setText("Hatchback");
-        button3.setText("Minivan");
+        button.setText("Седан");
+        button1.setText("Кросовер");
+        button2.setText("Хетчбек");
+        button3.setText("Минивэн");
         row.add(button);
         row.add(button1);
         row1.add(button2);
@@ -459,10 +459,10 @@ public class MyBotServiceRus {
 
 
 
-    public SendMessage kanlkulyator(Long chatId) {
+    public SendMessage kanlkulyatorRus(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("Choose the transport you need");
+        sendMessage.setText("Выберите транспорт, который вам нужен");
         ReplyKeyboardMarkup replyKeyboardMarkUp = new ReplyKeyboardMarkup();
         List<KeyboardRow> rows = new ArrayList<>();
         KeyboardRow row = new KeyboardRow();
@@ -470,9 +470,9 @@ public class MyBotServiceRus {
         KeyboardButton button = new KeyboardButton();
         KeyboardButton button1 = new KeyboardButton();
         KeyboardButton button2 = new KeyboardButton();
-        button.setText("✈️\uFE0FAir transport");
-        button1.setText("\uD83D\uDE88Railway transport");
-        button2.setText("\uD83D\uDE98Car transports");
+        button.setText("✈️\uFE0FАвиаперевозки");
+        button1.setText("\uD83D\uDE88Железнодорожные перевозки");
+        button2.setText("\uD83D\uDE98Автоперевозки");
         row.add(button);
         row.add(button1);
         row1.add(button2);
