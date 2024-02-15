@@ -510,4 +510,34 @@ public class MyBotServiceRus {
         sendMessage.setReplyMarkup(replyKeyboardMarkUp);
         return sendMessage;
     }
+    public SendMessage settingsRus (Long chatId){
+
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("⚙️Настройки");
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+
+        KeyboardRow row = new KeyboardRow();
+        KeyboardRow row1 = new KeyboardRow();
+
+        KeyboardButton button = new KeyboardButton();
+        KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
+
+        button.setText("\uD83C\uDDFA\uD83C\uDDF8Изменить язык");
+        button1.setText("☎️Изменить номер телефона");
+        button2.setText("⬅️ Назад");
+        row.add(button);
+        row.add(button1);
+        row1.add(button2);
+        rowList.add(row);
+        rowList.add(row1);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendMessage;
+    }
 }
