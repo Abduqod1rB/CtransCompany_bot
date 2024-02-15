@@ -112,21 +112,30 @@ public class MyBotServiceUz {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
         sendMessage.setText("O'zingizga kerakli transportni tanglang");
+
         ReplyKeyboardMarkup reply = new ReplyKeyboardMarkup();
         List<KeyboardRow> rows = new ArrayList<>();
+
         KeyboardRow row = new KeyboardRow();
         KeyboardRow row1 = new KeyboardRow();
+
         KeyboardButton button = new KeyboardButton();
         button.setText("✈\uFE0FHavo transporti");
-        row.add(button);
-        rows.add(row);
+
         KeyboardButton button1 = new KeyboardButton();
         button1.setText("\uD83D\uDE88Temir yo'l transporti");
-        row.add(button1);
+
         KeyboardButton button2 = new KeyboardButton();
         button2.setText("\uD83D\uDE98Avtomobil transporti");
-        row1.add(button2);
-        rows.add(row1);
+
+        KeyboardButton button3 = new KeyboardButton();
+        button3.setText("⬅\uFE0FOrqaga");
+
+        row.add(button);row.add(button1);
+        row1.add(button2);row1.add(button3);
+
+        rows.add(row);rows.add(row1);
+
         reply.setKeyboard(rows);
         reply.setResizeKeyboard(true);
         sendMessage.setReplyMarkup(reply);
@@ -144,12 +153,13 @@ public class MyBotServiceUz {
         KeyboardButton button3 = new KeyboardButton();
         KeyboardButton button4 = new KeyboardButton();
         KeyboardButton button5 = new KeyboardButton();
+        KeyboardButton button6 = new KeyboardButton();
         button1.setText("✈️Havo transporti");button2.setText("\uD83D\uDE98Avtomobil transporti");
         button3.setText("\uD83D\uDE88Temir yo'l transporti");button4.setText("Yivu va Guanchjou da ombor xizmatlari");
-        button5.setText("Bojxona rasmiylashtiruvi xizmatlari");
+        button5.setText("Bojxona rasmiylashtiruvi xizmatlari");button6.setText("⬅\uFE0FOrqaga");
         row.add(button1);row.add(button2);row.add(button3);
-        row1.add(button4);row1.add(button5);
-        rowList.add(row1);
+        row1.add(button4);row1.add(button5);row1.add(button6);
+        rowList.add(row);rowList.add(row1);
         replyKeyboardMarkup.setKeyboard(rowList);
         replyKeyboardMarkup.setResizeKeyboard(true);
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
@@ -162,18 +172,23 @@ public class MyBotServiceUz {
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         KeyboardRow row1 = new KeyboardRow();
         KeyboardRow row2 = new KeyboardRow();
+        KeyboardRow row3 = new KeyboardRow();
         List<KeyboardRow> rowList = new ArrayList<>();
         KeyboardButton button1 = new KeyboardButton();
         KeyboardButton button2 = new KeyboardButton();
         KeyboardButton button3 = new KeyboardButton();
         KeyboardButton button4 = new KeyboardButton();
+        KeyboardButton button5 = new KeyboardButton();
         button1.setText("Sedan");button2.setText("Krossover");
         button3.setText("Xetchbek");button4.setText("Mikroavtobus");
+        button5.setText("⬅\uFE0FOrqaga");
 
         row1.add(button1);row1.add(button2);
         row2.add(button3);row2.add(button4);
+        row3.add(button5);
 
-        rowList.add(row1);rowList.add(row2);
+        rowList.add(row1);rowList.add(row2);rowList.add(row3);
+
         replyKeyboardMarkup.setKeyboard(rowList);
         replyKeyboardMarkup.setResizeKeyboard(true);
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
@@ -185,16 +200,21 @@ public class MyBotServiceUz {
 
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         KeyboardRow row1 = new KeyboardRow();
+        KeyboardRow row2 = new KeyboardRow();
 
         List<KeyboardRow> rowList = new ArrayList<>();
         KeyboardButton button1 = new KeyboardButton();
         KeyboardButton button2 = new KeyboardButton();
+        KeyboardButton button3 = new KeyboardButton();
 
         button1.setText("Tilni almashtirish");button2.setText("☎️Telefon raqamini alashtirish");
+        button3.setText("⬅\uFE0FOrqaga");
 
         row1.add(button1);row1.add(button2);
+        row2.add(button3);
 
-        rowList.add(row1);
+        rowList.add(row1);rowList.add(row2);
+
         replyKeyboardMarkup.setKeyboard(rowList);
         replyKeyboardMarkup.setResizeKeyboard(true);
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
@@ -232,6 +252,7 @@ public class MyBotServiceUz {
         KeyboardButton button13 = new KeyboardButton();
         KeyboardButton button14 = new KeyboardButton();
         KeyboardButton button15 = new KeyboardButton();
+        KeyboardButton button16 = new KeyboardButton();
 
         button1.setText("BYD Seal");
         button2.setText("BYD Han");
@@ -248,6 +269,7 @@ public class MyBotServiceUz {
         button13.setText("Neta S");
         button14.setText("Neta Gt");
         button15.setText("Zeeker 007");
+        button16.setText("⬅\uFE0FOrqaga");
 
         row1.add(button1);row1.add(button2);
         row2.add(button3);row2.add(button4);
@@ -256,7 +278,7 @@ public class MyBotServiceUz {
         row5.add(button9);row5.add(button10);
         row6.add(button11);row6.add(button12);
         row7.add(button13);row7.add(button14);
-        row8.add(button15);
+        row8.add(button15);row8.add(button16);
 
         rowList.add(row1);rowList.add(row2);rowList.add(row3);rowList.add(row4);
         rowList.add(row5);rowList.add(row6);rowList.add(row7);rowList.add(row8);
@@ -312,6 +334,7 @@ public class MyBotServiceUz {
         KeyboardButton button21 = new KeyboardButton();
         KeyboardButton button22 = new KeyboardButton();
         KeyboardButton button23 = new KeyboardButton();
+        KeyboardButton button24 = new KeyboardButton();
 
         button1.setText("BYD Song Plus Champion Edition");
         button2.setText("BYD Tang EV");
@@ -336,6 +359,7 @@ public class MyBotServiceUz {
         button21.setText("Chevrolet Seeker");
         button22.setText("BYD Song L");
         button23.setText("BYD Yangwang U8");
+        button24.setText("⬅\uFE0FOrqaga");
 
         row1.add(button1);row1.add(button2);
         row2.add(button3);row2.add(button4);
@@ -348,7 +372,7 @@ public class MyBotServiceUz {
         row9.add(button17);row9.add(button18);
         row10.add(button19);row10.add(button20);
         row11.add(button21);row11.add(button22);
-        row12.add(button23);
+        row12.add(button23);row12.add(button24);
 
         rowList.add(row1);rowList.add(row2);rowList.add(row3);rowList.add(row4);rowList.add(row5);rowList.add(row6);
         rowList.add(row7);rowList.add(row8);rowList.add(row9);rowList.add(row10);rowList.add(row11);rowList.add(row12);
@@ -369,6 +393,7 @@ public class MyBotServiceUz {
         KeyboardButton button1 = new KeyboardButton();
         KeyboardButton button2 = new KeyboardButton();
         KeyboardButton button3 = new KeyboardButton();
+        KeyboardButton button4 = new KeyboardButton();
         KeyboardRow row1 = new KeyboardRow();
         KeyboardRow row2 = new KeyboardRow();
         List<KeyboardRow> rowList = new ArrayList<>();
@@ -376,9 +401,10 @@ public class MyBotServiceUz {
         button1.setText("Neta S");
         button2.setText("Neta Gt");
         button3.setText("Zeeker 007");
+        button4.setText("⬅\uFE0FOrqaga");
 
         row1.add(button1);row1.add(button2);
-        row2.add(button3);
+        row2.add(button3);row2.add(button4);
 
         rowList.add(row1);rowList.add(row2);
 
@@ -397,16 +423,20 @@ public class MyBotServiceUz {
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         List<KeyboardRow> rowList = new ArrayList<>();
         KeyboardRow row = new KeyboardRow();
+        KeyboardRow row1 = new KeyboardRow();
 
         KeyboardButton button1 = new KeyboardButton();
         KeyboardButton button2 = new KeyboardButton();
+        KeyboardButton button3 = new KeyboardButton();
 
         button1.setText("Denza D9");
         button2.setText("Zeeker 009");
+        button3.setText("⬅️Orqaga");
 
         row.add(button1);row.add(button2);
+        row1.add(button3);
 
-        rowList.add(row);
+        rowList.add(row);rowList.add(row1);
 
         replyKeyboardMarkup.setKeyboard(rowList);
         replyKeyboardMarkup.setResizeKeyboard(true);
