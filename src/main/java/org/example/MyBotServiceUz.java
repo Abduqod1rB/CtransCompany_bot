@@ -40,7 +40,7 @@ public class MyBotServiceUz {
         button2.setText("⏰Yetkazib berish muddati");
         row2.add(button2);
         KeyboardButton button3 = new KeyboardButton();
-        button3.setText("☎\uFE0FBiz bilan bog'lanish");
+        button3.setText("☎️Biz bilan bog'lanish");
         row2.add(button3);
         rowList.add(row2);
         KeyboardButton button4 = new KeyboardButton();
@@ -51,14 +51,14 @@ public class MyBotServiceUz {
         row3.add(button5);
         rowList.add(row3);
         KeyboardButton button6 = new KeyboardButton();
-        button6.setText("ℹ\uFE0FBiz haqimizda");
+        button6.setText("ℹ️Biz haqimizda");
         row4.add(button6);
         KeyboardButton button7 = new KeyboardButton();
         button7.setText("\uD83D\uDCACIzoh qoldirish");
         row4.add(button7);
         rowList.add(row4);
         KeyboardButton button8 = new KeyboardButton();
-        button8.setText("⚙\uFE0FSozlamalar");
+        button8.setText("⚙️Sozlamalar");
         row5.add(button8);
         rowList.add(row5);
         reply.setKeyboard(rowList);
@@ -78,7 +78,7 @@ public class MyBotServiceUz {
         KeyboardRow row1 = new KeyboardRow();
         KeyboardButton button1 = new KeyboardButton();
         button1.setRequestContact(true);
-        button1.setText("☎\uFE0F Telefon raqamni yuborish");
+        button1.setText("☎️ Telefon raqamni yuborish");
         row1.add(button1);
         rows.add(row1);
         reply.setKeyboard(rows);
@@ -94,7 +94,7 @@ public class MyBotServiceUz {
         List<KeyboardRow> rows = new ArrayList<>();
         KeyboardRow row1 = new KeyboardRow();
         KeyboardButton button1 = new KeyboardButton();
-        button1.setText("⬅\uFE0FOrqaga");
+        button1.setText("⬅️Orqaga");
         row1.add(button1);
         rows.add(row1);
         reply.setKeyboard(rows);
@@ -120,7 +120,7 @@ public class MyBotServiceUz {
         KeyboardRow row1 = new KeyboardRow();
 
         KeyboardButton button = new KeyboardButton();
-        button.setText("✈\uFE0FHavo transporti");
+        button.setText("✈️Havo transporti");
 
         KeyboardButton button1 = new KeyboardButton();
         button1.setText("\uD83D\uDE88Temir yo'l transporti");
@@ -129,7 +129,7 @@ public class MyBotServiceUz {
         button2.setText("\uD83D\uDE98Avtomobil transporti");
 
         KeyboardButton button3 = new KeyboardButton();
-        button3.setText("⬅\uFE0FOrqaga");
+        button3.setText("⬅️Orqaga");
 
         row.add(button);row.add(button1);
         row1.add(button2);row1.add(button3);
@@ -156,7 +156,7 @@ public class MyBotServiceUz {
         KeyboardButton button6 = new KeyboardButton();
         button1.setText("✈️Havo transporti");button2.setText("\uD83D\uDE98Avtomobil transporti");
         button3.setText("\uD83D\uDE88Temir yo'l transporti");button4.setText("Yivu va Guanchjou da ombor xizmatlari");
-        button5.setText("Bojxona rasmiylashtiruvi xizmatlari");button6.setText("⬅\uFE0FOrqaga");
+        button5.setText("Bojxona rasmiylashtiruvi xizmatlari");button6.setText("⬅️Orqaga");
         row.add(button1);row.add(button2);row.add(button3);
         row1.add(button4);row1.add(button5);row1.add(button6);
         rowList.add(row);rowList.add(row1);
@@ -164,6 +164,31 @@ public class MyBotServiceUz {
         replyKeyboardMarkup.setResizeKeyboard(true);
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
         return sendMessage;
+    }
+    public SendPhoto havotransporti(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQadhwXWWBK6q3N87eDm4XylkA9kFEroW9Aw&usqp=CAU"));
+        sendPhoto.setCaption("CTRANS katta o'lchamlari va og'irligi bo'lgan keng turdagi tovarlarni havo orqali tashishni taklif qiladi. Xitoy-O'zbekiston bilan havo transporti ko'pchilik o'zbekistonliklarning tanlovidir. Biz sizga eng qisqa vaqt ichida tez, xavfsiz va sifatli tashishni kafolatlaymiz.\n" +
+                "\n" +
+                "CTRANS xodimlari har bir mahsulotga ehtiyotkorlik bilan munosabatda bo'lishadi va tashishni nazorat qilishadi. Biz bilan mahsulotlaringiz xavfsiz va sog'lom yetib kelishiga amin bo'lishingiz mumkin.");
+        return sendPhoto;
+    }
+    public SendPhoto avtomobiltransporti(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQadhwXWWBK6q3N87eDm4XylkA9kFEroW9Aw&usqp=CAU"));
+        sendPhoto.setCaption("Avtomobil transportida yuk tashish transport xizmatlari bozorining eng muhim tarkibiy qismi bo'lib, aynan shu yo'nalish yuklarni jo'natuvchidan oluvchiga tashish sohasida yetakchi hisoblanadi.\n" +
+                "\n" +
+                "Boshqa transport turlari bilan taqqoslaganda, bugungi kunda avtotransport jiddiy ustuvor yo'nalish bo'lib qolmoqda. Avtotransport yuklarining afzalliklari orasida:\n" +
+                "\n" +
+                "manevr qobiliyati;\n" +
+                "logistika kompaniyasi uchun eng foydali marshrutlarni amalga oshirish uchun keng imkoniyatlar;\n" +
+                "yetkazib berish tezligi;\n" +
+                "tashiladigan tovarlarning keng assortimenti;\n" +
+                "bir nechta kompaniyalarning posilkalarini birlashtirgan holda, guruhli yo'l yuklarini shakllantirish;\n" +
+                "yukning og'irligi, formati va o'lchamlari, yonuvchan tovarlar va tez buziladigan mahsulotlarning mavjudligi kabi omillarni hisobga olgan holda transport vositalarining katta tanlovi;");
+        return sendPhoto;
     }
     public SendMessage xitoydanmashinalar(Long chatId){
         SendMessage sendMessage = new SendMessage();
@@ -181,7 +206,7 @@ public class MyBotServiceUz {
         KeyboardButton button5 = new KeyboardButton();
         button1.setText("Sedan");button2.setText("Krossover");
         button3.setText("Xetchbek");button4.setText("Mikroavtobus");
-        button5.setText("⬅\uFE0FOrqaga");
+        button5.setText("⬅️Orqaga");
 
         row1.add(button1);row1.add(button2);
         row2.add(button3);row2.add(button4);
@@ -208,7 +233,7 @@ public class MyBotServiceUz {
         KeyboardButton button3 = new KeyboardButton();
 
         button1.setText("Tilni almashtirish");button2.setText("☎️Telefon raqamini alashtirish");
-        button3.setText("⬅\uFE0FOrqaga");
+        button3.setText("⬅️Orqaga");
 
         row1.add(button1);row1.add(button2);
         row2.add(button3);
@@ -269,7 +294,7 @@ public class MyBotServiceUz {
         button13.setText("Neta S");
         button14.setText("Neta Gt");
         button15.setText("Zeeker 007");
-        button16.setText("⬅\uFE0FOrqaga");
+        button16.setText("⬅️Orqaga");
 
         row1.add(button1);row1.add(button2);
         row2.add(button3);row2.add(button4);
@@ -359,7 +384,7 @@ public class MyBotServiceUz {
         button21.setText("Chevrolet Seeker");
         button22.setText("BYD Song L");
         button23.setText("BYD Yangwang U8");
-        button24.setText("⬅\uFE0FOrqaga");
+        button24.setText("⬅️Orqaga");
 
         row1.add(button1);row1.add(button2);
         row2.add(button3);row2.add(button4);
@@ -401,7 +426,7 @@ public class MyBotServiceUz {
         button1.setText("Neta S");
         button2.setText("Neta Gt");
         button3.setText("Zeeker 007");
-        button4.setText("⬅\uFE0FOrqaga");
+        button4.setText("⬅️Orqaga");
 
         row1.add(button1);row1.add(button2);
         row2.add(button3);row2.add(button4);
@@ -418,7 +443,7 @@ public class MyBotServiceUz {
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("Minivanni tanlang");
+        sendMessage.setText("Mikroavtobusni tanlang");
 
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         List<KeyboardRow> rowList = new ArrayList<>();
