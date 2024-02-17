@@ -33,15 +33,15 @@ public class MyBotServiceRus {
         KeyboardButton button6 = new KeyboardButton();
         KeyboardButton button7 = new KeyboardButton();
         KeyboardButton button8 = new KeyboardButton();
-        button.setText("\uD83D\uDE9AServices");
-        button1.setText("\uD83D\uDE99Cars from China");
-        button2.setText("⏰Delivery time");
-        button3.setText("☎️\uFE0Fcontact us");
-        button4.setText("\uD83C\uDFDBCurrency rates");
-        button5.setText("\uD83E\uDDEECalculator");
-        button6.setText("ℹ️\uFE0Fabout Us");
-        button7.setText("\uD83D\uDCACLeave a comment");
-        button8.setText("⚙️\uFE0FSettings");
+        button.setText("\uD83D\uDE9AУслуги");
+        button1.setText("\uD83D\uDE99Авто из Китая");
+        button2.setText("⏰Срок доставки");
+        button3.setText("☎️\uFE0FНаши контакты");
+        button4.setText("\uD83C\uDFDBКурсы валют");
+        button5.setText("\uD83E\uDDEEКалькулятор");
+        button6.setText("ℹ️\uFE0FО нас");
+        button7.setText("\uD83D\uDCACНаписать комментарий");
+        button8.setText("⚙️\uFE0FНастройки");
         row.add(button);
         row1.add(button1);
         row2.add(button2);
@@ -66,16 +66,16 @@ public class MyBotServiceRus {
     public SendMessage kontaktYuborishRus(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("\uD83D\uDCDE Enter your phone number to register. \n" +
+        sendMessage.setText("\uD83D\uDCDE Введите свой номер телефона для регистрации. \n" +
                 " \n" +
-                " Send the number as +998***********.");
+                "Отправьте номер в виде +998***********.");
         ReplyKeyboardMarkup replyKeyboardMarkUp = new ReplyKeyboardMarkup();
         List<KeyboardRow> rows = new ArrayList<>();
         KeyboardRow row1 = new KeyboardRow();
         KeyboardButton button1 = new KeyboardButton();
 
         button1.setRequestContact(true);
-        button1.setText("☎️\uFE0FSend phone number");
+        button1.setText("☎️\uFE0FОтправить номер телефона");
         row1.add(button1);
         rows.add(row1);
 
@@ -88,7 +88,7 @@ public class MyBotServiceRus {
 
     public SendMessage izohQoldirishRus(Long chatId) {
         SendMessage sendMessage = new SendMessage();
-        sendMessage.setText("Leave a comment. Your opinion is important to us");
+        sendMessage.setText("Оставить комментарий. Ваше мнение важно для нас");
         sendMessage.setChatId(chatId);
         ReplyKeyboardMarkup replyKeyboardMarkUp = new ReplyKeyboardMarkup();
         List<KeyboardRow> rows = new ArrayList<>();
@@ -109,7 +109,7 @@ public class MyBotServiceRus {
     public SendMessage izohQabulQilindiRus(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("✅Your comment has been accepted");
+        sendMessage.setText("✅Ваш комментарий был принят");
         return sendMessage;
     }
 
