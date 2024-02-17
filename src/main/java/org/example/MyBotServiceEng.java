@@ -1426,4 +1426,49 @@ public class MyBotServiceEng {
 
     //---Hatchback yakunlanish---\\
 
+
+    //---Minivan boshlanish---\\
+
+    public SendPhoto denzaD9(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/luIEwx6z593gfrDOISORICB0o3mVocArTzIhirPJ.webp"));
+        sendPhoto.setCaption("""
+                Denza D9
+                                
+                ✅Battery capacity, kW: 103,36
+                ✅Acceleration 0-100 km, sec: 6,9
+                ✅Power, kW/hp: 275/374
+                ✅Drive unit: Full
+                ✅Power reserve (NEDC), km: 600
+                ✅Number of seats: 7
+                ✅Maximum speed, km/h: 190
+                
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto zeekr009(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/GyyaoLBYPQ04jO39mIy4obm1fKUwvNb7zwMOrgxf.webp"));
+        sendPhoto.setCaption("""
+                Zeekr 009
+                                
+                ✅Battery capacity, kW: 822
+                ✅Acceleration 0-100 km, sec: 140
+                ✅Power, kW/hp: 400/544
+                ✅Drive unit: Full
+                ✅Power reserve (NEDC), km: 4,5
+                ✅Number of seats: 6
+                ✅Maximum speed, km/h: 190
+                
+                """);
+
+        return sendPhoto;
+    }
+
+    //---Minivan yakunlanish---\\
+
 }
