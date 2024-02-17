@@ -540,4 +540,842 @@ public class MyBotServiceRus {
 
         return sendMessage;
     }
+    public SendPhoto bydSealRus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/GbnFoweKIIJ8SGRcR3X1qaBAmgizk9E8798rn536.webp"));
+        sendPhoto.setCaption("""
+                BYD Seal
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 82,5      
+                ✅Разгон 0-100 км, сек: 3,8
+                ✅Мощность, кВт/л.с: 390/530        
+                ✅Привод: Полный              
+                ✅Запас хода (NEDC), км: 650
+                ✅Количество мест: 5
+                ✅Максимальная скорость, км/ч: 180
+                ✅Скорость зарядки (медленная/быстрая), час: 11,8/0,5
+                
+                BYD Seal – это компактный электрический седан представительского класса, выпускаемый компанией BYD Auto. BYD Seal построен на платформе e-Platform 3.0, новой 800-вольтовой автомобильной платформе BYD.
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto bydHanRus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/G5LEALmmX7YN3h2S0ejHxggKreWq0hgj0rkNV3zI.webp"));
+        sendPhoto.setCaption("""
+                BYD Han
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 85,4    
+                ✅Разгон 0-100 км, сек: 3,9
+                ✅Мощность, кВт/л.с: 380/517     
+                ✅Привод: Полный             
+                ✅Запас хода (NEDC), км: 610
+                ✅Количество мест: 5
+                ✅Максимальная скорость, км/ч: 185
+                ✅Скорость зарядки (медленная/быстрая), час: 12,2/0,5
+                
+               BYD Han может похвастаться красивым, стильным, самобытным и презентабельным видом – хищный перед с узкими фарами и рельефным бампером, солидный силуэт с длинным капотом, выразительными бортами и небольшим «хвостиком» багажника, изящная корма со стильными фонарями.
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto chevroletMonzaAtmoRus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/7XZX6Aa66UBk54V6XkdOikpRj7MaSpDsfdPEecaw.webp"));
+        sendPhoto.setCaption("""
+                Chevrolet Monza 1.5L Atmo
+                Характеристики:
+                
+                ✅Двигатель: 1.5 л (113 л.с.)
+                ✅Коробка передач: 6-AT (Робот)
+                ✅Разгон (0-100 км/час): 12.9 с     
+                ✅Тип топлива: Бензин               
+                ✅Привод: Полный
+                ✅Количество мест: 5
+               
+                Chevrolet Monza седан, новая модель 2023 года, передний привод. Бензиновый двигатель — 1, 5 литра, мощностью 113 лошадиных сил, 6-ступенчатая автоматическая коробка передач.     
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto chevroletMonzaTurboRus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/b3iKeMlJtqB2tNlBX4F9UYXbWLtrXRqJiD9ht8Sm.webp"));
+        sendPhoto.setCaption("""
+                Chevrolet Monza 1.3L Turbo
+                Характеристики:
+                
+                ✅Двигатель: 1.3л Турбо (163 л.с.)
+                ✅Коробка передач: 6-AT (Робот)
+                ✅Разгон (0-100 км/час): 9.2 с      
+                ✅Тип топлива: Бензин             
+                ✅Привод: Полный
+                ✅Количество мест: 5
+               
+                Chevrolet Monza седан, новая модель 2023 года, передний привод. Бензиновый двигатель — 1,3 литра (Турбо), мощностью 163 лошадиных сил, 6-ступенчатая автоматическая коробка передач.           
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto HondaCriderTurboRus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/WWWDezhpGgYHzzR9VApgwmj9eeNyNtW7OAlYygCk.webp"));
+        sendPhoto.setCaption("""
+                Honda Crider 1.0L Turbo
+                Характеристики:
+                
+                ✅Объем двигателя: 1.0 л Turbo  
+                ✅Тип двигателя: Бензиновый
+                ✅Расход: 5.0 л  
+                ✅Мощность: 122 л.с.               
+                ✅Разгон до 100: 10.7 с
+               
+                Honda Crider – седан C-класса, передний привод. Бензиновые двигател мощностью 122 лошадиных сил.
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto leapMotorC01Rus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/gAvBM75WivxQrmjUD4oBWpXvhS0MjkTfLEvz2v5d.webp"));
+        sendPhoto.setCaption("""
+                LeapMotor C01
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 90
+                ✅Разгон 0-100 км, сек: 3,6
+                ✅Мощность, кВт/л.с: 400/544
+                ✅Привод: Полный              
+                ✅Запас хода (NEDC), км: 630
+                ✅Количество мест: 5
+                ✅Максимальная скорость, км/ч: 180
+               
+                Leapmotor C01 Продвинься в своей жизни – Электромобиль с технологией Deluxe где присутствует интеграция инновационных технологий для мягкого и элегантного внешнего вида. Ориентация на высокое качество и удовлетворение различных потребностей.
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto HiPhiZRus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/TmaFh6qeILQV09RdIovwNghxCrx9BASiaMFvgdO9.webp"));
+        sendPhoto.setCaption("""
+                HiPhi Z
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 120
+                ✅Разгон 0-100 км, сек: 3,8
+                ✅Мощность, кВт/л.с: 494/672
+                ✅Привод: Полный
+                ✅Запас хода (NEDC), км: 705
+                ✅Количество мест: 4
+                ✅Максимальная скорость, км/ч: 200
+                ✅Скорость зарядки (медленная/быстрая), час: 12,4/0,92             
+                
+                Добро пожаловать в будущее автомобильной индустрии! Представляем вам HiPhi Z – воплощение передовых технологий и несравненного стиля, переопределяющее понятие современной автомобильной мечты. Соединяя элегантность и инновации, HiPhi Z воплощает изысканный дизайн, который вызывает истинное восхищение на первый взгляд. Гармонично сочетая гладкие, изящные линии с эффектными деталями, этот автомобиль создан для того, чтобы привлекать внимание на дороге и оставаться воплощением современного автодизайна на долгие.
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto imMotorsL7Rus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/n7IgJoqfWsM0w5ljA24sr0wBGUq7lrUp3g9bb5wi.webp"));
+        sendPhoto.setCaption("""
+                IM Motors L7
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 90
+                ✅Разгон 0-100 км, сек: 3,7
+                ✅Мощность: 445кВт / 605Нм
+                ✅Привод: Полный
+                ✅Запас хода, км: 615
+                ✅Количество мест: 5
+                ✅Максимальная скорость, км/ч: 200         
+
+                Zhiji Auto – это бренд, созданный совместно SAIC Group, Zhangjiang Hi-Tech и Alibaba Group. Его Zhiji L7 представляет собой полностью электрический автомобиль седан представительского класса, размер с колесной базой 3 100 мм и двухмоторной системой, разгон до 100 км/ч всего за 3,9 секунды. Электромобиль Zhiji L7 имеет длину, ширину и высоту 5098/1960/1485 мм и колесную базу 3100 мм. Коэффициент лобового сопротивления 0,21.
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto geometryG6Rus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/Zl6MhKhdsf1r5CfqLELkB4DnHjaliEh4XoTU6I56.webp"));
+        sendPhoto.setCaption("""
+                Geometry G6
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 70
+                ✅Разгон 0-100 км, сек: 6,9
+                ✅Мощность: 150 кВт / 204Нм
+                ✅Привод: Передний
+                ✅Запас хода, км: 580
+                ✅Количество мест: 5
+                ✅Максимальная скорость, км/ч: 150
+
+                Передняя часть автомобиля получила закрытую решетку радиатора, а под капотом установлен светящийся логотип Geely Logo. Главная оптика модели имеет острую форму. Также следует отметить использование скрытых дверных ручек и пятиспицевых колесных дисков. Группа фар G6 имеет неправильную форму и соединена черной декоративной полосой, образуя проникающий дизайн.
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto bmwi3eDrive40Rus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/eQXmyVoEXPqMbHTXPKK2SrtMvKeFYs9BkaYGTs70.webp"));
+        sendPhoto.setCaption("""
+                BMW i3 eDrive40
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 78,92
+                ✅Разгон 0-100 км, сек: 5,6
+                ✅Мощность, кВт/л.с: 250/340
+                ✅Привод: задний
+                ✅Запас хода (NEDC), км: 592
+                ✅Количество мест: 5
+                ✅Максимальная скорость, км/ч: 180
+                ✅Скорость зарядки (медленная/быстрая), час: 7,5/0,68
+                
+                BMW i3 представляет собой бескомпромиссное и привлекательное решение для персональных требований мобильности настоящего и будущего в городских районах. Первый в мире автомобиль премиум-класса, специально разработанный для работы исключительно на электрической энергии – и, следовательно, без выбросов.
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto bmwi4eDrive35Rus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/gwvcNdDemXzj2KnSzE4KnrAiEQbr722zUqpkNwsw.webp"));
+        sendPhoto.setCaption("""
+                BMW i4 eDrive35
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 83,9
+                ✅Разгон 0-100 км, сек: 5,7
+                ✅Мощность: 250кВт / 340Нм
+                ✅Привод: Полный
+                ✅Запас хода, км: 625
+                ✅Количество мест: 5
+                ✅Максимальная скорость, км/ч: 182
+
+                BMW i4, являющийся первым электрокаром Gran Coupe, отличная динамика, высокая комфортность и отличные качества для ежедневного использования. Пятидверную вариацию создали, основываясь на примере пятого поколения привода BMW eDrive, и это новое произведение отличается спортивностью. Мощность машины составляет 400 кВт (544 л.с.). Запас хода до 590 километров и пять полноценных мест делает его идеальным спутником в любой поездке.
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto bmwi5eDrive40Rus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/5Pkx8cb6yJEhEPsJdXDBzEmfVDOr361aBdZILSLb.webp"));
+        sendPhoto.setCaption("""
+                BMW i5 eDrive40
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 81.2
+                ✅Разгон 0-100 км, сек: 6
+                ✅Мощность: 340кВт / 586Нм
+                ✅Привод: Полный
+                ✅Запас хода, км: 582
+                ✅Количество мест: 5
+                ✅Максимальная скорость, км/ч: 193
+
+                Первый полностью электрический представительский седан BMW 5-й серии, BMW i5, основан на платформе CLAR. Так что это не чисто электрическая модель. Но есть несколько новых функций, которые могут заставить вас забыть о старых основах. Во-первых, «бизнес» седан BMW теперь предлагает игровой опыт! Она называется Air Console, и на ней уже доступно около 15 игр.
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto netaSRus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/public/storage/cars/fktgieIK4VYEVFIP0uN36tNjxRymXuAX2LIluq2Q.webp"));
+        sendPhoto.setCaption("""
+                Neta S
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 91
+                ✅Разгон 0-100 км, сек: 3,9
+                ✅Мощность, кВт/л.с: 340/462
+                ✅Привод: Полный
+                ✅Запас хода (NEDC), км: 715
+                ✅Количество мест: 5
+                ✅Максимальная скорость, км/ч: 185
+                ✅Скорость зарядки (медленная/быстрая), час: 17/0,58
+
+                Идеальное сочетание технологического интеллекта и спортивной эстетики. Сверхразумная помощь при вождении. Талантливый, ведущий новый опыт разумных путешествий Прикоснись к очень молодому и умному автомобилю.
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto netaGtRus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/public/storage/cars/7fdWbQK8rsxAid456F7zwCFsqAIcKaibwZH1rMVS.webp"));
+        sendPhoto.setCaption("""
+                Neta GT
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 74.5
+                ✅Количество мест: 4
+                ✅Максимальная скорость, км/ч: 190
+                ✅Запас хода (NEDC), км: 650
+                ✅Мощность, кВт/л.с: 170
+                ✅Привод: задний
+                
+                Китайская фирма Hozon Auto представила электрическое двухдверное купе Neta GT. Новинка имеет атлетичный дизайн экстерьера и в первую очередь примечательна необычным исполнением головной оптики.
+                                                                                
+                Блоки фар модели имеют форму бумерангов и далеко заходят на передние крылья. А еще в глаза бросается мускулистый капот с парой эффектных вставок.
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto zeeker007Rus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/public/storage/cars/o81wp9OhfwgTCIkaXwEoFqhO0Dsgxx7Mh3VDFw47.webp"));
+        sendPhoto.setCaption("""
+                Zeeker 007
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 70
+                ✅Разгон 0-100 км, сек: 2,84
+                ✅Мощность: 421кВт / 224Нм
+                ✅Привод: Полный
+                ✅Запас хода, км: 688
+                ✅Количество мест: 5
+                ✅Максимальная скорость, км/ч: 210
+
+                На автосалоне в Гуанчжоу состоялась официальная премьера электромобиля Zeekr 007. Это первый седан китайской марки, принадлежащей концерну Geely. При длине 4865 мм автомобиль сравним с Tesla Model 3.Стоимость новинки составила 229 900 юаней, причем при внесении предоплаты дается скидка в 6 тыс. юаней. Таким образом цена снижается до примерно 31 тыс. долларов или 2,75 млн руб. За первые 30 минут после старта приема предзаказов их поступило более 5 тыс.
+                """);
+
+        return sendPhoto;
+    }
+
+
+
+                 //Krossover
+
+
+
+
+
+    public SendPhoto BYDSongPlusChampionEditionRus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/6xKSj76RdxhSGrindKkIbsV6J4MZJeI4bhF7SvK9.webp"));
+        sendPhoto.setCaption("""
+                BYD Song Plus Champion Edition
+                Характеристики:
+                
+                ✅Емкость батареи: 87,04 кВтч
+                ✅Дисплей: 15,6" мультимедиа
+                ✅Функция караоке: Есть        
+                ✅Количество мест: 5         
+                ✅Максимальная скорость, км/ч: 175
+                ✅Запас хода (NEDC): 605 км
+                ✅Автоматическая парковка: Есть
+                ✅Разгон 0-100 км, сек: 8,5
+                ✅Мощность, кВт/л.с: 160/218
+                ✅Привод: Передний
+                
+                Song PLUS позиционируется как широкий внедорожник с размерами: 4705/1890/1680 мм и колесной базой 2765 мм, что делает его самым широким внедорожником в своем классе, обеспечивающим комфортное вождение. Благодаря усовершенствованной и эффективной системе воздухозаборника, усовершенствованной системе сгорания и более интеллектуальной системе теплового управления мощность и крутящий момент автомобиля были увеличены на 20%. Общая тепловая эффективность двигателя была улучшена на 38%, а максимальная эффективность трансмиссии достигает 95%, при этом потребление топлива уменьшено на 15% на 100 км, сочетая мощность и экономию топлива.
+                """);
+
+        return sendPhoto;
+    }
+    public SendPhoto BYDTangEVRus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/MkAX3VNbdNuNqsWJvz3KZgyK1QJVGJpxOcf6rIRP.webp"));
+        sendPhoto.setCaption("""
+                BYD Tang EV
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 108,8
+                ✅Разгон 0-100 км, сек: 4,4
+                ✅Мощность, кВт/л.с: 380/517        
+                ✅Привод: Полный         
+                ✅Запас хода (NEDC), км: 635
+                ✅Количество мест: 7
+                ✅Максимальная скорость, км/ч: 180
+                ✅Скорость зарядки (медленная/быстрая), час: 16,5/0,5
+                
+                BYD Tang – это среднеразмерный кроссовер, второе поколение которого выпускается с 2018 года в Китае. Машина длиной 4,87 метра может иметь пять или семь мест в салоне. Кроссовер имеет выразительный внешний вид, созданный под руководством Вольфганга Эггера, бывшего шеф-дизайнера компаний Alfa Romeo и Audi.
+                """);
+
+        return sendPhoto;
+    }
+    public SendPhoto BYDYuanPlusEVRus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/GkibsVTK9z55KFCWHnci3A7xZgKGMydhoHGKIdjy.webp"));
+        sendPhoto.setCaption("""
+                BYD Yuan Plus EV
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 60.5
+                ✅Разгон 0-100 км, сек: 7,3
+                ✅Мощность, кВт/л.с: 150/204        
+                ✅Привод: Передний         
+                ✅Запас хода (NEDC), км: 510
+                ✅Количество мест: 5
+                ✅Максимальная скорость, км/ч: 160
+                ✅Скорость зарядки (медленная/быстрая), час: 8,64/0,5
+                
+                BYD Yuan Plus – это полностью электрический кроссовер, вмещающий пять человек. Впервые он был продемонстрирован еще в августе 2021 года. Автомобиль базируется на своей платформе BYD 3.0. Yuan Plus получил новейший дизайн Dragon Face 3.0. Габариты автомобиля составляют 4455×1875×1615 мм при колесной базе 2720 мм. Он позиционируется как компактный внедорожник, при этом авто получило большую колесную базу, что обеспечивает достаточно много места для посадки в салоне.
+                """);
+
+        return sendPhoto;
+    }
+    public SendPhoto Zeekr001Rus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/SWxFK8ht6WR0bB2HfhCw1xlONX9RjAN5RuZG18fm.webp"));
+        sendPhoto.setCaption("""
+                Zeekr 001
+                Характеристики:
+                
+                ✅Запас хода (NEDC), км: 650
+                ✅Емкость батареи, кВтч: 100
+                ✅Мощность, кВт/л.с: 400/544       
+                ✅Привод: Полный         
+                ✅Разгон 0-100 км, сек: 3,8
+                ✅Количество мест: 5
+                ✅Максимальная скорость, км/ч: 200
+                
+                Zeekr 001 – первый электромобиль, производимый Geely под брендом Zeekr. Автомобиль был выпущен в Китае в октябре 2021 года. Zeekr 001 изначально был представлен концептом Lynk&Co Zero. Его дизайн похож на Porsche Panamera.
+                """);
+
+        return sendPhoto;
+    }
+    public SendPhoto ZeekrXRus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/41pwueDIG22eJtsPOvQvNm4Cx7tR9nkoSM1VAT2o.webp"));
+        sendPhoto.setCaption("""
+                Zeekr X
+                Характеристики:
+                
+                ✅Запас хода (NEDC), км: 500
+                ✅Емкость батареи, кВтч: 66
+                ✅Мощность, кВт/л.с: 315/428        
+                ✅Привод: Полный        
+                ✅Разгон 0-100 км, сек: 3,8
+                ✅Количество мест: 4
+                ✅Максимальная скорость, км/ч: 190
+                
+                ZEEKR X – Интерпретация современной эстетики с городским вдохновением, открывая новые возможности для будущего вождения. Экстремальные линии и чистая красота подрывают традиционную эстетику SUV.
+                """);
+
+        return sendPhoto;
+    }
+    public SendPhoto LeapMotorC11Rus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/aucwGVtBiLRBOpBhJj3qMhb8oQ7ztlh0bvB5zI3Y.webp"));
+        sendPhoto.setCaption("""
+                LeapMotor C11
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 90
+                ✅Разгон 0-100 км, сек: 4,5
+                ✅Мощность, кВт/л.с: 400/544       
+                ✅Привод: Полный         
+                ✅Запас хода (NEDC), км: 580
+                ✅Количество мест: 5
+                ✅Максимальная скорость, км/ч: 200
+
+                Китайская компания Leap Motor представила в Гуанчжоу электрический кроссовер под названием C11. По размерам и характеристикам новинка похожа на Tesla Model Y, но при этом стоит в полтора раза дешевле. Leap C11 построен на платформе своей разработки, его длина составляет 4745 мм, ширина – 1890 мм, высота – 1635 мм, а размер колесной базы – 2923 мм.
+                """);
+
+        return sendPhoto;
+    }
+    public SendPhoto GeelyGeometryERus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/juAVI9k9BjoAUgS3eVAV5Rc0gREwuRVBFDfginS4.webp"));
+        sendPhoto.setCaption("""
+                Geely Geometry E
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 39,4
+                ✅Разгон 0-100 км, сек: 8,8
+                ✅Мощность, кВт/л.с: 60/82        
+                ✅Привод: Передний         
+                ✅Запас хода (NEDC), км: 401
+                ✅Количество мест: 4
+                ✅Максимальная скорость, км/ч: 102
+
+                Geometry E – новый электромобиль от бренда Geometry, принадлежащего компании Geely. Кроссовер ориентирован на молодых покупателей, которые ценят необычный дизайн, но не могут позволить себе дорогие автомобили.
+                """);
+
+        return sendPhoto;
+    }
+    public SendPhoto DenzaN7Rus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/wvBTQdrUhyfgKY8S7xqOseeicOmtGL7wLGNnY7E6.webp"));
+        sendPhoto.setCaption("""
+                Denza N7
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 91,3
+                ✅Разгон 0-100 км, сек: 3,9
+                ✅Мощность, кВт/л.с: 390/530        
+                ✅Привод: Полный         
+                ✅Запас хода (NEDC), км: 630
+                ✅Количество мест: 5
+                ✅Максимальная скорость, км/ч: 180
+                ✅
+                
+               Denza N7 представляет собой качественное, устойчивое и технологичное средство передвижения, которое соответствует современным требованиям экологически ответственного образа жизни. Его привлекательный дизайн, надежность и передовые технологии делают его прекрасным выбором для тех, кто стремится к комфортному и экологически чистому автомобилю.
+                """);
+
+        return sendPhoto;
+    }
+    public SendPhoto HiPhiYRus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/jbLkedyoEHmhdmhGfmWPDhee6a3jqqFgq55GYxq8.webp"));
+        sendPhoto.setCaption("""
+                HiPhi Y
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 115
+                ✅Разгон 0-100 км, сек: 4,7
+                ✅Мощность, кВт/л.с: 371/505        
+                ✅Привод: Полный         
+                ✅Запас хода (NEDC), км: 765
+                ✅Количество мест: 5
+                ✅Максимальная скорость, км/ч: 190
+                
+                Автомобиль HiPhi Y - это новаторский пример того, как современные технологии и дизайн могут встретиться в едином автомобильном сущности. Разработанный как электрический кроссовер следующего поколения, HiPhi Y сочетает в себе передовые технологии, экологичность и изысканный стиль. HiPhi Y - это не просто автомобиль, это часть большой экосистемы, предоставляющей пассажирам доступ к разнообразным услугам и возможностям. От развлекательных приложений и облачных сервисов до навигации и обновлений по воздуху - HiPhi Y всегда подключен и готов удовлетворить потребности современного образа жизни.
+                """);
+
+        return sendPhoto;
+    }
+    public SendPhoto NIOES8Rus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/zQV9rA6sYRm8zNgnxBdtHYdR2XczJUnxElxkOeVc.webp"));
+        sendPhoto.setCaption("""
+                NIO ES8
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 100
+                ✅Разгон 0-100 км, сек: 4,1
+                ✅Мощность, кВт/л.с: 480/653        
+                ✅Привод: Полный         
+                ✅Запас хода (NEDC), км: 605
+                ✅Количество мест: 6
+                ✅Максимальная скорость, км/ч: 200
+                ✅Скорость зарядки (медленная/быстрая), час: 0,5
+                
+                Переосмысленный, совершенно новый ES8. Грандиозное присутствие, непревзойденная производительность, беспрепятственное пространство, непревзойденный комфорт и увлекательный опыт – все вместе в новом ES8. Этот 6-местный внедорожник вмещает работу, семью и личную жизнь с двумя планировками.
+                """);
+
+        return sendPhoto;
+    }
+    public SendPhoto NIOEC7Rus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/xoOfzfnOEU35Da860RQf7tmwLu4tmSzHFgbGKESz.webp"));
+        sendPhoto.setCaption("""
+                NIO EC7
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 100
+                ✅Разгон 0-100 км, сек: 3,8
+                ✅Мощность, кВт/л.с: 480/653       
+                ✅Привод: Полный         
+                ✅Запас хода (NEDC), км: 635
+                ✅Количество мест: 5
+                ✅Максимальная скорость, км/ч: 200
+                ✅Скорость зарядки (медленная/быстрая), час: 0,33
+                
+                NIO EC7 - это современный кроссовер. Каждый ракурс и каждая деталь является интерпретацией утонченности. Элегантность происходит от его идеальных размеров, пропорций и осанки. Пропорция придает впечатляюще плавный силуэт фастбэка, одновременно обеспечивая просторный задний ряд. EC7 отличается чистотой дизайна следующего уровня, интегрированной с передовыми технологиями. Настоящая приманка с безупречной практичностью, которая всегда будет в центре внимания, куда бы вы ни поехали.
+                """);
+
+        return sendPhoto;
+    }
+    public SendPhoto LIAutoL7Rus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/RNQBVoacpvXjimNtBxZfZDfJN00HVDL6N7XQAM4l.webp"));
+        sendPhoto.setCaption("""
+                LI Auto L7
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 42.8
+                ✅Разгон 0-100 км, сек: 5.3
+                ✅Мощность: 330 кВт / 620 Нм       
+                ✅Запас хода, км: 1315         
+                ✅Количество мест: 5
+                ✅Максимальная скорость, км/ч: 180
+              
+                Li Auto L7 — подзаряжаемый гибрид, в котором трубированный двигатель объёмом 1,5 л заряжает тяговую батарею ёмкостью 42,8 кВт·ч, которая в свою очередь питает передний и задний электромоторы суммарной мощностью 449 л.с. Запас хода полностью заправленного и заряженного кроссовера составляет 1315 км (согласно методике CLTC), пробег на чистом электричестве — до 210 км. До 100 км/ч Li Auto L7 разгоняется за 5,3 с.
+                                                                                                                                                                                                                        
+                                                                                                                                                                                                                        
+                """);
+
+        return sendPhoto;
+    }
+    public SendPhoto LIAutoL9Rus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/hYabLzhJzyKeKAmbXydaT5kgK7za47MAZLOQzwO6.webp"));
+        sendPhoto.setCaption("""
+                LI Auto L9
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 44.5
+                ✅Разгон 0-100 км, сек: 5.3
+                ✅Мощность: 330 кВт / 620 Нм        
+                ✅Запас хода, км: 1100         
+                ✅Количество мест: 6
+                ✅Максимальная скорость, км/ч: 180
+   
+                Li Auto L9 оснащен огромным 15,7-дюймовым 3K OLED-дисплеем, который служит информационно-развлекательным дисплеем. Пассажиры могут легко управлять сенсорными дисплеями с помощью 3DToF-камер слежения за руками и пальцами. Большой экран второго ряда можно использовать как внешний дисплей для ноутбука или планшета. Мини-информационные экраны на рулевом колесе, полностью регулируемые сиденья второго ряда, проекционный дисплей и голосовое управление — вот некоторые из функций, которые Li Auto интегрировала в свой роскошный внедорожник L9. Под центральной консолью также есть мини-холодильник.
+                """);
+
+        return sendPhoto;
+    }
+    public SendPhoto IMMotorsLS7Rus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/tpG5urfPNaVYhLY7sEkYmfBYIo63zuWsa88nOq4U.webp"));
+        sendPhoto.setCaption("""
+                IM Motors LS7
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 100
+                ✅Разгон 0-100 км, сек: 4,5
+                ✅Мощность: 425кВт / 578Нм        
+                ✅Привод: Полный         
+                ✅Запас хода, км: 625
+                ✅Количество мест: 5
+                ✅Максимальная скорость, км/ч: 200
+               
+                Воплощение минимализма с L-образными фарами создает неповторимую гармонию дизайна. Смелый шаг вперед, где отсутствует традиционная решетка радиатора и присутствуют встроенные воздухозаборники в бампере. Спокойно и сдержанно сзади установлены узкие фонари, прекрасно сливающиеся в единый блок. Они подчеркивают великолепную эстетику этого автомобиля. Чтобы обеспечить безопасность и комфорт, на этом автомобиле расположена камера с высоким разрешением, а также установлено несколько лидаров, которые предоставляют возможность автопилоту работать с высокой точностью.
+                """);
+
+        return sendPhoto;
+    }
+    public SendPhoto GeometryM6Rus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/BgJZKJoWenpHEV6sbSeLRzWFmKYN2E9QcxqyFyvM.webp"));
+        sendPhoto.setCaption("""
+                Geometry M6
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 70
+                ✅Разгон 0-100 км, сек: 6,9
+                ✅Мощность: 150кВт / 204Нм        
+                ✅Привод: Передний         
+                ✅Запас хода, км: 580
+                ✅Количество мест: 5
+                ✅Максимальная скорость, км/ч: 150
+               
+               М6 является представителем сегмента внедорожников, что нашло отражение в соответствующем исполнении. Мускулистый корпус имеет несколько довольно резких выштампованных линий, придающих внешнему виду динамики. Передняя часть оформлена практически в том же стиле, что и G6. Автомобиль получил закрытую решетку радиатора и главную оптику острой формы. Задняя оптика у M6 сквозного типа.
+                """);
+
+        return sendPhoto;
+    }
+    public SendPhoto LIAutoL8Rus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/jGQVsR2nxeEmeBVuOd07Uo3OffAFU9Ptj5HBw4sU.webp"));
+        sendPhoto.setCaption("""
+                LI Auto L8
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 42.8
+                ✅Разгон 0-100 км, сек: 5.5
+                ✅Мощность, кВт/л.с: 449        
+                ✅Привод: Полный         
+                ✅Запас хода (NEDC), км: 1315
+                ✅Количество мест: 5
+                ✅Максимальная скорость, км/ч: 180
+               
+                Li L8 брат близнец Li L7. В отличие от «семёрки» этот гибридный кроссовер рассчитан на большую семью. В салоне 3 рада сидений по 2 посадочных места на каждом. Во всех комплектациях на втором ряду два капитанских кресла. Размеры Ли Л8 незначительно изменены: 5080 х 1995 х 1800 мм. Относительно «семёрки» к высоте добавлено 5 см. Видимо, для удобства задних пассажиров
+                """);
+
+        return sendPhoto;
+    }
+    public SendPhoto Avatr11Rus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/feyQk6GFzkFU4u0IB9KKaVHgHdsOrUdbRLCeRFv7.webp"));
+        sendPhoto.setCaption("""
+                Avatr 11
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 116,79
+                ✅Разгон 0-100 км, сек: 4,5
+                ✅Мощность: 425кВт / 578 Нм        
+                ✅Привод: Полный         
+                ✅Запас хода, км: 680
+                ✅Количество мест: 4
+                ✅Максимальная скорость, км/ч: 200
+                
+                Стиль Avatr 11 разрабатывался в собственной дизайн-студии компании, расположенной в Мюнхене (Германия) — оттого вид у него скорее европейский, чем азиатский. Внешне автомобиль привлекает внимание футуристичным обликом со стремительным силуэтом. Двери имеют безрамочные стекла и спрятанные в кузов дверные ручки, которые выезжают в момент, когда водитель подходит к машине. В крышку багажника встроен выдвижной активный спойлер.
+                """);
+
+        return sendPhoto;
+    }
+    public SendPhoto HiPhiXRus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/mFaMd0SDGOiNIRMzXrbHKdyKlkoXN5zRqAVK1Obv.webp"));
+        sendPhoto.setCaption("""
+                HiPhi X
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 94,3
+                ✅Разгон 0-100 км, сек: 4
+                ✅Мощность: 440кВт / 598Нм        
+                ✅Привод: Полный         
+                ✅Запас хода, км: 550
+                ✅Количество мест: 4
+                ✅Максимальная скорость, км/ч: 200
+              
+                Внешность HiPhi X яркая, с футуристичными нотками и нестандартными решениями. Электрический кроссовер получил узкие фары, соединенные между собой светодиодной полосой, бампер с широким воздухозаборником, фактурный капот, безрамные стекла, эффэектные задние фонари и широкие колесные арки. Однако ключевым элементом дизайна являются двери, которые представляют собой комбинацию в стиле Rollse-Royce и «крыла чайки» Mercedes 300 SL. Завершают стильный образ премиального авто оригинальные колесные диски, спойлер на крыше и хромированные акценты на кузове.
+                """);
+
+        return sendPhoto;
+    }
+    public SendPhoto LIAutoOneRus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/Rio4OVECZKtP6rATA0xAmwk66swm7pt9i5JmEPLU.webp"));
+        sendPhoto.setCaption("""
+                LI Auto One
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 40.5
+                ✅Разгон 0-100 км, сек: 6.5
+                ✅Мощность: 244кВт /552Нм        
+                ✅Привод: Полный         
+                ✅Запас хода, км: 890
+                ✅Количество мест: 5
+                ✅Максимальная скорость, км/ч: 172
+                
+                С момента основания самой компании не прошло еще и десяти лет. В 2015 году китайский медиамагнат Сянь Ли, создатель сайта Autohome, основал компанию CHJ Automotive (Chehejia переводится как «автомобиль и дом»). Причем изначально планировалось заняться производством крошечных электромобилей SEV (Small Electric Vehicle) для сдачи в аренду и каршеринга в Европе. Но этот проект быстро свернули и сосредоточились на больших кроссоверах. Причем не чисто электрических, а гибридных — господин Сянь Ли также является одним из основателей компании NextEV, которая занимается выпуском автомобилей Nio.Новый автомобильный бренд получил название Lixiang, по фамилии и имени основателя. Также LI дали англоязычную расшифровку — Leading Ideal («лидирующее совершенство»).
+                """);
+
+        return sendPhoto;
+    }
+    public SendPhoto LynkCo09EMPRus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/tS5di4emmprxFcaSAEvu7KeqU8nV2cJpt0WbHTB5.webp"));
+        sendPhoto.setCaption("""
+                Lynk&Co 09EM-P
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 40
+                ✅Количество мест: 5
+                ✅Привод: Полный        
+                ✅Разгон 0-100 км, сек: 5.9         
+                ✅Мощность, кВт/л.с: 540
+              
+                Большой паркетник с индексом 09 в гамме Lynk & Co, совместной марки Geely и Volvo, появился в прошлом году. Флагманская модель длиной 5042 мм построена на вольвовской платформе SPA (Scalable Product Architecture), на которой также базируются актуальные «шведы» шестидесятой и девяностой серий, включая и кроссовер XC90. Lynk & Co 09 бывает только в виде гибрида с бензиновой «турбочетверкой» 2.0 серии Drive-E (254 л.с., 350 Нм), причем таких версий две: у «мягкогибридного» исполнения 09 MHEV турбомотор дополнен 48-вольтовым стартер-генератором, а у подзаряжаемого варианта 09 PHEV на задней оси установлен отдельный электродвигатель мощностью 177 л.с. И вот марка Lynk & Co анонсировала новую топ-версию «девятки».
+                """);
+
+        return sendPhoto;
+    }
+    public SendPhoto ChevroletSeekerRus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/sh3Tmy6GCsarJzred5lUMaLxgNM6sECxsApeFUX9.webp"));
+        sendPhoto.setCaption("""
+                Chevrolet Seeker
+                Характеристики:
+                
+                ✅Объем: 1.5
+                ✅Расход: 6.6
+                ✅Мощность, кВт/л.с: 184/135        
+                ✅Привод: Передний         
+                ✅Коробка: Вариатор
+                ✅Количество мест: 5
+                ✅Максимальная скорость, км/ч: 205
+                
+                В конце июля двадцать второго компания Chevrolet представила в Китае новый кроссовер Seeker, который был разработан при непосредственном участии локального СП SAIC-GM.
+                                                                                                                                                                                                                        
+                По сути перед нами «старший брат» модели Trailblazer, который снаружи примечателен двухэтажной оптикой с узкими полосками ДХО и декоративной перемычкой на безрамочной решетке радиатора. Автомобиль также имеет броские черные накладки по периметру кузова и поставлен на стильные 18-дюймовые диски.
+                """);
+
+        return sendPhoto;
+    }
+    public SendPhoto BYDSongLRus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/qrSJ9LUiyqxQm3akh3668mKbbe3Z094IG7pZx8hp.webp"));
+        sendPhoto.setCaption("""
+                BYDSongL
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 87
+                ✅Разгон 0-100 км, сек: 4,3
+                ✅Мощность: 380кВт / 517 Нм        
+                ✅Привод: Полный         
+                ✅Запас хода, км: 602
+                ✅Количество мест: 5
+                ✅Максимальная скорость, км/ч: 200
+                
+                Спереди BYD Song L расположены узкие фары, между которыми находится фальшивая решетка радиатора. Ниже установлены воздухозаборники и дневные ходовые огни. Сзади находятся широкие фонари, объединенные в один блок. Также есть активное антикрыло и массивный диффузор. Стильные линии кузова, изящно выделенные хромированные элементы и эргономичные формы делают этот автомобиль привлекательным визуальным объектом.
+                """);
+
+        return sendPhoto;
+    }
+    public SendPhoto BYDYangwangU8Rus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/WGKjCPUUUdL9MdB4AAiLMM0AXSU5TfGwTJ6bZa5F.webp"));
+        sendPhoto.setCaption("""
+                BYD Yangwang U8
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 49.05
+                ✅Разгон 0-100 км, сек: 3.6
+                ✅Мощность: 880кВт / 1280Нм        
+                ✅Привод: Полный         
+                ✅Запас хода, км: 405
+                ✅Количество мест: 5
+                ✅Максимальная скорость, км/ч: 280
+                
+                Yangwang U8 построен на оригинальной рамной платформе Yisifang, которая отличается очень продвинутой начинкой. Силовая установка состоит из четырех электродвигателей, их суммарная мощность может достигать 1100 лошадиных сил. U8 разгоняется до первой сотни за 3,6 секунды.Yangwang имеет длину 5300 мм и колесную базу 3050 мм. Также у него есть скрытые дверные ручки и 20-дюймовые колеса с шинами размером 275/60 ​​R20.
+                """);
+
+        return sendPhoto;
+    }
+
+
+
+
+
+
+
 }
