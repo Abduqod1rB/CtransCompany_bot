@@ -1373,7 +1373,98 @@ public class MyBotServiceRus {
     }
 
 
+                                        //Хетчбек
 
+    public SendPhoto BYDSeagullRus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/ffyw1AMu4XFpkyvdXz419VxQqWR63iyM2rZNO2jL.webp"));
+
+        sendPhoto.setCaption("""
+                BYD Seagull
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 38,88
+                ✅Разгон 0-100 км, сек: 9,5
+                ✅Мощность, кВт/л.с: 55/75      
+                ✅Привод: Передний  
+                ✅Запас хода (NEDC), км: 405
+                ✅Количество мест: 4
+                ✅Максимальная скорость, км/ч: 130
+                
+                Новый BYD Seagull - компактный хэтчбек В-класса с нестандартным дизайном. У него выраженный "нос", рельефные боковины и высокая изогнутая оконная линия. Узкое заднее стекло прикрыто спойлером. Это самая маленькая модель китайской марки.
+                """);
+        return sendPhoto;
+    }
+
+    public SendPhoto BYDDolphinRus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/sK0hrrHnCtspCoUUmPlwubE3LzhselJYdTiYv4wu.webp"));
+
+        sendPhoto.setCaption("""
+                BYD Dolphin
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 44.9
+                ✅Разгон 0-100 км, сек: 7,5
+                ✅Мощность, кВт/л.с: 130/177      
+                ✅Привод: Передний  
+                ✅Запас хода (NEDC), км: 401
+                ✅Количество мест: 5
+                ✅Максимальная скорость, км/ч: 160
+                ✅Скорость зарядки (медленная/быстрая), час: 6,41/0,5
+                
+                Электромобиль BYD Dolphin – это идеальный пример сочетания цены и качества! Функциональный и стильный хэтчбек BYD Dolphin заявил о себе не только на китайском, но и на международном уровне. BYD Dolphin откровенно привлекает внешним видом. Авто имеет стремительный современный и продуманный до мельчайших деталей дизайн. Внешний вид хэтчбека – футуристический, но при этом сдержанный. Лаконические линии силуэта авто подчеркивают мощность, уверенность и оригинальность, а его фантастические формы напоминают, что будущее уже стало реальностью.
+                """);
+        return sendPhoto;
+    }
+    public SendPhoto BYDE2Rus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/wTDQ0xMwIBQvDR2sba11CvPrgEVcaidi66kZuNYq.webp"));
+
+        sendPhoto.setCaption("""
+                BYD E2
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 43,2
+                ✅Разгон 0-100 км, сек: 10,3
+                ✅Мощность, кВт/л.с: 70/95      
+                ✅Привод: Передний  
+                ✅Запас хода (NEDC), км: 405
+                ✅Количество мест: 5
+                ✅Максимальная скорость, км/ч: 130
+                ✅Скорость зарядки (медленная/быстрая), час: 13,1/0,5
+                
+                Этот экологичный автомобиль является электрическим переднеприводным хэтчбеком. Первый электрокар этого модельного ряда был выпущен совсем недавно: в апреле 2019 года. Byd E2 – стильный 5-дверный хэтчбек, он гармонично дополнил линейку моделей китайского бренда. Дизайн экстерьера выполнен в стиле китайских традиций - передняя часть авто напоминает прищурившегося дракона. Узкие светодиодные фары подчеркивают этот стиль. На корме автомобиля есть светодиодная полоса, соединяющая задние фары.
+                """);
+        return sendPhoto;
+    }
+    public SendPhoto ChanganBenBenEStarRus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/dBUAaOFl9cQbMGsGart96nB5723xCec8KApGXTmz.webp"));
+
+        sendPhoto.setCaption("""
+                Changan BenBen E-Star
+                Характеристики:
+                
+                ✅Тип топлива: Электрический
+                ✅Габариты: 3770*1650*1570
+                ✅Максимальная мощность (л.с.): 75      
+                ✅Максимальная скорость (км / ч): 101  
+                ✅Диапазон NEDC (км): 310
+                ✅Количество дверей: 5
+                ✅Общая мощность аккумулятора кВт: 31,95
+                ✅Мощность двигателя (Квт): 55
+                ✅Крутящий момент: 170
+                ✅Размер колес: 175/60 ​​R15
+                
+                
+                """);
+        return sendPhoto;
+    }
 
 
 
