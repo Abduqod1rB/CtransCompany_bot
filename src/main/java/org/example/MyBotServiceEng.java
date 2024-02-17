@@ -1336,4 +1336,94 @@ public class MyBotServiceEng {
 
 
     //---Krossover yakunlanish---\\
+
+    //---Hatchback boshlanish---\\
+
+    public SendPhoto bydSeagull(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/XZBuWOU3s2lQzubkw5PZvNlQ9hR64GhnZk1EUprF.webp"));
+        sendPhoto.setCaption("""
+                BYD Seagull
+                                
+                ✅Battery capacity, kW: 38,88
+                ✅Acceleration 0-100 km, sec: 9,5
+                ✅Power, kW/hp: 55/75
+                ✅Drive unit: Front
+                ✅Range (NEDC), km: 405
+                ✅Number of seats: 4
+                ✅Maximum speed, km/h: 130
+                
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto bydDolphin(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/sK0hrrHnCtspCoUUmPlwubE3LzhselJYdTiYv4wu.webp"));
+        sendPhoto.setCaption("""
+                BYD Dolphin
+                                
+                ✅Battery capacity, kW: 44.9
+                ✅Acceleration 0-100 km, sec: 7,5
+                ✅Power, kW/hp: 130/177
+                ✅Drive unit: Front
+                ✅Range (NEDC), km: 401
+                ✅Number of seats: 5
+                ✅Maximum speed, km/h: 160
+                ✅Charging speed (slow / fast), hour: 6,41/0,5
+                
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto bydE2(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/wTDQ0xMwIBQvDR2sba11CvPrgEVcaidi66kZuNYq.webp"));
+        sendPhoto.setCaption("""
+                BYD E2
+                                
+                ✅Battery capacity, kW: 43,2
+                ✅Acceleration 0-100 km, sec: 10,3
+                ✅Power, kW/hp: 70/95
+                ✅Drive unit: Front
+                ✅Range (NEDC), km: 405
+                ✅Number of seats: 5
+                ✅Maximum speed, km/h: 130
+                ✅Charging speed (slow / fast), hour: 13,1/0,5
+                
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto changanBenBenEStar(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/dBUAaOFl9cQbMGsGart96nB5723xCec8KApGXTmz.webp"));
+        sendPhoto.setCaption("""
+                Changan BenBen E-Star
+                                
+                ✅Fuel type: Electric
+                ✅Dimensions: 3770*1650*1570
+                ✅Maximum power (hp): 75
+                ✅Max speed (km/h): 101
+                ✅NEDC range (km): 310
+                ✅Number of doors: 5
+                ✅Total battery power kW: 31,95
+                ✅Motor power (kw): 55
+                ✅Torque: 170
+                ✅Wheel size: 175/60 R15
+                
+                """);
+
+        return sendPhoto;
+    }
+
+    //---Hatchback yakunlanish---\\
+
 }
