@@ -611,6 +611,7 @@ public class MyBotServiceUz {
                 "✅Maksimal tezlik, km/soat: 180\n" +
                 "✅Haydovchi blok: To'liq\n" +
                 "✅Zaryadlash tezligi (sekin/tez), soat: 11,8/0,5");
+        sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
     public SendPhoto BYD_HAN(Long chatId){
@@ -627,6 +628,7 @@ public class MyBotServiceUz {
                 "✅Maksimal tezlik, km/soat: 185\n" +
                 "✅Haydovchi blok: To'liq\n" +
                 "✅Zaryadlash tezligi (sekin / tez), soat: 12,2/0,5");
+        sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
     public SendPhoto Chevrolet_Monza15(Long chatId){
@@ -641,6 +643,7 @@ public class MyBotServiceUz {
                 "✅Haydovchi blok: To'liq\n" +
                 "✅Tezlashuv (0-100 km/soat): 12.9 s\n" +
                 "✅Joylar soni: 5");
+        sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
     public SendPhoto Chevrolet_Monza13(Long chatId){
@@ -655,6 +658,7 @@ public class MyBotServiceUz {
                 "✅Haydovchi blok: To'liq\n" +
                 "✅Tezlashuv (0-100 km/soat): 9.2 s\n" +
                 "✅Joylar soni: 5");
+        sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
     public SendPhoto Honda_Crider10_Turo(Long chatId){
@@ -668,6 +672,7 @@ public class MyBotServiceUz {
                 "✅Dvigatel turi: Benzin\n" +
                 "✅100 ga tezlashtirish: 10.7 s\n" +
                 "✅Iste'mol: 5.0 L");
+        sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
     public SendPhoto LeapMotor_C01(Long chatId){
@@ -683,6 +688,7 @@ public class MyBotServiceUz {
                 "✅Quvvat, kVt/hp: 400/544\n" +
                 "✅Maksimal tezlik, km/soat: 180\n" +
                 "✅Haydovchi blok: To'liq");
+        sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
     public SendPhoto HiPhi_Z(Long chatId){
@@ -699,6 +705,7 @@ public class MyBotServiceUz {
                 "✅Maksimal tezlik, km/soat: 200\n" +
                 "✅Haydovchi blok: To'liq\n" +
                 "✅Zaryadlash tezligi (sekin / tez), soat: 12,4/0,92");
+        sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
     public SendPhoto IM_Motors_L7(Long chatId){
@@ -714,6 +721,7 @@ public class MyBotServiceUz {
                 "✅Quvvat: 445kVt / 605Nm\n" +
                 "✅Maksimal tezlik, km/soat: 200\n" +
                 "✅Haydovchi blok: Toʻliq");
+        sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
     public SendPhoto Geometry_G6(Long chatId){
@@ -729,6 +737,7 @@ public class MyBotServiceUz {
                 "✅Maksimal tezlik, km/soat: 150\n" +
                 "✅Haydovchi blok: Old"
                 );
+        sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
     public SendPhoto BMW_i3_eDrive40(Long chatId){
@@ -746,6 +755,7 @@ public class MyBotServiceUz {
                 "✅Haydovchi blok: orqa\n" +
                 "✅Zaryadlash tezligi (sekin / tez), soat: 7,5/0,68\n"
         );
+        sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
     public SendPhoto BMW_i4_eDrive35(Long chatId){
@@ -762,6 +772,7 @@ public class MyBotServiceUz {
                 "✅Maksimal tezlik, km/soat: 182\n" +
                 "✅Haydovchi blok: Toʻliq"
         );
+        sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
     public SendPhoto BMW_i5_eDrive40(Long chatId){
@@ -778,6 +789,7 @@ public class MyBotServiceUz {
                 "✅Maksimal tezlik, km/soat: 193\n" +
                 "✅Haydovchi blok: Toʻliq"
         );
+        sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
     public SendPhoto Neta_S(Long chatId){
@@ -795,6 +807,7 @@ public class MyBotServiceUz {
                 "✅Haydovchi blok: To'liq\n" +
                 "✅Zaryadlash tezligi (sekin / tez), soat: 17/0,58"
         );
+        sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
     public SendPhoto Neta_Gt(Long chatId){
@@ -810,6 +823,7 @@ public class MyBotServiceUz {
                 "✅Maksimal tezlik, km/soat: 190\n" +
                 "✅Haydovchi blok: orqa"
         );
+        sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
     public SendPhoto Zeekr_007(Long chatId){
@@ -826,6 +840,7 @@ public class MyBotServiceUz {
                 "✅Maksimal tezlik, km/soat: 210\n" +
                 "✅Haydovchi blok: Toʻliq"
         );
+        sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
 }
