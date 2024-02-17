@@ -142,7 +142,7 @@ public class MyBot extends TelegramLongPollingBot {
             }
 
 
-            /*if(text.equals("\uD83E\uDDEEKalkulyator")){
+            if(text.equals("\uD83E\uDDEEKalkulyator")){
                 try {
                     execute(myBotServiceUz.kankulator(chatId));
                 } catch (TelegramApiException e) {
@@ -198,7 +198,7 @@ public class MyBot extends TelegramLongPollingBot {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-            }*/
+            }
 
 
         }
