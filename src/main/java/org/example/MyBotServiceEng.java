@@ -242,6 +242,7 @@ public class MyBotServiceEng {
         KeyboardButton button14 = new KeyboardButton();
         KeyboardButton button15 = new KeyboardButton();
 
+
         button.setText("BYD Seal");
         button1.setText("BYD Han");
         button2.setText("Chevrolet Monza 1.5L Atmo");
@@ -258,6 +259,7 @@ public class MyBotServiceEng {
         button13.setText("Neta Gt");
         button14.setText("Zeeker 007");
         button15.setText("⬅️ Back");
+
 
         row.add(button);
         row.add(button1);
@@ -276,6 +278,7 @@ public class MyBotServiceEng {
         row7.add(button14);
         row8.add(button15);
 
+
         rowList.add(row);
         rowList.add(row1);
         rowList.add(row2);
@@ -286,12 +289,16 @@ public class MyBotServiceEng {
         rowList.add(row7);
         rowList.add(row8);
 
+
         replyKeyboardMarkup.setKeyboard(rowList);
         replyKeyboardMarkup.setResizeKeyboard(true);
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
 
+
         return sendMessage;
     }
+
+
 
     public SendMessage crossoverEng(Long chatId) {
 
@@ -315,6 +322,7 @@ public class MyBotServiceEng {
         KeyboardRow row10 = new KeyboardRow();
         KeyboardRow row11 = new KeyboardRow();
         KeyboardRow row12 = new KeyboardRow();
+
 
         KeyboardButton button = new KeyboardButton();
         KeyboardButton button1 = new KeyboardButton();
@@ -341,6 +349,7 @@ public class MyBotServiceEng {
         KeyboardButton button22 = new KeyboardButton();
         KeyboardButton button23 = new KeyboardButton();
 
+
         button.setText("BYD Song Plus Champion Edition");
         button1.setText("BYD Tang EV");
         button2.setText("BYD Yuan Plus EV");
@@ -365,6 +374,7 @@ public class MyBotServiceEng {
         button21.setText("BYD Song L");
         button22.setText("BYD Yangwang U8");
         button23.setText("⬅️ Back");
+
 
         row.add(button);
         row.add(button1);
@@ -391,6 +401,7 @@ public class MyBotServiceEng {
         row11.add(button22);
         row12.add(button23);
 
+
         rowList.add(row);
         rowList.add(row1);
         rowList.add(row2);
@@ -405,6 +416,7 @@ public class MyBotServiceEng {
         rowList.add(row11);
         rowList.add(row12);
 
+
         replyKeyboardMarkup.setKeyboard(rowList);
         replyKeyboardMarkup.setResizeKeyboard(true);
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
@@ -412,7 +424,9 @@ public class MyBotServiceEng {
         return sendMessage;
     }
 
+
     public SendMessage servicesEng(Long chatId) {
+
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -420,10 +434,12 @@ public class MyBotServiceEng {
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         List<KeyboardRow> rowList = new ArrayList<>();
 
+
         KeyboardRow row = new KeyboardRow();
         KeyboardRow row1 = new KeyboardRow();
         KeyboardRow row2 = new KeyboardRow();
         KeyboardRow row3 = new KeyboardRow();
+
 
         KeyboardButton button = new KeyboardButton();
         KeyboardButton button1 = new KeyboardButton();
@@ -432,12 +448,14 @@ public class MyBotServiceEng {
         KeyboardButton button4 = new KeyboardButton();
         KeyboardButton button5 = new KeyboardButton();
 
+
         button.setText("Air transportation");
         button1.setText("Auto transportation");
         button2.setText("Railway transportation");
         button3.setText("Werehouse services in Yiwu and Gungzhou");
         button4.setText("Customs Clearance services");
         button5.setText("⬅️ Back");
+
 
         row.add(button);
         row.add(button1);
@@ -446,23 +464,29 @@ public class MyBotServiceEng {
         row2.add(button4);
         row3.add(button5);
 
+
         rowList.add(row);
         rowList.add(row1);
         rowList.add(row2);
         rowList.add(row3);
 
+
         replyKeyboardMarkup.setKeyboard(rowList);
         replyKeyboardMarkup.setResizeKeyboard(true);
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
 
+
         return sendMessage;
     }
 
+
     public SendMessage carsFromChinaEng(Long chatId) {
+
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
         sendMessage.setText("choose your type car");
+
 
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         List<KeyboardRow> rowList = new ArrayList<>();
@@ -470,11 +494,13 @@ public class MyBotServiceEng {
         KeyboardRow row1 = new KeyboardRow();
         KeyboardRow row2 = new KeyboardRow();
 
+
         KeyboardButton button = new KeyboardButton();
         KeyboardButton button1 = new KeyboardButton();
         KeyboardButton button2 = new KeyboardButton();
         KeyboardButton button3 = new KeyboardButton();
         KeyboardButton button4 = new KeyboardButton();
+
 
         button.setText("Sedan");
         button1.setText("Crossover");
@@ -482,11 +508,13 @@ public class MyBotServiceEng {
         button3.setText("Minivan");
         button4.setText("⬅️ Back");
 
+
         row.add(button);
         row.add(button1);
         row1.add(button2);
         row1.add(button3);
         row2.add(button4);
+
 
         rowList.add(row);
         rowList.add(row1);
@@ -498,6 +526,8 @@ public class MyBotServiceEng {
 
         return sendMessage;
     }
+
+
 
 
 
@@ -519,20 +549,25 @@ public class MyBotServiceEng {
         button2.setText("\uD83D\uDE98Car transports");
         button3.setText("⬅️ Back");
 
+
         row.add(button);
         row.add(button1);
         row1.add(button2);
         row2.add(button3);
 
+
         rows.add(row);
         rows.add(row1);
         rows.add(row2);
+
 
         replyKeyboardMarkUp.setKeyboard(rows);
         replyKeyboardMarkUp.setResizeKeyboard(true);
         sendMessage.setReplyMarkup(replyKeyboardMarkUp);
         return sendMessage;
     }
+
+
 
     public SendMessage settingsEng (Long chatId){
 
@@ -541,6 +576,7 @@ public class MyBotServiceEng {
         sendMessage.setText("⚙️Settings");
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         List<KeyboardRow> rowList = new ArrayList<>();
+
 
         KeyboardRow row = new KeyboardRow();
         KeyboardRow row1 = new KeyboardRow();
@@ -558,9 +594,12 @@ public class MyBotServiceEng {
         rowList.add(row);
         rowList.add(row1);
 
+
+
         replyKeyboardMarkup.setKeyboard(rowList);
         replyKeyboardMarkup.setResizeKeyboard(true);
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
 
         return sendMessage;
     }
@@ -883,3 +922,189 @@ public class MyBotServiceEng {
         return sendPhoto;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
