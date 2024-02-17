@@ -4,6 +4,7 @@ package org.example;
  *Date:2/9/2024 *Time:9:24 AM
  */
 
+import org.telegram.telegrambots.meta.api.methods.ParseMode;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.methods.send.SendPhoto;
 import org.telegram.telegrambots.meta.api.objects.InputFile;
@@ -11,6 +12,7 @@ import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMar
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardButton;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
 
+import javax.swing.text.html.HTML;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
@@ -168,26 +170,86 @@ public class MyBotServiceUz {
     public SendPhoto havotransporti(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQadhwXWWBK6q3N87eDm4XylkA9kFEroW9Aw&usqp=CAU"));
-        sendPhoto.setCaption("CTRANS katta o'lchamlari va og'irligi bo'lgan keng turdagi tovarlarni havo orqali tashishni taklif qiladi. Xitoy-O'zbekiston bilan havo transporti ko'pchilik o'zbekistonliklarning tanlovidir. Biz sizga eng qisqa vaqt ichida tez, xavfsiz va sifatli tashishni kafolatlaymiz.\n" +
+        sendPhoto.setPhoto(new InputFile("https://wallpaperset.com/w/full/c/6/a/249472.jpg"));
+        sendPhoto.setCaption("<b>Havo transporti</b>\n" +
+                "CTRANS katta o'lchamlari va og'irligi bo'lgan keng turdagi tovarlarni havo orqali tashishni taklif qiladi. Xitoy-O'zbekiston bilan havo transporti ko'pchilik o'zbekistonliklarning tanlovidir. Biz sizga eng qisqa vaqt ichida tez, xavfsiz va sifatli tashishni kafolatlaymiz.\n" +
                 "\n" +
                 "CTRANS xodimlari har bir mahsulotga ehtiyotkorlik bilan munosabatda bo'lishadi va tashishni nazorat qilishadi. Biz bilan mahsulotlaringiz xavfsiz va sog'lom yetib kelishiga amin bo'lishingiz mumkin.");
+        sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
     public SendPhoto avtomobiltransporti(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQadhwXWWBK6q3N87eDm4XylkA9kFEroW9Aw&usqp=CAU"));
-        sendPhoto.setCaption("Avtomobil transportida yuk tashish transport xizmatlari bozorining eng muhim tarkibiy qismi bo'lib, aynan shu yo'nalish yuklarni jo'natuvchidan oluvchiga tashish sohasida yetakchi hisoblanadi.\n" +
+        sendPhoto.setPhoto(new InputFile("https://hips.hearstapps.com/hmg-prod/images/volvo-45-6464dc2d84b25.jpg"));
+        sendPhoto.setCaption("<b>Avtomobil transporti</b>\n" +
+                "Avtomobil transportida yuk tashish transport xizmatlari bozorining eng muhim tarkibiy qismi bo'lib, aynan shu yo'nalish yuklarni jo'natuvchidan oluvchiga tashish sohasida yetakchi hisoblanadi.\n" +
                 "\n" +
                 "Boshqa transport turlari bilan taqqoslaganda, bugungi kunda avtotransport jiddiy ustuvor yo'nalish bo'lib qolmoqda. Avtotransport yuklarining afzalliklari orasida:\n" +
                 "\n" +
-                "manevr qobiliyati;\n" +
-                "logistika kompaniyasi uchun eng foydali marshrutlarni amalga oshirish uchun keng imkoniyatlar;\n" +
-                "yetkazib berish tezligi;\n" +
-                "tashiladigan tovarlarning keng assortimenti;\n" +
-                "bir nechta kompaniyalarning posilkalarini birlashtirgan holda, guruhli yo'l yuklarini shakllantirish;\n" +
-                "yukning og'irligi, formati va o'lchamlari, yonuvchan tovarlar va tez buziladigan mahsulotlarning mavjudligi kabi omillarni hisobga olgan holda transport vositalarining katta tanlovi;");
+                "•manevr qobiliyati;\n" +
+                "•logistika kompaniyasi uchun eng foydali marshrutlarni amalga oshirish uchun keng imkoniyatlar;\n" +
+                "•yetkazib berish tezligi;\n" +
+                "•tashiladigan tovarlarning keng assortimenti;\n" +
+                "•bir nechta kompaniyalarning posilkalarini birlashtirgan holda, guruhli yo'l yuklarini shakllantirish;\n" +
+                "•yukning og'irligi, formati va o'lchamlari, yonuvchan tovarlar va tez buziladigan mahsulotlarning mavjudligi kabi omillarni hisobga olgan holda transport vositalarining katta tanlovi;");
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+    public SendPhoto dengiztransporti(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://img.freepik.com/premium-photo/view-from-ship-with-cargo-going-by-sea-cargo-port_124507-55067.jpg"));
+        sendPhoto.setCaption("<b>Dengiz transporti</b>\n" +
+                "Temir yo'l transporti CTRANS kompaniyasining asosiy faoliyat yo'nalishlaridan biridir. Kompaniya kerakli tonnajdagi konteynerlarda ham, barcha turdagi vagonlarda ham yuk tashishni amalga oshiradi.\n" +
+                "\n" +
+                "Konteynerda tashish yuklarni qayta yuklamasdan yetkazib berish imkonini beradi. Bu hajmni sezilarli darajada kamaytiradi va oraliq yuklash va tushirish operatsiyalari tezligini oshiradi.\n" +
+                "\n" +
+                "Agar siz past transport xarajatlarini qadrlasangiz, temir yo'l transporti ajoyib tanlovdir. Bu holatda past narx yuqori yuk ko'tarish qobiliyatiga bog'liq.");
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+    public SendPhoto temiryoltransporti(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://img.freepik.com/premium-photo/large-containers-with-cargo-delivered-by-cargo-train-railway-station_124507-35363.jpg"));
+        sendPhoto.setCaption("<b>Temiryo'l transporti</b>\n" +
+                "Temir yo'l transporti CTRANS kompaniyasining asosiy faoliyat yo'nalishlaridan biridir. Kompaniya kerakli tonnajdagi konteynerlarda ham, barcha turdagi vagonlarda ham yuk tashishni amalga oshiradi.\n" +
+                "\n" +
+                "Konteynerda tashish yuklarni qayta yuklamasdan yetkazib berish imkonini beradi. Bu hajmni sezilarli darajada kamaytiradi va oraliq yuklash va tushirish operatsiyalari tezligini oshiradi.\n" +
+                "\n" +
+                "Agar siz past transport xarajatlarini qadrlasangiz, temir yo'l transporti ajoyib tanlovdir. Bu holatda past narx yuqori yuk ko'tarish qobiliyatiga bog'liq.");
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+    public SendPhoto omborXizmatlari(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://img.freepik.com/premium-photo/large-clean-warehouse-storage-room-with-boxes-merchandise-generative-ai_634358-850.jpg"));
+        sendPhoto.setCaption("<b>Yivu va Guanchjouda ombor xizmatlari</b>\n"+
+                "CTRANS kompaniyasi Xitoydan transport vositalarida yuk tashishdan tashqari, Xitoyda bir vaqtning o'zida ombor logistikasi xizmatlaridan foydalanishni taklif qiladi.\n" +
+                "\n" +
+                "Yivu va Guanchjou kabi yirik shaharlarda savdo koʻp.\n" +
+                "\n" +
+                "Mijozlarimiz uchun tovarlarni saqlash va yetkazib berishda tejashni yanada qulay qilish uchun omborlarimiz shaharning qulay joylarida joylashgan.");
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+    public SendPhoto bojxonaxizmatlari(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://solutionsforshipping.com/images/page_images/custom-clearance-1000-new.jpg"));
+        sendPhoto.setCaption("<b>Bojxona rasmiylashtiruvchi xizmatlri</b>\n"+
+                "CTRANS o'z mijozlarining vaqtini qadrlaydi va yuklarni bojxona deklaratsiyasi xizmatlarini taklif qiladi. TIF TN kodlarining ta'rifi.\n" +
+                "\n" +
+                "Bojxona rasmiylashtiruvi tovarlarga tegishli barcha ma'lumotlarni ro'yxatdan o'tkazish, ro'yxatdan o'tkazish va u haqida ishonchli ma'lumotga ega bo'lgan hujjatlar to'plamini shakllantirish uchun zarurdir.\n" +
+                "\n" +
+                "Ammo tajriba shuni ko'rsatadiki. Barcha kerakli hujjatlarni mustaqil ravishda to'g'ri to'plash deyarli mumkin emas. Binobarin, bu chegarada yukning kechikishiga olib keladi. Buning uchun siz uchun barcha kerakli hujjatlarni oldindan tayyorlaydigan mutaxassislar mavjud.\n" +
+                "\n" +
+                "Yukingiz yarim yo‘lda qayergadir “osilib qolishini” xohlamaysizmi? Biz, albatta, xohlamaymiz, shuning uchun biz mijozlarimizga bojxona rasmiylashtiruvi xizmatini taklif qilamiz.\n" +
+                "\n" +
+                "Ctransga murojaat qilib, siz bizning professionalligimiz va bojxona rasmiylashtiruvidan keyin tovarlarning yakuniy narxi o'zgarmasligiga amin bo'lishingiz mumkin. Biz sizga mahsulot tannarxini arzon va tez, kutilmagan xarajatlarsiz, bojxona nazoratidan o‘tkazishingizga yordam beramiz.");
+        sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
     public SendMessage xitoydanmashinalar(Long chatId){
@@ -483,6 +545,287 @@ public class MyBotServiceUz {
                 "✅Tajribali jamoa            ✅Yuklarni sug'urta qilish\n" +
                 "✅24/7 qo'llab-quvvatlash    ✅Xavfsiz omborxona");
 
+        return sendPhoto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public SendPhoto BYD_SEAL(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/GbnFoweKIIJ8SGRcR3X1qaBAmgizk9E8798rn536.webp"));
+        sendPhoto.setCaption("<b>Brend: BYD\nModel: Seal\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Batareya quvvati, kVt: 82,5\n" +
+                "✅Quvvat zahirasi (NEDC), km: 650\n" +
+                "✅Tezlashuv 0-100 km, sek: 3,8\n" +
+                "✅Joylar soni: 5\n" +
+                "✅Quvvat, kVt/hp: 390/530\n" +
+                "✅Maksimal tezlik, km/soat: 180\n" +
+                "✅Haydovchi blok: To'liq\n" +
+                "✅Zaryadlash tezligi (sekin/tez), soat: 11,8/0,5");
+        return sendPhoto;
+    }
+    public SendPhoto BYD_HAN(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/G5LEALmmX7YN3h2S0ejHxggKreWq0hgj0rkNV3zI.webp"));
+        sendPhoto.setCaption("<b>Brend: BYD\nModel: Han\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Batareya quvvati, kVt: 85,4\n" +
+                "✅Quvvat zahirasi (NEDC), km: 610\n" +
+                "✅Tezlashuv 0-100 km, sek: 3,9\n" +
+                "✅Joylar soni: 5\n" +
+                "✅Quvvat, kVt/hp: 380/517\n" +
+                "✅Maksimal tezlik, km/soat: 185\n" +
+                "✅Haydovchi blok: To'liq\n" +
+                "✅Zaryadlash tezligi (sekin / tez), soat: 12,2/0,5");
+        return sendPhoto;
+    }
+    public SendPhoto Chevrolet_Monza15(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/7XZX6Aa66UBk54V6XkdOikpRj7MaSpDsfdPEecaw.webp"));
+        sendPhoto.setCaption("<b>Brend: Chevrolet\nModel: Monza 1.5L Atmo\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Dvigatel: 1.5 L (113 ot kuchi)\n" +
+                "✅Yoqilg'i turi: Benzin\n" +
+                "✅Uzatish qutisi: 6-AT (robot)\n" +
+                "✅Haydovchi blok: To'liq\n" +
+                "✅Tezlashuv (0-100 km/soat): 12.9 s\n" +
+                "✅Joylar soni: 5");
+        return sendPhoto;
+    }
+    public SendPhoto Chevrolet_Monza13(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/7XZX6Aa66UBk54V6XkdOikpRj7MaSpDsfdPEecaw.webp"));
+        sendPhoto.setCaption("<b>Brend: Chevrolet\nModel: Monza 1.3L Turbo\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Dvigatel: 1.3L Turbo (163 ot kuchi)\n" +
+                "✅Yoqilg'i turi: Benzin\n" +
+                "✅Uzatish qutisi: 6-AT (robot)\n" +
+                "✅Haydovchi blok: To'liq\n" +
+                "✅Tezlashuv (0-100 km/soat): 9.2 s\n" +
+                "✅Joylar soni: 5");
+        return sendPhoto;
+    }
+    public SendPhoto Honda_Crider10_Turo(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/WWWDezhpGgYHzzR9VApgwmj9eeNyNtW7OAlYygCk.webp"));
+        sendPhoto.setCaption("<b>Brend: Honda\nModel: Crider 1.0L Turbo\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Dvigatel hajmi: 1.0 L Turbo\n" +
+                "✅Quvvat: 122 ot kuchi\n" +
+                "✅Dvigatel turi: Benzin\n" +
+                "✅100 ga tezlashtirish: 10.7 s\n" +
+                "✅Iste'mol: 5.0 L");
+        return sendPhoto;
+    }
+    public SendPhoto LeapMotor_C01(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/gAvBM75WivxQrmjUD4oBWpXvhS0MjkTfLEvz2v5d.webp"));
+        sendPhoto.setCaption("<b>Brend: LeapMotor\nModel: C01\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Batareya quvvati, kVt: 90\n" +
+                "✅Quvvat zahirasi (NEDC), km: 630\n" +
+                "✅Tezlashuv 0-100 km, sek: 3,6\n" +
+                "✅Joylar soni: 5\n" +
+                "✅Quvvat, kVt/hp: 400/544\n" +
+                "✅Maksimal tezlik, km/soat: 180\n" +
+                "✅Haydovchi blok: To'liq");
+        return sendPhoto;
+    }
+    public SendPhoto HiPhi_Z(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/TmaFh6qeILQV09RdIovwNghxCrx9BASiaMFvgdO9.webp"));
+        sendPhoto.setCaption("<b>Brend: HiPhi\nModel: Z\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Batareya quvvati, kVt: 120\n" +
+                "✅Quvvat zahirasi (NEDC), km: 705\n" +
+                "✅Tezlashuv 0-100 km, sek: 3,8\n" +
+                "✅Joylar soni: 4\n" +
+                "✅Quvvat, kVt/hp: 494/672\n" +
+                "✅Maksimal tezlik, km/soat: 200\n" +
+                "✅Haydovchi blok: To'liq\n" +
+                "✅Zaryadlash tezligi (sekin / tez), soat: 12,4/0,92");
+        return sendPhoto;
+    }
+    public SendPhoto IM_Motors_L7(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/n7IgJoqfWsM0w5ljA24sr0wBGUq7lrUp3g9bb5wi.webp"));
+        sendPhoto.setCaption("<b>Brend: IM Motors\nModel: L7\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Batareya quvvati, kVt: 90\n" +
+                "✅Zaxira quvvati, km: 615\n" +
+                "✅Tezlashuv 0-100 km, sek: 3,7\n" +
+                "✅Joylar soni: 5\n" +
+                "✅Quvvat: 445kVt / 605Nm\n" +
+                "✅Maksimal tezlik, km/soat: 200\n" +
+                "✅Haydovchi blok: Toʻliq");
+        return sendPhoto;
+    }
+    public SendPhoto Geometry_G6(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/Zl6MhKhdsf1r5CfqLELkB4DnHjaliEh4XoTU6I56.webp"));
+        sendPhoto.setCaption("<b>Brend: Geometry\nModel: G6\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
+                "✅Batareya quvvati, kVt: 70\n" +
+                "✅Zaxira quvvati, km: 580\n" +
+                "✅Tezlashuv 0-100 km, sek: 6,9\n" +
+                "✅Joylar soni: 5\n" +
+                "✅Quvvat: 150 kVt / 204Nm\n" +
+                "✅Maksimal tezlik, km/soat: 150\n" +
+                "✅Haydovchi blok: Old"
+                );
+        return sendPhoto;
+    }
+    public SendPhoto BMW_i3_eDrive40(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/eQXmyVoEXPqMbHTXPKK2SrtMvKeFYs9BkaYGTs70.webp"));
+        sendPhoto.setCaption("<b>Brend: BMW\nModel: i3 eDrive40\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Batareya quvvati, kVt: 78,92\n" +
+                "✅Quvvat zahirasi (NEDC), km: 592\n" +
+                "✅Tezlashuv 0-100 km, sek: 5,6\n" +
+                "✅Joylar soni: 5\n" +
+                "✅Quvvat, kVt/hp: 250/340\n" +
+                "✅Maksimal tezlik, km/soat: 180\n" +
+                "✅Haydovchi blok: orqa\n" +
+                "✅Zaryadlash tezligi (sekin / tez), soat: 7,5/0,68\n"
+        );
+        return sendPhoto;
+    }
+    public SendPhoto BMW_i4_eDrive35(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/gwvcNdDemXzj2KnSzE4KnrAiEQbr722zUqpkNwsw.webp"));
+        sendPhoto.setCaption("<b>Brend: BMW\nModel: i4 eDrive35\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Batareya quvvati, kVt: 83,9\n" +
+                "✅Zaxira quvvati, km: 625\n" +
+                "✅Tezlashuv 0-100 km, sek: 5,7\n" +
+                "✅Joylar soni: 5\n" +
+                "✅Quvvat: 250kVt / 340Nm\n" +
+                "✅Maksimal tezlik, km/soat: 182\n" +
+                "✅Haydovchi blok: Toʻliq"
+        );
+        return sendPhoto;
+    }
+    public SendPhoto BMW_i5_eDrive40(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/5Pkx8cb6yJEhEPsJdXDBzEmfVDOr361aBdZILSLb.webp"));
+        sendPhoto.setCaption("<b>Brend: BMW\nModel: i5 eDrive40\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Batareya quvvati, kVt: 81.2\n" +
+                "✅Zaxira quvvati, km: 582\n" +
+                "✅Tezlashuv 0-100 km, sek: 6\n" +
+                "✅Joylar soni: 5\n" +
+                "✅Quvvat: 340kVt / 586Nm\n" +
+                "✅Maksimal tezlik, km/soat: 193\n" +
+                "✅Haydovchi blok: Toʻliq"
+        );
+        return sendPhoto;
+    }
+    public SendPhoto Neta_S(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/public/storage/cars/fktgieIK4VYEVFIP0uN36tNjxRymXuAX2LIluq2Q.webp"));
+        sendPhoto.setCaption("<b>Brend: Neta\nModel: S\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Batareya quvvati, kVt: 91\n" +
+                "✅Quvvat zahirasi (NEDC), km: 715\n" +
+                "✅Tezlashuv 0-100 km, sek: 3,9\n" +
+                "✅Joylar soni: 5\n" +
+                "✅Quvvat, kVt/hp: 340/462\n" +
+                "✅Maksimal tezlik, km/soat: 185\n" +
+                "✅Haydovchi blok: To'liq\n" +
+                "✅Zaryadlash tezligi (sekin / tez), soat: 17/0,58"
+        );
+        return sendPhoto;
+    }
+    public SendPhoto Neta_Gt(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/public/storage/cars/7fdWbQK8rsxAid456F7zwCFsqAIcKaibwZH1rMVS.webp"));
+        sendPhoto.setCaption("<b>Brend: Neta\nModel: GT\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Batareya quvvati, kVt: 74.5\n" +
+                "✅Quvvat zahirasi (NEDC), km: 650\n" +
+                "✅Joylar soni: 4\n" +
+                "✅Quvvat, kVt/hp: 170\n" +
+                "✅Maksimal tezlik, km/soat: 190\n" +
+                "✅Haydovchi blok: orqa"
+        );
+        return sendPhoto;
+    }
+    public SendPhoto Zeekr_007(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/public/storage/cars/o81wp9OhfwgTCIkaXwEoFqhO0Dsgxx7Mh3VDFw47.webp"));
+        sendPhoto.setCaption("<b>Brend: Zeekr\nModel: 007\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Batareya quvvati, kVt: 70\n" +
+                "✅Zaxira quvvati, km: 688\n" +
+                "✅Tezlashuv 0-100 km, sek: 2,84\n" +
+                "✅Joylar soni: 5\n" +
+                "✅Quvvat: 421kVt / 224Nm\n" +
+                "✅Maksimal tezlik, km/soat: 210\n" +
+                "✅Haydovchi blok: Toʻliq"
+        );
         return sendPhoto;
     }
 }
