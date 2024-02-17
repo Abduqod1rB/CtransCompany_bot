@@ -1471,4 +1471,98 @@ public class MyBotServiceEng {
 
     //---Minivan yakunlanish---\\
 
+
+    //---Servis boshlanish---\\
+
+    public SendPhoto airTransportation(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile(new File("D:\\My_Telegram_bots\\CTRANS_bot\\image\\air.png")));
+        sendPhoto.setCaption("""
+                CTRANS offers air transportation of a wide range of goods with large dimensions and weight. Air transportation China-Uzbekistan is the choice of most Uzbeks. We guarantee you fast, safe, and high-quality transportation in the shortest possible time.
+                
+                CTRANS employees carefully treat and control the transportation of each product. With us, you can be sure that your goods will arrive safe and sound.
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto autoTransportation(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile(new File("D:\\My_Telegram_bots\\CTRANS_bot\\image\\auto.png")));
+        sendPhoto.setCaption("""
+                Cargo transportation by road is the most important component of the transport services market, and it is this direction that is considered the leader in the field of transportation of goods from the sender to the recipient.
+                
+                Compared to other modes of transport, motor transport today remains a serious priority. Among the advantages that road transport cargo has:
+                
+                ⊚Maneuverability;
+                ⊚ample opportunities for the logistics company to make the most profitable routes;
+                ⊚speed of delivery;
+                ⊚a wide range of transported goods;
+                ⊚formation of groupage road cargo, combining parcels from several companies;
+                ⊚a large selection of vehicles, taking into account factors such as weight, format and dimensions of luggage, the presence of flammable goods and perishable products;
+                
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto railwayTransportation(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile(new File("D:\\My_Telegram_bots\\CTRANS_bot\\image\\Railway.png")));
+        sendPhoto.setCaption("""
+
+                Rail transportation is one of the main activities of CTRANS. The company carries out transportation both in containers of the required tonnage and in all types of wagons.                    
+                
+                Container transportation will allow to carry out non-reloading delivery of goods. This significantly reduces the volume and increases the speed of intermediate loading and unloading operations.
+                
+                Rail transportation is a great choice if you value low transportation costs. The low cost in this case is due to the high load capacity.
+                
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto werehouse(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile(new File("D:\\My_Telegram_bots\\CTRANS_bot\\image\\WSIYAG.png")));
+        sendPhoto.setCaption("""
+
+                The CTRANS company, in addition to transporting goods by vehicles from China, offers to use warehouse logistics services in China at the same time.
+                
+                Big cities like Yiwu and Guangzhou have a lot of trade.
+                
+                To make it more convenient for our customers to store goods and save on delivery, our warehouses are located in convenient locations in the city.
+                
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto ccs(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile(new File("D:\\My_Telegram_bots\\CTRANS_bot\\image\\CCS.png")));
+        sendPhoto.setCaption("""
+
+                CTRANS values the time of its customers and offers services for customs declaration of goods. Definition of HS code.
+                
+                Customs clearance is necessary in order to register, register all information related to the goods, and form a package of documents with reliable information about it.
+                
+                But as experience shows. It is almost impossible to collect all the necessary documents properly on your own. Consequently, this leads to a delay of cargo at the border. For this, there are specialists who can prepare all the necessary documents for you in advance.
+                
+                Don't want your cargo to "hang" somewhere halfway? We definitely do not want to, therefore we offer our customers a customs clearance service.
+                
+                Turning to Ctrans, you can be sure of our professionalism and that the final cost of the goods will not change after customs clearance. We will help you keep the cost of production low and quickly, without unforeseen expenses, pass through customs control.
+                
+                """);
+
+        return sendPhoto;
+    }
+
+    //---Servis yakunlanish---\\
+
 }
