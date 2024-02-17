@@ -774,4 +774,112 @@ public class MyBotServiceEng {
 
         return sendPhoto;
     }
+
+    public SendPhoto bmwi4eDrive35(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/gwvcNdDemXzj2KnSzE4KnrAiEQbr722zUqpkNwsw.webp"));
+        sendPhoto.setCaption("""
+                BMW i4 eDrive35
+                
+                ✅Battery capacity, kW: 83,9
+                ✅Acceleration 0-100 km, sec: 5,7
+                ✅Power: 250kW / 340Nm
+                ✅Drive unit: Full
+                ✅Power reserve, km: 625
+                ✅Number of seats: 5
+                ✅Maximum speed, km/h: 182
+
+                The BMW i4, the first electric car in the Gran Coupe, offers great dynamics, high comfort and excellent qualities for everyday use. The five-door variant is based on the fifth generation of BMW eDrive, and this new product is sporty. The power of the machine is 400 kW (544 hp). With a range of up to 590 kilometers and five full-seats, it's the perfect companion for any trip.
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto bmwi5eDrive40(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/5Pkx8cb6yJEhEPsJdXDBzEmfVDOr361aBdZILSLb.webp"));
+        sendPhoto.setCaption("""
+                BMW i5 eDrive40
+                
+                ✅Battery capacity, kW: 81.2
+                ✅Acceleration 0-100 km, sec: 6
+                ✅Power: 340kW / 586Nm
+                ✅Drive unit: Full
+                ✅Power reserve, km: 582
+                ✅Number of seats: 5
+                ✅Maximum speed, km/h: 193
+
+                BMW’s first all-electric 5 Series executive sedan, BMW i5 is based on the CLAR platform. So, it’s not a pure electric model. But there are a couple of new features that might make you forget about the old underpinnings.First off, BMW’s ‘business’ sedan now offers gaming experience! It’s called Air Console and there are already 15 or so games available to play.
+                The second most noteworthy feature is the new intelligent heat pump system. It’ll allow BMW i5 to consume less energy in cold weather and easily pre-condition the battery pack before charging
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto netaS(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/public/storage/cars/fktgieIK4VYEVFIP0uN36tNjxRymXuAX2LIluq2Q.webp"));
+        sendPhoto.setCaption("""
+                Neta S
+                
+                ✅Battery capacity, kW: 91
+                ✅Acceleration 0-100 km, sec: 3,9
+                ✅Power, kW/hp: 340/462
+                ✅Drive unit: Full
+                ✅Power reserve (NEDC), km: 715
+                ✅Number of seats: 5
+                ✅Maximum speed, km/h: 185
+                ✅Charging speed (slow / fast), hour: 17/0,58
+
+                The perfect combination of technological intelligence and sporty aesthetics. Super intelligent driving assistance. Talented, leading a new smart travel experience Touch a very young and smart car.
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto netaGt(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/public/storage/cars/7fdWbQK8rsxAid456F7zwCFsqAIcKaibwZH1rMVS.webp"));
+        sendPhoto.setCaption("""
+                Neta GT
+                
+                ✅Battery capacity, kW: 74.5
+                ✅Number of seats: 4
+                ✅Maximum speed, km/h: 190
+                ✅Power reserve (NEDC), km: 650
+                ✅Power, kW/hp: 170
+                ✅Drive unit: rear
+                
+                Chinese firm Hozon Auto has unveiled the Neta GT electric two-door coupe. The novelty has an athletic exterior design and is primarily notable for the unusual design of the head optics.
+                
+                The headlight units of the model are in the form of boomerangs and extend far into the front fenders. And the muscular hood with a pair of spectacular inserts catches the eye.
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto zeeker007(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/public/storage/cars/o81wp9OhfwgTCIkaXwEoFqhO0Dsgxx7Mh3VDFw47.webp"));
+        sendPhoto.setCaption("""
+                Zeeker 007
+                
+                ✅Battery capacity, kW: 70
+                ✅Acceleration 0-100 km, sec: 2,84
+                ✅Power: 421kW / 224Nm
+                ✅Drive unit: Full
+                ✅Power reserve, km: 688
+                ✅Number of seats: 5
+                ✅Maximum speed, km/h: 210
+
+                The official premiere of the Zeekr 007 electric car took place at the Guangzhou Motor Show. This is the first sedan of the Chinese brand owned by the Geely concern. With a length of 4865 mm, the car is comparable to the Tesla Model 3. The cost of the new product was 229,900 yuan, and if you make an advance payment, a discount of 6 thousand yuan is given. Thus, the price is reduced to approximately 31 thousand dollars or 2.75 million rubles. In the first 30 minutes after the start of accepting pre-orders, more than 5 thousand were received.
+                """);
+
+        return sendPhoto;
+    }
 }
