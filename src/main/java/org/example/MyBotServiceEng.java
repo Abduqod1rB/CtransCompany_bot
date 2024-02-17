@@ -500,7 +500,6 @@ public class MyBotServiceEng {
     }
 
 
-
     public SendMessage kanlkulyator(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -534,7 +533,7 @@ public class MyBotServiceEng {
         return sendMessage;
     }
 
-    public SendMessage settingsEng (Long chatId){
+    public SendMessage settingsEng(Long chatId) {
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -565,13 +564,15 @@ public class MyBotServiceEng {
         return sendMessage;
     }
 
-    public SendPhoto bydSeal(Long chatId){
+    //---Sedan boshlanish---\\
+
+    public SendPhoto bydSeal(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/GbnFoweKIIJ8SGRcR3X1qaBAmgizk9E8798rn536.webp"));
         sendPhoto.setCaption("""
                 BYD Seal
-                
+                                
                 ✅Battery capacity, kW: 82,5       
                 ✅Acceleration 0-100 km, sec: 3,8  
                 ✅Power, kW/hp: 390/530            
@@ -580,20 +581,19 @@ public class MyBotServiceEng {
                 ✅Number of seats: 5
                 ✅Maximum speed, km/h: 180
                 ✅Charging speed (slow / fast), hour: 11,8/0,5
-                
-                The BYD Seal is a compact electric executive sedan produced by BYD Auto. BYD Seal is built on e-Platform 3.0, BYD's new 800-volt automotive platform.
+                                
                 """);
 
         return sendPhoto;
     }
 
-    public SendPhoto bydHan(Long chatId){
+    public SendPhoto bydHan(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/G5LEALmmX7YN3h2S0ejHxggKreWq0hgj0rkNV3zI.webp"));
         sendPhoto.setCaption("""
                 BYD Han
-                
+                                
                 ✅Battery capacity, kW: 85,4    
                 ✅Acceleration 0-100 km, sec: 3,9
                 ✅Power, kW/hp: 380/517         
@@ -602,79 +602,75 @@ public class MyBotServiceEng {
                 ✅Number of seats: 5
                 ✅Maximum speed, km/h: 185
                 ✅Charging speed (slow / fast), hour: 12,2/0,5
-                
-                BYD Han can boast a beautiful, stylish, distinctive and presentable look - a predatory front with narrow headlights and relief bumper, solid silhouette with a long hood, expressive sides and a small "tail" of the trunk, graceful stern with stylish lights.
+                                
                 """);
 
         return sendPhoto;
     }
 
-    public SendPhoto chevroletMonzaAtmo(Long chatId){
+    public SendPhoto chevroletMonzaAtmo(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/7XZX6Aa66UBk54V6XkdOikpRj7MaSpDsfdPEecaw.webp"));
         sendPhoto.setCaption("""
                 Chevrolet Monza 1.5L Atmo
-                
+                                
                 ✅Engine: 1.5 L (113 hp)    
                 ✅Transmission: 6-AT (Robot)
                 ✅Acceleration (0-100 km/h): 12.9 s         
                 ✅Fuel type: Petrol                 
                 ✅Drive unit: Full
                 ✅Number of seats: 5
-               
-                Chevrolet Monza sedan, new model 2023, front wheel drive. Gasoline engine - 1.5 liters, 113 horsepower, 6-speed automatic transmission.                
+                               
                 """);
 
         return sendPhoto;
     }
 
-    public SendPhoto chevroletMonzaTurbo(Long chatId){
+    public SendPhoto chevroletMonzaTurbo(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/b3iKeMlJtqB2tNlBX4F9UYXbWLtrXRqJiD9ht8Sm.webp"));
         sendPhoto.setCaption("""
                 Chevrolet Monza 1.3L Turbo
-                
+                                
                 ✅Engine: 1.3L Tubro (163 hp)    
                 ✅Transmission: 6-AT (Robot)
                 ✅Acceleration (0-100 km/h): 9.2 s         
                 ✅Fuel type: Petrol                 
                 ✅Drive unit: Full
                 ✅Drive unit: Full
-               
-                Chevrolet Monza sedan, new model 2023, front wheel drive. Gasoline engine - 1.3 liters (Turbo), 163 horsepower, 6-speed automatic transmission.            
+                               
                 """);
 
         return sendPhoto;
     }
 
-    public SendPhoto HondaCriderTurbo(Long chatId){
+    public SendPhoto HondaCriderTurbo(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/WWWDezhpGgYHzzR9VApgwmj9eeNyNtW7OAlYygCk.webp"));
         sendPhoto.setCaption("""
                 Honda Crider 1.0L Turbo
-                
+                                
                 ✅Engine capacity: 1.0 L Turbo   
                 ✅Engine's type: Petrol
                 ✅Consumption: 5.0 L     
                 ✅Power: 122 HP                 
                 ✅Acceleration to 100: 10.7 s
-               
-                Honda Crider is a C-class sedan, front-wheel drive. Petrol engines with a capacity of 122 horsepower.
+                               
                 """);
 
         return sendPhoto;
     }
 
-    public SendPhoto leapMotorC01(Long chatId){
+    public SendPhoto leapMotorC01(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/gAvBM75WivxQrmjUD4oBWpXvhS0MjkTfLEvz2v5d.webp"));
         sendPhoto.setCaption("""
                 LeapMotor C01
-                
+                                
                 ✅Battery capacity, kW: 90   
                 ✅Acceleration 0-100 km, sec: 3,6
                 ✅Power, kW/hp: 400/544     
@@ -682,20 +678,19 @@ public class MyBotServiceEng {
                 ✅Range (NEDC), km: 630
                 ✅Number of seats: 5
                 ✅Maximum speed, km/h: 180
-               
-                Leapmotor C01 Advance in its life is an electric car with Deluxe technology where there is an integration of innovative technologies for a soft and elegant appearance. Focus on high quality and satisfaction of various needs.
+                               
                 """);
 
         return sendPhoto;
     }
 
-    public SendPhoto HiPhiZ(Long chatId){
+    public SendPhoto HiPhiZ(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/TmaFh6qeILQV09RdIovwNghxCrx9BASiaMFvgdO9.webp"));
         sendPhoto.setCaption("""
                 HiPhi Z
-                
+                                
                 ✅Battery capacity, kW: 120
                 ✅Acceleration 0-100 km, sec: 3,8
                 ✅Power, kW/hp: 494/672
@@ -704,20 +699,19 @@ public class MyBotServiceEng {
                 ✅Number of seats: 4
                 ✅Maximum speed, km/h: 200
                 ✅Charging speed (slow / fast), hour: 12,4/0,92               
-                
-                Welcome to the future of the automotive industry! Introducing the HiPhi Z, the epitome of cutting-edge technology and incomparable style that redefines the modern automotive dream. Combining elegance and innovation, HiPhi Z embodies a sophisticated design that is truly admirable at first sight. Harmoniously combining sleek, sleek lines with eye-catching details, this car is designed to grab attention on the road and remain the epitome of modern car design for years to come.
+                                
                 """);
 
         return sendPhoto;
     }
 
-    public SendPhoto imMotorsL7(Long chatId){
+    public SendPhoto imMotorsL7(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/n7IgJoqfWsM0w5ljA24sr0wBGUq7lrUp3g9bb5wi.webp"));
         sendPhoto.setCaption("""
                 IM Motors L7
-                
+                                
                 ✅Battery capacity, kW: 90
                 ✅Acceleration 0-100 km, sec: 3,7
                 ✅Power: 445kW / 605Nm
@@ -726,19 +720,18 @@ public class MyBotServiceEng {
                 ✅Number of seats: 5
                 ✅Maximum speed, km/h: 200             
 
-                Zhiji Auto is a brand jointly created by SAIC Group, Zhangjiang Hi-Tech and Alibaba Group. His Zhiji L7 is an all-electric executive sedan, size 3,100mm wheelbase and dual-engine system, 0-100km/h in just 3.9 seconds. The Zhiji L7 electric car has a length, width and height of 5098/1960/1485 mm and a wheelbase of 3100 mm. Drag coefficient 0.21.
                 """);
 
         return sendPhoto;
     }
 
-    public SendPhoto geometryG6(Long chatId){
+    public SendPhoto geometryG6(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/Zl6MhKhdsf1r5CfqLELkB4DnHjaliEh4XoTU6I56.webp"));
         sendPhoto.setCaption("""
                 Geometry G6
-                
+                                
                 ✅Battery capacity, kW: 70
                 ✅Acceleration 0-100 km, sec: 6,9
                 ✅Power: 150kW / 204Nm
@@ -747,19 +740,18 @@ public class MyBotServiceEng {
                 ✅Number of seats: 5
                 ✅Maximum speed, km/h: 150
 
-                The front of the car received a closed grille, and a glowing Geely Logo was installed under the hood. The main optics of the model has a sharp shape. Also of note is the use of hidden door handles and five-spoke rims. The G6 headlight group is irregularly shaped and connected by a black decorative stripe, forming a penetrating design.
                 """);
 
         return sendPhoto;
     }
 
-    public SendPhoto bmwi3eDrive40(Long chatId){
+    public SendPhoto bmwi3eDrive40(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/eQXmyVoEXPqMbHTXPKK2SrtMvKeFYs9BkaYGTs70.webp"));
         sendPhoto.setCaption("""
                 BMW i3 eDrive40
-                
+                                
                 ✅Battery capacity, kW: 78,92
                 ✅Acceleration 0-100 km, sec: 5,6
                 ✅Power, kW/hp: 250/340
@@ -768,20 +760,19 @@ public class MyBotServiceEng {
                 ✅Number of seats: 5
                 ✅Maximum speed, km/h: 180
                 ✅Charging speed (slow / fast), hour: 7,5/0,68
-                
-                The BMW i3 represents an uncompromising and attractive solution for the personal mobility requirements of the present and future in urban areas. The world's first premium car specifically designed to run entirely on electric power - and therefore emission-free.
+                                
                 """);
 
         return sendPhoto;
     }
 
-    public SendPhoto bmwi4eDrive35(Long chatId){
+    public SendPhoto bmwi4eDrive35(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/gwvcNdDemXzj2KnSzE4KnrAiEQbr722zUqpkNwsw.webp"));
         sendPhoto.setCaption("""
                 BMW i4 eDrive35
-                
+                                
                 ✅Battery capacity, kW: 83,9
                 ✅Acceleration 0-100 km, sec: 5,7
                 ✅Power: 250kW / 340Nm
@@ -790,19 +781,18 @@ public class MyBotServiceEng {
                 ✅Number of seats: 5
                 ✅Maximum speed, km/h: 182
 
-                The BMW i4, the first electric car in the Gran Coupe, offers great dynamics, high comfort and excellent qualities for everyday use. The five-door variant is based on the fifth generation of BMW eDrive, and this new product is sporty. The power of the machine is 400 kW (544 hp). With a range of up to 590 kilometers and five full-seats, it's the perfect companion for any trip.
                 """);
 
         return sendPhoto;
     }
 
-    public SendPhoto bmwi5eDrive40(Long chatId){
+    public SendPhoto bmwi5eDrive40(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/5Pkx8cb6yJEhEPsJdXDBzEmfVDOr361aBdZILSLb.webp"));
         sendPhoto.setCaption("""
                 BMW i5 eDrive40
-                
+                                
                 ✅Battery capacity, kW: 81.2
                 ✅Acceleration 0-100 km, sec: 6
                 ✅Power: 340kW / 586Nm
@@ -811,20 +801,18 @@ public class MyBotServiceEng {
                 ✅Number of seats: 5
                 ✅Maximum speed, km/h: 193
 
-                BMW’s first all-electric 5 Series executive sedan, BMW i5 is based on the CLAR platform. So, it’s not a pure electric model. But there are a couple of new features that might make you forget about the old underpinnings.First off, BMW’s ‘business’ sedan now offers gaming experience! It’s called Air Console and there are already 15 or so games available to play.
-                The second most noteworthy feature is the new intelligent heat pump system. It’ll allow BMW i5 to consume less energy in cold weather and easily pre-condition the battery pack before charging
                 """);
 
         return sendPhoto;
     }
 
-    public SendPhoto netaS(Long chatId){
+    public SendPhoto netaS(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/public/storage/cars/fktgieIK4VYEVFIP0uN36tNjxRymXuAX2LIluq2Q.webp"));
         sendPhoto.setCaption("""
                 Neta S
-                
+                                
                 ✅Battery capacity, kW: 91
                 ✅Acceleration 0-100 km, sec: 3,9
                 ✅Power, kW/hp: 340/462
@@ -834,41 +822,37 @@ public class MyBotServiceEng {
                 ✅Maximum speed, km/h: 185
                 ✅Charging speed (slow / fast), hour: 17/0,58
 
-                The perfect combination of technological intelligence and sporty aesthetics. Super intelligent driving assistance. Talented, leading a new smart travel experience Touch a very young and smart car.
                 """);
 
         return sendPhoto;
     }
 
-    public SendPhoto netaGt(Long chatId){
+    public SendPhoto netaGt(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/public/storage/cars/7fdWbQK8rsxAid456F7zwCFsqAIcKaibwZH1rMVS.webp"));
         sendPhoto.setCaption("""
                 Neta GT
-                
+                                
                 ✅Battery capacity, kW: 74.5
                 ✅Number of seats: 4
                 ✅Maximum speed, km/h: 190
                 ✅Power reserve (NEDC), km: 650
                 ✅Power, kW/hp: 170
                 ✅Drive unit: rear
-                
-                Chinese firm Hozon Auto has unveiled the Neta GT electric two-door coupe. The novelty has an athletic exterior design and is primarily notable for the unusual design of the head optics.
-                
-                The headlight units of the model are in the form of boomerangs and extend far into the front fenders. And the muscular hood with a pair of spectacular inserts catches the eye.
+                                
                 """);
 
         return sendPhoto;
     }
 
-    public SendPhoto zeeker007(Long chatId){
+    public SendPhoto zeeker007(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/public/storage/cars/o81wp9OhfwgTCIkaXwEoFqhO0Dsgxx7Mh3VDFw47.webp"));
         sendPhoto.setCaption("""
                 Zeeker 007
-                
+                                
                 ✅Battery capacity, kW: 70
                 ✅Acceleration 0-100 km, sec: 2,84
                 ✅Power: 421kW / 224Nm
@@ -877,9 +861,479 @@ public class MyBotServiceEng {
                 ✅Number of seats: 5
                 ✅Maximum speed, km/h: 210
 
-                The official premiere of the Zeekr 007 electric car took place at the Guangzhou Motor Show. This is the first sedan of the Chinese brand owned by the Geely concern. With a length of 4865 mm, the car is comparable to the Tesla Model 3. The cost of the new product was 229,900 yuan, and if you make an advance payment, a discount of 6 thousand yuan is given. Thus, the price is reduced to approximately 31 thousand dollars or 2.75 million rubles. In the first 30 minutes after the start of accepting pre-orders, more than 5 thousand were received.
                 """);
 
         return sendPhoto;
     }
+
+    //---Sedan yakunlanish---\\
+
+    //---Krossover boshlanish---\\
+
+    public SendPhoto bydSongPlusChampionEdition(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/6xKSj76RdxhSGrindKkIbsV6J4MZJeI4bhF7SvK9.webp"));
+        sendPhoto.setCaption("""
+                BYD Song Plus Champion Edition
+                                
+                ✅Batareya quvvati: 87,04 kVt/soat
+                ✅Displey: 15,6" multimedia
+                ✅Karaoke funksiyasi: Bor
+                ✅Joylar soni: 5
+                ✅Maksimal tezlik, km/soat: 175
+                ✅Quvvat zaxirasi (NEDC): 605 km
+                ✅Avtomatik to'xtash: Bor
+                ✅Tezlashuv 0-100 km, sek: 8,5
+                ✅Quvvat, kVt/hp: 160/218
+                ✅Haydovchi blok: Old
+
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto bydTengEV(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/MkAX3VNbdNuNqsWJvz3KZgyK1QJVGJpxOcf6rIRP.webp"));
+        sendPhoto.setCaption("""
+                BYD Teng EV
+                                
+                ✅Battery capacity, kW: 108,8
+                ✅Acceleration 0-100 km, sec: 4,4
+                ✅Power, kW/hp: 380/517
+                ✅Drive unit: Full
+                ✅Range (NEDC), km: 635
+                ✅Number of seats: 7
+                ✅Maximum speed, km/h: 180
+                ✅Charging speed (slow / fast), hour: 16,5/0,5
+                
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto bydYuanPlusEV(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/GkibsVTK9z55KFCWHnci3A7xZgKGMydhoHGKIdjy.webp"));
+        sendPhoto.setCaption("""
+                BYD Yuan Plus EV
+                                
+                ✅Battery capacity, kW: 60.5
+                ✅Acceleration 0-100 km, sec: 7,3
+                ✅Power, kW/hp: 150/204
+                ✅Drive unit: Front
+                ✅Range (NEDC), km: 510
+                ✅Number of seats: 5
+                ✅Maximum speed, km/h: 160
+                ✅Charging speed (slow / fast), hour: 8,64/0,5
+                
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto zeekr001(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/SWxFK8ht6WR0bB2HfhCw1xlONX9RjAN5RuZG18fm.webp"));
+        sendPhoto.setCaption("""
+                Zeekr 001
+                                
+                ✅Power reserve (NEDC), km: 650
+                ✅Battery capacity, kWh: 100
+                ✅Power, kW/hp: 400/544
+                ✅Drive unit: Full
+                ✅Acceleration 0-100 km, sec: 3,8
+                ✅Number of seats: 5
+                ✅Maximum speed, km/h: 200
+                
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto zeekrX(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/41pwueDIG22eJtsPOvQvNm4Cx7tR9nkoSM1VAT2o.webp"));
+        sendPhoto.setCaption("""
+                Zeekr X
+                                
+                ✅Power reserve (NEDC), km: 500
+                ✅Battery capacity, kWh: 66
+                ✅Power, kW/hp: 315/428
+                ✅Drive unit: Full
+                ✅Acceleration 0-100 km, sec: 3,8
+                ✅Number of seats: 4
+                ✅Maximum speed, km/h: 190
+                
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto leapMotorC11(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/aucwGVtBiLRBOpBhJj3qMhb8oQ7ztlh0bvB5zI3Y.webp"));
+        sendPhoto.setCaption("""
+                Leap Motor C11
+                                
+                ✅Battery capacity, kW: 90
+                ✅Acceleration 0-100 km, sec: 4,5
+                ✅Power, kW/hp: 400/544
+                ✅Drive unit: Full
+                ✅Range (NEDC), km: 580
+                ✅Number of seats: 5
+                ✅Maximum speed, km/h: 200
+                
+                """);
+
+        return sendPhoto;
+    }
+
+
+    public SendPhoto GeelyGeometryE(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/juAVI9k9BjoAUgS3eVAV5Rc0gREwuRVBFDfginS4.webp"));
+        sendPhoto.setCaption("""
+                Geely Geometry E
+                                
+                ✅Battery capacity, kW: 39,4
+                ✅Acceleration 0-100 km, sec: 8,8
+                ✅Power, kW/hp: 60/82
+                ✅Drive unit: Full
+                ✅Range (NEDC), km: 401
+                ✅Number of seats: 4
+                ✅Maximum speed, km/h: 102
+                
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto denzaN7(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/wvBTQdrUhyfgKY8S7xqOseeicOmtGL7wLGNnY7E6.webp"));
+        sendPhoto.setCaption("""
+                Denza N7
+                
+                ✅Battery capacity, kW: 91,3
+                ✅Acceleration 0-100 km, sec: 3,9
+                ✅Power, kW/hp: 390/530
+                ✅Drive unit: Full
+                ✅Power reserve (NEDC), km: 630
+                ✅Number of seats: 5
+                ✅Maximum speed, km/h: 180
+                
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto hiPhiY(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/jbLkedyoEHmhdmhGfmWPDhee6a3jqqFgq55GYxq8.webp"));
+        sendPhoto.setCaption("""
+                HiPhi Y
+                                
+                ✅Battery capacity, kW: 115
+                ✅Acceleration 0-100 km, sec: 4,7
+                ✅Power, kW/hp: 371/505
+                ✅Drive unit: Full
+                ✅Power reserve (NEDC), km: 765
+                ✅Number of seats: 5
+                ✅Maximum speed, km/h: 190
+                
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto nioES8(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/zQV9rA6sYRm8zNgnxBdtHYdR2XczJUnxElxkOeVc.webp"));
+        sendPhoto.setCaption("""
+                NIO ES8
+                                
+                ✅Battery capacity, kW: 100
+                ✅Acceleration 0-100 km, sec: 4,1
+                ✅Power, kW/hp: 480/653
+                ✅Drive unit: Full
+                ✅Power reserve (NEDC), km: 605
+                ✅Number of seats: 6
+                ✅Maximum speed, km/h: 200
+                ✅Charging speed (slow / fast), hour: 0,5
+                          
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto nioEC7(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/xoOfzfnOEU35Da860RQf7tmwLu4tmSzHFgbGKESz.webp"));
+        sendPhoto.setCaption("""
+                NIO EC7
+                                
+                ✅Battery capacity, kW: 100
+                ✅Acceleration 0-100 km, sec: 3,8
+                ✅Power, kW/hp: 480/653
+                ✅Drive unit: Full
+                ✅Power reserve (NEDC), km: 635
+                ✅Number of seats: 5
+                ✅Maximum speed, km/h: 200
+                ✅Charging speed (slow / fast), hour: 0,33
+                                
+                """);
+
+        return sendPhoto;
+    }
+
+
+    public SendPhoto liAutoL7(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/RNQBVoacpvXjimNtBxZfZDfJN00HVDL6N7XQAM4l.webp"));
+        sendPhoto.setCaption("""
+                LI Auto L7
+                                
+                ✅Battery capacity, kW: 42.8
+                ✅Acceleration 0-100 km, sec: 5.3
+                ✅Power: 330 kW / 620 Nm
+                ✅Power reserve, km: 1315
+                ✅Number of seats: 5
+                ✅Maximum speed, km/h: 180
+                         
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto liAutoL9(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/hYabLzhJzyKeKAmbXydaT5kgK7za47MAZLOQzwO6.webp"));
+        sendPhoto.setCaption("""
+                LI Auto L9
+                                
+                ✅Battery capacity, kW: 44.5
+                ✅Acceleration 0-100 km, sec: 5.3
+                ✅Power: 330 kW / 620 Nm
+                ✅Power reserve, km: 1100
+                ✅Number of seats: 6
+                ✅Maximum speed, km/h: 180
+                
+                """);
+        return sendPhoto;
+    }
+
+    public SendPhoto IMMotorsLS7(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/tpG5urfPNaVYhLY7sEkYmfBYIo63zuWsa88nOq4U.webp"));
+        sendPhoto.setCaption("""
+                IM Motors LS7
+                                
+                ✅Battery capacity, kW: 100
+                ✅Acceleration 0-100 km, sec: 4,5
+                ✅Power: 425kW / 578Nm
+                ✅Drive unit: Full
+                ✅Power reserve, km: 625
+                ✅Number of seats: 5
+                ✅Maximum speed, km/h: 200
+                
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto geometryM6(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/BgJZKJoWenpHEV6sbSeLRzWFmKYN2E9QcxqyFyvM.webp"));
+        sendPhoto.setCaption("""
+                Geometry M6
+                                
+                ✅Battery capacity, kW: 70
+                ✅Acceleration 0-100 km, sec: 6,9
+                ✅Power: 150kW / 204Nm
+                ✅Drive unit: Front
+                ✅Power reserve, km: 580
+                ✅Power reserve, km: 580
+                ✅Maximum speed, km/h: 150
+
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto lIAutoL8(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/jGQVsR2nxeEmeBVuOd07Uo3OffAFU9Ptj5HBw4sU.webp"));
+        sendPhoto.setCaption("""
+                LI Auto L8
+                                
+                ✅Battery capacity, kW: 42.8
+                ✅Acceleration 0-100 km, sec: 5.5
+                ✅Power, kW/hp: 449
+                ✅Drive unit: Full
+                ✅Power reserve (NEDC), km: 1315
+                ✅Number of seats: 5
+                ✅Maximum speed, km/h: 180
+
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto avatr11(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/feyQk6GFzkFU4u0IB9KKaVHgHdsOrUdbRLCeRFv7.webp"));
+        sendPhoto.setCaption("""
+                Avatr 11
+                                
+                ✅Battery capacity, kW: 116,79
+                ✅Acceleration 0-100 km, sec: 4,5
+                ✅Power: 425kW / 578 Nm
+                ✅Drive unit: Full
+                ✅Power reserve, km: 680
+                ✅Number of seats: 4
+                ✅Maximum speed, km/h: 200
+
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto hiPhiX(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/mFaMd0SDGOiNIRMzXrbHKdyKlkoXN5zRqAVK1Obv.webp"));
+        sendPhoto.setCaption("""
+                HiPhi X
+                                
+                ✅Battery capacity, kW: 94,3
+                ✅Acceleration 0-100 km, sec: 4
+                ✅Power: 440kW / 598Nm
+                ✅Drive unit: Full
+                ✅Power reserve, km: 550
+                ✅Number of seats: 4
+                ✅Maximum speed, km/h: 200
+
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto lIAutoOne(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/Rio4OVECZKtP6rATA0xAmwk66swm7pt9i5JmEPLU.webp"));
+        sendPhoto.setCaption("""
+                LI Auto One
+                                
+                ✅Battery capacity, kW: 40.5
+                ✅Acceleration 0-100 km, sec: 6.5
+                ✅Power: 244kW / 552Nm
+                ✅Drive unit: Full
+                ✅Power reserve, km: 890
+                ✅Number of seats: 5
+                ✅Maximum speed, km/h: 172
+
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto lynkCo09EMP(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/tS5di4emmprxFcaSAEvu7KeqU8nV2cJpt0WbHTB5.webp"));
+        sendPhoto.setCaption("""
+                Lynk&Co 09EM-P
+                                
+                ✅Battery capacity, kW: 40
+                ✅Number of seats: 5
+                ✅Drive unit: Full
+                ✅Acceleration 0-100 km, sec: 5.9
+                ✅Power, kW/hp: 540
+
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto chevroletSeeker(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/sh3Tmy6GCsarJzred5lUMaLxgNM6sECxsApeFUX9.webp"));
+        sendPhoto.setCaption("""
+                Chevrolet Seeker
+                                
+                ✅Volume: 1.5
+                ✅Consumption: 6.6
+                ✅Power, kW/hp: 184/135
+                ✅Drive unit: Front
+                ✅Box: Variable speed drive
+                ✅Number of seats: 5
+                ✅Maximum speed, km/h: 205
+                
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto bydSongL(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/qrSJ9LUiyqxQm3akh3668mKbbe3Z094IG7pZx8hp.webp"));
+        sendPhoto.setCaption("""
+                BYD Song L
+                                
+                ✅Battery capacity, kW: 87
+                ✅Acceleration 0-100 km, sec: 4,3
+                ✅Power: 380kW / 517Nm
+                ✅Drive unit: Full
+                ✅Power reserve, km: 602
+                ✅Number of seats: 5
+                ✅Maximum speed, km/h: 200
+                
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto bydYangwangU8(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/qrSJ9LUiyqxQm3akh3668mKbbe3Z094IG7pZx8hp.webp"));
+        sendPhoto.setCaption("""
+                BYD Yangwang U8
+                                
+                ✅Battery capacity, kW: 49.05
+                ✅Acceleration 0-100 km, sec: 3.6
+                ✅Power: 880kW / 1280Nm
+                ✅Drive unit: Full
+                ✅Power reserve, km: 405
+                ✅Number of seats: 5
+                ✅Maximum speed, km/h: 280
+                
+                """);
+
+        return sendPhoto;
+    }
+
+
+    //---Krossover yakunlanish---\\
 }
