@@ -120,21 +120,22 @@ public class MyBotServiceUz {
         KeyboardRow row1 = new KeyboardRow();
 
         KeyboardButton button = new KeyboardButton();
-        button.setText("✈️Havo transporti");
-
         KeyboardButton button1 = new KeyboardButton();
-        button1.setText("\uD83D\uDE88Temir yo'l transporti");
-
         KeyboardButton button2 = new KeyboardButton();
-        button2.setText("\uD83D\uDE98Avtomobil transporti");
-
         KeyboardButton button3 = new KeyboardButton();
+
+        button.setText("✈️Havo transporti");
+        button1.setText("\uD83D\uDE88Temir yo'l transporti");
+        button2.setText("\uD83D\uDE98Avtomobil transporti");
         button3.setText("⬅️Orqaga");
 
-        row.add(button);row.add(button1);
-        row1.add(button2);row1.add(button3);
+        row.add(button);
+        row.add(button1);
+        row1.add(button2);
+        row1.add(button3);
 
-        rows.add(row);rows.add(row1);
+        rows.add(row);
+        rows.add(row1);
 
         reply.setKeyboard(rows);
         reply.setResizeKeyboard(true);
@@ -154,12 +155,24 @@ public class MyBotServiceUz {
         KeyboardButton button4 = new KeyboardButton();
         KeyboardButton button5 = new KeyboardButton();
         KeyboardButton button6 = new KeyboardButton();
-        button1.setText("✈️Havo transporti");button2.setText("\uD83D\uDE98Avtomobil transporti");
-        button3.setText("\uD83D\uDE88Temir yo'l transporti");button4.setText("Yivu va Guanchjou da ombor xizmatlari");
-        button5.setText("Bojxona rasmiylashtiruvi xizmatlari");button6.setText("⬅️Orqaga");
-        row.add(button1);row.add(button2);row.add(button3);
-        row1.add(button4);row1.add(button5);row1.add(button6);
-        rowList.add(row);rowList.add(row1);
+
+        button1.setText("✈️Havo transporti");
+        button2.setText("\uD83D\uDE98Avtomobil transporti");
+        button3.setText("\uD83D\uDE88Temir yo'l transporti");
+        button4.setText("Yivu va Guanchjou da ombor xizmatlari");
+        button5.setText("Bojxona rasmiylashtiruvi xizmatlari");
+        button6.setText("⬅️Orqaga");
+
+        row.add(button1);
+        row.add(button2);
+        row.add(button3);
+        row1.add(button4);
+        row1.add(button5);
+        row1.add(button6);
+
+        rowList.add(row);
+        rowList.add(row1);
+
         replyKeyboardMarkup.setKeyboard(rowList);
         replyKeyboardMarkup.setResizeKeyboard(true);
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
