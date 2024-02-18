@@ -113,6 +113,34 @@ public class MyBotServiceRus {
         return sendMessage;
     }
 
+    public SendMessage kanlkulyatorRus(Long chatId) {
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Выберите транспорт, который вам нужен");
+        ReplyKeyboardMarkup replyKeyboardMarkUp = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rows = new ArrayList<>();
+        KeyboardRow row = new KeyboardRow();
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardButton button = new KeyboardButton();
+        KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
+        KeyboardButton button3 = new KeyboardButton();
+        button.setText("✈️\uFE0FАвиаперевозки");
+        button1.setText("\uD83D\uDE88Железнодорожные перевозки");
+        button2.setText("\uD83D\uDE98Автоперевозки");
+        button3.setText("⬅️\uFE0FНазад");
+        row.add(button);
+        row.add(button1);
+        row1.add(button2);
+        row1.add(button3);
+        rows.add(row);
+        rows.add(row1);
+        replyKeyboardMarkUp.setKeyboard(rows);
+        replyKeyboardMarkUp.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkUp);
+        return sendMessage;
+    }
+
 
     public SendPhoto aboutUsRus(Long chatId) {
 
@@ -404,7 +432,7 @@ public class MyBotServiceRus {
         return sendMessage;
     }
 
-    public SendMessage servicesRus(Long chatId) {
+    public SendMessage xizmatlarRus(Long chatId) {
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -427,7 +455,7 @@ public class MyBotServiceRus {
         button3.setText("Складовые услуги в Иу и Гуанчжоу");
         button4.setText("Услуги таможеннего оформления");
         button5.setText("⬅️\uFE0FНазад");
-        row.add(button); 
+        row.add(button);
         row.add(button1);
         row1.add(button2);
         row1.add(button3);
@@ -442,6 +470,33 @@ public class MyBotServiceRus {
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
 
         return sendMessage;
+    }
+
+    public SendPhoto havotransportiRus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQadhwXWWBK6q3N87eDm4XylkA9kFEroW9Aw&usqp=CAU"));
+        sendPhoto.setCaption("Компания CTRANS предлагает авиаперевозки широкого спектра товаров с большими габаритами и весом. Авиаперевозки Китай-Узбекистан выбор большинства Узбекистанцев. Мы гарантируем вам быструю, безопасную, и качественную перевозку за минимальный срок.\n" +
+                "\n" +
+                "Сотрудники CTRANS бережно относятся и контролируют перевозку каждого товара. С нами вы будете уверены, что ваш товар прибудет в целости и сохранности.");
+        return sendPhoto;
+    }
+
+    public SendPhoto avtomobiltransportiRus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQadhwXWWBK6q3N87eDm4XylkA9kFEroW9Aw&usqp=CAU"));
+        sendPhoto.setCaption("Грузоперевозки автомобильным транспортом являются важнейшей составной рынка транспортных услуг, причем именно это направление считается лидером в сфере транспортировки  грузов от отправителя к получателю.\n" +
+                "\n" +
+                "По сравнению с другими видами транспорта, за автотранспортом сегодня остаются серьезные приоритеты. Среди достоинств, которыми обладают автотранспортные грузоперевозки:\n" +
+                "\n" +
+                "маневренность;;\n" +
+                "широкие возможности для логистической компании составлять наиболее выгодные маршруты следования;\n" +
+                "оперативность доставки;\n" +
+                "широкий спектр перевозимых товаров;\n" +
+                "формирование сборных автомобильных грузов, объединяющих посылки от нескольких компаний;\n" +
+                "большой выбор средств передвижения с учетом таких факторов, как вес, формат и габариты поклажи, наличие легковоспламеняемых товаров и быстропортящихся продуктов;");
+        return sendPhoto;
     }
 
     public SendMessage carsFromChinaRus(Long chatId) {
@@ -482,34 +537,6 @@ public class MyBotServiceRus {
     }
 
 
-
-    public SendMessage kanlkulyatorRus(Long chatId) {
-        SendMessage sendMessage = new SendMessage();
-        sendMessage.setChatId(chatId);
-        sendMessage.setText("Выберите транспорт, который вам нужен");
-        ReplyKeyboardMarkup replyKeyboardMarkUp = new ReplyKeyboardMarkup();
-        List<KeyboardRow> rows = new ArrayList<>();
-        KeyboardRow row = new KeyboardRow();
-        KeyboardRow row1 = new KeyboardRow();
-        KeyboardButton button = new KeyboardButton();
-        KeyboardButton button1 = new KeyboardButton();
-        KeyboardButton button2 = new KeyboardButton();
-        KeyboardButton button3 = new KeyboardButton();
-        button.setText("✈️\uFE0FАвиаперевозки");
-        button1.setText("\uD83D\uDE88Железнодорожные перевозки");
-        button2.setText("\uD83D\uDE98Автоперевозки");
-        button3.setText("⬅️\uFE0FНазад");
-        row.add(button);
-        row.add(button1);
-        row1.add(button2);
-        row1.add(button3);
-        rows.add(row);
-        rows.add(row1);
-        replyKeyboardMarkUp.setKeyboard(rows);
-        replyKeyboardMarkUp.setResizeKeyboard(true);
-        sendMessage.setReplyMarkup(replyKeyboardMarkUp);
-        return sendMessage;
-    }
     public SendMessage settingsRus (Long chatId){
 
         SendMessage sendMessage = new SendMessage();
@@ -1378,7 +1405,7 @@ public class MyBotServiceRus {
     public SendPhoto BYDSeagullRus(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/ffyw1AMu4XFpkyvdXz419VxQqWR63iyM2rZNO2jL.webp"));
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/XZBuWOU3s2lQzubkw5PZvNlQ9hR64GhnZk1EUprF.webp"));
 
         sendPhoto.setCaption("""
                 BYD Seagull
@@ -1465,6 +1492,58 @@ public class MyBotServiceRus {
                 """);
         return sendPhoto;
     }
+    //Miniven
+
+
+
+
+
+    public SendPhoto DenzaD9Rus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile(""));
+
+        sendPhoto.setCaption("""
+                Denza D9
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 103,36
+                ✅Разгон 0-100 км, сек: 6,9
+                ✅Мощность, кВт/л.с: 275/374     
+                ✅Привод: Полный
+                ✅Запас хода (NEDC), км: 600
+                ✅Количество мест: 7
+                ✅Максимальная скорость, км/ч: 190
+                
+                Denza D9 – полноразмерный минивэн представительского класса. Всего за полчаса новинка со стартовым ценником в 50 000 долларов собрала 3000 заказов. Минивэн Denza D9 – вторая модель одноименного бренда, созданного BYD Auto и Mercedes-Benz в 2010 году. Презентация новинки состоялась в Китае и была столь успешной, что Габаритная длина модели – 5250 мм, ширина – 1960 мм, высота – 1920 мм, размер между осями – 3110 мм.
+                """);
+        return sendPhoto;
+    }
+    public SendPhoto Zeekr009Rus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile(""));
+
+        sendPhoto.setCaption("""
+                Zeekr009
+                Характеристики:
+                
+                ✅Емкость батареи, кВт: 822
+                ✅Разгон 0-100 км, сек: 140
+                ✅Мощность, кВт/л.с: 400/544     
+                ✅Привод: Полный 
+                ✅Запас хода (NEDC), км: 4,5
+                ✅Количество мест: 6
+                ✅Максимальная скорость, км/ч: 190
+               
+                Минивэн Zeekr 009 - это идеальный выбор для тех, кто ценит комфорт, безопасность и экологичность. Большой запас хода, быстрая зарядка и передовые технологии обеспечивают удобство и надежность в использовании.
+                """);
+        return sendPhoto;
+    }
+
+
+
+
 
 
 
