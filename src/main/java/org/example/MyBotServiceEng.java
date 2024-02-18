@@ -121,17 +121,20 @@ public class MyBotServiceEng {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile(new File("D:\\My_Telegram_bots\\CTRANS_bot\\image\\aboutUs.png")));
-        sendPhoto.setCaption("ABOUT US\n" +
-                "<b>Experience in the field of</b>\n" +
-                "<b>logistics services around the</b>\n" +
-                "<b>world.<b>\n" +
-                " \n" +
-                "We pride ourselves on providing the best shipping and\n" +
-                "transportation deals around the world.\n" +
-                " \n" +
-                "✅100% Compensation ✅Online tracking\n" +
-                "✅Experienced Team  ✅Cargo insurance\n" +
-                "✅Support 24/7      ✅Safe warehouse");
+        sendPhoto.setCaption("""
+        ABOUT US
+        
+        Experience in the field of
+        logistics services around the
+        world.
+        
+        We pride ourselves on providing the best shipping and
+        transportation deals around the world.
+        
+        ✅100% Compensation ✅Online tracking
+        ✅Experienced Team  ✅Cargo insurance
+        ✅Support 24/7      ✅Safe warehouse
+        """);
 
         return sendPhoto;
     }
