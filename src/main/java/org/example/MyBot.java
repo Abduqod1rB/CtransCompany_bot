@@ -163,6 +163,27 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
+            if(text.equals("✈️ Havo transporti")){
+                try {
+                    execute(myBotServiceUz.havotransporti(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("✈\uFE0F\uFE0FАвиаперевозки")){
+                try {
+                    execute(myBotServiceRus.havotransportiRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("✈\uFE0F Air transportation")){
+                try {
+                    execute(myBotServiceEng.airTransportation(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
             if(text.equals("\uD83D\uDE99Xitoydan mashinalar")){
                 try {
                     execute(myBotServiceUz.xitoydanmashinalar(chatId));

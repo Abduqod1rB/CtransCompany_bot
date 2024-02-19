@@ -160,9 +160,9 @@ public class MyBotServiceUz {
         KeyboardButton button5 = new KeyboardButton();
         KeyboardButton button6 = new KeyboardButton();
 
-        button1.setText("✈️Havo transporti");
-        button2.setText("\uD83D\uDE98Avtomobil transporti");
-        button3.setText("\uD83D\uDE88Temir yo'l transporti");
+        button1.setText("✈️ Havo transporti");
+        button2.setText("\uD83D\uDE98 Avtomobil transporti");
+        button3.setText("\uD83D\uDE88 Temir yo'l transporti");
         button4.setText("Yivu va Guanchjou da ombor xizmatlari");
         button5.setText("Bojxona rasmiylashtiruvi xizmatlari");
         button6.setText("⬅️Orqaga");
@@ -184,31 +184,7 @@ public class MyBotServiceUz {
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
         return sendMessage;
     }
-    public SendPhoto havotransporti(Long chatId){
-        SendPhoto sendPhoto = new SendPhoto();
-        sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQadhwXWWBK6q3N87eDm4XylkA9kFEroW9Aw&usqp=CAU"));
-        sendPhoto.setCaption("CTRANS katta o'lchamlari va og'irligi bo'lgan keng turdagi tovarlarni havo orqali tashishni taklif qiladi. Xitoy-O'zbekiston bilan havo transporti ko'pchilik o'zbekistonliklarning tanlovidir. Biz sizga eng qisqa vaqt ichida tez, xavfsiz va sifatli tashishni kafolatlaymiz.\n" +
-                "\n" +
-                "CTRANS xodimlari har bir mahsulotga ehtiyotkorlik bilan munosabatda bo'lishadi va tashishni nazorat qilishadi. Biz bilan mahsulotlaringiz xavfsiz va sog'lom yetib kelishiga amin bo'lishingiz mumkin.");
-        return sendPhoto;
-    }
-    public SendPhoto avtomobiltransporti(Long chatId){
-        SendPhoto sendPhoto = new SendPhoto();
-        sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQadhwXWWBK6q3N87eDm4XylkA9kFEroW9Aw&usqp=CAU"));
-        sendPhoto.setCaption("Avtomobil transportida yuk tashish transport xizmatlari bozorining eng muhim tarkibiy qismi bo'lib, aynan shu yo'nalish yuklarni jo'natuvchidan oluvchiga tashish sohasida yetakchi hisoblanadi.\n" +
-                "\n" +
-                "Boshqa transport turlari bilan taqqoslaganda, bugungi kunda avtotransport jiddiy ustuvor yo'nalish bo'lib qolmoqda. Avtotransport yuklarining afzalliklari orasida:\n" +
-                "\n" +
-                "manevr qobiliyati;\n" +
-                "logistika kompaniyasi uchun eng foydali marshrutlarni amalga oshirish uchun keng imkoniyatlar;\n" +
-                "yetkazib berish tezligi;\n" +
-                "tashiladigan tovarlarning keng assortimenti;\n" +
-                "bir nechta kompaniyalarning posilkalarini birlashtirgan holda, guruhli yo'l yuklarini shakllantirish;\n" +
-                "yukning og'irligi, formati va o'lchamlari, yonuvchan tovarlar va tez buziladigan mahsulotlarning mavjudligi kabi omillarni hisobga olgan holda transport vositalarining katta tanlovi;");
-        return sendPhoto;
-    }
+
     public SendMessage xitoydanmashinalar(Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -238,6 +214,49 @@ public class MyBotServiceUz {
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
         return sendMessage;
     }
+    public SendPhoto aboutUsUz(Long chatId) {
+
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/images/content/about-01.webp"));
+        sendPhoto.setCaption("<b>BIZ HAQIMIZDA</b>\n" +
+                "<b>Butun dunyo bo'ylab logistika xizmatlari sohasida tajriba</b>\n" +
+                "\n" +
+                "Biz butun dunyo bo'ylab eng yaxshi yuk tashish va transport bitimlarini taqdim etishdan faxrlanamiz." +
+                " \n" +
+                "✅100%Kompensatsiya          ✅Onlayn kuzatish\n" +
+                "✅Tajribali jamoa            ✅Yuklarni sug'urta qilish\n" +
+                "✅24/7 qo'llab-quvvatlash    ✅Xavfsiz omborxona");
+
+        return sendPhoto;
+    }
+
+    public SendPhoto havotransporti(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQadhwXWWBK6q3N87eDm4XylkA9kFEroW9Aw&usqp=CAU"));
+        sendPhoto.setCaption("CTRANS katta o'lchamlari va og'irligi bo'lgan keng turdagi tovarlarni havo orqali tashishni taklif qiladi. Xitoy-O'zbekiston bilan havo transporti ko'pchilik o'zbekistonliklarning tanlovidir. Biz sizga eng qisqa vaqt ichida tez, xavfsiz va sifatli tashishni kafolatlaymiz.\n" +
+                "\n" +
+                "CTRANS xodimlari har bir mahsulotga ehtiyotkorlik bilan munosabatda bo'lishadi va tashishni nazorat qilishadi. Biz bilan mahsulotlaringiz xavfsiz va sog'lom yetib kelishiga amin bo'lishingiz mumkin.");
+        return sendPhoto;
+    }
+    public SendPhoto avtomobiltransporti(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQadhwXWWBK6q3N87eDm4XylkA9kFEroW9Aw&usqp=CAU"));
+        sendPhoto.setCaption("Avtomobil transportida yuk tashish transport xizmatlari bozorining eng muhim tarkibiy qismi bo'lib, aynan shu yo'nalish yuklarni jo'natuvchidan oluvchiga tashish sohasida yetakchi hisoblanadi.\n" +
+                "\n" +
+                "Boshqa transport turlari bilan taqqoslaganda, bugungi kunda avtotransport jiddiy ustuvor yo'nalish bo'lib qolmoqda. Avtotransport yuklarining afzalliklari orasida:\n" +
+                "\n" +
+                "manevr qobiliyati;\n" +
+                "logistika kompaniyasi uchun eng foydali marshrutlarni amalga oshirish uchun keng imkoniyatlar;\n" +
+                "yetkazib berish tezligi;\n" +
+                "tashiladigan tovarlarning keng assortimenti;\n" +
+                "bir nechta kompaniyalarning posilkalarini birlashtirgan holda, guruhli yo'l yuklarini shakllantirish;\n" +
+                "yukning og'irligi, formati va o'lchamlari, yonuvchan tovarlar va tez buziladigan mahsulotlarning mavjudligi kabi omillarni hisobga olgan holda transport vositalarining katta tanlovi;");
+        return sendPhoto;
+    }
+
     public SendMessage sozlamalar(Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -488,22 +507,6 @@ public class MyBotServiceUz {
 
         return sendMessage;
     }
-    public SendPhoto aboutUsUz(Long chatId) {
-
-        SendPhoto sendPhoto = new SendPhoto();
-        sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/images/content/about-01.webp"));
-        sendPhoto.setCaption("<b>BIZ HAQIMIZDA</b>\n" +
-                "<b>Butun dunyo bo'ylab logistika xizmatlari sohasida tajriba</b>\n" +
-                "\n" +
-                "Biz butun dunyo bo'ylab eng yaxshi yuk tashish va transport bitimlarini taqdim etishdan faxrlanamiz." +
-                " \n" +
-                "✅100%Kompensatsiya          ✅Onlayn kuzatish\n" +
-                "✅Tajribali jamoa            ✅Yuklarni sug'urta qilish\n" +
-                "✅24/7 qo'llab-quvvatlash    ✅Xavfsiz omborxona");
-
-        return sendPhoto;
-    }
     public SendPhoto BYD_SEAL(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -750,4 +753,5 @@ public class MyBotServiceUz {
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
+    //Push and Commit
 }
