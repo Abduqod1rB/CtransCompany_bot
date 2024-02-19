@@ -149,6 +149,8 @@ public class MyBotServiceUz {
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         KeyboardRow row = new KeyboardRow();
         KeyboardRow row1 = new KeyboardRow();
+        KeyboardRow row2 = new KeyboardRow();
+        KeyboardRow row3 = new KeyboardRow();
         List<KeyboardRow> rowList = new ArrayList<>();
         KeyboardButton button1 = new KeyboardButton();
         KeyboardButton button2 = new KeyboardButton();
@@ -166,13 +168,15 @@ public class MyBotServiceUz {
 
         row.add(button1);
         row.add(button2);
-        row.add(button3);
+        row1.add(button3);
         row1.add(button4);
-        row1.add(button5);
-        row1.add(button6);
+        row2.add(button5);
+        row3.add(button6);
 
         rowList.add(row);
         rowList.add(row1);
+        rowList.add(row2);
+        rowList.add(row3);
 
         replyKeyboardMarkup.setKeyboard(rowList);
         replyKeyboardMarkup.setResizeKeyboard(true);
