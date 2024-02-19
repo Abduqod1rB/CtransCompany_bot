@@ -142,8 +142,6 @@ public class MyBot extends TelegramLongPollingBot {
                 DB.users.get(id).setCurrentPosition("start");
             }
 
-
-
             if(text.equals("\uD83D\uDE9AXizmatlar")){
                 try {
                     execute(myBotServiceUz.xizmatlar(chatId));
@@ -167,26 +165,25 @@ public class MyBot extends TelegramLongPollingBot {
             }
             if(text.equals("\uD83D\uDE99Xitoydan mashinalar")){
                 try {
-                    execute(myBotServiceUz.sedanUz(chatId));
+                    execute(myBotServiceUz.xitoydanmashinalar(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
             if(text.equals("\uD83D\uDE99Авто из Китая")){
                 try {
-                    execute(myBotServiceRus.sedanRus(chatId));
+                    execute(myBotServiceRus.carsFromChinaRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
             if(text.equals("\uD83D\uDE99Cars from China")){
                 try {
-                    execute(myBotServiceEng.sedanEng(chatId));
+                    execute(myBotServiceEng.carsFromChinaEng(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-
 
 
 

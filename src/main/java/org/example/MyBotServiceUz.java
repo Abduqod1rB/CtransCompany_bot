@@ -146,6 +146,7 @@ public class MyBotServiceUz {
     public SendMessage xizmatlar(Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
+        sendMessage.setText("Xizmat turini tanlang");
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         KeyboardRow row = new KeyboardRow();
         KeyboardRow row1 = new KeyboardRow();
@@ -207,7 +208,7 @@ public class MyBotServiceUz {
     public SendMessage xitoydanmashinalar(Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-
+        sendMessage.setText("Mashina turini tanlang");
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         KeyboardRow row1 = new KeyboardRow();
         KeyboardRow row2 = new KeyboardRow();
