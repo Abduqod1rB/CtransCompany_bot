@@ -345,6 +345,34 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
+            if(text.equals("Sedan")){
+                try {
+                    execute(myBotServiceEng.sedanEng(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("Crossover")){
+                try {
+                    execute(myBotServiceEng.crossoverEng(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("Hatchback")){
+                try {
+                    execute(myBotServiceEng.hatchBackEng(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("Minivan")){
+                try {
+                    execute(myBotServiceEng.minivanEng(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
 
 
 
