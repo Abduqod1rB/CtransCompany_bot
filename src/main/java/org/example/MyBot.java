@@ -179,7 +179,7 @@ public class MyBot extends TelegramLongPollingBot {
             }
             if(text.equals("✈\uFE0F Air transportation")){
                 try {
-                    execute(myBotServiceEng.airTransportation(chatId));
+                    execute(myBotServiceEng.havotransportiEng(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
