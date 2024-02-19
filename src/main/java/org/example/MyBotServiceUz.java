@@ -288,6 +288,26 @@ public class MyBotServiceUz {
 
         return sendPhoto;
     }
+    public SendPhoto ccsUz(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMpjNZMvmmVbQ84rG9FaI4W9i-ghZnIf9uIyN7jiJo4NwXTyyB"));
+        sendPhoto.setCaption("""
+
+                CTRANS o'z mijozlarining vaqtini qadrlaydi va yuklarni bojxona deklaratsiyasi xizmatlarini taklif qiladi. TIF TN kodlarining ta'rifi.
+                                                                                                                                                                                                                                                                                
+                Bojxona rasmiylashtiruvi tovarlarga tegishli barcha ma'lumotlarni ro'yxatdan o'tkazish, ro'yxatdan o'tkazish va u haqida ishonchli ma'lumotga ega bo'lgan hujjatlar to'plamini shakllantirish uchun zarurdir.
+                                                                                                                                                                                                                                                                                
+                Ammo tajriba shuni ko'rsatadiki. Barcha kerakli hujjatlarni mustaqil ravishda to'g'ri to'plash deyarli mumkin emas. Binobarin, bu chegarada yukning kechikishiga olib keladi. Buning uchun siz uchun barcha kerakli hujjatlarni oldindan tayyorlaydigan mutaxassislar mavjud.
+                                                                                                                                                                                                                                                                                
+                Yukingiz yarim yo‘lda qayergadir “osilib qolishini” xohlamaysizmi? Biz, albatta, xohlamaymiz, shuning uchun biz mijozlarimizga bojxona rasmiylashtiruvi xizmatini taklif qilamiz.
+                                                                                                                                                                                                                                                                                
+                Ctransga murojaat qilib, siz bizning professionalligimiz va bojxona rasmiylashtiruvidan keyin tovarlarning yakuniy narxi o'zgarmasligiga amin bo'lishingiz mumkin. Biz sizga mahsulot tannarxini arzon va tez, kutilmagan xarajatlarsiz, bojxona nazoratidan o‘tkazishingizga yordam beramiz.
+                
+                """);
+
+        return sendPhoto;
+    }
 
 
     public SendMessage sozlamalar(Long chatId){

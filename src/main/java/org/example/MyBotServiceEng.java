@@ -1548,10 +1548,10 @@ public class MyBotServiceEng {
         return sendPhoto;
     }
 
-    public SendPhoto ccs(Long chatId){
+    public SendPhoto ccsEng(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(new File("D:\\My_Telegram_bots\\CTRANS_bot\\image\\CCS.png")));
+        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMpjNZMvmmVbQ84rG9FaI4W9i-ghZnIf9uIyN7jiJo4NwXTyyB"));
         sendPhoto.setCaption("""
 
                 CTRANS values the time of its customers and offers services for customs declaration of goods. Definition of HS code.
