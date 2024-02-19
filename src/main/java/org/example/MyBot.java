@@ -249,7 +249,7 @@ public class MyBot extends TelegramLongPollingBot {
             }
             if(text.equals("Bojxona rasmiylashtiruvi xizmatlari")){
                 try {
-                    execute(myBotServiceUz.cssUz(chatId));
+                    execute(myBotServiceUz.ccsUz(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
@@ -289,6 +289,65 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
+            if(text.equals("Sedan")){
+                try {
+                    execute(myBotServiceUz.sedanUz(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("Krossover")){
+                try {
+                    execute(myBotServiceUz.crossoverUz(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("Xetchbek")){
+                try {
+                    execute(myBotServiceUz.xetchBackUz(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("Mikroavtobus")){
+                try {
+                    execute(myBotServiceUz.minivanUz(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("Седан")){
+                try {
+                    execute(myBotServiceRus.sedanRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("Кросовер")){
+                try {
+                    execute(myBotServiceRus.crossoverRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("Хетчбек")){
+                try {
+                    execute(myBotServiceRus.xetchBackRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("Минивэн")){
+                try {
+                    execute(myBotServiceUz.minivanUz(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+
+
             if(text.equals("\uD83E\uDDEEKalkulyator")){
                 try {
                     execute(myBotServiceUz.kankulator(chatId));

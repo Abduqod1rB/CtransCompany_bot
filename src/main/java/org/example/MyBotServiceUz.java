@@ -12,7 +12,6 @@ import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMar
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardButton;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -288,28 +287,22 @@ public class MyBotServiceUz {
 
         return sendPhoto;
     }
-    public SendPhoto cssUz(Long chatId){
+    public SendPhoto ccsUz(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://wittysparks.com/wp-content/uploads/2019/12/custom-agents-checking.jpg"));
         sendPhoto.setCaption("""
-                
                 CTRANS o'z mijozlarining vaqtini qadrlaydi va yuklarni bojxona deklaratsiyasi xizmatlarini taklif qiladi. TIF TN kodlarining ta'rifi.
                                                 
                 Bojxona rasmiylashtiruvi tovarlarga tegishli barcha ma'lumotlarni ro'yxatdan o'tkazish, ro'yxatdan o'tkazish va u haqida ishonchli ma'lumotga ega bo'lgan hujjatlar to'plamini shakllantirish uchun zarurdir.
-                                                
-                Ammo tajriba shuni ko'rsatadiki. Barcha kerakli hujjatlarni mustaqil ravishda to'g'ri to'plash deyarli mumkin emas. Binobarin, bu chegarada yukning kechikishiga olib keladi. Buning uchun siz uchun barcha kerakli hujjatlarni oldindan tayyorlaydigan mutaxassislar mavjud.
-                                                
+                                                                
                 Yukingiz yarim yo‘lda qayergadir “osilib qolishini” xohlamaysizmi? Biz, albatta, xohlamaymiz, shuning uchun biz mijozlarimizga bojxona rasmiylashtiruvi xizmatini taklif qilamiz.
-                                                                                                                                                                              
-                Ctransga murojaat qilib, siz bizning professionalligimiz va bojxona rasmiylashtiruvidan keyin tovarlarning yakuniy narxi o'zgarmasligiga amin bo'lishingiz mumkin. Biz sizga mahsulot tannarxini arzon va tez, kutilmagan xarajatlarsiz, bojxona nazoratidan o‘tkazishingizga yordam beramiz.                
+                
+                Ctransga murojaat qilib, siz bizning professionalligimiz va bojxona rasmiylashtiruvidan keyin tovarlarning yakuniy narxi o'zgarmasligiga amin bo'lishingiz mumkin. Biz sizga mahsulot tannarxini arzon va tez, kutilmagan xarajatlarsiz, bojxona nazoratidan o‘tkazishingizga yordam beramiz.
                 """);
 
         return sendPhoto;
     }
-
-
-
 
     public SendMessage sozlamalar(Long chatId){
         SendMessage sendMessage = new SendMessage();
@@ -353,6 +346,7 @@ public class MyBotServiceUz {
         KeyboardRow row6 = new KeyboardRow();
         KeyboardRow row7 = new KeyboardRow();
         KeyboardRow row8 = new KeyboardRow();
+        KeyboardRow row9 = new KeyboardRow();
 
         KeyboardButton button1 = new KeyboardButton();
         KeyboardButton button2 = new KeyboardButton();
@@ -395,10 +389,11 @@ public class MyBotServiceUz {
         row5.add(button9);row5.add(button10);
         row6.add(button11);row6.add(button12);
         row7.add(button13);row7.add(button14);
-        row8.add(button15);row8.add(button16);
+        row8.add(button15);row9.add(button16);
 
         rowList.add(row1);rowList.add(row2);rowList.add(row3);rowList.add(row4);
         rowList.add(row5);rowList.add(row6);rowList.add(row7);rowList.add(row8);
+        rowList.add(row9);
 
         replyKeyboardMarkup.setResizeKeyboard(true);
         replyKeyboardMarkup.setKeyboard(rowList);
@@ -427,6 +422,7 @@ public class MyBotServiceUz {
         KeyboardRow row10 = new KeyboardRow();
         KeyboardRow row11 = new KeyboardRow();
         KeyboardRow row12 = new KeyboardRow();
+        KeyboardRow row13 = new KeyboardRow();
 
         KeyboardButton button1 = new KeyboardButton();
         KeyboardButton button2 = new KeyboardButton();
@@ -489,10 +485,11 @@ public class MyBotServiceUz {
         row9.add(button17);row9.add(button18);
         row10.add(button19);row10.add(button20);
         row11.add(button21);row11.add(button22);
-        row12.add(button23);row12.add(button24);
+        row12.add(button23);row13.add(button24);
 
         rowList.add(row1);rowList.add(row2);rowList.add(row3);rowList.add(row4);rowList.add(row5);rowList.add(row6);
         rowList.add(row7);rowList.add(row8);rowList.add(row9);rowList.add(row10);rowList.add(row11);rowList.add(row12);
+        rowList.add(row13);
 
         replyKeyboardMarkup.setKeyboard(rowList);
         replyKeyboardMarkup.setResizeKeyboard(true);
@@ -500,7 +497,7 @@ public class MyBotServiceUz {
 
         return sendMessage;
     }
-    public SendMessage hatchBackUz(Long chatId) {
+    public SendMessage xetchBackUz(Long chatId) {
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -513,6 +510,7 @@ public class MyBotServiceUz {
         KeyboardButton button4 = new KeyboardButton();
         KeyboardRow row1 = new KeyboardRow();
         KeyboardRow row2 = new KeyboardRow();
+        KeyboardRow row3 = new KeyboardRow();
         List<KeyboardRow> rowList = new ArrayList<>();
 
         button1.setText("Neta S");
@@ -521,9 +519,9 @@ public class MyBotServiceUz {
         button4.setText("⬅️Orqaga");
 
         row1.add(button1);row1.add(button2);
-        row2.add(button3);row2.add(button4);
+        row2.add(button3);row3.add(button4);
 
-        rowList.add(row1);rowList.add(row2);
+        rowList.add(row1);rowList.add(row2);rowList.add(row3);
 
         replyKeyboardMarkup.setKeyboard(rowList);
         replyKeyboardMarkup.setResizeKeyboard(true);

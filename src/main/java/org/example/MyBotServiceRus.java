@@ -239,73 +239,6 @@ public class MyBotServiceRus {
         return sendPhoto;
     }
 
-    public SendMessage minivanRus(Long chatId) {
-
-        SendMessage sendMessage = new SendMessage();
-        sendMessage.setChatId(chatId);
-            sendMessage.setText("Выберите тип минивэна");
-
-        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
-        List<KeyboardRow> rowList = new ArrayList<>();
-        KeyboardRow row = new KeyboardRow();
-        KeyboardRow row1 = new KeyboardRow();
-
-        KeyboardButton button = new KeyboardButton();
-        KeyboardButton button1 = new KeyboardButton();
-        KeyboardButton button2 = new KeyboardButton();
-
-        button.setText("Denza D9");
-        button1.setText("Zeeker 009");
-        button2.setText("⬅️\uFE0FНазад");
-
-        row.add(button);
-        row.add(button1);
-        row1.add(button2);
-
-        rowList.add(row);
-        rowList.add(row1);
-
-        replyKeyboardMarkup.setKeyboard(rowList);
-        replyKeyboardMarkup.setResizeKeyboard(true);
-        sendMessage.setReplyMarkup(replyKeyboardMarkup);
-
-        return sendMessage;
-    }
-
-    public SendMessage hatchBackRus(Long chatId) {
-
-        SendMessage sendMessage = new SendMessage();
-        sendMessage.setChatId(chatId);
-        sendMessage.setText("Выберите тип хэтчбека");
-
-        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
-        List<KeyboardRow> rowList = new ArrayList<>();
-        KeyboardRow row = new KeyboardRow();
-        KeyboardRow row1 = new KeyboardRow();
-        KeyboardButton button = new KeyboardButton();
-        KeyboardButton button1 = new KeyboardButton();
-        KeyboardButton button2 = new KeyboardButton();
-        KeyboardButton button3 = new KeyboardButton();
-
-        button.setText("Neta S");
-        button1.setText("Neta Gt");
-        button2.setText("Zeeker 007");
-        button3.setText("⬅️\uFE0FНазад");
-
-        row.add(button);
-        row.add(button1);
-        row1.add(button2);
-        row1.add(button3);
-
-        rowList.add(row);
-        rowList.add(row1);
-
-        replyKeyboardMarkup.setKeyboard(rowList);
-        replyKeyboardMarkup.setResizeKeyboard(true);
-        sendMessage.setReplyMarkup(replyKeyboardMarkup);
-
-        return sendMessage;
-    }
 
     public SendMessage sedanRus(Long chatId) {
 
@@ -413,6 +346,7 @@ public class MyBotServiceRus {
         KeyboardRow row9 = new KeyboardRow();
         KeyboardRow row10 = new KeyboardRow();
         KeyboardRow row11 = new KeyboardRow();
+        KeyboardRow row12 = new KeyboardRow();
 
         KeyboardButton button = new KeyboardButton();
         KeyboardButton button1 = new KeyboardButton();
@@ -488,7 +422,7 @@ public class MyBotServiceRus {
         row10.add(button20);
         row10.add(button21);
         row11.add(button22);
-        row11.add(button23);
+        row12.add(button23);
 
         rowList.add(row);
         rowList.add(row1);
@@ -502,6 +436,76 @@ public class MyBotServiceRus {
         rowList.add(row9);
         rowList.add(row10);
         rowList.add(row11);
+        rowList.add(row12);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendMessage;
+    }
+    public SendMessage minivanRus(Long chatId) {
+
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Выберите тип минивэна");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+        KeyboardRow row = new KeyboardRow();
+        KeyboardRow row1 = new KeyboardRow();
+
+        KeyboardButton button = new KeyboardButton();
+        KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
+
+        button.setText("Denza D9");
+        button1.setText("Zeeker 009");
+        button2.setText("⬅️\uFE0FНазад");
+
+        row.add(button);
+        row.add(button1);
+        row1.add(button2);
+
+        rowList.add(row);
+        rowList.add(row1);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendMessage;
+    }
+
+    public SendMessage xetchBackRus(Long chatId) {
+
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Выберите тип хэтчбека");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+        KeyboardRow row = new KeyboardRow();
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardRow row2 = new KeyboardRow();
+        KeyboardButton button = new KeyboardButton();
+        KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
+        KeyboardButton button3 = new KeyboardButton();
+
+        button.setText("Neta S");
+        button1.setText("Neta Gt");
+        button2.setText("Zeeker 007");
+        button3.setText("⬅️\uFE0FНазад");
+
+        row.add(button);
+        row.add(button1);
+        row1.add(button2);
+        row2.add(button3);
+
+        rowList.add(row);
+        rowList.add(row1);
+        rowList.add(row2);
 
         replyKeyboardMarkup.setKeyboard(rowList);
         replyKeyboardMarkup.setResizeKeyboard(true);
@@ -579,9 +583,7 @@ public class MyBotServiceRus {
                 Компания CTRANS ценит время своих клиентов и предлагает услуги по таможенному декларированию грузов. Определение кодов TIF TN.
                                 
                 Таможенное оформление необходимо для оформления всей информации, касающейся товара, оформления и формирования комплекта документов с достоверной информацией о нем.
-                                
-                Но опыт показывает это. Самостоятельно правильно собрать все необходимые документы практически невозможно. Следовательно, это приводит к задержкам грузов на границе. Для этого есть специалисты, которые заранее подготовят для вас все необходимые документы.
-                                
+                                                                
                 Не хотите, чтобы ваш багаж «болтался» где-то на полпути? Нам, конечно, не хочется, поэтому мы предлагаем нашим клиентам услугу таможенного оформления.
                                                                                                                                                               
                 Обратившись в Ctrans, вы можете быть уверены в нашем профессионализме и в том, что окончательная цена товара не изменится после таможенного оформления. Мы поможем Вам пройти стоимость товара дешево и быстро, без непредвиденных расходов, через таможенный контроль.

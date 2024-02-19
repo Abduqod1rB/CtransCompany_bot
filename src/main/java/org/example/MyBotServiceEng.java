@@ -1557,9 +1557,7 @@ public class MyBotServiceEng {
                 CTRANS values the time of its customers and offers services for customs declaration of goods. Definition of HS code.
                 
                 Customs clearance is necessary in order to register, register all information related to the goods, and form a package of documents with reliable information about it.
-                
-                But as experience shows. It is almost impossible to collect all the necessary documents properly on your own. Consequently, this leads to a delay of cargo at the border. For this, there are specialists who can prepare all the necessary documents for you in advance.
-                
+                                
                 Don't want your cargo to "hang" somewhere halfway? We definitely do not want to, therefore we offer our customers a customs clearance service.
                 
                 Turning to Ctrans, you can be sure of our professionalism and that the final cost of the goods will not change after customs clearance. We will help you keep the cost of production low and quickly, without unforeseen expenses, pass through customs control.
