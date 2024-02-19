@@ -37,22 +37,4 @@ public class MyBotService {
         sendMessage.setReplyMarkup(reply);
         return sendMessage;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
