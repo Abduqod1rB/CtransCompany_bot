@@ -309,6 +309,8 @@ public class MyBotServiceUz {
     }
 
 
+
+
     public SendMessage sozlamalar(Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
