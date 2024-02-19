@@ -247,6 +247,27 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
+            if(text.equals("Bojxona rasmiylashtiruvi xizmatlari")){
+                try {
+                    execute(myBotServiceUz.ccsUz(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("Услуги таможеннего оформления")){
+                try {
+                    execute(myBotServiceRus.ccsRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("Customs Clearance services")){
+                try {
+                    execute(myBotServiceEng.ccsEng(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
             if(text.equals("\uD83D\uDE99Xitoydan mashinalar")){
                 try {
                     execute(myBotServiceUz.xitoydanmashinalar(chatId));
