@@ -15,7 +15,7 @@ public class MyBotServiceRus {
     public SendMessage asosiyMenuRus(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("Main menu");
+        sendMessage.setText("Главное меня");
         ReplyKeyboardMarkup replyKeyboardMarkUp = new ReplyKeyboardMarkup();
         List<KeyboardRow> rowList = new ArrayList<>();
         KeyboardRow row = new KeyboardRow();
