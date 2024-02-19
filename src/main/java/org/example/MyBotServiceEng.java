@@ -1489,6 +1489,9 @@ public class MyBotServiceEng {
         return sendPhoto;
     }
 
+
+
+
     public SendPhoto autoTransportationEng(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
