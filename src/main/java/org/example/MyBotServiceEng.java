@@ -1482,7 +1482,7 @@ public class MyBotServiceEng {
     public SendPhoto airTransportation(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(new File("D:\\My_Telegram_bots\\CTRANS_bot\\image\\air.png")));
+        sendPhoto.setPhoto(new InputFile("https://api.360tv.ru/get_resized/-95SAJCmVKUbkPUC2f6RxCyVqbk=/1080x607/filters:focal(0.5:0.5):format(webp)/YXJ0aWNsZXMvaW1hZ2UvMjAyNC8xLzI1NjM3ODQ5NTA5ODc2NTQuanBn.webp"));
         sendPhoto.setCaption("""
                 CTRANS offers air transportation of a wide range of goods with large dimensions and weight. Air transportation China-Uzbekistan is the choice of most Uzbeks. We guarantee you fast, safe, and high-quality transportation in the shortest possible time.
                 
