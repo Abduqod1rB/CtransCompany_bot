@@ -8,26 +8,24 @@ import java.util.HashMap;
 
 public class Costs {
 
-    public static HashMap<Double,Double> RailWaySmallAmount = new HashMap<>();
-    public static HashMap<Double,Double> RailWayBigAmount = new HashMap<>();
+    public static HashMap<Integer,Integer> RailWaySmallAmount = new HashMap<>();
+    public static HashMap<Integer,Double> RailWayBigAmount = new HashMap<>();
 
-    public static HashMap<Double,Double> CarSmallAmount = new HashMap<>();
-    public static HashMap<Double,Double> CarBigAmount = new HashMap<>();
+    public static HashMap<Integer,Integer> CarSmallAmount = new HashMap<>();
+    public static HashMap<Integer,Double> CarBigAmount = new HashMap<>();
 
-    public static HashMap<Double,Double> AirWaySmallAmount = new HashMap<>();
-    public static HashMap<Double,Double> AirWayBigAmount = new HashMap<>();
+    public static HashMap<Integer,Integer> AirWaySmallAmount = new HashMap<>();
+    public static HashMap<Integer,Double> AirWayBigAmount = new HashMap<>();
     public static void fill(){
-        RailWaySmallAmount.put(150.0,170.0);
-        RailWaySmallAmount.put(200.0,180.0);
-        RailWaySmallAmount.put(300.0,200.0);
-        RailWaySmallAmount.put(400.0,210.0);
-        RailWaySmallAmount.put(500.0,240.0);
-        RailWaySmallAmount.put(700.0,260.0);
-        RailWaySmallAmount.put(900.0,310.0);
-        RailWaySmallAmount.put(1000.0,360.0);
-
-        //----------------------------\\
-        double kg = 1500.0;
+        RailWaySmallAmount.put(150,170);
+        RailWaySmallAmount.put(200,180);
+        RailWaySmallAmount.put(300,200);
+        RailWaySmallAmount.put(400,210);
+        RailWaySmallAmount.put(500,240);
+        RailWaySmallAmount.put(700,260);
+        RailWaySmallAmount.put(900,310);
+        RailWaySmallAmount.put(1000,360);
+        int kg = 1500;
         double RailWayPrice = 0.35;
         for(int i = 0; i < 18; i++){
             RailWayBigAmount.put(kg, RailWayPrice);
@@ -35,37 +33,57 @@ public class Costs {
             RailWayPrice += 0.05;
         }
 
-        CarSmallAmount.put(150.0,140.0);
-        CarSmallAmount.put(200.0,160.0);
-        CarSmallAmount.put(300.0,180.0);
-        CarSmallAmount.put(400.0,200.0);
-        CarSmallAmount.put(500.0,220.0);
-        CarSmallAmount.put(700.0,250.0);
-        CarSmallAmount.put(900.0,280.0);
-        CarSmallAmount.put(1000.0,320.0);
 
-        //----------------------------\\
-        kg = 1500.0;
+        CarSmallAmount.put(150,140);
+        CarSmallAmount.put(200,160);
+        CarSmallAmount.put(300,180);
+        CarSmallAmount.put(400,200);
+        CarSmallAmount.put(500,220);
+        CarSmallAmount.put(700,250);
+        CarSmallAmount.put(900,280);
+        CarSmallAmount.put(1000,320);
+        kg = 1500;
         double CarPrice = 0.52;
         for(int i = 0; i < 18; i++){
             CarBigAmount.put(kg, CarPrice);
             kg += 500;
             CarPrice += 0.05;
         }
-
-        //AirWaySmallAmount.put();
-
-        //----------------------------\\
-        kg = 1500.0;
-        /*double AirPrice = ;
-        for(int i = 0; i < 18; i++){
-            AirWayBigAmount.put(kg, AirPrice);
-            kg += 500;
-            AirPrice += 0.05;
-        }*/
     }
 
+    public static double priceRailWay(double kg, double volume){
 
+        if(kg <= 1000){
 
+            for (int key : RailWaySmallAmount.keySet()) {
+                if(kg < key){
+                    System.out.println(RailWaySmallAmount.get(key) * volume);
+                    return RailWaySmallAmount.get(key) * volume;
+                }
+            }
+        }else{
+            for(int key : RailWayBigAmount.keySet()){
+                if(kg < key){
+                    return RailWayBigAmount.get(key) * kg;
+                }
+            }
+        }
+        return 0;
+    }
+    public static double priceCar(double kg, double volume){
+        if(kg <= 1000){
+            for (int key : CarSmallAmount.keySet()) {
+                if(kg < key){
+                    return CarSmallAmount.get(key) * volume;
+                }
+            }
+        }else{
+            for(int key : CarBigAmount.keySet()){
+                if(kg < key){
+                    return CarBigAmount.get(key) * kg;
+                }
+            }
+        }
+        return 0;
+    }
 }
-

@@ -503,7 +503,7 @@ public class MyBotServiceEng {
     }
 
 
-    public SendMessage kanlkulyator(Long chatId) {
+    public SendMessage kanlkulyatorEng(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
         sendMessage.setText("Choose the transport you need");
@@ -516,7 +516,7 @@ public class MyBotServiceEng {
         KeyboardButton button1 = new KeyboardButton();
         KeyboardButton button2 = new KeyboardButton();
         KeyboardButton button3 = new KeyboardButton();
-        button.setText("✈️\uFE0FAir transport");
+        button.setText("✈️Air transport");
         button1.setText("\uD83D\uDE88Railway transport");
         button2.setText("\uD83D\uDE98Car transports");
         button3.setText("⬅️ Back");

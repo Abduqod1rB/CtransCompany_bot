@@ -19,6 +19,7 @@ public class MyBot extends TelegramLongPollingBot {
 
     @Override
     public void onUpdateReceived(Update update) {
+
         if (update.hasMessage() && update.getMessage().hasText()) {
             Long chatId = update.getMessage().getChatId();
             String text = update.getMessage().getText();
@@ -137,9 +138,57 @@ public class MyBot extends TelegramLongPollingBot {
                         }
                     }
                 }
-                System.out.println(text);
+                // get comment
                 DB.users.get(id).setCurrentPosition("start");
             }
+
+
+
+            if(text.equals("\uD83D\uDE9AXizmatlar")){
+                try {
+                    execute(myBotServiceUz.xizmatlar(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("\uD83D\uDE9AУслуги")){
+                try {
+                    execute(myBotServiceRus.xizmatlarRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("\uD83D\uDE9AServices")){
+                try {
+                    execute(myBotServiceEng.servicesEng(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("\uD83D\uDE99Xitoydan mashinalar")){
+                try {
+                    execute(myBotServiceUz.sedanUz(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("\uD83D\uDE99Авто из Китая")){
+                try {
+                    execute(myBotServiceRus.sedanRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("\uD83D\uDE99Cars from China")){
+                try {
+                    execute(myBotServiceEng.sedanEng(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+
+
 
 
             if(text.equals("\uD83E\uDDEEKalkulyator")){
@@ -149,7 +198,21 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("✈\uFE0FHavo transporti")){
+            if(text.equals("\uD83E\uDDEEКалькулятор")){
+                try {
+                    execute(myBotServiceRus.kanlkulyatorRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("\uD83E\uDDEECalculator")){
+                try {
+                    execute(myBotServiceEng.kanlkulyatorEng(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            else if(text.equals("✈️Havo transporti")){
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
                 sendMessage.setText("Yukning og'irligi (kg): ");
@@ -161,43 +224,173 @@ public class MyBot extends TelegramLongPollingBot {
                     e.printStackTrace();
                 }
             }
-            else if(DB.users.get(id).getCurrentPosition().equals("kg")){
+            else if(text.equals("✈️️Авиаперевозки")){
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
-                try {
-                    DB.users.get(id).setKg(Double.parseDouble(text));
-                    sendMessage.setText("Yuk hajmi (m3): ");
-                    DB.users.get(id).setCurrentPosition("volume");
-                }catch (Exception e){
-                    sendMessage.setText("Butun sonda kiriting");
-                }
+                sendMessage.setText("Вес груза (кг): ");
+                DB.users.get(id).setCurrentPosition("kg");
+                DB.users.get(id).setSendType("Air");
                 try {
                     execute(sendMessage);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
-            else if(DB.users.get(id).getCurrentPosition().equals("volume")){
+            else if(text.equals("✈️Air transport")){
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
-                try {
-                    DB.users.get(id).setVolume(Double.parseDouble(text));
-                    double volume = DB.users.get(id).getVolume(), kg = DB.users.get(id).getKg();
-                    switch (DB.users.get(id).getSendType()){
-                        case "Air" -> {
-                             //sendMessage.setText(String.valueOf()));
-                        }
-                    }
-                    DB.users.get(id).setCurrentPosition("start");
-
-                }catch (Exception e){
-                    sendMessage.setText("Butun sonda kiriting");
-                }
+                sendMessage.setText("Cargo weight (kg): ");
+                DB.users.get(id).setCurrentPosition("kg");
+                DB.users.get(id).setSendType("Air"); // type
                 try {
                     execute(sendMessage);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
+            }
+            else if(text.equals("\uD83D\uDE88Temir yo'l transporti")){
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.setChatId(chatId);
+                sendMessage.setText("Yukning og'irligi (kg): ");
+                DB.users.get(id).setCurrentPosition("kg");
+                DB.users.get(id).setSendType("RailWay");
+                try {
+                    execute(sendMessage);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+            else if(text.equals("\uD83D\uDE88Железнодорожные перевозки")){
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.setChatId(chatId);
+                sendMessage.setText("Вес груза (кг): ");
+                DB.users.get(id).setCurrentPosition("kg");
+                DB.users.get(id).setSendType("RailWay");
+                try {
+                    execute(sendMessage);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+            else if(text.equals("\uD83D\uDE88Railway transport")){
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.setChatId(chatId);
+                sendMessage.setText("Cargo weight (kg): ");
+                DB.users.get(id).setCurrentPosition("kg");
+                DB.users.get(id).setSendType("RailWay"); // type
+                try {
+                    execute(sendMessage);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+            else if(text.equals("\uD83D\uDE98Avtomobil transporti")){
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.setChatId(chatId);
+                sendMessage.setText("Yukning og'irligi (kg): ");
+                DB.users.get(id).setCurrentPosition("kg");
+                DB.users.get(id).setSendType("Car");
+                try {
+                    execute(sendMessage);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+            else if(text.equals("\uD83D\uDE98Автоперевозки")){
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.setChatId(chatId);
+                sendMessage.setText("Вес груза (кг): ");
+                DB.users.get(id).setCurrentPosition("kg");
+                DB.users.get(id).setSendType("Car");
+                try {
+                    execute(sendMessage);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+            else if(text.equals("\uD83D\uDE98Car transports")){
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.setChatId(chatId);
+                sendMessage.setText("Cargo weight (kg): ");
+                DB.users.get(id).setCurrentPosition("kg");
+                DB.users.get(id).setSendType("Car"); // type
+                try {
+                    execute(sendMessage);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+            else if(DB.users.get(id).getCurrentPosition().equals("kg")){
+                String currLan = DB.users.get(id).getCurrentLanguage();
+
+                try{
+                    SendMessage sendMessage = new SendMessage();
+                    sendMessage.setChatId(chatId);
+                    DB.users.get(id).setKg(Double.parseDouble(text));
+                    DB.users.get(id).setCurrentPosition("volume");
+                    switch (currLan){
+                        case "uz" -> sendMessage.setText("Yuk hajmi (m3): ");
+                        case "ru" -> sendMessage.setText("Вес груза (кг): ");
+                        case "en" -> sendMessage.setText("Cargo weight (kg): ");
+                    }
+                    execute(sendMessage);
+                }catch (Exception e){
+                    SendMessage sendMessage = new SendMessage();
+                    sendMessage.setChatId(chatId);
+                    sendMessage.setText("Butun sonda kiriting");
+                    try {
+                        execute(sendMessage);
+                    } catch (TelegramApiException ex) {
+                        throw new RuntimeException(ex);
+                    }
+                }
+            }
+            else if(DB.users.get(id).getCurrentPosition().equals("volume")){
+                String currLan = DB.users.get(id).getCurrentLanguage();
+                try {
+                    SendMessage sendMessage = new SendMessage();
+                    sendMessage.setChatId(chatId);
+                    DB.users.get(id).setVolume(Double.parseDouble(text));
+                    double volume = DB.users.get(id).getVolume(), kg = DB.users.get(id).getKg();
+                    String sendType = DB.users.get(id).getSendType();
+                    double price = 0;
+                    switch (sendType){
+                        case "Air" -> price = 0;
+                        case "RailWay" -> price = Costs.priceRailWay(kg, volume);
+                        case "Car" -> price = Costs.priceCar(kg, volume);
+                    }
+                    price = (double) Math.round(price * 100.0) / 100.0;
+                    switch (currLan){
+                        case "uz" ->{
+                            sendMessage.setText("Narxi: " + price + "💲");
+                            execute(sendMessage);
+                            execute(myBotServiceUz.asosiyMenuUz(chatId));
+                        }
+                        case "ru" ->{
+                            sendMessage.setText("Цена: " + price + "💲");
+                            execute(sendMessage);
+                            execute(myBotServiceRus.asosiyMenuRus(chatId));
+                        }
+                        case "en" ->{
+                            sendMessage.setText("Price: " + price + "💲");
+                            execute(sendMessage);
+                            execute(myBotServiceEng.asosiyMenuEng(chatId));
+                        }
+                    }
+                    DB.users.get(id).setCurrentPosition("start");
+
+
+                }catch (Exception e){
+                    SendMessage sendMessage = new SendMessage();
+                    sendMessage.setChatId(chatId);
+                    sendMessage.setText("Butun sonda kiriting");
+                    try {
+                        execute(sendMessage);
+                    } catch (TelegramApiException ex) {
+                        throw new RuntimeException(ex);
+                    }
+                }
+
             }
 
 
