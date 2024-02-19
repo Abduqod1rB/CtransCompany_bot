@@ -345,7 +345,7 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Sedan")){
+            if(text.equals("Sedann")){
                 try {
                     execute(myBotServiceEng.sedanEng(chatId));
                 } catch (TelegramApiException e) {
