@@ -1530,10 +1530,11 @@ public class MyBotServiceEng {
         return sendPhoto;
     }
 
-    public SendPhoto werehouse(Long chatId){
+
+    public SendPhoto werehouseEng(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(new File("D:\\My_Telegram_bots\\CTRANS_bot\\image\\WSIYAG.png")));
+        sendPhoto.setPhoto(new InputFile("https://fkplatforma.ru/wp-content/uploads/2023/05/img-7.png"));
         sendPhoto.setCaption("""
 
                 The CTRANS company, in addition to transporting goods by vehicles from China, offers to use warehouse logistics services in China at the same time.

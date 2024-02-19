@@ -553,6 +553,22 @@ public class MyBotServiceRus {
 
         return sendPhoto;
     }
+    public SendPhoto werehouseRus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://fkplatforma.ru/wp-content/uploads/2023/05/img-7.png"));
+        sendPhoto.setCaption("""
+
+                CTRANS предлагает услуги одновременной складской логистики в Китае, а также перевозки автомобилей из Китая.
+                
+                В крупных городах, таких как Иу и Гуанчжоу, развита торговля.
+                
+                Наши склады расположены в удобных местах города, чтобы нашим клиентам было удобнее экономить на хранении и доставке товара.
+                
+                """);
+
+        return sendPhoto;
+    }
 
 
 

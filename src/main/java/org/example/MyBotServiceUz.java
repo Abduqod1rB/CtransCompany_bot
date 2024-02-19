@@ -272,6 +272,22 @@ public class MyBotServiceUz {
 
         return sendPhoto;
     }
+    public SendPhoto werehouseUzb(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://fkplatforma.ru/wp-content/uploads/2023/05/img-7.png"));
+        sendPhoto.setCaption("""
+
+                CTRANS kompaniyasi Xitoydan transport vositalarida yuk tashishdan tashqari, Xitoyda bir vaqtning o'zida ombor logistikasi xizmatlaridan foydalanishni taklif qiladi.
+                
+                Yivu va Guanchjou kabi yirik shaharlarda savdo koʻp.
+                
+                Mijozlarimiz uchun tovarlarni saqlash va yetkazib berishda tejashni yanada qulay qilish uchun omborlarimiz shaharning qulay joylarida joylashgan.
+                
+                """);
+
+        return sendPhoto;
+    }
 
 
     public SendMessage sozlamalar(Long chatId){
