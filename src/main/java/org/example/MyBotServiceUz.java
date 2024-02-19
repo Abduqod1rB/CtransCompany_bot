@@ -243,7 +243,7 @@ public class MyBotServiceUz {
     public SendPhoto avtomobiltransporti(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQadhwXWWBK6q3N87eDm4XylkA9kFEroW9Aw&usqp=CAU"));
+        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDsXg7vSpcNXJi0JIR5i2zfNXzawFxcAWNbJG3ojAqmvaNcmB5"));
         sendPhoto.setCaption("Avtomobil transportida yuk tashish transport xizmatlari bozorining eng muhim tarkibiy qismi bo'lib, aynan shu yo'nalish yuklarni jo'natuvchidan oluvchiga tashish sohasida yetakchi hisoblanadi.\n" +
                 "\n" +
                 "Boshqa transport turlari bilan taqqoslaganda, bugungi kunda avtotransport jiddiy ustuvor yo'nalish bo'lib qolmoqda. Avtotransport yuklarining afzalliklari orasida:\n" +

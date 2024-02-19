@@ -1492,7 +1492,7 @@ public class MyBotServiceEng {
     public SendPhoto autoTransportation(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(new File("D:\\My_Telegram_bots\\CTRANS_bot\\image\\auto.png")));
+        sendPhoto.setPhoto(new InputFile("https://api.360tv.ru/get_resized/-95SAJCmVKUbkPUC2f6RxCyVqbk=/1080x607/filters:focal(0.5:0.5):format(webp)/YXJ0aWNsZXMvaW1hZ2UvMjAyNC8xLzI1NjM3ODQ5NTA5ODc2NTQuanBn.webp"));
         sendPhoto.setCaption("""
                 Cargo transportation by road is the most important component of the transport services market, and it is this direction that is considered the leader in the field of transportation of goods from the sender to the recipient.
                 

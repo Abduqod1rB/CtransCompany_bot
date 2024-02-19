@@ -525,7 +525,7 @@ public class MyBotServiceRus {
     public SendPhoto avtomobiltransportiRus(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQadhwXWWBK6q3N87eDm4XylkA9kFEroW9Aw&usqp=CAU"));
+        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDsXg7vSpcNXJi0JIR5i2zfNXzawFxcAWNbJG3ojAqmvaNcmB5"));
         sendPhoto.setCaption("Грузоперевозки автомобильным транспортом являются важнейшей составной рынка транспортных услуг, причем именно это направление считается лидером в сфере транспортировки  грузов от отправителя к получателю.\n" +
                 "\n" +
                 "По сравнению с другими видами транспорта, за автотранспортом сегодня остаются серьезные приоритеты. Среди достоинств, которыми обладают автотранспортные грузоперевозки:\n" +
