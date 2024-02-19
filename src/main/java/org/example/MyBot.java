@@ -373,8 +373,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-            //---sedan eng---\\
-
             if(text.equals("BYD Seal")){
                 try {
                     execute(myBotServiceEng.bydSeal(chatId));
@@ -382,7 +380,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
             if(text.equals("BYD Han")){
                 try {
                     execute(myBotServiceEng.bydHan(chatId));
@@ -390,7 +387,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
             if(text.equals("Chevrolet Monza 1.5L Atmo")){
                 try {
                     execute(myBotServiceEng.chevroletMonzaAtmo(chatId));
@@ -398,7 +394,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
             if (text.equals("Chevrolet Monza 1.3L Turbo")){
                 try {
                     execute(myBotServiceEng.chevroletMonzaTurbo(chatId));
@@ -406,7 +401,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
             if (text.equals("Honda Crider 1.0L Turbo")){
                 try {
                     execute(myBotServiceEng.HondaCriderTurbo(chatId));
@@ -414,7 +408,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
             if (text.equals("LeapMotor C01")){
                 try {
                     execute(myBotServiceEng.leapMotorC01(chatId));
@@ -422,7 +415,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
             if (text.equals("HiPhi Z")){
                 try {
                     execute(myBotServiceEng.HiPhiZ(chatId));
@@ -430,7 +422,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
             if (text.equals("IM Motors L7")){
                 try {
                     execute(myBotServiceEng.imMotorsL7(chatId));
@@ -438,7 +429,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
             if (text.equals("Geometry G6")){
                 try {
                     execute(myBotServiceEng.geometryG6(chatId));
@@ -446,7 +436,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
             if (text.equals("BMW i3 eDrive40")){
                 try {
                     execute(myBotServiceEng.bmwi3eDrive40(chatId));
@@ -454,7 +443,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
             if (text.equals("BMW i4 eDrive35")){
                 try {
                     execute(myBotServiceEng.bmwi4eDrive35(chatId));
@@ -462,7 +450,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
             if (text.equals("BMW i5 eDrive40")){
                 try {
                     execute(myBotServiceEng.bmwi5eDrive40(chatId));
@@ -470,7 +457,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
             if (text.equals("Neta S")){
                 try {
                     execute(myBotServiceEng.netaS(chatId));
@@ -478,7 +464,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
             if (text.equals("Neta Gt")){
                 try {
                     execute(myBotServiceEng.netaGt(chatId));
@@ -486,7 +471,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
             if (text.equals("Zeeker 007")){
                 try {
                     execute(myBotServiceEng.zeeker007(chatId));
@@ -495,7 +479,6 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
 
-            //---sedan eng---\\
             if(text.equals("\uD83E\uDDEEKalkulyator")){
                 try {
                     execute(myBotServiceUz.kankulator(chatId));
