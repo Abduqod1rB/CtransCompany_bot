@@ -1489,7 +1489,7 @@ public class MyBotServiceEng {
         return sendPhoto;
     }
 
-    public SendPhoto autoTransportation(Long chatId){
+    public SendPhoto autoTransportationEng(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDsXg7vSpcNXJi0JIR5i2zfNXzawFxcAWNbJG3ojAqmvaNcmB5"));

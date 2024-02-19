@@ -538,7 +538,7 @@ public class MyBotServiceRus {
                 "большой выбор средств передвижения с учетом таких факторов, как вес, формат и габариты поклажи, наличие легковоспламеняемых товаров и быстропортящихся продуктов;");
         return sendPhoto;
     }
-    public SendPhoto railwayTransportation(Long chatId){
+    public SendPhoto railwayTransportationRus(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7EI3DngKarj1R1HwVvbhjoGzmDIrSBj1OvdnLkYnlu37ZUjMF"));

@@ -256,7 +256,7 @@ public class MyBotServiceUz {
                 "yukning og'irligi, formati va o'lchamlari, yonuvchan tovarlar va tez buziladigan mahsulotlarning mavjudligi kabi omillarni hisobga olgan holda transport vositalarining katta tanlovi;");
         return sendPhoto;
     }
-    public SendPhoto railwayTransportation(Long chatId){
+    public SendPhoto railwayTransportationUz(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7EI3DngKarj1R1HwVvbhjoGzmDIrSBj1OvdnLkYnlu37ZUjMF"));
