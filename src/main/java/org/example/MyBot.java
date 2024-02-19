@@ -373,9 +373,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
-
-
             if(text.equals("\uD83E\uDDEEKalkulyator")){
                 try {
                     execute(myBotServiceUz.kankulator(chatId));
