@@ -480,6 +480,111 @@ public class MyBot extends TelegramLongPollingBot {
             }
             if(text.equals("BYD Seal")){
                 try {
+                    execute(myBotServiceRus.bydSealRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("BYD Han")){
+                try {
+                    execute(myBotServiceRus.bydHanRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("Chevrolet Monza 1.5L Atmo")){
+                try {
+                    execute(myBotServiceRus.chevroletMonzaAtmoRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("Chevrolet Monza 1.3L Turbo")){
+                try {
+                    execute(myBotServiceRus.chevroletMonzaTurboRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("Honda Crider 1.0L Turbo")){
+                try {
+                    execute(myBotServiceRus.HondaCriderTurboRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("LeapMotor C01")){
+                try {
+                    execute(myBotServiceRus.leapMotorC01Rus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("HiPhi Z")){
+                try {
+                    execute(myBotServiceRus.HiPhiZRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("IM Motors L7")){
+                try {
+                    execute(myBotServiceRus.imMotorsL7Rus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("Geometry G6")){
+                try {
+                    execute(myBotServiceRus.geometryG6Rus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("BMW i3 eDrive40")){
+                try {
+                    execute(myBotServiceRus.bmwi3eDrive40Rus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("BMW i4 eDrive35")){
+                try {
+                    execute(myBotServiceRus.bmwi4eDrive35Rus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("BMW i5 eDrive40")){
+                try {
+                    execute(myBotServiceRus.bmwi5eDrive40Rus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("Neta S")){
+                try {
+                    execute(myBotServiceRus.netaSRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("Neta Gt")){
+                try {
+                    execute(myBotServiceRus.netaGtRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("Zeeker 007")){
+                try {
+                    execute(myBotServiceRus.zeeker007Rus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("BYD Seal")){
+                try {
                     execute(myBotServiceEng.bydSeal(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
