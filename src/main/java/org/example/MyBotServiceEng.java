@@ -115,6 +115,125 @@ public class MyBotServiceEng {
         return sendMessage;
     }
 
+    public SendMessage kanlkulyatorEng(Long chatId) {
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Choose the transport you need");
+        ReplyKeyboardMarkup replyKeyboardMarkUp = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rows = new ArrayList<>();
+        KeyboardRow row = new KeyboardRow();
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardRow row2 = new KeyboardRow();
+        KeyboardButton button = new KeyboardButton();
+        KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
+        KeyboardButton button3 = new KeyboardButton();
+        button.setText("✈️Air transport");
+        button1.setText("\uD83D\uDE88Railway transport");
+        button2.setText("\uD83D\uDE98Car transports");
+        button3.setText("⬅️ Back");
+
+        row.add(button);
+        row.add(button1);
+        row1.add(button2);
+        row2.add(button3);
+
+        rows.add(row);
+        rows.add(row1);
+        rows.add(row2);
+
+        replyKeyboardMarkUp.setKeyboard(rows);
+        replyKeyboardMarkUp.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkUp);
+        return sendMessage;
+    }
+
+    public SendMessage servicesEng(Long chatId) {
+
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Select the type of service.");
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+
+        KeyboardRow row = new KeyboardRow();
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardRow row2 = new KeyboardRow();
+        KeyboardRow row3 = new KeyboardRow();
+
+        KeyboardButton button = new KeyboardButton();
+        KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
+        KeyboardButton button3 = new KeyboardButton();
+        KeyboardButton button4 = new KeyboardButton();
+        KeyboardButton button5 = new KeyboardButton();
+
+        button.setText("✈\uFE0F Air transportation");
+        button1.setText("\uD83D\uDE98 Auto transportation");
+        button2.setText("\uD83D\uDE88Railway transportation");
+        button3.setText("Werehouse services in Yiwu and Gungzhou");
+        button4.setText("Customs Clearance services");
+        button5.setText("⬅️ Back");
+
+        row.add(button);
+        row.add(button1);
+        row1.add(button2);
+        row1.add(button3);
+        row2.add(button4);
+        row3.add(button5);
+
+        rowList.add(row);
+        rowList.add(row1);
+        rowList.add(row2);
+        rowList.add(row3);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendMessage;
+    }
+
+    public SendMessage carsFromChinaEng(Long chatId) {
+
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("choose your type car");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+        KeyboardRow row = new KeyboardRow();
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardRow row2 = new KeyboardRow();
+
+        KeyboardButton button = new KeyboardButton();
+        KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
+        KeyboardButton button3 = new KeyboardButton();
+        KeyboardButton button4 = new KeyboardButton();
+
+        button.setText("Sedan");
+        button1.setText("Crossover");
+        button2.setText("Hatchback");
+        button3.setText("Minivan");
+        button4.setText("⬅️ Back");
+
+        row.add(button);
+        row.add(button1);
+        row1.add(button2);
+        row1.add(button3);
+        row2.add(button4);
+
+        rowList.add(row);
+        rowList.add(row1);
+        rowList.add(row2);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendMessage;
+    }
 
     public SendPhoto aboutUsEng(Long chatId) {
 
@@ -415,126 +534,9 @@ public class MyBotServiceEng {
         return sendMessage;
     }
 
-    public SendMessage servicesEng(Long chatId) {
-
-        SendMessage sendMessage = new SendMessage();
-        sendMessage.setChatId(chatId);
-        sendMessage.setText("Select the type of service.");
-        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
-        List<KeyboardRow> rowList = new ArrayList<>();
-
-        KeyboardRow row = new KeyboardRow();
-        KeyboardRow row1 = new KeyboardRow();
-        KeyboardRow row2 = new KeyboardRow();
-        KeyboardRow row3 = new KeyboardRow();
-
-        KeyboardButton button = new KeyboardButton();
-        KeyboardButton button1 = new KeyboardButton();
-        KeyboardButton button2 = new KeyboardButton();
-        KeyboardButton button3 = new KeyboardButton();
-        KeyboardButton button4 = new KeyboardButton();
-        KeyboardButton button5 = new KeyboardButton();
-
-        button.setText("Air transportation");
-        button1.setText("Auto transportation");
-        button2.setText("Railway transportation");
-        button3.setText("Werehouse services in Yiwu and Gungzhou");
-        button4.setText("Customs Clearance services");
-        button5.setText("⬅️ Back");
-
-        row.add(button);
-        row.add(button1);
-        row1.add(button2);
-        row1.add(button3);
-        row2.add(button4);
-        row3.add(button5);
-
-        rowList.add(row);
-        rowList.add(row1);
-        rowList.add(row2);
-        rowList.add(row3);
-
-        replyKeyboardMarkup.setKeyboard(rowList);
-        replyKeyboardMarkup.setResizeKeyboard(true);
-        sendMessage.setReplyMarkup(replyKeyboardMarkup);
-
-        return sendMessage;
-    }
-
-    public SendMessage carsFromChinaEng(Long chatId) {
-
-        SendMessage sendMessage = new SendMessage();
-        sendMessage.setChatId(chatId);
-        sendMessage.setText("choose your type car");
-
-        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
-        List<KeyboardRow> rowList = new ArrayList<>();
-        KeyboardRow row = new KeyboardRow();
-        KeyboardRow row1 = new KeyboardRow();
-        KeyboardRow row2 = new KeyboardRow();
-
-        KeyboardButton button = new KeyboardButton();
-        KeyboardButton button1 = new KeyboardButton();
-        KeyboardButton button2 = new KeyboardButton();
-        KeyboardButton button3 = new KeyboardButton();
-        KeyboardButton button4 = new KeyboardButton();
-
-        button.setText("Sedan");
-        button1.setText("Crossover");
-        button2.setText("Hatchback");
-        button3.setText("Minivan");
-        button4.setText("⬅️ Back");
-
-        row.add(button);
-        row.add(button1);
-        row1.add(button2);
-        row1.add(button3);
-        row2.add(button4);
-
-        rowList.add(row);
-        rowList.add(row1);
-        rowList.add(row2);
-
-        replyKeyboardMarkup.setKeyboard(rowList);
-        replyKeyboardMarkup.setResizeKeyboard(true);
-        sendMessage.setReplyMarkup(replyKeyboardMarkup);
-
-        return sendMessage;
-    }
 
 
-    public SendMessage kanlkulyatorEng(Long chatId) {
-        SendMessage sendMessage = new SendMessage();
-        sendMessage.setChatId(chatId);
-        sendMessage.setText("Choose the transport you need");
-        ReplyKeyboardMarkup replyKeyboardMarkUp = new ReplyKeyboardMarkup();
-        List<KeyboardRow> rows = new ArrayList<>();
-        KeyboardRow row = new KeyboardRow();
-        KeyboardRow row1 = new KeyboardRow();
-        KeyboardRow row2 = new KeyboardRow();
-        KeyboardButton button = new KeyboardButton();
-        KeyboardButton button1 = new KeyboardButton();
-        KeyboardButton button2 = new KeyboardButton();
-        KeyboardButton button3 = new KeyboardButton();
-        button.setText("✈️Air transport");
-        button1.setText("\uD83D\uDE88Railway transport");
-        button2.setText("\uD83D\uDE98Car transports");
-        button3.setText("⬅️ Back");
 
-        row.add(button);
-        row.add(button1);
-        row1.add(button2);
-        row2.add(button3);
-
-        rows.add(row);
-        rows.add(row1);
-        rows.add(row2);
-
-        replyKeyboardMarkUp.setKeyboard(rows);
-        replyKeyboardMarkUp.setResizeKeyboard(true);
-        sendMessage.setReplyMarkup(replyKeyboardMarkUp);
-        return sendMessage;
-    }
 
     public SendMessage settingsEng(Long chatId) {
 
