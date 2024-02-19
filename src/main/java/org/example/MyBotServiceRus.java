@@ -449,9 +449,9 @@ public class MyBotServiceRus {
         KeyboardButton button3 = new KeyboardButton();
         KeyboardButton button4 = new KeyboardButton();
         KeyboardButton button5 = new KeyboardButton();
-        button.setText("Авиаперевозки");
-        button1.setText("Автоперевозки");
-        button2.setText("Железнодорожные перевозки");
+        button.setText("✈️Авиаперевозки");
+        button1.setText("\uD83D\uDE98Автоперевозки");
+        button2.setText("\uD83D\uDE88Железнодорожные перевозки");
         button3.setText("Складовые услуги в Иу и Гуанчжоу");
         button4.setText("Услуги таможеннего оформления");
         button5.setText("⬅️\uFE0FНазад");
