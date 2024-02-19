@@ -1479,16 +1479,13 @@ public class MyBotServiceEng {
 
     //---Servis boshlanish---\\
 
-    public SendPhoto airTransportation(Long chatId){
+    public SendPhoto havotransportiEng(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://api.360tv.ru/get_resized/-95SAJCmVKUbkPUC2f6RxCyVqbk=/1080x607/filters:focal(0.5:0.5):format(webp)/YXJ0aWNsZXMvaW1hZ2UvMjAyNC8xLzI1NjM3ODQ5NTA5ODc2NTQuanBn.webp"));
-        sendPhoto.setCaption("""
-                CTRANS offers air transportation of a wide range of goods with large dimensions and weight. Air transportation China-Uzbekistan is the choice of most Uzbeks. We guarantee you fast, safe, and high-quality transportation in the shortest possible time.
-                
-                CTRANS employees carefully treat and control the transportation of each product. With us, you can be sure that your goods will arrive safe and sound.
-                """);
-
+        sendPhoto.setCaption("CTRANS offers air transportation of a wide range of goods with large dimensions and weight. Air transportation China-Uzbekistan is the choice of most Uzbeks. We guarantee you fast, safe, and high-quality transportation in the shortest possible time.\n" +
+                "\n" +
+                "CTRANS employees carefully treat and control the transportation of each product. With us, you can be sure that your goods will arrive safe and sound.");
         return sendPhoto;
     }
 
