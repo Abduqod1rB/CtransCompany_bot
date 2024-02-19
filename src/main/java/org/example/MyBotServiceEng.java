@@ -1551,7 +1551,7 @@ public class MyBotServiceEng {
     public SendPhoto ccsEng(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMpjNZMvmmVbQ84rG9FaI4W9i-ghZnIf9uIyN7jiJo4NwXTyyB"));
+        sendPhoto.setPhoto(new InputFile("https://wittysparks.com/wp-content/uploads/2019/12/custom-agents-checking.jpg"));
         sendPhoto.setCaption("""
 
                 CTRANS values the time of its customers and offers services for customs declaration of goods. Definition of HS code.

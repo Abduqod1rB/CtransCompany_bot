@@ -291,7 +291,7 @@ public class MyBotServiceUz {
     public SendPhoto ccsUz(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMpjNZMvmmVbQ84rG9FaI4W9i-ghZnIf9uIyN7jiJo4NwXTyyB"));
+        sendPhoto.setPhoto(new InputFile("https://wittysparks.com/wp-content/uploads/2019/12/custom-agents-checking.jpg"));
         sendPhoto.setCaption("""
 
                 CTRANS o'z mijozlarining vaqtini qadrlaydi va yuklarni bojxona deklaratsiyasi xizmatlarini taklif qiladi. TIF TN kodlarining ta'rifi.
