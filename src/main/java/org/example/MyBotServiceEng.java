@@ -168,9 +168,9 @@ public class MyBotServiceEng {
         KeyboardButton button4 = new KeyboardButton();
         KeyboardButton button5 = new KeyboardButton();
 
-        button.setText("✈\uFE0F Air transportation");
+        button.setText("✈️ Air transportation");
         button1.setText("\uD83D\uDE98 Auto transportation");
-        button2.setText("\uD83D\uDE88Railway transportation");
+        button2.setText("\uD83D\uDE88 Railway transportation");
         button3.setText("Werehouse services in Yiwu and Gungzhou");
         button4.setText("Customs Clearance services");
         button5.setText("⬅️ Back");

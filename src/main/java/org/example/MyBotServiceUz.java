@@ -272,7 +272,7 @@ public class MyBotServiceUz {
 
         return sendPhoto;
     }
-    public SendPhoto werehouseUzb(Long chatId){
+    public SendPhoto werehouseUz(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://fkplatforma.ru/wp-content/uploads/2023/05/img-7.png"));

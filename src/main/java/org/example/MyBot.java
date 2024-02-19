@@ -184,6 +184,69 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
+            if(text.equals("\uD83D\uDE98 Avtomobil transporti")){
+                try {
+                    execute(myBotServiceUz.avtomobiltransporti(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("\uD83D\uDE98 Автоперевозки")){
+                try {
+                    execute(myBotServiceRus.avtomobiltransportiRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("\uD83D\uDE98 Auto transportation")){
+                try {
+                    execute(myBotServiceEng.autoTransportationEng(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("\uD83D\uDE88 Temir yo'l transporti")){
+                try {
+                    execute(myBotServiceUz.railwayTransportationUz(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("\uD83D\uDE88 Железнодорожные перевозки")){
+                try {
+                    execute(myBotServiceRus.railwayTransportationRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("\uD83D\uDE88 Railway transportation")){
+                try {
+                    execute(myBotServiceEng.railwayTransportation(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("Yivu va Guanchjou da ombor xizmatlari")){
+                try {
+                    execute(myBotServiceUz.werehouseUz(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("Складовые услуги в Иу и Гуанчжоу")){
+                try {
+                    execute(myBotServiceRus.werehouseRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("Werehouse services in Yiwu and Gungzhou")){
+                try {
+                    execute(myBotServiceEng.werehouseEng(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
             if(text.equals("\uD83D\uDE99Xitoydan mashinalar")){
                 try {
                     execute(myBotServiceUz.xitoydanmashinalar(chatId));
