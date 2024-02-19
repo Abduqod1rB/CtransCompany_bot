@@ -1513,7 +1513,7 @@ public class MyBotServiceEng {
     public SendPhoto railwayTransportation(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(new File("D:\\My_Telegram_bots\\CTRANS_bot\\image\\Railway.png")));
+        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7EI3DngKarj1R1HwVvbhjoGzmDIrSBj1OvdnLkYnlu37ZUjMF"));
         sendPhoto.setCaption("""
 
                 Rail transportation is one of the main activities of CTRANS. The company carries out transportation both in containers of the required tonnage and in all types of wagons.                    

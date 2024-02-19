@@ -256,6 +256,23 @@ public class MyBotServiceUz {
                 "yukning og'irligi, formati va o'lchamlari, yonuvchan tovarlar va tez buziladigan mahsulotlarning mavjudligi kabi omillarni hisobga olgan holda transport vositalarining katta tanlovi;");
         return sendPhoto;
     }
+    public SendPhoto railwayTransportation(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7EI3DngKarj1R1HwVvbhjoGzmDIrSBj1OvdnLkYnlu37ZUjMF"));
+        sendPhoto.setCaption("""
+
+                Temir yo'l transporti CTRANS kompaniyasining asosiy faoliyat yo'nalishlaridan biridir. Kompaniya kerakli tonnajdagi konteynerlarda ham, barcha turdagi vagonlarda ham yuk tashishni amalga oshiradi.     
+                
+                Konteynerda tashish yuklarni qayta yuklamasdan yetkazib berish imkonini beradi. Bu hajmni sezilarli darajada kamaytiradi va oraliq yuklash va tushirish operatsiyalari tezligini oshiradi.
+                
+                Agar siz past transport xarajatlarini qadrlasangiz, temir yo'l transporti ajoyib tanlovdir. Bu holatda past narx yuqori yuk ko'tarish qobiliyatiga bog'liq.
+                
+                """);
+
+        return sendPhoto;
+    }
+
 
     public SendMessage sozlamalar(Long chatId){
         SendMessage sendMessage = new SendMessage();
