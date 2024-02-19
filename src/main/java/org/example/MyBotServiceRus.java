@@ -140,6 +140,82 @@ public class MyBotServiceRus {
         sendMessage.setReplyMarkup(replyKeyboardMarkUp);
         return sendMessage;
     }
+    public SendMessage xizmatlarRus(Long chatId) {
+
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Выберите тип услуги");
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+
+        KeyboardRow row = new KeyboardRow();
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardRow row2 = new KeyboardRow();
+        KeyboardButton button = new KeyboardButton();
+        KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
+        KeyboardButton button3 = new KeyboardButton();
+        KeyboardButton button4 = new KeyboardButton();
+        KeyboardButton button5 = new KeyboardButton();
+        button.setText("✈️ Авиаперевозки");
+        button1.setText("\uD83D\uDE98 Автоперевозки");
+        button2.setText("\uD83D\uDE88 Железнодорожные перевозки");
+        button3.setText("Складовые услуги в Иу и Гуанчжоу");
+        button4.setText("Услуги таможеннего оформления");
+        button5.setText("⬅️\uFE0FНазад");
+        row.add(button);
+        row.add(button1);
+        row1.add(button2);
+        row1.add(button3);
+        row2.add(button4);
+        row2.add(button5);
+        rowList.add(row);
+        rowList.add(row1);
+        rowList.add(row2);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendMessage;
+    }
+
+    public SendMessage carsFromChinaRus(Long chatId) {
+
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Выберите свой тип автомобиля");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+        KeyboardRow row = new KeyboardRow();
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardRow row2 = new KeyboardRow();
+        KeyboardButton button = new KeyboardButton();
+        KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
+        KeyboardButton button3 = new KeyboardButton();
+        KeyboardButton button4 = new KeyboardButton();
+        button.setText("Седан");
+        button1.setText("Кросовер");
+        button2.setText("Хетчбек");
+        button3.setText("Минивэн");
+        button4.setText("⬅️\uFE0FНазад");
+        row.add(button);
+        row.add(button1);
+        row1.add(button2);
+        row1.add(button3);
+        row2.add(button4);
+        rowList.add(row);
+        rowList.add(row1);
+        rowList.add(row2);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendMessage;
+    }
 
 
     public SendPhoto aboutUsRus(Long chatId) {
@@ -432,45 +508,7 @@ public class MyBotServiceRus {
         return sendMessage;
     }
 
-    public SendMessage xizmatlarRus(Long chatId) {
 
-        SendMessage sendMessage = new SendMessage();
-        sendMessage.setChatId(chatId);
-        sendMessage.setText("Выберите тип услуги");
-        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
-        List<KeyboardRow> rowList = new ArrayList<>();
-
-        KeyboardRow row = new KeyboardRow();
-        KeyboardRow row1 = new KeyboardRow();
-        KeyboardRow row2 = new KeyboardRow();
-        KeyboardButton button = new KeyboardButton();
-        KeyboardButton button1 = new KeyboardButton();
-        KeyboardButton button2 = new KeyboardButton();
-        KeyboardButton button3 = new KeyboardButton();
-        KeyboardButton button4 = new KeyboardButton();
-        KeyboardButton button5 = new KeyboardButton();
-        button.setText("✈️Авиаперевозки");
-        button1.setText("\uD83D\uDE98Автоперевозки");
-        button2.setText("\uD83D\uDE88Железнодорожные перевозки");
-        button3.setText("Складовые услуги в Иу и Гуанчжоу");
-        button4.setText("Услуги таможеннего оформления");
-        button5.setText("⬅️\uFE0FНазад");
-        row.add(button);
-        row.add(button1);
-        row1.add(button2);
-        row1.add(button3);
-        row2.add(button4);
-        row2.add(button5);
-        rowList.add(row);
-        rowList.add(row1);
-        rowList.add(row2);
-
-        replyKeyboardMarkup.setKeyboard(rowList);
-        replyKeyboardMarkup.setResizeKeyboard(true);
-        sendMessage.setReplyMarkup(replyKeyboardMarkup);
-
-        return sendMessage;
-    }
 
     public SendPhoto havotransportiRus(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
@@ -499,42 +537,7 @@ public class MyBotServiceRus {
         return sendPhoto;
     }
 
-    public SendMessage carsFromChinaRus(Long chatId) {
 
-        SendMessage sendMessage = new SendMessage();
-        sendMessage.setChatId(chatId);
-        sendMessage.setText("Выберите свой тип автомобиля");
-
-        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
-        List<KeyboardRow> rowList = new ArrayList<>();
-        KeyboardRow row = new KeyboardRow();
-        KeyboardRow row1 = new KeyboardRow();
-        KeyboardRow row2 = new KeyboardRow();
-        KeyboardButton button = new KeyboardButton();
-        KeyboardButton button1 = new KeyboardButton();
-        KeyboardButton button2 = new KeyboardButton();
-        KeyboardButton button3 = new KeyboardButton();
-        KeyboardButton button4 = new KeyboardButton();
-        button.setText("Седан");
-        button1.setText("Кросовер");
-        button2.setText("Хетчбек");
-        button3.setText("Минивэн");
-        button4.setText("⬅️\uFE0FНазад");
-        row.add(button);
-        row.add(button1);
-        row1.add(button2);
-        row1.add(button3);
-        row2.add(button4);
-        rowList.add(row);
-        rowList.add(row1);
-        rowList.add(row2);
-
-        replyKeyboardMarkup.setKeyboard(rowList);
-        replyKeyboardMarkup.setResizeKeyboard(true);
-        sendMessage.setReplyMarkup(replyKeyboardMarkup);
-
-        return sendMessage;
-    }
 
 
     public SendMessage settingsRus (Long chatId){
