@@ -249,7 +249,7 @@ public class MyBot extends TelegramLongPollingBot {
             }
             if(text.equals("Bojxona rasmiylashtiruvi xizmatlari")){
                 try {
-                    execute(myBotServiceUz.ccsUz(chatId));
+                    execute(myBotServiceUz.cssUz(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }

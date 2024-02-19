@@ -38,12 +38,12 @@ public class MyBotServiceEng {
         button.setText("\uD83D\uDE9AServices");
         button1.setText("\uD83D\uDE99Cars from China");
         button2.setText("⏰Delivery time");
-        button3.setText("☎️\uFE0Fcontact us");
+        button3.setText("☎️contact us");
         button4.setText("\uD83C\uDFDBCurrency rates");
         button5.setText("\uD83E\uDDEECalculator");
-        button6.setText("ℹ️\uFE0Fabout Us");
+        button6.setText("ℹ️about Us");
         button7.setText("\uD83D\uDCACLeave a comment");
-        button8.setText("⚙️\uFE0FSettings");
+        button8.setText("⚙️Settings");
         row.add(button);
         row1.add(button1);
         row2.add(button2);

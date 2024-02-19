@@ -36,12 +36,12 @@ public class MyBotServiceRus {
         button.setText("\uD83D\uDE9AУслуги");
         button1.setText("\uD83D\uDE99Авто из Китая");
         button2.setText("⏰Срок доставки");
-        button3.setText("☎️\uFE0FНаши контакты");
+        button3.setText("☎️Наши контакты");
         button4.setText("\uD83C\uDFDBКурсы валют");
         button5.setText("\uD83E\uDDEEКалькулятор");
-        button6.setText("ℹ️\uFE0FО нас");
+        button6.setText("ℹ️О нас");
         button7.setText("\uD83D\uDCACНаписать комментарий");
-        button8.setText("⚙️\uFE0FНастройки");
+        button8.setText("⚙️Настройки");
         row.add(button);
         row1.add(button1);
         row2.add(button2);
