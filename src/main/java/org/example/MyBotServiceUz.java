@@ -1273,4 +1273,126 @@ public class MyBotServiceUz {
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
+
+    //hechbek
+
+    public SendPhoto BYD_Segaull(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/XZBuWOU3s2lQzubkw5PZvNlQ9hR64GhnZk1EUprF.webp"));
+        sendPhoto.setCaption("""
+                BYD Segaull
+                
+                ✅Batareya quvvati, kVt: 38,88
+                ✅Tezlashuv 0-100 km, sek: 9,5
+                ✅Quvvat, kVt/hp: 55/75
+                ✅Haydovchi blok: Old
+                ✅Quvvat zahirasi (NEDC), km: 405
+                ✅Joylar soni: 4
+                ✅Maksimal tezlik, km/soat: 130
+                """);
+        return sendPhoto;
+    }
+
+    public SendPhoto BYD_Dolphin(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/sK0hrrHnCtspCoUUmPlwubE3LzhselJYdTiYv4wu.webp"));
+        sendPhoto.setCaption("""
+                BYD Dolphin
+                
+                ✅Batareya quvvati, kVt: 44.9
+                ✅Tezlashuv 0-100 km, sek: 7,5
+                ✅Quvvat, kVt/hp: 130/177
+                ✅Haydovchi blok: Old
+                ✅Quvvat zahirasi (NEDC), km: 401
+                ✅Joylar soni: 5
+                ✅Maksimal tezlik, km/soat: 160
+                ✅Zaryadlash tezligi (sekin / tez), soat: 6,41/0,5
+                """);
+        return sendPhoto;
+    }
+
+    public SendPhoto BYD_E2(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/wTDQ0xMwIBQvDR2sba11CvPrgEVcaidi66kZuNYq.webp"));
+        sendPhoto.setCaption("""
+                BYD E2
+                
+                ✅Batareya quvvati, kVt: 43,2
+                ✅Tezlashuv 0-100 km, sek: 10,3
+                ✅Quvvat, kVt/hp: 70/95
+                ✅Haydovchi blok: Old
+                ✅Quvvat zahirasi (NEDC), km: 405
+                ✅Joylar soni: 5
+                ✅Maksimal tezlik, km/soat: 130
+                ✅Zaryadlash tezligi (sekin / tez), soat: 13,1/0,5
+                """);
+        return sendPhoto;
+    }
+
+    public SendPhoto Changan_BenBen_E_Star(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/dBUAaOFl9cQbMGsGart96nB5723xCec8KApGXTmz.webp"));
+        sendPhoto.setCaption("""
+                Changan BenBen E-Star
+                
+                ✅Yoqilg'i turi: Elektr
+                ✅O'lchamlari: 3770*1650*1570
+                ✅Maksimal quvvat (hp): 75
+                ✅Maksimal tezlik (km/soat): 101
+                ✅NEDC diapazoni (km): 310
+                ✅Eshiklar soni: 5
+                ✅Umumiy batareya quvvati kVt: 31,95
+                ✅Dvigatel quvvati (kVt): 55
+                ✅Moment: 170
+                ✅G'ildirak o'lchami: 175/60 R15
+                """);
+        return sendPhoto;
+    }
+
+    //hechbek yakun
+
+    //minivan
+
+    public SendPhoto Denza_D9(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/luIEwx6z593gfrDOISORICB0o3mVocArTzIhirPJ.webp"));
+        sendPhoto.setCaption("""
+                Denza D9
+                
+                ✅Batareya quvvati, kVt: 103,36
+                ✅Tezlashuv 0-100 km, sek: 6,9
+                ✅Quvvat, kVt/hp: 275/374
+                ✅Haydovchi blok: To'liq
+                ✅Quvvat zahirasi (NEDC), km: 600
+                ✅Joylar soni: 7
+                ✅Maksimal tezlik, km/soat: 190
+                """);
+        return sendPhoto;
+    }
+
+    public SendPhoto Zeekr_009(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/GyyaoLBYPQ04jO39mIy4obm1fKUwvNb7zwMOrgxf.webp"));
+        sendPhoto.setCaption("""
+                Zeekr 009
+                
+                ✅Batareya quvvati, kVt: 822
+                ✅Tezlashuv 0-100 km, sek: 140
+                ✅Quvvat, kVt/hp: 400/544
+                ✅Haydovchi blok: To'liq
+                ✅Quvvat zahirasi (NEDC), km: 4,5
+                ✅Joylar soni: 6
+                ✅Maksimal tezlik, km/soat: 190
+                """);
+        return sendPhoto;
+    }
+
+    //minivan yakun
+
 }
