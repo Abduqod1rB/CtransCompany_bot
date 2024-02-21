@@ -599,16 +599,17 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/GbnFoweKIIJ8SGRcR3X1qaBAmgizk9E8798rn536.webp"));
-        sendPhoto.setCaption("<b>Brend: BYD\nModel: Seal\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Batareya quvvati, kVt: 82,5\n" +
-                "✅Quvvat zahirasi (NEDC), km: 650\n" +
-                "✅Tezlashuv 0-100 km, sek: 3,8\n" +
-                "✅Joylar soni: 5\n" +
-                "✅Quvvat, kVt/hp: 390/530\n" +
-                "✅Maksimal tezlik, km/soat: 180\n" +
-                "✅Haydovchi blok: To'liq\n" +
-                "✅Zaryadlash tezligi (sekin/tez), soat: 11,8/0,5");
+        sendPhoto.setCaption("""
+                        BYD Seal
+                        
+                        ✅Batareya quvvati, kVt: 82,5
+                        ✅Quvvat zahirasi (NEDC), km: 650
+                        ✅Tezlashuv 0-100 km, sek: 3,8
+                        ✅Joylar soni: 5
+                        ✅Quvvat, kVt/hp: 390/530
+                        ✅Maksimal tezlik, km/soat: 180
+                        ✅Haydovchi blok: To'liq
+                        ✅Zaryadlash tezligi (sekin/tez), soat: 11,8/0,5""");
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
@@ -616,16 +617,18 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/G5LEALmmX7YN3h2S0ejHxggKreWq0hgj0rkNV3zI.webp"));
-        sendPhoto.setCaption("<b>Brend: BYD\nModel: Han\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Batareya quvvati, kVt: 85,4\n" +
-                "✅Quvvat zahirasi (NEDC), km: 610\n" +
-                "✅Tezlashuv 0-100 km, sek: 3,9\n" +
-                "✅Joylar soni: 5\n" +
-                "✅Quvvat, kVt/hp: 380/517\n" +
-                "✅Maksimal tezlik, km/soat: 185\n" +
-                "✅Haydovchi blok: To'liq\n" +
-                "✅Zaryadlash tezligi (sekin / tez), soat: 12,2/0,5");
+        sendPhoto.setCaption("""
+                BYD Han
+
+                ✅Batareya quvvati, kVt: 85,4
+                ✅Quvvat zahirasi (NEDC), km: 610
+                ✅Tezlashuv 0-100 km, sek: 3,9
+                ✅Joylar soni: 5
+                ✅Quvvat, kVt/hp: 380/517
+                ✅Maksimal tezlik, km/soat: 185
+                ✅Haydovchi blok: To'liq
+                ✅Zaryadlash tezligi (sekin / tez), soat: 12,2/0,5
+                """);
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
@@ -633,14 +636,15 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/7XZX6Aa66UBk54V6XkdOikpRj7MaSpDsfdPEecaw.webp"));
-        sendPhoto.setCaption("<b>Brend: Chevrolet\nModel: Monza 1.5L Atmo\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Dvigatel: 1.5 L (113 ot kuchi)\n" +
-                "✅Yoqilg'i turi: Benzin\n" +
-                "✅Uzatish qutisi: 6-AT (robot)\n" +
-                "✅Haydovchi blok: To'liq\n" +
-                "✅Tezlashuv (0-100 km/soat): 12.9 s\n" +
-                "✅Joylar soni: 5");
+        sendPhoto.setCaption("""
+                Chevrolet Monza 1.5L Atmo
+                
+                ✅Dvigatel: 1.5 L (113 ot kuchi)
+                ✅Yoqilg'i turi: Benzin
+                ✅Uzatish qutisi: 6-AT (robot)
+                ✅Haydovchi blok: To'liq
+                ✅Tezlashuv (0-100 km/soat): 12.9 s
+                ✅Joylar soni: 5""");
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
@@ -648,14 +652,15 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/7XZX6Aa66UBk54V6XkdOikpRj7MaSpDsfdPEecaw.webp"));
-        sendPhoto.setCaption("<b>Brend: Chevrolet\nModel: Monza 1.3L Turbo\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Dvigatel: 1.3L Turbo (163 ot kuchi)\n" +
-                "✅Yoqilg'i turi: Benzin\n" +
-                "✅Uzatish qutisi: 6-AT (robot)\n" +
-                "✅Haydovchi blok: To'liq\n" +
-                "✅Tezlashuv (0-100 km/soat): 9.2 s\n" +
-                "✅Joylar soni: 5");
+        sendPhoto.setCaption("""
+                Chevrolet Monza 1.3L Turbo
+                
+                ✅Dvigatel: 1.3L Turbo (163 ot kuchi)
+                ✅Yoqilg'i turi: Benzin
+                ✅Uzatish qutisi: 6-AT (robot)
+                ✅Haydovchi blok: To'liq
+                ✅Tezlashuv (0-100 km/soat): 9.2 s
+                ✅Joylar soni: 5""");
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
@@ -663,13 +668,14 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/WWWDezhpGgYHzzR9VApgwmj9eeNyNtW7OAlYygCk.webp"));
-        sendPhoto.setCaption("<b>Brend: Honda\nModel: Crider 1.0L Turbo\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Dvigatel hajmi: 1.0 L Turbo\n" +
-                "✅Quvvat: 122 ot kuchi\n" +
-                "✅Dvigatel turi: Benzin\n" +
-                "✅100 ga tezlashtirish: 10.7 s\n" +
-                "✅Iste'mol: 5.0 L");
+        sendPhoto.setCaption("""
+                Honda Crider 1.0L Turbo
+                
+                ✅Dvigatel hajmi: 1.0 L Turbo
+                ✅Quvvat: 122 ot kuchi
+                ✅Dvigatel turi: Benzin
+                ✅100 ga tezlashtirish: 10.7 s
+                ✅Iste'mol: 5.0 L""");
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
@@ -677,15 +683,16 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/gAvBM75WivxQrmjUD4oBWpXvhS0MjkTfLEvz2v5d.webp"));
-        sendPhoto.setCaption("<b>Brend: LeapMotor\nModel: C01\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Batareya quvvati, kVt: 90\n" +
-                "✅Quvvat zahirasi (NEDC), km: 630\n" +
-                "✅Tezlashuv 0-100 km, sek: 3,6\n" +
-                "✅Joylar soni: 5\n" +
-                "✅Quvvat, kVt/hp: 400/544\n" +
-                "✅Maksimal tezlik, km/soat: 180\n" +
-                "✅Haydovchi blok: To'liq");
+        sendPhoto.setCaption("""
+                LeapMotor C01
+                
+                ✅Batareya quvvati, kVt: 90
+                ✅Quvvat zahirasi (NEDC), km: 630
+                ✅Tezlashuv 0-100 km, sek: 3,6
+                ✅Joylar soni: 5
+                ✅Quvvat, kVt/hp: 400/544
+                ✅Maksimal tezlik, km/soat: 180
+                ✅Haydovchi blok: To'liq""");
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
@@ -693,16 +700,17 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/TmaFh6qeILQV09RdIovwNghxCrx9BASiaMFvgdO9.webp"));
-        sendPhoto.setCaption("<b>Brend: HiPhi\nModel: Z\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Batareya quvvati, kVt: 120\n" +
-                "✅Quvvat zahirasi (NEDC), km: 705\n" +
-                "✅Tezlashuv 0-100 km, sek: 3,8\n" +
-                "✅Joylar soni: 4\n" +
-                "✅Quvvat, kVt/hp: 494/672\n" +
-                "✅Maksimal tezlik, km/soat: 200\n" +
-                "✅Haydovchi blok: To'liq\n" +
-                "✅Zaryadlash tezligi (sekin / tez), soat: 12,4/0,92");
+        sendPhoto.setCaption("""
+                hiPhi Z
+                
+                ✅Batareya quvvati, kVt: 120
+                ✅Quvvat zahirasi (NEDC), km: 705
+                ✅Tezlashuv 0-100 km, sek: 3,8
+                ✅Joylar soni: 4
+                ✅Quvvat, kVt/hp: 494/672
+                ✅Maksimal tezlik, km/soat: 200
+                ✅Haydovchi blok: To'liq
+                ✅Zaryadlash tezligi (sekin / tez), soat: 12,4/0,92""");
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
@@ -710,15 +718,16 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/n7IgJoqfWsM0w5ljA24sr0wBGUq7lrUp3g9bb5wi.webp"));
-        sendPhoto.setCaption("<b>Brend: IM Motors\nModel: L7\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Batareya quvvati, kVt: 90\n" +
-                "✅Zaxira quvvati, km: 615\n" +
-                "✅Tezlashuv 0-100 km, sek: 3,7\n" +
-                "✅Joylar soni: 5\n" +
-                "✅Quvvat: 445kVt / 605Nm\n" +
-                "✅Maksimal tezlik, km/soat: 200\n" +
-                "✅Haydovchi blok: Toʻliq");
+        sendPhoto.setCaption("""
+                IM Motors L7
+                
+                ✅Batareya quvvati, kVt: 90
+                ✅Zaxira quvvati, km: 615
+                ✅Tezlashuv 0-100 km, sek: 3,7
+                ✅Joylar soni: 5
+                ✅Quvvat: 445kVt / 605Nm
+                ✅Maksimal tezlik, km/soat: 200
+                ✅Haydovchi blok: Toʻliq""");
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
@@ -726,14 +735,16 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/Zl6MhKhdsf1r5CfqLELkB4DnHjaliEh4XoTU6I56.webp"));
-        sendPhoto.setCaption("<b>Brend: Geometry\nModel: G6\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
-                "✅Batareya quvvati, kVt: 70\n" +
-                "✅Zaxira quvvati, km: 580\n" +
-                "✅Tezlashuv 0-100 km, sek: 6,9\n" +
-                "✅Joylar soni: 5\n" +
-                "✅Quvvat: 150 kVt / 204Nm\n" +
-                "✅Maksimal tezlik, km/soat: 150\n" +
-                "✅Haydovchi blok: Old"
+        sendPhoto.setCaption("""
+                Geometry G6
+
+                ✅Batareya quvvati, kVt: 70
+                ✅Zaxira quvvati, km: 580
+                ✅Tezlashuv 0-100 km, sek: 6,9
+                ✅Joylar soni: 5
+                ✅Quvvat: 150 kVt / 204Nm
+                ✅Maksimal tezlik, km/soat: 150
+                ✅Haydovchi blok: Old"""
         );
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
@@ -742,16 +753,18 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/eQXmyVoEXPqMbHTXPKK2SrtMvKeFYs9BkaYGTs70.webp"));
-        sendPhoto.setCaption("<b>Brend: BMW\nModel: i3 eDrive40\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Batareya quvvati, kVt: 78,92\n" +
-                "✅Quvvat zahirasi (NEDC), km: 592\n" +
-                "✅Tezlashuv 0-100 km, sek: 5,6\n" +
-                "✅Joylar soni: 5\n" +
-                "✅Quvvat, kVt/hp: 250/340\n" +
-                "✅Maksimal tezlik, km/soat: 180\n" +
-                "✅Haydovchi blok: orqa\n" +
-                "✅Zaryadlash tezligi (sekin / tez), soat: 7,5/0,68\n"
+        sendPhoto.setCaption("""
+                BMW i3 eDrive40
+                
+                ✅Batareya quvvati, kVt: 78,92
+                ✅Quvvat zahirasi (NEDC), km: 592
+                ✅Tezlashuv 0-100 km, sek: 5,6
+                ✅Joylar soni: 5
+                ✅Quvvat, kVt/hp: 250/340
+                ✅Maksimal tezlik, km/soat: 180
+                ✅Haydovchi blok: orqa
+                ✅Zaryadlash tezligi (sekin / tez), soat: 7,5/0,68
+                """
         );
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
@@ -760,15 +773,16 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/gwvcNdDemXzj2KnSzE4KnrAiEQbr722zUqpkNwsw.webp"));
-        sendPhoto.setCaption("<b>Brend: BMW\nModel: i4 eDrive35\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Batareya quvvati, kVt: 83,9\n" +
-                "✅Zaxira quvvati, km: 625\n" +
-                "✅Tezlashuv 0-100 km, sek: 5,7\n" +
-                "✅Joylar soni: 5\n" +
-                "✅Quvvat: 250kVt / 340Nm\n" +
-                "✅Maksimal tezlik, km/soat: 182\n" +
-                "✅Haydovchi blok: Toʻliq"
+        sendPhoto.setCaption("""
+                BMW i4 eDrive35
+                
+                ✅Batareya quvvati, kVt: 83,9
+                ✅Zaxira quvvati, km: 625
+                ✅Tezlashuv 0-100 km, sek: 5,7
+                ✅Joylar soni: 5
+                ✅Quvvat: 250kVt / 340Nm
+                ✅Maksimal tezlik, km/soat: 182
+                ✅Haydovchi blok: Toʻliq"""
         );
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
@@ -777,15 +791,16 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/5Pkx8cb6yJEhEPsJdXDBzEmfVDOr361aBdZILSLb.webp"));
-        sendPhoto.setCaption("<b>Brend: BMW\nModel: i5 eDrive40\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Batareya quvvati, kVt: 81.2\n" +
-                "✅Zaxira quvvati, km: 582\n" +
-                "✅Tezlashuv 0-100 km, sek: 6\n" +
-                "✅Joylar soni: 5\n" +
-                "✅Quvvat: 340kVt / 586Nm\n" +
-                "✅Maksimal tezlik, km/soat: 193\n" +
-                "✅Haydovchi blok: Toʻliq"
+        sendPhoto.setCaption("""
+                BMW i5 eDrive40
+                
+                ✅Batareya quvvati, kVt: 81.2
+                ✅Zaxira quvvati, km: 582
+                ✅Tezlashuv 0-100 km, sek: 6
+                ✅Joylar soni: 5
+                ✅Quvvat: 340kVt / 586Nm
+                ✅Maksimal tezlik, km/soat: 193
+                ✅Haydovchi blok: Toʻliq"""
         );
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
@@ -794,16 +809,17 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/public/storage/cars/fktgieIK4VYEVFIP0uN36tNjxRymXuAX2LIluq2Q.webp"));
-        sendPhoto.setCaption("<b>Brend: Neta\nModel: S\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Batareya quvvati, kVt: 91\n" +
-                "✅Quvvat zahirasi (NEDC), km: 715\n" +
-                "✅Tezlashuv 0-100 km, sek: 3,9\n" +
-                "✅Joylar soni: 5\n" +
-                "✅Quvvat, kVt/hp: 340/462\n" +
-                "✅Maksimal tezlik, km/soat: 185\n" +
-                "✅Haydovchi blok: To'liq\n" +
-                "✅Zaryadlash tezligi (sekin / tez), soat: 17/0,58"
+        sendPhoto.setCaption("""
+                Neta S
+                
+                ✅Batareya quvvati, kVt: 91
+                ✅Quvvat zahirasi (NEDC), km: 715
+                ✅Tezlashuv 0-100 km, sek: 3,9
+                ✅Joylar soni: 5
+                ✅Quvvat, kVt/hp: 340/462
+                ✅Maksimal tezlik, km/soat: 185
+                ✅Haydovchi blok: To'liq
+                ✅Zaryadlash tezligi (sekin / tez), soat: 17/0,58"""
         );
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
@@ -812,14 +828,15 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/public/storage/cars/7fdWbQK8rsxAid456F7zwCFsqAIcKaibwZH1rMVS.webp"));
-        sendPhoto.setCaption("<b>Brend: Neta\nModel: GT\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Batareya quvvati, kVt: 74.5\n" +
-                "✅Quvvat zahirasi (NEDC), km: 650\n" +
-                "✅Joylar soni: 4\n" +
-                "✅Quvvat, kVt/hp: 170\n" +
-                "✅Maksimal tezlik, km/soat: 190\n" +
-                "✅Haydovchi blok: orqa"
+        sendPhoto.setCaption("""
+                Neta Gt
+                
+                ✅Batareya quvvati, kVt: 74.5
+                ✅Quvvat zahirasi (NEDC), km: 650
+                ✅Joylar soni: 4
+                ✅Quvvat, kVt/hp: 170
+                ✅Maksimal tezlik, km/soat: 190
+                ✅Haydovchi blok: orqa"""
         );
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
@@ -828,15 +845,16 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/public/storage/cars/o81wp9OhfwgTCIkaXwEoFqhO0Dsgxx7Mh3VDFw47.webp"));
-        sendPhoto.setCaption("<b>Brend: Zeekr\nModel: 007\nTurkum: Sedan\nNarxi: Договорная</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Batareya quvvati, kVt: 70\n" +
-                "✅Zaxira quvvati, km: 688\n" +
-                "✅Tezlashuv 0-100 km, sek: 2,84\n" +
-                "✅Joylar soni: 5\n" +
-                "✅Quvvat: 421kVt / 224Nm\n" +
-                "✅Maksimal tezlik, km/soat: 210\n" +
-                "✅Haydovchi blok: Toʻliq"
+        sendPhoto.setCaption("""
+                Zeeker 007
+                
+                ✅Batareya quvvati, kVt: 70
+                ✅Zaxira quvvati, km: 688
+                ✅Tezlashuv 0-100 km, sek: 2,84
+                ✅Joylar soni: 5
+                ✅Quvvat: 421kVt / 224Nm
+                ✅Maksimal tezlik, km/soat: 210
+                ✅Haydovchi blok: Toʻliq"""
         );
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
@@ -848,18 +866,19 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/6xKSj76RdxhSGrindKkIbsV6J4MZJeI4bhF7SvK9.webp"));
-        sendPhoto.setCaption("<b>BYD Song Plus Champion Edition</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Batareya quvvati: 87,04 kVt/soat\n" +
-                "✅Quvvat zaxirasi (NEDC): 605 km\n" +
-                "✅Displey: 15,6\" multimedia\n" +
-                "✅Avtomatik to'xtash: Bor\n" +
-                "✅Karaoke funksiyasi: Bor\n" +
-                "✅Tezlashuv 0-100 km, sek: 8,5\n" +
-                "✅Joylar soni: 5\n" +
-                "✅Quvvat, kVt/hp: 160/218\n" +
-                "✅Maksimal tezlik, km/soat: 175\n" +
-                "✅Haydovchi blok: Old"
+        sendPhoto.setCaption("""
+                BYD Song Plus Champion Edition
+                
+                ✅Batareya quvvati: 87,04 kVt/soat
+                ✅Quvvat zaxirasi (NEDC): 605 km
+                ✅Displey: 15,6" multimedia
+                ✅Avtomatik to'xtash: Bor
+                ✅Karaoke funksiyasi: Bor
+                ✅Tezlashuv 0-100 km, sek: 8,5
+                ✅Joylar soni: 5
+                ✅Quvvat, kVt/hp: 160/218
+                ✅Maksimal tezlik, km/soat: 175
+                ✅Haydovchi blok: Old"""
         );
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
@@ -868,16 +887,17 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/R1V88PAOtN8eavpv5oHORRTnjp8bIGDeTMBYmyli.webp"));
-        sendPhoto.setCaption("<b>BYD Tang EV</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Batareya quvvati, kVt: 108,8\n" +
-                "✅Quvvat zahirasi (NEDC), km: 635\n" +
-                "✅Tezlashuv 0-100 km, sek: 4,4\n" +
-                "✅Joylar soni: 7\n" +
-                "✅Quvvat, kVt/hp: 380/517\n" +
-                "✅Maksimal tezlik, km/soat: 180\n" +
-                "✅Haydovchi blok: To'liq\n" +
-                "✅Zaryadlash tezligi (sekin / tez), soat: 16,5/0,5"
+        sendPhoto.setCaption("""
+                BYD Teng EV
+                
+                ✅Batareya quvvati, kVt: 108,8
+                ✅Quvvat zahirasi (NEDC), km: 635
+                ✅Tezlashuv 0-100 km, sek: 4,4
+                ✅Joylar soni: 7
+                ✅Quvvat, kVt/hp: 380/517
+                ✅Maksimal tezlik, km/soat: 180
+                ✅Haydovchi blok: To'liq
+                ✅Zaryadlash tezligi (sekin / tez), soat: 16,5/0,5"""
         );
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
@@ -886,17 +906,18 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/GkibsVTK9z55KFCWHnci3A7xZgKGMydhoHGKIdjy.webp"));
-        sendPhoto.setCaption("<b>BYD Yuan Plus EV</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Batareya quvvati, kVt: 60.5\n" +
-                "✅Quvvat zahirasi (NEDC), km: 510\n" +
-                "✅Tezlashuv 0-100 km, sek: 7,3\n" +
-                "✅Joylar soni: 5\n" +
-                "✅Quvvat, kVt/hp: 150/204\n" +
-                "✅Maksimal tezlik, km/soat: 160\n" +
-                "✅Haydovchi blok: Old\n" +
-                "✅Zaryadlash tezligi (sekin / tez), soat: 8,64/0,5"
-        );
+        sendPhoto.setCaption("""
+                BYD Yuan Plus
+                
+                ✅Batareya quvvati, kVt: 60.5
+                ✅Quvvat zahirasi (NEDC), km: 510
+                ✅Tezlashuv 0-100 km, sek: 7,3
+                ✅Joylar soni: 5
+                ✅Quvvat, kVt/hp: 150/204
+                ✅Maksimal tezlik, km/soat: 160
+                ✅Haydovchi blok: Old
+                ✅Zaryadlash tezligi (sekin / tez), soat: 8,64/0,5
+                """);
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
@@ -904,15 +925,16 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/SWxFK8ht6WR0bB2HfhCw1xlONX9RjAN5RuZG18fm.webp"));
-        sendPhoto.setCaption("<b>Zeekr 001</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Quvvat zahirasi (NEDC), km: 650\n" +
-                "✅Tezlashuv 0-100 km, sek: 3,8\n" +
-                "✅Batareya quvvati, kVt/soat: 100\n" +
-                "✅Joylar soni: 5\n" +
-                "✅Quvvat, kVt/hp: 400/544\n" +
-                "✅Maksimal tezlik, km/soat: 200\n" +
-                "✅Haydovchi blok: Toʻliq"
+        sendPhoto.setCaption("""
+                Zeeker 001
+                
+                ✅Quvvat zahirasi (NEDC), km: 650
+                ✅Tezlashuv 0-100 km, sek: 3,8
+                ✅Batareya quvvati, kVt/soat: 100
+                ✅Joylar soni: 5
+                ✅Quvvat, kVt/hp: 400/544
+                ✅Maksimal tezlik, km/soat: 200
+                ✅Haydovchi blok: Toʻliq"""
         );
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
@@ -921,15 +943,16 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/41pwueDIG22eJtsPOvQvNm4Cx7tR9nkoSM1VAT2o.webp"));
-        sendPhoto.setCaption("<b>Zeekr X</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Quvvat zahirasi (NEDC), km: 500\n" +
-                "✅Tezlashuv 0-100 km, sek: 3,8\n" +
-                "✅Batareya quvvati, kVt/soat: 66\n" +
-                "✅Joylar soni: 4\n" +
-                "✅Quvvat, kVt/hp: 315/428\n" +
-                "✅Maksimal tezlik, km/soat: 190\n" +
-                "✅Haydovchi blok: To'liq"
+        sendPhoto.setCaption("""
+                Zeeker X
+                
+                ✅Quvvat zahirasi (NEDC), km: 500
+                ✅Tezlashuv 0-100 km, sek: 3,8
+                ✅Batareya quvvati, kVt/soat: 66
+                ✅Joylar soni: 4
+                ✅Quvvat, kVt/hp: 315/428
+                ✅Maksimal tezlik, km/soat: 190
+                ✅Haydovchi blok: To'liq"""
         );
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
@@ -938,15 +961,16 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/aucwGVtBiLRBOpBhJj3qMhb8oQ7ztlh0bvB5zI3Y.webp"));
-        sendPhoto.setCaption("<b>LeapMotor C11</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Batareya quvvati, kVt: 90\n" +
-                "✅Quvvat zahirasi (NEDC), km: 580\n" +
-                "✅0-100 km tezlashuv, sek: 4,5\n" +
-                "✅Joylar soni: 5\n" +
-                "✅Quvvat, kVt/hp: 400/544\n" +
-                "✅Maksimal tezlik, km/soat: 200\n" +
-                "✅Haydovchi blok: To'liq"
+        sendPhoto.setCaption("""
+                LeapMotor C11
+                
+                ✅Batareya quvvati, kVt: 90
+                ✅Quvvat zahirasi (NEDC), km: 580
+                ✅0-100 km tezlashuv, sek: 4,5
+                ✅Joylar soni: 5
+                ✅Quvvat, kVt/hp: 400/544
+                ✅Maksimal tezlik, km/soat: 200
+                ✅Haydovchi blok: To'liq"""
         );
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
@@ -955,15 +979,16 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/juAVI9k9BjoAUgS3eVAV5Rc0gREwuRVBFDfginS4.webp"));
-        sendPhoto.setCaption("<b>Geely Geometry E</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Batareya quvvati, kVt: 39,4\n" +
-                "✅Quvvat zahirasi (NEDC), km: 401\n" +
-                "✅Tezlashuv 0-100 km, sek: 8,8\n" +
-                "✅Joylar soni: 4\n" +
-                "✅Quvvat, kVt/hp: 60/82\n" +
-                "✅Maksimal tezlik, km/soat: 102\n" +
-                "✅Haydovchi blok: To'liq"
+        sendPhoto.setCaption("""
+                Geely Geometry E
+                
+                ✅Batareya quvvati, kVt: 39,4
+                ✅Quvvat zahirasi (NEDC), km: 401
+                ✅Tezlashuv 0-100 km, sek: 8,8
+                ✅Joylar soni: 4
+                ✅Quvvat, kVt/hp: 60/82
+                ✅Maksimal tezlik, km/soat: 102
+                ✅Haydovchi blok: To'liq"""
         );
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
@@ -972,15 +997,16 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/wvBTQdrUhyfgKY8S7xqOseeicOmtGL7wLGNnY7E6.webp"));
-        sendPhoto.setCaption("<b>Denza N7</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Batareya quvvati, kVt: 91,3\n" +
-                "✅Quvvat zahirasi (NEDC), km: 630\n" +
-                "✅Tezlashuv 0-100 km, sek: 3,9\n" +
-                "✅Joylar soni: 5\n" +
-                "✅Quvvat, kVt/hp: 390/530\n" +
-                "✅Maksimal tezlik, km/soat: 180\n" +
-                "✅Haydovchi blok: To'liq"
+        sendPhoto.setCaption("""
+                Denza N7
+                
+                ✅Batareya quvvati, kVt: 91,3
+                ✅Quvvat zahirasi (NEDC), km: 630
+                ✅Tezlashuv 0-100 km, sek: 3,9
+                ✅Joylar soni: 5
+                ✅Quvvat, kVt/hp: 390/530
+                ✅Maksimal tezlik, km/soat: 180
+                ✅Haydovchi blok: To'liq"""
         );
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
@@ -989,15 +1015,16 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/jbLkedyoEHmhdmhGfmWPDhee6a3jqqFgq55GYxq8.webp"));
-        sendPhoto.setCaption("<b>HiPhi Y</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Batareya quvvati, kVt: 115\n" +
-                "✅Quvvat zahirasi (NEDC), km: 765\n" +
-                "✅Tezlashuv 0-100 km, sek: 4,7\n" +
-                "✅Joylar soni: 5\n" +
-                "✅Quvvat, kVt/hp: 371/505\n" +
-                "✅Maksimal tezlik, km/soat: 190\n" +
-                "✅Haydovchi blok: To'liq"
+        sendPhoto.setCaption("""
+                HiPhi Y
+                
+                ✅Batareya quvvati, kVt: 115
+                ✅Quvvat zahirasi (NEDC), km: 765
+                ✅Tezlashuv 0-100 km, sek: 4,7
+                ✅Joylar soni: 5
+                ✅Quvvat, kVt/hp: 371/505
+                ✅Maksimal tezlik, km/soat: 190
+                ✅Haydovchi blok: To'liq"""
         );
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
@@ -1006,16 +1033,17 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/zQV9rA6sYRm8zNgnxBdtHYdR2XczJUnxElxkOeVc.webp"));
-        sendPhoto.setCaption("<b>NIO ES8</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Batareya quvvati, kVt: 100\n" +
-                "✅Quvvat zahirasi (NEDC), km: 605\n" +
-                "✅Tezlashuv 0-100 km, sek: 4,1\n" +
-                "✅Joylar soni: 6\n" +
-                "✅Quvvat, kVt/hp: 480/653\n" +
-                "✅Maksimal tezlik, km/soat: 200\n" +
-                "✅Haydovchi blok: To'liq\n" +
-                "✅Zaryadlash tezligi (sekin / tez), soat: 0,5"
+        sendPhoto.setCaption("""
+                NIO ES8
+                
+                ✅Batareya quvvati, kVt: 100
+                ✅Quvvat zahirasi (NEDC), km: 605
+                ✅Tezlashuv 0-100 km, sek: 4,1
+                ✅Joylar soni: 6
+                ✅Quvvat, kVt/hp: 480/653
+                ✅Maksimal tezlik, km/soat: 200
+                ✅Haydovchi blok: To'liq
+                ✅Zaryadlash tezligi (sekin / tez), soat: 0,5"""
         );
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
@@ -1024,16 +1052,17 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/xoOfzfnOEU35Da860RQf7tmwLu4tmSzHFgbGKESz.webp"));
-        sendPhoto.setCaption("<b>NEO EC7</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Batareya quvvati, kVt: 100\n" +
-                "✅Quvvat zahirasi (NEDC), km: 635\n" +
-                "✅Tezlashuv 0-100 km, sek: 3,8\n" +
-                "✅Joylar soni: 5\n" +
-                "✅Quvvat, kVt/hp: 480/653\n" +
-                "✅Maksimal tezlik, km/soat: 200\n" +
-                "✅Haydovchi blok: To'liq\n" +
-                "✅Zaryadlash tezligi (sekin / tez), soat: 0,33"
+        sendPhoto.setCaption("""
+                NEO EC7
+                
+                ✅Batareya quvvati, kVt: 100
+                ✅Quvvat zahirasi (NEDC), km: 635
+                ✅Tezlashuv 0-100 km, sek: 3,8
+                ✅Joylar soni: 5
+                ✅Quvvat, kVt/hp: 480/653
+                ✅Maksimal tezlik, km/soat: 200
+                ✅Haydovchi blok: To'liq
+                ✅Zaryadlash tezligi (sekin / tez), soat: 0,33"""
         );
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
