@@ -710,6 +710,15 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
+
+            if(text.equals("ℹ️about Us")){
+                try {
+                    execute(myBotServiceEng.aboutUsEng(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
             else if(text.equals("✈️Havo transporti")){
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
