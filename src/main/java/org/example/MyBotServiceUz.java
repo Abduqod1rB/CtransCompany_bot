@@ -1091,16 +1091,18 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/BgJZKJoWenpHEV6sbSeLRzWFmKYN2E9QcxqyFyvM.webp"));
-        sendPhoto.setCaption("<b>Geometry M6</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Batareya quvvati, kVt: 70\n" +
-                "✅Zaxira quvvati, km: 580\n" +
-                "✅Tezlashuv 0-100 km, sek: 6,9\n" +
-                "✅Joylar soni: 5\n" +
-                "✅Quvvat: 150kVt / 204Nm\n" +
-                "✅Maksimal tezlik, km/soat: 150\n" +
-                "✅Haydovchi blok: Old"
-        );
+        sendPhoto.setCaption("""
+                <b>Geometry M6</b>
+                
+                "<b>Xususiyatlari:</b>
+                "✅Batareya quvvati, kVt: 70
+                "✅Zaxira quvvati, km: 580
+                "✅Tezlashuv 0-100 km, sek: 6,9
+                "✅Joylar soni: 5
+                "✅Quvvat: 150kVt / 204Nm
+                "✅Maksimal tezlik, km/soat: 150
+                "✅Haydovchi blok: Old
+                """);
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
@@ -1110,6 +1112,7 @@ public class MyBotServiceUz {
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/jGQVsR2nxeEmeBVuOd07Uo3OffAFU9Ptj5HBw4sU.webp"));
         sendPhoto.setCaption("""
                 <b>Li Auto L8</b>
+                
                 <b>Xususiyatlari:</b>
                 ✅Batareya quvvati, kVt: 42.8
                 ✅Quvvat zahirasi (NEDC), km: 1315
@@ -1128,6 +1131,7 @@ public class MyBotServiceUz {
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/s49VX9zJ9P2TKBPShY707aDH2GGDP2cwFZHmmXtL.webp"));
         sendPhoto.setCaption("""
                 <b>Avatr 11</b>
+                
                 <b>Xususiyatlari:</b>
                 ✅Batareya quvvati, kVt: 116,79
                 ✅Zaxira quvvati, km: 680
@@ -1146,6 +1150,7 @@ public class MyBotServiceUz {
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/mFaMd0SDGOiNIRMzXrbHKdyKlkoXN5zRqAVK1Obv.webp"));
         sendPhoto.setCaption("""
                 <b>HiPhi X</b>
+                
                 <b>Xususiyatlari:</b>
                 ✅Batareya quvvati, kVt: 94,3
                 ✅Zaxira quvvati, km: 550
@@ -1164,6 +1169,7 @@ public class MyBotServiceUz {
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/Rio4OVECZKtP6rATA0xAmwk66swm7pt9i5JmEPLU.webp"));
         sendPhoto.setCaption("""
                 <b>Li Auto One</b>
+                
                 <b>Xususiyatlari:</b>
                 ✅Batareya quvvati, kVt: 40.5
                 ✅Zaxira quvvati, km: 890
