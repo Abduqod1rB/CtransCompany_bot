@@ -432,7 +432,7 @@ public class MyBotServiceUz {
         button13.setText("Neta S");
         button14.setText("Neta Gt");
         button15.setText("Zeeker 007");
-        button16.setText("⬅️Orqaga");
+        button16.setText("⬅️ Orqaga");
 
         row1.add(button1);
         row1.add(button2);
@@ -539,7 +539,7 @@ public class MyBotServiceUz {
         button21.setText("Chevrolet Seeker");
         button22.setText("BYD Song L");
         button23.setText("BYD Yangwang U8");
-        button24.setText("⬅️Orqaga");
+        button24.setText("⬅️ Orqaga");
 
         row1.add(button1);
         row1.add(button2);
@@ -608,7 +608,7 @@ public class MyBotServiceUz {
         button2.setText("BYD Dolphin");
         button3.setText("BYD E2");
         button4.setText("Changan BenBen E-Star");
-        button5.setText("⬅️Orqaga");
+        button5.setText("⬅️ Orqaga");
 
         row1.add(button1);
         row1.add(button2);
@@ -644,7 +644,7 @@ public class MyBotServiceUz {
 
         button1.setText("Denza D9");
         button2.setText("Zeeker 009");
-        button3.setText("⬅️Orqaga");
+        button3.setText("⬅️ Orqaga");
 
         row.add(button1);
         row.add(button2);

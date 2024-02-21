@@ -38,10 +38,10 @@ public class MyBotServiceEng {
         button.setText("\uD83D\uDE9AServices");
         button1.setText("\uD83D\uDE99Cars from China");
         button2.setText("⏰Delivery time");
-        button3.setText("☎️contact us");
+        button3.setText("☎️Contact us");
         button4.setText("\uD83C\uDFDBCurrency rates");
         button5.setText("\uD83E\uDDEECalculator");
-        button6.setText("ℹ️about Us");
+        button6.setText("ℹ️About Us");
         button7.setText("\uD83D\uDCACLeave a comment");
         button8.setText("⚙️Settings");
         row.add(button);
@@ -97,7 +97,7 @@ public class MyBotServiceEng {
 
         KeyboardRow row1 = new KeyboardRow();
         KeyboardButton button1 = new KeyboardButton();
-        button1.setText("⬅️\uFE0FBack");
+        button1.setText("⬅️Back");
         row1.add(button1);
         rows.add(row1);
 
@@ -131,7 +131,7 @@ public class MyBotServiceEng {
         button.setText("✈️Air transport");
         button1.setText("\uD83D\uDE88Railway transport");
         button2.setText("\uD83D\uDE98Car transports");
-        button3.setText("⬅️ Back");
+        button3.setText("⬅️Back");
 
         row.add(button);
         row.add(button1);
@@ -173,7 +173,7 @@ public class MyBotServiceEng {
         button2.setText("\uD83D\uDE88 Railway transportation");
         button3.setText("Werehouse services in Yiwu and Gungzhou");
         button4.setText("Customs Clearance services");
-        button5.setText("⬅️ Back");
+        button5.setText("⬅️Back");
 
         row.add(button);
         row.add(button1);
@@ -382,7 +382,7 @@ public class MyBotServiceEng {
         button12.setText("Neta S");
         button13.setText("Neta Gt");
         button14.setText("Zeeker 007");
-        button15.setText("⬅️Back");
+        button15.setText("⬅️ Back");
 
         row.add(button);
         row.add(button1);

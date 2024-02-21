@@ -95,7 +95,7 @@ public class MyBotServiceRus {
 
         KeyboardRow row1 = new KeyboardRow();
         KeyboardButton button1 = new KeyboardButton();
-        button1.setText("⬅️\uFE0FНазад");
+        button1.setText("⬅️Назад");
         row1.add(button1);
         rows.add(row1);
 
@@ -128,7 +128,7 @@ public class MyBotServiceRus {
         button.setText("✈️\uFE0FАвиаперевозки");
         button1.setText("\uD83D\uDE88Железнодорожные перевозки");
         button2.setText("\uD83D\uDE98Автоперевозки");
-        button3.setText("⬅️\uFE0FНазад");
+        button3.setText("⬅️Назад");
         row.add(button);
         row.add(button1);
         row1.add(button2);
@@ -163,7 +163,7 @@ public class MyBotServiceRus {
         button2.setText("\uD83D\uDE88 Железнодорожные перевозки");
         button3.setText("Складовые услуги в Иу и Гуанчжоу");
         button4.setText("Услуги таможеннего оформления");
-        button5.setText("⬅️\uFE0FНазад");
+        button5.setText("⬅️Назад");
         row.add(button);
         row.add(button1);
         row1.add(button2);
@@ -198,11 +198,11 @@ public class MyBotServiceRus {
         KeyboardButton button2 = new KeyboardButton();
         KeyboardButton button3 = new KeyboardButton();
         KeyboardButton button4 = new KeyboardButton();
-        button.setText("\uD83D\uDE97Седан");
-        button1.setText("\uD83D\uDE97Кросовер");
-        button2.setText("\uD83D\uDE97Хетчбек");
-        button3.setText("\uD83D\uDE97Минивэн");
-        button4.setText("⬅️\uFE0FНазад");
+        button.setText("Седан");
+        button1.setText("Кросовер");
+        button2.setText("Хетчбек");
+        button3.setText("Минивэн");
+        button4.setText("⬅️Назад");
         row.add(button);
         row.add(button1);
         row1.add(button2);
@@ -289,7 +289,7 @@ public class MyBotServiceRus {
         button12.setText("\uD83D\uDE97Neta S");
         button13.setText("\uD83D\uDE97Neta Gt");
         button14.setText("\uD83D\uDE97Zeeker 007");
-        button15.setText("⬅️Назад");
+        button15.setText("⬅️ Назад");
 
         row.add(button);
         row.add(button1);
@@ -372,30 +372,30 @@ public class MyBotServiceRus {
         KeyboardButton button22 = new KeyboardButton();
         KeyboardButton button23 = new KeyboardButton();
 
-        button.setText("\uD83D\uDE97BYD Song Plus Champion Edition");
-        button1.setText("\uD83D\uDE97BYD Tang EV");
-        button2.setText("\uD83D\uDE97BYD Yuan Plus EV");
-        button3.setText("\uD83D\uDE97Zeeker 001");
-        button4.setText("\uD83D\uDE97Zeeker X");
-        button5.setText("\uD83D\uDE97LeapMotor C11");
-        button6.setText("\uD83D\uDE97Geely Geometry E");
-        button7.setText("\uD83D\uDE97Denza N7");
-        button8.setText("\uD83D\uDE97HiPhi Y");
-        button9.setText("\uD83D\uDE97NIO ES8");
-        button10.setText("\uD83D\uDE97NIO EC7");
-        button11.setText("\uD83D\uDE97LI Auto L7");
-        button12.setText("\uD83D\uDE97LI Auto L9");
-        button13.setText("\uD83D\uDE97IM Motors LS7");
-        button14.setText("\uD83D\uDE97Geometry M6");
-        button15.setText("\uD83D\uDE97LI Auto L8");
-        button16.setText("\uD83D\uDE97Avatr 11");
-        button17.setText("\uD83D\uDE97HiPhi X");
-        button18.setText("\uD83D\uDE97LI Auto One");
-        button19.setText("\uD83D\uDE97Lynk&Co 09EM-P");
-        button20.setText("\uD83D\uDE97Chevrolet Seeker");
-        button21.setText("\uD83D\uDE97BYD Song L");
-        button22.setText("\uD83D\uDE97BYD Yangwang U8");
-        button23.setText("⬅️Назад");
+        button.setText("\uD83D\uDE99BYD Song Plus Champion Edition");
+        button1.setText("\uD83D\uDE99BYD Tang EV");
+        button2.setText("\uD83D\uDE99BYD Yuan Plus EV");
+        button3.setText("\uD83D\uDE99Zeeker 001");
+        button4.setText("\uD83D\uDE99Zeeker X");
+        button5.setText("\uD83D\uDE99LeapMotor C11");
+        button6.setText("\uD83D\uDE99Geely Geometry E");
+        button7.setText("\uD83D\uDE99Denza N7");
+        button8.setText("\uD83D\uDE99HiPhi Y");
+        button9.setText("\uD83D\uDE99NIO ES8");
+        button10.setText("\uD83D\uDE99NIO EC7");
+        button11.setText("\uD83D\uDE99LI Auto L7");
+        button12.setText("\uD83D\uDE99LI Auto L9");
+        button13.setText("\uD83D\uDE99IM Motors LS7");
+        button14.setText("\uD83D\uDE99Geometry M6");
+        button15.setText("\uD83D\uDE99LI Auto L8");
+        button16.setText("\uD83D\uDE99Avatr 11");
+        button17.setText("\uD83D\uDE99HiPhi X");
+        button18.setText("\uD83D\uDE99LI Auto One");
+        button19.setText("\uD83D\uDE99Lynk&Co 09EM-P");
+        button20.setText("\uD83D\uDE99Chevrolet Seeker");
+        button21.setText("\uD83D\uDE99BYD Song L");
+        button22.setText("\uD83D\uDE99BYD Yangwang U8");
+        button23.setText("⬅️ Назад");
 
 
         row.add(button);
@@ -458,9 +458,9 @@ public class MyBotServiceRus {
         KeyboardButton button1 = new KeyboardButton();
         KeyboardButton button2 = new KeyboardButton();
 
-        button.setText("Denza D9");
-        button1.setText("Zeeker 009");
-        button2.setText("⬅️\uFE0FНазад");
+        button.setText("\uD83D\uDE90Denza D9");
+        button1.setText("\uD83D\uDE90Zeeker 009");
+        button2.setText("⬅️ Назад");
 
         row.add(button);
         row.add(button1);
@@ -497,7 +497,7 @@ public class MyBotServiceRus {
         button1.setText("\uD83D\uDE97BYD Dolphin");
         button2.setText("\uD83D\uDE97BYD E2");
         button3.setText("\uD83D\uDE97Changan BenBen E-Star");
-        button4.setText("⬅️Назад");
+        button4.setText("⬅️ Назад");
 
         row.add(button);
         row.add(button1);
