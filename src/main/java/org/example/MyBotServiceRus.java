@@ -634,7 +634,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/GbnFoweKIIJ8SGRcR3X1qaBAmgizk9E8798rn536.webp"));
         sendPhoto.setCaption("""
                 🏎BYD Seal
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 82,5
                 ✅Разгон 0-100 км, сек: 3,8
@@ -657,7 +656,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/G5LEALmmX7YN3h2S0ejHxggKreWq0hgj0rkNV3zI.webp"));
         sendPhoto.setCaption("""
                🏎BYD Han
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 85,4    
                 ✅Разгон 0-100 км, сек: 3,9
@@ -680,7 +678,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/7XZX6Aa66UBk54V6XkdOikpRj7MaSpDsfdPEecaw.webp"));
         sendPhoto.setCaption("""
                 🏎Chevrolet Monza 1.5L Atmo
-                Характеристики:
                 
                 ✅Двигатель: 1.5 л (113 л.с.)
                 ✅Коробка передач: 6-AT (Робот)
@@ -701,7 +698,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/b3iKeMlJtqB2tNlBX4F9UYXbWLtrXRqJiD9ht8Sm.webp"));
         sendPhoto.setCaption("""
                 🏎Chevrolet Monza 1.3L Turbo
-                Характеристики:
                 
                 ✅Двигатель: 1.3л Турбо (163 л.с.)
                 ✅Коробка передач: 6-AT (Робот)
@@ -722,7 +718,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/WWWDezhpGgYHzzR9VApgwmj9eeNyNtW7OAlYygCk.webp"));
         sendPhoto.setCaption("""
                 🏎Honda Crider 1.0L Turbo
-                Характеристики:
                 
                 ✅Объем двигателя: 1.0 л Turbo  
                 ✅Тип двигателя: Бензиновый
@@ -742,7 +737,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/gAvBM75WivxQrmjUD4oBWpXvhS0MjkTfLEvz2v5d.webp"));
         sendPhoto.setCaption("""
                 🏎LeapMotor C01
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 90
                 ✅Разгон 0-100 км, сек: 3,6
@@ -764,7 +758,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/TmaFh6qeILQV09RdIovwNghxCrx9BASiaMFvgdO9.webp"));
         sendPhoto.setCaption("""
                 🏎HiPhi Z
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 120
                 ✅Разгон 0-100 км, сек: 3,8
@@ -787,7 +780,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/n7IgJoqfWsM0w5ljA24sr0wBGUq7lrUp3g9bb5wi.webp"));
         sendPhoto.setCaption("""
                 🏎IM Motors L7
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 90
                 ✅Разгон 0-100 км, сек: 3,7
@@ -809,7 +801,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/Zl6MhKhdsf1r5CfqLELkB4DnHjaliEh4XoTU6I56.webp"));
         sendPhoto.setCaption("""
                 🏎Geometry G6
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 70
                 ✅Разгон 0-100 км, сек: 6,9
@@ -831,7 +822,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/eQXmyVoEXPqMbHTXPKK2SrtMvKeFYs9BkaYGTs70.webp"));
         sendPhoto.setCaption("""
                 🏎BMW i3 eDrive40
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 78,92
                 ✅Разгон 0-100 км, сек: 5,6
@@ -854,7 +844,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/gwvcNdDemXzj2KnSzE4KnrAiEQbr722zUqpkNwsw.webp"));
         sendPhoto.setCaption("""
                 🏎BMW i4 eDrive35
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 83,9
                 ✅Разгон 0-100 км, сек: 5,7
@@ -876,7 +865,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/5Pkx8cb6yJEhEPsJdXDBzEmfVDOr361aBdZILSLb.webp"));
         sendPhoto.setCaption("""
                 🏎BMW i5 eDrive40
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 81.2
                 ✅Разгон 0-100 км, сек: 6
@@ -898,7 +886,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/public/storage/cars/fktgieIK4VYEVFIP0uN36tNjxRymXuAX2LIluq2Q.webp"));
         sendPhoto.setCaption("""
                 🏎Neta S
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 91
                 ✅Разгон 0-100 км, сек: 3,9
@@ -921,7 +908,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/public/storage/cars/7fdWbQK8rsxAid456F7zwCFsqAIcKaibwZH1rMVS.webp"));
         sendPhoto.setCaption("""
                 🏎Neta GT
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 74.5
                 ✅Количество мест: 4
@@ -944,7 +930,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/public/storage/cars/o81wp9OhfwgTCIkaXwEoFqhO0Dsgxx7Mh3VDFw47.webp"));
         sendPhoto.setCaption("""
                 🏎Zeeker 007
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 70
                 ✅Разгон 0-100 км, сек: 2,84
@@ -974,7 +959,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/6xKSj76RdxhSGrindKkIbsV6J4MZJeI4bhF7SvK9.webp"));
         sendPhoto.setCaption("""
                 🚙BYD Song Plus Champion Edition
-                Характеристики:
                 
                 ✅Емкость батареи: 87,04 кВтч
                 ✅Дисплей: 15,6" мультимедиа
@@ -998,7 +982,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/MkAX3VNbdNuNqsWJvz3KZgyK1QJVGJpxOcf6rIRP.webp"));
         sendPhoto.setCaption("""
                 🚙BYD Tang EV
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 108,8
                 ✅Разгон 0-100 км, сек: 4,4
@@ -1020,7 +1003,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/GkibsVTK9z55KFCWHnci3A7xZgKGMydhoHGKIdjy.webp"));
         sendPhoto.setCaption("""
                 🚙BYD Yuan Plus EV
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 60.5
                 ✅Разгон 0-100 км, сек: 7,3
@@ -1042,7 +1024,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/SWxFK8ht6WR0bB2HfhCw1xlONX9RjAN5RuZG18fm.webp"));
         sendPhoto.setCaption("""
                 🚙Zeekr 001
-                Характеристики:
                 
                 ✅Запас хода (NEDC), км: 650
                 ✅Емкость батареи, кВтч: 100
@@ -1063,7 +1044,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/41pwueDIG22eJtsPOvQvNm4Cx7tR9nkoSM1VAT2o.webp"));
         sendPhoto.setCaption("""
                 🚙Zeekr X
-                Характеристики:
                 
                 ✅Запас хода (NEDC), км: 500
                 ✅Емкость батареи, кВтч: 66
@@ -1084,7 +1064,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/aucwGVtBiLRBOpBhJj3qMhb8oQ7ztlh0bvB5zI3Y.webp"));
         sendPhoto.setCaption("""
                 🚙LeapMotor C11
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 90
                 ✅Разгон 0-100 км, сек: 4,5
@@ -1105,7 +1084,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/juAVI9k9BjoAUgS3eVAV5Rc0gREwuRVBFDfginS4.webp"));
         sendPhoto.setCaption("""
                 🚙Geely Geometry E
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 39,4
                 ✅Разгон 0-100 км, сек: 8,8
@@ -1126,7 +1104,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/wvBTQdrUhyfgKY8S7xqOseeicOmtGL7wLGNnY7E6.webp"));
         sendPhoto.setCaption("""
                🚙Denza N7
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 91,3
                 ✅Разгон 0-100 км, сек: 3,9
@@ -1148,7 +1125,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/jbLkedyoEHmhdmhGfmWPDhee6a3jqqFgq55GYxq8.webp"));
         sendPhoto.setCaption("""
                 🚙HiPhi Y
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 115
                 ✅Разгон 0-100 км, сек: 4,7
@@ -1169,7 +1145,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/zQV9rA6sYRm8zNgnxBdtHYdR2XczJUnxElxkOeVc.webp"));
         sendPhoto.setCaption("""
                 🚙NIO ES8
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 100
                 ✅Разгон 0-100 км, сек: 4,1
@@ -1191,7 +1166,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/xoOfzfnOEU35Da860RQf7tmwLu4tmSzHFgbGKESz.webp"));
         sendPhoto.setCaption("""
                 🚙NIO EC7
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 100
                 ✅Разгон 0-100 км, сек: 3,8
@@ -1213,7 +1187,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/RNQBVoacpvXjimNtBxZfZDfJN00HVDL6N7XQAM4l.webp"));
         sendPhoto.setCaption("""
                 🚙LI Auto L7
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 42.8
                 ✅Разгон 0-100 км, сек: 5.3
@@ -1235,7 +1208,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/hYabLzhJzyKeKAmbXydaT5kgK7za47MAZLOQzwO6.webp"));
         sendPhoto.setCaption("""
                 🚙LI Auto L9
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 44.5
                 ✅Разгон 0-100 км, сек: 5.3
@@ -1255,7 +1227,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/tpG5urfPNaVYhLY7sEkYmfBYIo63zuWsa88nOq4U.webp"));
         sendPhoto.setCaption("""
                 🚙IM Motors LS7
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 100
                 ✅Разгон 0-100 км, сек: 4,5
@@ -1276,7 +1247,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/BgJZKJoWenpHEV6sbSeLRzWFmKYN2E9QcxqyFyvM.webp"));
         sendPhoto.setCaption("""
                🚙Geometry M6
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 70
                 ✅Разгон 0-100 км, сек: 6,9
@@ -1297,7 +1267,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/jGQVsR2nxeEmeBVuOd07Uo3OffAFU9Ptj5HBw4sU.webp"));
         sendPhoto.setCaption("""
                 🚙LI Auto L8
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 42.8
                 ✅Разгон 0-100 км, сек: 5.5
@@ -1318,7 +1287,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/feyQk6GFzkFU4u0IB9KKaVHgHdsOrUdbRLCeRFv7.webp"));
         sendPhoto.setCaption("""
                 🚙Avatr 11
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 116,79
                 ✅Разгон 0-100 км, сек: 4,5
@@ -1339,7 +1307,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/mFaMd0SDGOiNIRMzXrbHKdyKlkoXN5zRqAVK1Obv.webp"));
         sendPhoto.setCaption("""
                 🚙HiPhi X
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 94,3
                 ✅Разгон 0-100 км, сек: 4
@@ -1360,7 +1327,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/Rio4OVECZKtP6rATA0xAmwk66swm7pt9i5JmEPLU.webp"));
         sendPhoto.setCaption("""
                 🚙LI Auto One
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 40.5
                 ✅Разгон 0-100 км, сек: 6.5
@@ -1381,7 +1347,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/tS5di4emmprxFcaSAEvu7KeqU8nV2cJpt0WbHTB5.webp"));
         sendPhoto.setCaption("""
                 🚙Lynk&Co 09EM-P
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 40
                 ✅Количество мест: 5
@@ -1400,7 +1365,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/sh3Tmy6GCsarJzred5lUMaLxgNM6sECxsApeFUX9.webp"));
         sendPhoto.setCaption("""
                 🚙Chevrolet Seeker
-                Характеристики:
                 
                 ✅Объем: 1.5
                 ✅Расход: 6.6
@@ -1423,7 +1387,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/qrSJ9LUiyqxQm3akh3668mKbbe3Z094IG7pZx8hp.webp"));
         sendPhoto.setCaption("""
                 🚙BYD Song L
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 87
                 ✅Разгон 0-100 км, сек: 4,3
@@ -1444,7 +1407,6 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/WGKjCPUUUdL9MdB4AAiLMM0AXSU5TfGwTJ6bZa5F.webp"));
         sendPhoto.setCaption("""
                 🚙BYD Yangwang U8
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 49.05
                 ✅Разгон 0-100 км, сек: 3.6
@@ -1470,7 +1432,6 @@ public class MyBotServiceRus {
 
         sendPhoto.setCaption("""
                 🚗BYD Seagull
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 38,88
                 ✅Разгон 0-100 км, сек: 9,5
@@ -1492,7 +1453,6 @@ public class MyBotServiceRus {
 
         sendPhoto.setCaption("""
                 🚗BYD Dolphin
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 44.9
                 ✅Разгон 0-100 км, сек: 7,5
@@ -1514,7 +1474,6 @@ public class MyBotServiceRus {
 
         sendPhoto.setCaption("""
                 🚗BYD E2
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 43,2
                 ✅Разгон 0-100 км, сек: 10,3
@@ -1536,7 +1495,6 @@ public class MyBotServiceRus {
 
         sendPhoto.setCaption("""
                 🚗Changan BenBen E-Star
-                Характеристики:
                 
                 ✅Тип топлива: Электрический
                 ✅Габариты: 3770*1650*1570
@@ -1568,7 +1526,6 @@ public class MyBotServiceRus {
 
         sendPhoto.setCaption("""
                 🚐Denza D9
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 103,36
                 ✅Разгон 0-100 км, сек: 6,9
@@ -1589,7 +1546,6 @@ public class MyBotServiceRus {
 
         sendPhoto.setCaption("""
                 🚐Zeekr009
-                Характеристики:
                 
                 ✅Емкость батареи, кВт: 822
                 ✅Разгон 0-100 км, сек: 140
