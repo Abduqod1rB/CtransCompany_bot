@@ -38,12 +38,12 @@ public class MyBotServiceEng {
         button.setText("\uD83D\uDE9AServices");
         button1.setText("\uD83D\uDE99Cars from China");
         button2.setText("⏰Delivery time");
-        button3.setText("☎️\uFE0Fcontact us");
+        button3.setText("☎️contact us");
         button4.setText("\uD83C\uDFDBCurrency rates");
         button5.setText("\uD83E\uDDEECalculator");
-        button6.setText("ℹ️\uFE0Fabout Us");
+        button6.setText("ℹ️about Us");
         button7.setText("\uD83D\uDCACLeave a comment");
-        button8.setText("⚙️\uFE0FSettings");
+        button8.setText("⚙️Settings");
         row.add(button);
         row1.add(button1);
         row2.add(button2);
@@ -168,9 +168,9 @@ public class MyBotServiceEng {
         KeyboardButton button4 = new KeyboardButton();
         KeyboardButton button5 = new KeyboardButton();
 
-        button.setText("✈\uFE0F Air transportation");
+        button.setText("✈️ Air transportation");
         button1.setText("\uD83D\uDE98 Auto transportation");
-        button2.setText("\uD83D\uDE88Railway transportation");
+        button2.setText("\uD83D\uDE88 Railway transportation");
         button3.setText("Werehouse services in Yiwu and Gungzhou");
         button4.setText("Customs Clearance services");
         button5.setText("⬅️ Back");
@@ -212,7 +212,7 @@ public class MyBotServiceEng {
         KeyboardButton button3 = new KeyboardButton();
         KeyboardButton button4 = new KeyboardButton();
 
-        button.setText("Sedan");
+        button.setText("Sedan.");
         button1.setText("Crossover");
         button2.setText("Hatchback");
         button3.setText("Minivan");
@@ -364,21 +364,21 @@ public class MyBotServiceEng {
         KeyboardButton button14 = new KeyboardButton();
         KeyboardButton button15 = new KeyboardButton();
 
-        button.setText("BYD Seal");
-        button1.setText("BYD Han");
-        button2.setText("Chevrolet Monza 1.5L Atmo");
-        button3.setText("Chevrolet Monza 1.3L Turbo");
-        button4.setText("Honda Crider 1.0L Turbo");
-        button5.setText("LeapMotor C01");
-        button6.setText("HiPhi Z");
-        button7.setText("IM Motors L7");
-        button8.setText("Geometry G6");
-        button9.setText("BMW i3 eDrive40");
-        button10.setText("BMW i4 eDrive35");
-        button11.setText("BMW i5 eDrive40");
-        button12.setText("Neta S");
-        button13.setText("Neta Gt");
-        button14.setText("Zeeker 007");
+        button.setText("BYD Seal ");
+        button1.setText("BYD Han ");
+        button2.setText("Chevrolet Monza 1.5L Atmo ");
+        button3.setText("Chevrolet Monza 1.3L Turbo ");
+        button4.setText("Honda Crider 1.0L Turbo ");
+        button5.setText("LeapMotor C01 ");
+        button6.setText("HiPhi Z ");
+        button7.setText("IM Motors L7 ");
+        button8.setText("Geometry G6 ");
+        button9.setText("BMW i3 eDrive40 ");
+        button10.setText("BMW i4 eDrive35 ");
+        button11.setText("BMW i5 eDrive40 ");
+        button12.setText("Neta S ");
+        button13.setText("Neta Gt ");
+        button14.setText("Zeeker 007 ");
         button15.setText("⬅️ Back");
 
         row.add(button);
@@ -1479,23 +1479,23 @@ public class MyBotServiceEng {
 
     //---Servis boshlanish---\\
 
-    public SendPhoto airTransportation(Long chatId){
+    public SendPhoto havotransportiEng(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(new File("D:\\My_Telegram_bots\\CTRANS_bot\\image\\air.png")));
-        sendPhoto.setCaption("""
-                CTRANS offers air transportation of a wide range of goods with large dimensions and weight. Air transportation China-Uzbekistan is the choice of most Uzbeks. We guarantee you fast, safe, and high-quality transportation in the shortest possible time.
-                
-                CTRANS employees carefully treat and control the transportation of each product. With us, you can be sure that your goods will arrive safe and sound.
-                """);
-
+        sendPhoto.setPhoto(new InputFile("https://api.360tv.ru/get_resized/-95SAJCmVKUbkPUC2f6RxCyVqbk=/1080x607/filters:focal(0.5:0.5):format(webp)/YXJ0aWNsZXMvaW1hZ2UvMjAyNC8xLzI1NjM3ODQ5NTA5ODc2NTQuanBn.webp"));
+        sendPhoto.setCaption("CTRANS offers air transportation of a wide range of goods with large dimensions and weight. Air transportation China-Uzbekistan is the choice of most Uzbeks. We guarantee you fast, safe, and high-quality transportation in the shortest possible time.\n" +
+                "\n" +
+                "CTRANS employees carefully treat and control the transportation of each product. With us, you can be sure that your goods will arrive safe and sound.");
         return sendPhoto;
     }
 
-    public SendPhoto autoTransportation(Long chatId){
+
+
+
+    public SendPhoto autoTransportationEng(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(new File("D:\\My_Telegram_bots\\CTRANS_bot\\image\\auto.png")));
+        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDsXg7vSpcNXJi0JIR5i2zfNXzawFxcAWNbJG3ojAqmvaNcmB5"));
         sendPhoto.setCaption("""
                 Cargo transportation by road is the most important component of the transport services market, and it is this direction that is considered the leader in the field of transportation of goods from the sender to the recipient.
                 
@@ -1516,7 +1516,7 @@ public class MyBotServiceEng {
     public SendPhoto railwayTransportation(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(new File("D:\\My_Telegram_bots\\CTRANS_bot\\image\\Railway.png")));
+        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7EI3DngKarj1R1HwVvbhjoGzmDIrSBj1OvdnLkYnlu37ZUjMF"));
         sendPhoto.setCaption("""
 
                 Rail transportation is one of the main activities of CTRANS. The company carries out transportation both in containers of the required tonnage and in all types of wagons.                    
@@ -1530,10 +1530,11 @@ public class MyBotServiceEng {
         return sendPhoto;
     }
 
-    public SendPhoto werehouse(Long chatId){
+
+    public SendPhoto werehouseEng(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(new File("D:\\My_Telegram_bots\\CTRANS_bot\\image\\WSIYAG.png")));
+        sendPhoto.setPhoto(new InputFile("https://fkplatforma.ru/wp-content/uploads/2023/05/img-7.png"));
         sendPhoto.setCaption("""
 
                 The CTRANS company, in addition to transporting goods by vehicles from China, offers to use warehouse logistics services in China at the same time.
@@ -1547,18 +1548,16 @@ public class MyBotServiceEng {
         return sendPhoto;
     }
 
-    public SendPhoto ccs(Long chatId){
+    public SendPhoto ccsEng(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(new File("D:\\My_Telegram_bots\\CTRANS_bot\\image\\CCS.png")));
+        sendPhoto.setPhoto(new InputFile("https://wittysparks.com/wp-content/uploads/2019/12/custom-agents-checking.jpg"));
         sendPhoto.setCaption("""
 
                 CTRANS values the time of its customers and offers services for customs declaration of goods. Definition of HS code.
                 
                 Customs clearance is necessary in order to register, register all information related to the goods, and form a package of documents with reliable information about it.
-                
-                But as experience shows. It is almost impossible to collect all the necessary documents properly on your own. Consequently, this leads to a delay of cargo at the border. For this, there are specialists who can prepare all the necessary documents for you in advance.
-                
+                                
                 Don't want your cargo to "hang" somewhere halfway? We definitely do not want to, therefore we offer our customers a customs clearance service.
                 
                 Turning to Ctrans, you can be sure of our professionalism and that the final cost of the goods will not change after customs clearance. We will help you keep the cost of production low and quickly, without unforeseen expenses, pass through customs control.

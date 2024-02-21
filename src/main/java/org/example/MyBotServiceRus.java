@@ -36,12 +36,12 @@ public class MyBotServiceRus {
         button.setText("\uD83D\uDE9AУслуги");
         button1.setText("\uD83D\uDE99Авто из Китая");
         button2.setText("⏰Срок доставки");
-        button3.setText("☎️\uFE0FНаши контакты");
+        button3.setText("☎️Наши контакты");
         button4.setText("\uD83C\uDFDBКурсы валют");
         button5.setText("\uD83E\uDDEEКалькулятор");
-        button6.setText("ℹ️\uFE0FО нас");
+        button6.setText("ℹ️О нас");
         button7.setText("\uD83D\uDCACНаписать комментарий");
-        button8.setText("⚙️\uFE0FНастройки");
+        button8.setText("⚙️Настройки");
         row.add(button);
         row1.add(button1);
         row2.add(button2);
@@ -151,6 +151,7 @@ public class MyBotServiceRus {
         KeyboardRow row = new KeyboardRow();
         KeyboardRow row1 = new KeyboardRow();
         KeyboardRow row2 = new KeyboardRow();
+        KeyboardRow row3 = new KeyboardRow();
         KeyboardButton button = new KeyboardButton();
         KeyboardButton button1 = new KeyboardButton();
         KeyboardButton button2 = new KeyboardButton();
@@ -168,10 +169,11 @@ public class MyBotServiceRus {
         row1.add(button2);
         row1.add(button3);
         row2.add(button4);
-        row2.add(button5);
+        row3.add(button5);
         rowList.add(row);
         rowList.add(row1);
         rowList.add(row2);
+        rowList.add(row3);
 
         replyKeyboardMarkup.setKeyboard(rowList);
         replyKeyboardMarkup.setResizeKeyboard(true);
@@ -237,73 +239,6 @@ public class MyBotServiceRus {
         return sendPhoto;
     }
 
-    public SendMessage minivanRus(Long chatId) {
-
-        SendMessage sendMessage = new SendMessage();
-        sendMessage.setChatId(chatId);
-            sendMessage.setText("Выберите тип минивэна");
-
-        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
-        List<KeyboardRow> rowList = new ArrayList<>();
-        KeyboardRow row = new KeyboardRow();
-        KeyboardRow row1 = new KeyboardRow();
-
-        KeyboardButton button = new KeyboardButton();
-        KeyboardButton button1 = new KeyboardButton();
-        KeyboardButton button2 = new KeyboardButton();
-
-        button.setText("Denza D9");
-        button1.setText("Zeeker 009");
-        button2.setText("⬅️\uFE0FНазад");
-
-        row.add(button);
-        row.add(button1);
-        row1.add(button2);
-
-        rowList.add(row);
-        rowList.add(row1);
-
-        replyKeyboardMarkup.setKeyboard(rowList);
-        replyKeyboardMarkup.setResizeKeyboard(true);
-        sendMessage.setReplyMarkup(replyKeyboardMarkup);
-
-        return sendMessage;
-    }
-
-    public SendMessage hatchBackRus(Long chatId) {
-
-        SendMessage sendMessage = new SendMessage();
-        sendMessage.setChatId(chatId);
-        sendMessage.setText("Выберите тип хэтчбека");
-
-        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
-        List<KeyboardRow> rowList = new ArrayList<>();
-        KeyboardRow row = new KeyboardRow();
-        KeyboardRow row1 = new KeyboardRow();
-        KeyboardButton button = new KeyboardButton();
-        KeyboardButton button1 = new KeyboardButton();
-        KeyboardButton button2 = new KeyboardButton();
-        KeyboardButton button3 = new KeyboardButton();
-
-        button.setText("Neta S");
-        button1.setText("Neta Gt");
-        button2.setText("Zeeker 007");
-        button3.setText("⬅️\uFE0FНазад");
-
-        row.add(button);
-        row.add(button1);
-        row1.add(button2);
-        row1.add(button3);
-
-        rowList.add(row);
-        rowList.add(row1);
-
-        replyKeyboardMarkup.setKeyboard(rowList);
-        replyKeyboardMarkup.setResizeKeyboard(true);
-        sendMessage.setReplyMarkup(replyKeyboardMarkup);
-
-        return sendMessage;
-    }
 
     public SendMessage sedanRus(Long chatId) {
 
@@ -411,6 +346,7 @@ public class MyBotServiceRus {
         KeyboardRow row9 = new KeyboardRow();
         KeyboardRow row10 = new KeyboardRow();
         KeyboardRow row11 = new KeyboardRow();
+        KeyboardRow row12 = new KeyboardRow();
 
         KeyboardButton button = new KeyboardButton();
         KeyboardButton button1 = new KeyboardButton();
@@ -486,7 +422,7 @@ public class MyBotServiceRus {
         row10.add(button20);
         row10.add(button21);
         row11.add(button22);
-        row11.add(button23);
+        row12.add(button23);
 
         rowList.add(row);
         rowList.add(row1);
@@ -500,6 +436,76 @@ public class MyBotServiceRus {
         rowList.add(row9);
         rowList.add(row10);
         rowList.add(row11);
+        rowList.add(row12);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendMessage;
+    }
+    public SendMessage minivanRus(Long chatId) {
+
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Выберите тип минивэна");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+        KeyboardRow row = new KeyboardRow();
+        KeyboardRow row1 = new KeyboardRow();
+
+        KeyboardButton button = new KeyboardButton();
+        KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
+
+        button.setText("Denza D9");
+        button1.setText("Zeeker 009");
+        button2.setText("⬅️\uFE0FНазад");
+
+        row.add(button);
+        row.add(button1);
+        row1.add(button2);
+
+        rowList.add(row);
+        rowList.add(row1);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendMessage;
+    }
+
+    public SendMessage xetchBackRus(Long chatId) {
+
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Выберите тип хэтчбека");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+        KeyboardRow row = new KeyboardRow();
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardRow row2 = new KeyboardRow();
+        KeyboardButton button = new KeyboardButton();
+        KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
+        KeyboardButton button3 = new KeyboardButton();
+
+        button.setText("Neta S");
+        button1.setText("Neta Gt");
+        button2.setText("Zeeker 007");
+        button3.setText("⬅️\uFE0FНазад");
+
+        row.add(button);
+        row.add(button1);
+        row1.add(button2);
+        row2.add(button3);
+
+        rowList.add(row);
+        rowList.add(row1);
+        rowList.add(row2);
 
         replyKeyboardMarkup.setKeyboard(rowList);
         replyKeyboardMarkup.setResizeKeyboard(true);
@@ -513,7 +519,7 @@ public class MyBotServiceRus {
     public SendPhoto havotransportiRus(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQadhwXWWBK6q3N87eDm4XylkA9kFEroW9Aw&usqp=CAU"));
+        sendPhoto.setPhoto(new InputFile("https://api.360tv.ru/get_resized/-95SAJCmVKUbkPUC2f6RxCyVqbk=/1080x607/filters:focal(0.5:0.5):format(webp)/YXJ0aWNsZXMvaW1hZ2UvMjAyNC8xLzI1NjM3ODQ5NTA5ODc2NTQuanBn.webp"));
         sendPhoto.setCaption("Компания CTRANS предлагает авиаперевозки широкого спектра товаров с большими габаритами и весом. Авиаперевозки Китай-Узбекистан выбор большинства Узбекистанцев. Мы гарантируем вам быструю, безопасную, и качественную перевозку за минимальный срок.\n" +
                 "\n" +
                 "Сотрудники CTRANS бережно относятся и контролируют перевозку каждого товара. С нами вы будете уверены, что ваш товар прибудет в целости и сохранности.");
@@ -523,7 +529,7 @@ public class MyBotServiceRus {
     public SendPhoto avtomobiltransportiRus(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQadhwXWWBK6q3N87eDm4XylkA9kFEroW9Aw&usqp=CAU"));
+        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDsXg7vSpcNXJi0JIR5i2zfNXzawFxcAWNbJG3ojAqmvaNcmB5"));
         sendPhoto.setCaption("Грузоперевозки автомобильным транспортом являются важнейшей составной рынка транспортных услуг, причем именно это направление считается лидером в сфере транспортировки  грузов от отправителя к получателю.\n" +
                 "\n" +
                 "По сравнению с другими видами транспорта, за автотранспортом сегодня остаются серьезные приоритеты. Среди достоинств, которыми обладают автотранспортные грузоперевозки:\n" +
@@ -536,6 +542,57 @@ public class MyBotServiceRus {
                 "большой выбор средств передвижения с учетом таких факторов, как вес, формат и габариты поклажи, наличие легковоспламеняемых товаров и быстропортящихся продуктов;");
         return sendPhoto;
     }
+    public SendPhoto railwayTransportationRus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7EI3DngKarj1R1HwVvbhjoGzmDIrSBj1OvdnLkYnlu37ZUjMF"));
+        sendPhoto.setCaption("""
+                Железнодорожные перевозки — одно из главных направлений деятельности CTRANS. Компанией осуществляется транспортировка как контейнерами нужного тоннажа, так и всеми видами вагона. 
+                               
+                Контейнерные перевозки позволят выполнить бесперегрузочную доставку товаров. Так значительно сокращается объём и увеличивается скорость промежуточных погрузочно-разгрузочных работ.
+                                
+                Железнодорожные перевозки — отличный выбор, если вы цените низкую стоимость транспортировки. Невысокая стоимость в данном случае обусловлена высокой грузоподъёмностью.
+                
+                """);
+
+        return sendPhoto;
+    }
+    public SendPhoto werehouseRus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://fkplatforma.ru/wp-content/uploads/2023/05/img-7.png"));
+        sendPhoto.setCaption("""
+
+                CTRANS предлагает услуги одновременной складской логистики в Китае, а также перевозки автомобилей из Китая.
+                
+                В крупных городах, таких как Иу и Гуанчжоу, развита торговля.
+                
+                Наши склады расположены в удобных местах города, чтобы нашим клиентам было удобнее экономить на хранении и доставке товара.
+                
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto ccsRus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://wittysparks.com/wp-content/uploads/2019/12/custom-agents-checking.jpg"));
+        sendPhoto.setCaption("""
+
+                Компания CTRANS ценит время своих клиентов и предлагает услуги по таможенному декларированию грузов. Определение кодов TIF TN.
+                                
+                Таможенное оформление необходимо для оформления всей информации, касающейся товара, оформления и формирования комплекта документов с достоверной информацией о нем.
+                                                                
+                Не хотите, чтобы ваш багаж «болтался» где-то на полпути? Нам, конечно, не хочется, поэтому мы предлагаем нашим клиентам услугу таможенного оформления.
+                                                                                                                                                              
+                Обратившись в Ctrans, вы можете быть уверены в нашем профессионализме и в том, что окончательная цена товара не изменится после таможенного оформления. Мы поможем Вам пройти стоимость товара дешево и быстро, без непредвиденных расходов, через таможенный контроль.
+                
+                """);
+
+        return sendPhoto;
+    }
+
 
 
 
