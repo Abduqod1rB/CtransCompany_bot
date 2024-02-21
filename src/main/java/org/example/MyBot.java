@@ -304,7 +304,7 @@ public class MyBot extends TelegramLongPollingBot {
             }
             if(text.equals("Xetchbek")){
                 try {
-                    execute(myBotServiceUz.xetchBackUz(chatId));
+                    execute(myBotServiceUz.hatchBackUz(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
@@ -373,6 +373,7 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
 
+
             if(text.equals("\uD83E\uDDEEKalkulyator")){
                 try {
                     execute(myBotServiceUz.kankulator(chatId));
@@ -394,7 +395,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
             if(text.equals("ℹ️Biz haqimizda")){
                 try {
                     execute(myBotServiceUz.aboutUsUz(chatId));
@@ -402,7 +402,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
             if(text.equals("ℹ️О нас")){
                 try {
                     execute(myBotServiceRus.aboutUsRus(chatId));
@@ -410,7 +409,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
             if(text.equals("ℹ️about Us")){
                 try {
                     execute(myBotServiceEng.aboutUsEng(chatId));
