@@ -685,6 +685,48 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
+            if(text.equals("BYD Seagull")){
+                try {
+                    execute(myBotServiceUz.BYD_Segaull(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("BYD Dolphin")){
+                try {
+                    execute(myBotServiceUz.BYD_Dolphin(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("BYD E2")){
+                try {
+                    execute(myBotServiceUz.BYD_E2(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("Changan BenBen E-Star")){
+                try {
+                    execute(myBotServiceUz.Changan_BenBen_E_Star(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("Denza D9")){
+                try {
+                    execute(myBotServiceUz.Denza_D9(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("Zeeker 009")){
+                try {
+                    execute(myBotServiceUz.Zeekr_009(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
 
             ///////////////////////////////////////////
 
