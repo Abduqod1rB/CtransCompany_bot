@@ -711,6 +711,22 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
 
+            if(text.equals("ℹ️Biz haqimizda")){
+                try {
+                    execute(myBotServiceUz.aboutUsUz(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            if(text.equals("ℹ️О нас")){
+                try {
+                    execute(myBotServiceRus.aboutUsRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
             if(text.equals("ℹ️about Us")){
                 try {
                     execute(myBotServiceEng.aboutUsEng(chatId));
