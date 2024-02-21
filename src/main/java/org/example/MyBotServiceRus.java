@@ -396,7 +396,7 @@ public class MyBotServiceRus {
         button20.setText("\uD83D\uDE97Chevrolet Seeker");
         button21.setText("\uD83D\uDE97BYD Song L");
         button22.setText("\uD83D\uDE97BYD Yangwang U8");
-        button23.setText("⬅️\uFE0FНазад");
+        button23.setText("⬅️Назад");
 
 
         row.add(button);
@@ -493,9 +493,9 @@ public class MyBotServiceRus {
         KeyboardButton button2 = new KeyboardButton();
         KeyboardButton button3 = new KeyboardButton();
 
-        button.setText("\uD83D\uDE97Neta S");
-        button1.setText("\uD83D\uDE97Neta Gt");
-        button2.setText("\uD83D\uDE97Zeeker 007");
+        button.setText("\uD83D\uDE97");
+        button1.setText("\uD83D\uDE97");
+        button2.setText("\uD83D\uDE97");
         button3.setText("⬅️\uFE0FНазад");
 
         row.add(button);

@@ -547,19 +547,22 @@ public class MyBotServiceUz {
         KeyboardButton button2 = new KeyboardButton();
         KeyboardButton button3 = new KeyboardButton();
         KeyboardButton button4 = new KeyboardButton();
+        KeyboardButton button5 = new KeyboardButton();
         KeyboardRow row1 = new KeyboardRow();
         KeyboardRow row2 = new KeyboardRow();
+        KeyboardRow row3 = new KeyboardRow();
         List<KeyboardRow> rowList = new ArrayList<>();
 
-        button1.setText("Neta S");
-        button2.setText("Neta Gt");
-        button3.setText("Zeeker 007");
-        button4.setText("⬅️Orqaga");
+        button1.setText("BYD Seagull");
+        button2.setText("BYD Dolphin");
+        button3.setText("BYD E2");
+        button4.setText("Changan BenBen E-Star");
+        button5.setText("⬅️Orqaga");
 
         row1.add(button1);row1.add(button2);
-        row2.add(button3);row2.add(button4);
+        row2.add(button3);row2.add(button3);row3.add(button5);
 
-        rowList.add(row1);rowList.add(row2);
+        rowList.add(row1);rowList.add(row2);rowList.add(row3);
 
         replyKeyboardMarkup.setKeyboard(rowList);
         replyKeyboardMarkup.setResizeKeyboard(true);
