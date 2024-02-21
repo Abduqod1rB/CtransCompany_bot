@@ -243,16 +243,16 @@ public class MyBotServiceEng {
         sendPhoto.setCaption("""
         ABOUT US
         
-        Experience in the field of
-        logistics services around the
-        world.
+        Experience in the field of logistics services around the world.
         
-        We pride ourselves on providing the best shipping and
-        transportation deals around the world.
+        We pride ourselves on providing the best shipping and transportation deals around the world.
         
-        ✅100% Compensation ✅Online tracking
-        ✅Experienced Team  ✅Cargo insurance
-        ✅Support 24/7      ✅Safe warehouse
+        ✅100% Compensation
+        ✅Online tracking
+        ✅Experienced Team
+        ✅Cargo insurance
+        ✅Safe warehouse
+        ✅Support 24/7
         """);
 
         return sendPhoto;
