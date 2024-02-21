@@ -307,16 +307,19 @@ public class MyBotServiceEng {
         KeyboardButton button1 = new KeyboardButton();
         KeyboardButton button2 = new KeyboardButton();
         KeyboardButton button3 = new KeyboardButton();
+        KeyboardButton button4 = new KeyboardButton();
 
-        button.setText("Neta S");
-        button1.setText("Neta Gt");
-        button2.setText("Zeeker 007");
-        button3.setText("⬅️ Back");
+        button.setText("BYD Seagull");
+        button1.setText("BYD Dolphin");
+        button2.setText("BYD E2");
+        button3.setText("Changan BenBen E-Star");
+        button4.setText("⬅️ Back");
 
         row.add(button);
         row.add(button1);
         row1.add(button2);
-        row2.add(button3);
+        row1.add(button3);
+        row2.add(button4);
 
         rowList.add(row);
         rowList.add(row1);
@@ -1391,7 +1394,7 @@ public class MyBotServiceEng {
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/wTDQ0xMwIBQvDR2sba11CvPrgEVcaidi66kZuNYq.webp"));
         sendPhoto.setCaption("""
                 BYD E2
-                                
+                
                 ✅Battery capacity, kW: 43,2
                 ✅Acceleration 0-100 km, sec: 10,3
                 ✅Power, kW/hp: 70/95
