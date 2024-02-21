@@ -272,39 +272,7 @@ public class MyBotServiceUz {
 
         return sendPhoto;
     }
-    public SendPhoto werehouseUz(Long chatId){
-        SendPhoto sendPhoto = new SendPhoto();
-        sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://fkplatforma.ru/wp-content/uploads/2023/05/img-7.png"));
-        sendPhoto.setCaption("""
-
-                CTRANS kompaniyasi Xitoydan transport vositalarida yuk tashishdan tashqari, Xitoyda bir vaqtning o'zida ombor logistikasi xizmatlaridan foydalanishni taklif qiladi.
-                
-                Yivu va Guanchjou kabi yirik shaharlarda savdo koʻp.
-                
-                Mijozlarimiz uchun tovarlarni saqlash va yetkazib berishda tejashni yanada qulay qilish uchun omborlarimiz shaharning qulay joylarida joylashgan.
-                
-                """);
-
-        return sendPhoto;
-    }
-    public SendPhoto ccsUz(Long chatId){
-        SendPhoto sendPhoto = new SendPhoto();
-        sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://wittysparks.com/wp-content/uploads/2019/12/custom-agents-checking.jpg"));
-        sendPhoto.setCaption("""
-                CTRANS o'z mijozlarining vaqtini qadrlaydi va yuklarni bojxona deklaratsiyasi xizmatlarini taklif qiladi. TIF TN kodlarining ta'rifi.
-                                                
-                Bojxona rasmiylashtiruvi tovarlarga tegishli barcha ma'lumotlarni ro'yxatdan o'tkazish, ro'yxatdan o'tkazish va u haqida ishonchli ma'lumotga ega bo'lgan hujjatlar to'plamini shakllantirish uchun zarurdir.
-                                                                
-                Yukingiz yarim yo‘lda qayergadir “osilib qolishini” xohlamaysizmi? Biz, albatta, xohlamaymiz, shuning uchun biz mijozlarimizga bojxona rasmiylashtiruvi xizmatini taklif qilamiz.
-                
-                Ctransga murojaat qilib, siz bizning professionalligimiz va bojxona rasmiylashtiruvidan keyin tovarlarning yakuniy narxi o'zgarmasligiga amin bo'lishingiz mumkin. Biz sizga mahsulot tannarxini arzon va tez, kutilmagan xarajatlarsiz, bojxona nazoratidan o‘tkazishingizga yordam beramiz.
-                """);
-
-        return sendPhoto;
-    }
-//    public SendPhoto havotransporti(Long chatId){
+    //    public SendPhoto havotransporti(Long chatId){
 //        SendPhoto sendPhoto = new SendPhoto();
 //        sendPhoto.setChatId(chatId);
 //        sendPhoto.setPhoto(new InputFile("https://wallpaperset.com/w/full/c/6/a/249472.jpg"));
@@ -357,6 +325,38 @@ public class MyBotServiceUz {
                 "\n" +
                 "Agar siz past transport xarajatlarini qadrlasangiz, temir yo'l transporti ajoyib tanlovdir. Bu holatda past narx yuqori yuk ko'tarish qobiliyatiga bog'liq.");
         sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+    public SendPhoto werehouseUz(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://fkplatforma.ru/wp-content/uploads/2023/05/img-7.png"));
+        sendPhoto.setCaption("""
+
+                CTRANS kompaniyasi Xitoydan transport vositalarida yuk tashishdan tashqari, Xitoyda bir vaqtning o'zida ombor logistikasi xizmatlaridan foydalanishni taklif qiladi.
+                
+                Yivu va Guanchjou kabi yirik shaharlarda savdo koʻp.
+                
+                Mijozlarimiz uchun tovarlarni saqlash va yetkazib berishda tejashni yanada qulay qilish uchun omborlarimiz shaharning qulay joylarida joylashgan.
+                
+                """);
+
+        return sendPhoto;
+    }
+    public SendPhoto ccsUz(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://wittysparks.com/wp-content/uploads/2019/12/custom-agents-checking.jpg"));
+        sendPhoto.setCaption("""
+                CTRANS o'z mijozlarining vaqtini qadrlaydi va yuklarni bojxona deklaratsiyasi xizmatlarini taklif qiladi. TIF TN kodlarining ta'rifi.
+                                                
+                Bojxona rasmiylashtiruvi tovarlarga tegishli barcha ma'lumotlarni ro'yxatdan o'tkazish, ro'yxatdan o'tkazish va u haqida ishonchli ma'lumotga ega bo'lgan hujjatlar to'plamini shakllantirish uchun zarurdir.
+                                                                
+                Yukingiz yarim yo‘lda qayergadir “osilib qolishini” xohlamaysizmi? Biz, albatta, xohlamaymiz, shuning uchun biz mijozlarimizga bojxona rasmiylashtiruvi xizmatini taklif qilamiz.
+                
+                Ctransga murojaat qilib, siz bizning professionalligimiz va bojxona rasmiylashtiruvidan keyin tovarlarning yakuniy narxi o'zgarmasligiga amin bo'lishingiz mumkin. Biz sizga mahsulot tannarxini arzon va tez, kutilmagan xarajatlarsiz, bojxona nazoratidan o‘tkazishingizga yordam beramiz.
+                """);
+
         return sendPhoto;
     }
 
