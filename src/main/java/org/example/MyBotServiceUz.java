@@ -12,6 +12,7 @@ import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMar
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardButton;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -233,7 +234,7 @@ public class MyBotServiceUz {
     public SendPhoto havotransporti(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://api.360tv.ru/get_resized/-95SAJCmVKUbkPUC2f6RxCyVqbk=/1080x607/filters:focal(0.5:0.5):format(webp)/YXJ0aWNsZXMvaW1hZ2UvMjAyNC8xLzI1NjM3ODQ5NTA5ODc2NTQuanBn.webp"));
+        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQadhwXWWBK6q3N87eDm4XylkA9kFEroW9Aw&usqp=CAU"));
         sendPhoto.setCaption("CTRANS katta o'lchamlari va og'irligi bo'lgan keng turdagi tovarlarni havo orqali tashishni taklif qiladi. Xitoy-O'zbekiston bilan havo transporti ko'pchilik o'zbekistonliklarning tanlovidir. Biz sizga eng qisqa vaqt ichida tez, xavfsiz va sifatli tashishni kafolatlaymiz.\n" +
                 "\n" +
                 "CTRANS xodimlari har bir mahsulotga ehtiyotkorlik bilan munosabatda bo'lishadi va tashishni nazorat qilishadi. Biz bilan mahsulotlaringiz xavfsiz va sog'lom yetib kelishiga amin bo'lishingiz mumkin.");
@@ -242,17 +243,19 @@ public class MyBotServiceUz {
     public SendPhoto avtomobiltransporti(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDsXg7vSpcNXJi0JIR5i2zfNXzawFxcAWNbJG3ojAqmvaNcmB5"));
-        sendPhoto.setCaption("Avtomobil transportida yuk tashish transport xizmatlari bozorining eng muhim tarkibiy qismi bo'lib, aynan shu yo'nalish yuklarni jo'natuvchidan oluvchiga tashish sohasida yetakchi hisoblanadi.\n" +
+        sendPhoto.setPhoto(new InputFile("https://hips.hearstapps.com/hmg-prod/images/volvo-45-6464dc2d84b25.jpg"));
+        sendPhoto.setCaption("<b>Avtomobil transporti</b>\n" +
+                "Avtomobil transportida yuk tashish transport xizmatlari bozorining eng muhim tarkibiy qismi bo'lib, aynan shu yo'nalish yuklarni jo'natuvchidan oluvchiga tashish sohasida yetakchi hisoblanadi.\n" +
                 "\n" +
                 "Boshqa transport turlari bilan taqqoslaganda, bugungi kunda avtotransport jiddiy ustuvor yo'nalish bo'lib qolmoqda. Avtotransport yuklarining afzalliklari orasida:\n" +
                 "\n" +
-                "manevr qobiliyati;\n" +
-                "logistika kompaniyasi uchun eng foydali marshrutlarni amalga oshirish uchun keng imkoniyatlar;\n" +
-                "yetkazib berish tezligi;\n" +
-                "tashiladigan tovarlarning keng assortimenti;\n" +
-                "bir nechta kompaniyalarning posilkalarini birlashtirgan holda, guruhli yo'l yuklarini shakllantirish;\n" +
-                "yukning og'irligi, formati va o'lchamlari, yonuvchan tovarlar va tez buziladigan mahsulotlarning mavjudligi kabi omillarni hisobga olgan holda transport vositalarining katta tanlovi;");
+                "•manevr qobiliyati;\n" +
+                "•logistika kompaniyasi uchun eng foydali marshrutlarni amalga oshirish uchun keng imkoniyatlar;\n" +
+                "•yetkazib berish tezligi;\n" +
+                "•tashiladigan tovarlarning keng assortimenti;\n" +
+                "•bir nechta kompaniyalarning posilkalarini birlashtirgan holda, guruhli yo'l yuklarini shakllantirish;\n" +
+                "•yukning og'irligi, formati va o'lchamlari, yonuvchan tovarlar va tez buziladigan mahsulotlarning mavjudligi kabi omillarni hisobga olgan holda transport vositalarining katta tanlovi;");
+        sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
     public SendPhoto railwayTransportationUz(Long chatId){
@@ -269,6 +272,44 @@ public class MyBotServiceUz {
                 
                 """);
 
+        return sendPhoto;
+    }
+    //    public SendPhoto havotransporti(Long chatId){
+//        SendPhoto sendPhoto = new SendPhoto();
+//        sendPhoto.setChatId(chatId);
+//        sendPhoto.setPhoto(new InputFile("https://wallpaperset.com/w/full/c/6/a/249472.jpg"));
+//        sendPhoto.setCaption("<b>Havo transporti</b>\n" +
+//                "CTRANS katta o'lchamlari va og'irligi bo'lgan keng turdagi tovarlarni havo orqali tashishni taklif qiladi. Xitoy-O'zbekiston bilan havo transporti ko'pchilik o'zbekistonliklarning tanlovidir. Biz sizga eng qisqa vaqt ichida tez, xavfsiz va sifatli tashishni kafolatlaymiz.\n" +
+//                "\n" +
+//                "CTRANS xodimlari har bir mahsulotga ehtiyotkorlik bilan munosabatda bo'lishadi va tashishni nazorat qilishadi. Biz bilan mahsulotlaringiz xavfsiz va sog'lom yetib kelishiga amin bo'lishingiz mumkin.");
+//        sendPhoto.setParseMode(ParseMode.HTML);
+//        return sendPhoto;
+//    }
+
+    public SendPhoto dengiztransporti(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://img.freepik.com/premium-photo/view-from-ship-with-cargo-going-by-sea-cargo-port_124507-55067.jpg"));
+        sendPhoto.setCaption("<b>Dengiz transporti</b>\n" +
+                "Temir yo'l transporti CTRANS kompaniyasining asosiy faoliyat yo'nalishlaridan biridir. Kompaniya kerakli tonnajdagi konteynerlarda ham, barcha turdagi vagonlarda ham yuk tashishni amalga oshiradi.\n" +
+                "\n" +
+                "Konteynerda tashish yuklarni qayta yuklamasdan yetkazib berish imkonini beradi. Bu hajmni sezilarli darajada kamaytiradi va oraliq yuklash va tushirish operatsiyalari tezligini oshiradi.\n" +
+                "\n" +
+                "Agar siz past transport xarajatlarini qadrlasangiz, temir yo'l transporti ajoyib tanlovdir. Bu holatda past narx yuqori yuk ko'tarish qobiliyatiga bog'liq.");
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+    public SendPhoto temiryoltransporti(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://img.freepik.com/premium-photo/large-containers-with-cargo-delivered-by-cargo-train-railway-station_124507-35363.jpg"));
+        sendPhoto.setCaption("<b>Temiryo'l transporti</b>\n" +
+                "Temir yo'l transporti CTRANS kompaniyasining asosiy faoliyat yo'nalishlaridan biridir. Kompaniya kerakli tonnajdagi konteynerlarda ham, barcha turdagi vagonlarda ham yuk tashishni amalga oshiradi.\n" +
+                "\n" +
+                "Konteynerda tashish yuklarni qayta yuklamasdan yetkazib berish imkonini beradi. Bu hajmni sezilarli darajada kamaytiradi va oraliq yuklash va tushirish operatsiyalari tezligini oshiradi.\n" +
+                "\n" +
+                "Agar siz past transport xarajatlarini qadrlasangiz, temir yo'l transporti ajoyib tanlovdir. Bu holatda past narx yuqori yuk ko'tarish qobiliyatiga bog'liq.");
+        sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
     public SendPhoto werehouseUz(Long chatId){
@@ -346,7 +387,6 @@ public class MyBotServiceUz {
         KeyboardRow row6 = new KeyboardRow();
         KeyboardRow row7 = new KeyboardRow();
         KeyboardRow row8 = new KeyboardRow();
-        KeyboardRow row9 = new KeyboardRow();
 
         KeyboardButton button1 = new KeyboardButton();
         KeyboardButton button2 = new KeyboardButton();
@@ -389,11 +429,10 @@ public class MyBotServiceUz {
         row5.add(button9);row5.add(button10);
         row6.add(button11);row6.add(button12);
         row7.add(button13);row7.add(button14);
-        row8.add(button15);row9.add(button16);
+        row8.add(button15);row8.add(button16);
 
         rowList.add(row1);rowList.add(row2);rowList.add(row3);rowList.add(row4);
         rowList.add(row5);rowList.add(row6);rowList.add(row7);rowList.add(row8);
-        rowList.add(row9);
 
         replyKeyboardMarkup.setResizeKeyboard(true);
         replyKeyboardMarkup.setKeyboard(rowList);
@@ -422,7 +461,6 @@ public class MyBotServiceUz {
         KeyboardRow row10 = new KeyboardRow();
         KeyboardRow row11 = new KeyboardRow();
         KeyboardRow row12 = new KeyboardRow();
-        KeyboardRow row13 = new KeyboardRow();
 
         KeyboardButton button1 = new KeyboardButton();
         KeyboardButton button2 = new KeyboardButton();
@@ -485,11 +523,10 @@ public class MyBotServiceUz {
         row9.add(button17);row9.add(button18);
         row10.add(button19);row10.add(button20);
         row11.add(button21);row11.add(button22);
-        row12.add(button23);row13.add(button24);
+        row12.add(button23);row12.add(button24);
 
         rowList.add(row1);rowList.add(row2);rowList.add(row3);rowList.add(row4);rowList.add(row5);rowList.add(row6);
         rowList.add(row7);rowList.add(row8);rowList.add(row9);rowList.add(row10);rowList.add(row11);rowList.add(row12);
-        rowList.add(row13);
 
         replyKeyboardMarkup.setKeyboard(rowList);
         replyKeyboardMarkup.setResizeKeyboard(true);
@@ -497,7 +534,7 @@ public class MyBotServiceUz {
 
         return sendMessage;
     }
-    public SendMessage xetchBackUz(Long chatId) {
+    public SendMessage hatchBackUz(Long chatId) {
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -510,7 +547,6 @@ public class MyBotServiceUz {
         KeyboardButton button4 = new KeyboardButton();
         KeyboardRow row1 = new KeyboardRow();
         KeyboardRow row2 = new KeyboardRow();
-        KeyboardRow row3 = new KeyboardRow();
         List<KeyboardRow> rowList = new ArrayList<>();
 
         button1.setText("Neta S");
@@ -519,9 +555,9 @@ public class MyBotServiceUz {
         button4.setText("⬅️Orqaga");
 
         row1.add(button1);row1.add(button2);
-        row2.add(button3);row3.add(button4);
+        row2.add(button3);row2.add(button4);
 
-        rowList.add(row1);rowList.add(row2);rowList.add(row3);
+        rowList.add(row1);rowList.add(row2);
 
         replyKeyboardMarkup.setKeyboard(rowList);
         replyKeyboardMarkup.setResizeKeyboard(true);
@@ -805,5 +841,202 @@ public class MyBotServiceUz {
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
-    //Push and Commit
+
+    //C R O S S O V E R
+
+    public SendPhoto BYD_Song_Plus_Champion_Edition(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/6xKSj76RdxhSGrindKkIbsV6J4MZJeI4bhF7SvK9.webp"));
+        sendPhoto.setCaption("<b>BYD Song Plus Champion Edition</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Batareya quvvati: 87,04 kVt/soat\n" +
+                "✅Quvvat zaxirasi (NEDC): 605 km\n" +
+                "✅Displey: 15,6\" multimedia\n" +
+                "✅Avtomatik to'xtash: Bor\n" +
+                "✅Karaoke funksiyasi: Bor\n" +
+                "✅Tezlashuv 0-100 km, sek: 8,5\n" +
+                "✅Joylar soni: 5\n" +
+                "✅Quvvat, kVt/hp: 160/218\n" +
+                "✅Maksimal tezlik, km/soat: 175\n" +
+                "✅Haydovchi blok: Old"
+        );
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+    public SendPhoto BYD_Tang_EV(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/R1V88PAOtN8eavpv5oHORRTnjp8bIGDeTMBYmyli.webp"));
+        sendPhoto.setCaption("<b>BYD Tang EV</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Batareya quvvati, kVt: 108,8\n" +
+                "✅Quvvat zahirasi (NEDC), km: 635\n" +
+                "✅Tezlashuv 0-100 km, sek: 4,4\n" +
+                "✅Joylar soni: 7\n" +
+                "✅Quvvat, kVt/hp: 380/517\n" +
+                "✅Maksimal tezlik, km/soat: 180\n" +
+                "✅Haydovchi blok: To'liq\n" +
+                "✅Zaryadlash tezligi (sekin / tez), soat: 16,5/0,5"
+        );
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+    public SendPhoto BYD_Yuan_Plus_EV(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/GkibsVTK9z55KFCWHnci3A7xZgKGMydhoHGKIdjy.webp"));
+        sendPhoto.setCaption("<b>BYD Yuan Plus EV</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Batareya quvvati, kVt: 60.5\n" +
+                "✅Quvvat zahirasi (NEDC), km: 510\n" +
+                "✅Tezlashuv 0-100 km, sek: 7,3\n" +
+                "✅Joylar soni: 5\n" +
+                "✅Quvvat, kVt/hp: 150/204\n" +
+                "✅Maksimal tezlik, km/soat: 160\n" +
+                "✅Haydovchi blok: Old\n" +
+                "✅Zaryadlash tezligi (sekin / tez), soat: 8,64/0,5"
+        );
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+    public SendPhoto Zeekr_001(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/SWxFK8ht6WR0bB2HfhCw1xlONX9RjAN5RuZG18fm.webp"));
+        sendPhoto.setCaption("<b>Zeekr 001</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Quvvat zahirasi (NEDC), km: 650\n" +
+                "✅Tezlashuv 0-100 km, sek: 3,8\n" +
+                "✅Batareya quvvati, kVt/soat: 100\n" +
+                "✅Joylar soni: 5\n" +
+                "✅Quvvat, kVt/hp: 400/544\n" +
+                "✅Maksimal tezlik, km/soat: 200\n" +
+                "✅Haydovchi blok: Toʻliq"
+        );
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+    public SendPhoto Zeekr_X(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/41pwueDIG22eJtsPOvQvNm4Cx7tR9nkoSM1VAT2o.webp"));
+        sendPhoto.setCaption("<b>Zeekr X</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Quvvat zahirasi (NEDC), km: 500\n" +
+                "✅Tezlashuv 0-100 km, sek: 3,8\n" +
+                "✅Batareya quvvati, kVt/soat: 66\n" +
+                "✅Joylar soni: 4\n" +
+                "✅Quvvat, kVt/hp: 315/428\n" +
+                "✅Maksimal tezlik, km/soat: 190\n" +
+                "✅Haydovchi blok: To'liq"
+        );
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+    public SendPhoto LeapMotor_C11(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/aucwGVtBiLRBOpBhJj3qMhb8oQ7ztlh0bvB5zI3Y.webp"));
+        sendPhoto.setCaption("<b>LeapMotor C11</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Batareya quvvati, kVt: 90\n" +
+                "✅Quvvat zahirasi (NEDC), km: 580\n" +
+                "✅0-100 km tezlashuv, sek: 4,5\n" +
+                "✅Joylar soni: 5\n" +
+                "✅Quvvat, kVt/hp: 400/544\n" +
+                "✅Maksimal tezlik, km/soat: 200\n" +
+                "✅Haydovchi blok: To'liq"
+        );
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+    public SendPhoto Geely_Geometry_E(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/juAVI9k9BjoAUgS3eVAV5Rc0gREwuRVBFDfginS4.webp"));
+        sendPhoto.setCaption("<b>Geely Geometry E</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Batareya quvvati, kVt: 39,4\n" +
+                "✅Quvvat zahirasi (NEDC), km: 401\n" +
+                "✅Tezlashuv 0-100 km, sek: 8,8\n" +
+                "✅Joylar soni: 4\n" +
+                "✅Quvvat, kVt/hp: 60/82\n" +
+                "✅Maksimal tezlik, km/soat: 102\n" +
+                "✅Haydovchi blok: To'liq"
+        );
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+    public SendPhoto Denza_N7(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/wvBTQdrUhyfgKY8S7xqOseeicOmtGL7wLGNnY7E6.webp"));
+        sendPhoto.setCaption("<b>Denza N7</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Batareya quvvati, kVt: 91,3\n" +
+                "✅Quvvat zahirasi (NEDC), km: 630\n" +
+                "✅Tezlashuv 0-100 km, sek: 3,9\n" +
+                "✅Joylar soni: 5\n" +
+                "✅Quvvat, kVt/hp: 390/530\n" +
+                "✅Maksimal tezlik, km/soat: 180\n" +
+                "✅Haydovchi blok: To'liq"
+        );
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+    public SendPhoto HiPhi_Y(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/jbLkedyoEHmhdmhGfmWPDhee6a3jqqFgq55GYxq8.webp"));
+        sendPhoto.setCaption("<b>HiPhi Y</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Batareya quvvati, kVt: 115\n" +
+                "✅Quvvat zahirasi (NEDC), km: 765\n" +
+                "✅Tezlashuv 0-100 km, sek: 4,7\n" +
+                "✅Joylar soni: 5\n" +
+                "✅Quvvat, kVt/hp: 371/505\n" +
+                "✅Maksimal tezlik, km/soat: 190\n" +
+                "✅Haydovchi blok: To'liq"
+        );
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+    public SendPhoto NIO_ES8(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/zQV9rA6sYRm8zNgnxBdtHYdR2XczJUnxElxkOeVc.webp"));
+        sendPhoto.setCaption("<b>NIO ES8</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Batareya quvvati, kVt: 100\n" +
+                "✅Quvvat zahirasi (NEDC), km: 605\n" +
+                "✅Tezlashuv 0-100 km, sek: 4,1\n" +
+                "✅Joylar soni: 6\n" +
+                "✅Quvvat, kVt/hp: 480/653\n" +
+                "✅Maksimal tezlik, km/soat: 200\n" +
+                "✅Haydovchi blok: To'liq\n" +
+                "✅Zaryadlash tezligi (sekin / tez), soat: 0,5"
+        );
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+    public SendPhoto NIO_EC7(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/xoOfzfnOEU35Da860RQf7tmwLu4tmSzHFgbGKESz.webp"));
+        sendPhoto.setCaption("<b>NEO EC7</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Batareya quvvati, kVt: 100\n" +
+                "✅Quvvat zahirasi (NEDC), km: 635\n" +
+                "✅Tezlashuv 0-100 km, sek: 3,8\n" +
+                "✅Joylar soni: 5\n" +
+                "✅Quvvat, kVt/hp: 480/653\n" +
+                "✅Maksimal tezlik, km/soat: 200\n" +
+                "✅Haydovchi blok: To'liq\n" +
+                "✅Zaryadlash tezligi (sekin / tez), soat: 0,33"
+        );
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+
 }
