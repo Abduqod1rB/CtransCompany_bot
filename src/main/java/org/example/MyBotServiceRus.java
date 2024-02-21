@@ -198,10 +198,10 @@ public class MyBotServiceRus {
         KeyboardButton button2 = new KeyboardButton();
         KeyboardButton button3 = new KeyboardButton();
         KeyboardButton button4 = new KeyboardButton();
-        button.setText("Седан");
-        button1.setText("Кросовер");
-        button2.setText("Хетчбек");
-        button3.setText("Минивэн");
+        button.setText("\uD83D\uDE97Седан");
+        button1.setText("\uD83D\uDE97Кросовер");
+        button2.setText("\uD83D\uDE97Хетчбек");
+        button3.setText("\uD83D\uDE97Минивэн");
         button4.setText("⬅️\uFE0FНазад");
         row.add(button);
         row.add(button1);
@@ -275,22 +275,22 @@ public class MyBotServiceRus {
         KeyboardButton button14 = new KeyboardButton();
         KeyboardButton button15 = new KeyboardButton();
 
-        button.setText("BYD Seal");
-        button1.setText("BYD Han");
-        button2.setText("Chevrolet Monza 1.5L Atmo");
-        button3.setText("Chevrolet Monza 1.3L Turbo");
-        button4.setText("Honda Crider 1.0L Turbo");
-        button5.setText("LeapMotor C01");
-        button6.setText("HiPhi Z");
-        button7.setText("IM Motors L7");
-        button8.setText("Geometry G6");
-        button9.setText("BMW i3 eDrive40");
-        button10.setText("BMW i4 eDrive35");
-        button11.setText("BMW i5 eDrive40");
-        button12.setText("Neta S");
-        button13.setText("Neta Gt");
-        button14.setText("Zeeker 007");
-        button15.setText("⬅️\uFE0FНазад");
+        button.setText("\uD83D\uDE97BYD Seal");
+        button1.setText("\uD83D\uDE97BYD Han");
+        button2.setText("\uD83D\uDE97Chevrolet Monza 1.5L Atmo");
+        button3.setText("\uD83D\uDE97Chevrolet Monza 1.3L Turbo");
+        button4.setText("\uD83D\uDE97Honda Crider 1.0L Turbo");
+        button5.setText("\uD83D\uDE97LeapMotor C01");
+        button6.setText("\uD83D\uDE97HiPhi Z");
+        button7.setText("\uD83D\uDE97IM Motors L7");
+        button8.setText("\uD83D\uDE97Geometry G6");
+        button9.setText("\uD83D\uDE97BMW i3 eDrive40");
+        button10.setText("\uD83D\uDE97BMW i4 eDrive35");
+        button11.setText("\uD83D\uDE97BMW i5 eDrive40");
+        button12.setText("\uD83D\uDE97Neta S");
+        button13.setText("\uD83D\uDE97Neta Gt");
+        button14.setText("\uD83D\uDE97Zeeker 007");
+        button15.setText("⬅️Назад");
 
         row.add(button);
         row.add(button1);
@@ -373,29 +373,29 @@ public class MyBotServiceRus {
         KeyboardButton button22 = new KeyboardButton();
         KeyboardButton button23 = new KeyboardButton();
 
-        button.setText("BYD Song Plus Champion Edition");
-        button1.setText("BYD Tang EV");
-        button2.setText("BYD Yuan Plus EV");
-        button3.setText("Zeeker 001");
-        button4.setText("Zeeker X");
-        button5.setText("LeapMotor C11");
-        button6.setText("Geely Geometry E");
-        button7.setText("Denza N7");
-        button8.setText("HiPhi Y");
-        button9.setText("NIO ES8");
-        button10.setText("NIO EC7");
-        button11.setText("LI Auto L7");
-        button12.setText("LI Auto L9");
-        button13.setText("IM Motors LS7");
-        button14.setText("Geometry M6");
-        button15.setText("LI Auto L8");
-        button16.setText("Avatr 11");
-        button17.setText("HiPhi X");
-        button18.setText("LI Auto One");
-        button19.setText("Lynk&Co 09EM-P");
-        button20.setText("Chevrolet Seeker");
-        button21.setText("BYD Song L");
-        button22.setText("BYD Yangwang U8");
+        button.setText("\uD83D\uDE97BYD Song Plus Champion Edition");
+        button1.setText("\uD83D\uDE97BYD Tang EV");
+        button2.setText("\uD83D\uDE97BYD Yuan Plus EV");
+        button3.setText("\uD83D\uDE97Zeeker 001");
+        button4.setText("\uD83D\uDE97Zeeker X");
+        button5.setText("\uD83D\uDE97LeapMotor C11");
+        button6.setText("\uD83D\uDE97Geely Geometry E");
+        button7.setText("\uD83D\uDE97Denza N7");
+        button8.setText("\uD83D\uDE97HiPhi Y");
+        button9.setText("\uD83D\uDE97NIO ES8");
+        button10.setText("\uD83D\uDE97NIO EC7");
+        button11.setText("\uD83D\uDE97LI Auto L7");
+        button12.setText("\uD83D\uDE97LI Auto L9");
+        button13.setText("\uD83D\uDE97IM Motors LS7");
+        button14.setText("\uD83D\uDE97Geometry M6");
+        button15.setText("\uD83D\uDE97LI Auto L8");
+        button16.setText("\uD83D\uDE97Avatr 11");
+        button17.setText("\uD83D\uDE97HiPhi X");
+        button18.setText("\uD83D\uDE97LI Auto One");
+        button19.setText("\uD83D\uDE97Lynk&Co 09EM-P");
+        button20.setText("\uD83D\uDE97Chevrolet Seeker");
+        button21.setText("\uD83D\uDE97BYD Song L");
+        button22.setText("\uD83D\uDE97BYD Yangwang U8");
         button23.setText("⬅️\uFE0FНазад");
 
 
@@ -493,9 +493,9 @@ public class MyBotServiceRus {
         KeyboardButton button2 = new KeyboardButton();
         KeyboardButton button3 = new KeyboardButton();
 
-        button.setText("Neta S");
-        button1.setText("Neta Gt");
-        button2.setText("Zeeker 007");
+        button.setText("\uD83D\uDE97Neta S");
+        button1.setText("\uD83D\uDE97Neta Gt");
+        button2.setText("\uD83D\uDE97Zeeker 007");
         button3.setText("⬅️\uFE0FНазад");
 
         row.add(button);
@@ -612,7 +612,7 @@ public class MyBotServiceRus {
         KeyboardButton button1 = new KeyboardButton();
         KeyboardButton button2 = new KeyboardButton();
 
-        button.setText("\uD83C\uDDFA\uD83C\uDDF8Изменить язык");
+        button.setText("\uD83C\uDDF7\uD83C\uDDFAИзменить язык");
         button1.setText("☎️Изменить номер телефона");
         button2.setText("⬅️ Назад");
         row.add(button);
@@ -632,7 +632,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/GbnFoweKIIJ8SGRcR3X1qaBAmgizk9E8798rn536.webp"));
         sendPhoto.setCaption("""
-                BYD Seal
+                🏎BYD Seal
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 82,5      
@@ -655,7 +655,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/G5LEALmmX7YN3h2S0ejHxggKreWq0hgj0rkNV3zI.webp"));
         sendPhoto.setCaption("""
-                BYD Han
+               🏎BYD Han
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 85,4    
@@ -678,7 +678,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/7XZX6Aa66UBk54V6XkdOikpRj7MaSpDsfdPEecaw.webp"));
         sendPhoto.setCaption("""
-                Chevrolet Monza 1.5L Atmo
+                🏎Chevrolet Monza 1.5L Atmo
                 Характеристики:
                 
                 ✅Двигатель: 1.5 л (113 л.с.)
@@ -699,7 +699,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/b3iKeMlJtqB2tNlBX4F9UYXbWLtrXRqJiD9ht8Sm.webp"));
         sendPhoto.setCaption("""
-                Chevrolet Monza 1.3L Turbo
+                🏎Chevrolet Monza 1.3L Turbo
                 Характеристики:
                 
                 ✅Двигатель: 1.3л Турбо (163 л.с.)
@@ -720,7 +720,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/WWWDezhpGgYHzzR9VApgwmj9eeNyNtW7OAlYygCk.webp"));
         sendPhoto.setCaption("""
-                Honda Crider 1.0L Turbo
+                🏎Honda Crider 1.0L Turbo
                 Характеристики:
                 
                 ✅Объем двигателя: 1.0 л Turbo  
@@ -740,7 +740,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/gAvBM75WivxQrmjUD4oBWpXvhS0MjkTfLEvz2v5d.webp"));
         sendPhoto.setCaption("""
-                LeapMotor C01
+                🏎LeapMotor C01
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 90
@@ -762,7 +762,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/TmaFh6qeILQV09RdIovwNghxCrx9BASiaMFvgdO9.webp"));
         sendPhoto.setCaption("""
-                HiPhi Z
+                🏎HiPhi Z
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 120
@@ -785,7 +785,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/n7IgJoqfWsM0w5ljA24sr0wBGUq7lrUp3g9bb5wi.webp"));
         sendPhoto.setCaption("""
-                IM Motors L7
+                🏎IM Motors L7
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 90
@@ -807,7 +807,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/Zl6MhKhdsf1r5CfqLELkB4DnHjaliEh4XoTU6I56.webp"));
         sendPhoto.setCaption("""
-                Geometry G6
+                🏎Geometry G6
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 70
@@ -829,7 +829,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/eQXmyVoEXPqMbHTXPKK2SrtMvKeFYs9BkaYGTs70.webp"));
         sendPhoto.setCaption("""
-                BMW i3 eDrive40
+                🏎BMW i3 eDrive40
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 78,92
@@ -852,7 +852,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/gwvcNdDemXzj2KnSzE4KnrAiEQbr722zUqpkNwsw.webp"));
         sendPhoto.setCaption("""
-                BMW i4 eDrive35
+                🏎BMW i4 eDrive35
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 83,9
@@ -874,7 +874,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/5Pkx8cb6yJEhEPsJdXDBzEmfVDOr361aBdZILSLb.webp"));
         sendPhoto.setCaption("""
-                BMW i5 eDrive40
+                🏎BMW i5 eDrive40
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 81.2
@@ -896,7 +896,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/public/storage/cars/fktgieIK4VYEVFIP0uN36tNjxRymXuAX2LIluq2Q.webp"));
         sendPhoto.setCaption("""
-                Neta S
+                🏎Neta S
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 91
@@ -919,7 +919,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/public/storage/cars/7fdWbQK8rsxAid456F7zwCFsqAIcKaibwZH1rMVS.webp"));
         sendPhoto.setCaption("""
-                Neta GT
+                🏎Neta GT
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 74.5
@@ -942,7 +942,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/public/storage/cars/o81wp9OhfwgTCIkaXwEoFqhO0Dsgxx7Mh3VDFw47.webp"));
         sendPhoto.setCaption("""
-                Zeeker 007
+                🏎Zeeker 007
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 70
@@ -972,7 +972,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/6xKSj76RdxhSGrindKkIbsV6J4MZJeI4bhF7SvK9.webp"));
         sendPhoto.setCaption("""
-                BYD Song Plus Champion Edition
+                🚙BYD Song Plus Champion Edition
                 Характеристики:
                 
                 ✅Емкость батареи: 87,04 кВтч
@@ -996,7 +996,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/MkAX3VNbdNuNqsWJvz3KZgyK1QJVGJpxOcf6rIRP.webp"));
         sendPhoto.setCaption("""
-                BYD Tang EV
+                🚙BYD Tang EV
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 108,8
@@ -1018,7 +1018,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/GkibsVTK9z55KFCWHnci3A7xZgKGMydhoHGKIdjy.webp"));
         sendPhoto.setCaption("""
-                BYD Yuan Plus EV
+                🚙BYD Yuan Plus EV
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 60.5
@@ -1040,7 +1040,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/SWxFK8ht6WR0bB2HfhCw1xlONX9RjAN5RuZG18fm.webp"));
         sendPhoto.setCaption("""
-                Zeekr 001
+                🚙Zeekr 001
                 Характеристики:
                 
                 ✅Запас хода (NEDC), км: 650
@@ -1061,7 +1061,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/41pwueDIG22eJtsPOvQvNm4Cx7tR9nkoSM1VAT2o.webp"));
         sendPhoto.setCaption("""
-                Zeekr X
+                🚙Zeekr X
                 Характеристики:
                 
                 ✅Запас хода (NEDC), км: 500
@@ -1082,7 +1082,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/aucwGVtBiLRBOpBhJj3qMhb8oQ7ztlh0bvB5zI3Y.webp"));
         sendPhoto.setCaption("""
-                LeapMotor C11
+                🚙LeapMotor C11
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 90
@@ -1103,7 +1103,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/juAVI9k9BjoAUgS3eVAV5Rc0gREwuRVBFDfginS4.webp"));
         sendPhoto.setCaption("""
-                Geely Geometry E
+                🚙Geely Geometry E
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 39,4
@@ -1124,7 +1124,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/wvBTQdrUhyfgKY8S7xqOseeicOmtGL7wLGNnY7E6.webp"));
         sendPhoto.setCaption("""
-                Denza N7
+               🚙Denza N7
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 91,3
@@ -1146,7 +1146,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/jbLkedyoEHmhdmhGfmWPDhee6a3jqqFgq55GYxq8.webp"));
         sendPhoto.setCaption("""
-                HiPhi Y
+                🚙HiPhi Y
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 115
@@ -1167,7 +1167,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/zQV9rA6sYRm8zNgnxBdtHYdR2XczJUnxElxkOeVc.webp"));
         sendPhoto.setCaption("""
-                NIO ES8
+                🚙NIO ES8
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 100
@@ -1189,7 +1189,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/xoOfzfnOEU35Da860RQf7tmwLu4tmSzHFgbGKESz.webp"));
         sendPhoto.setCaption("""
-                NIO EC7
+                🚙NIO EC7
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 100
@@ -1211,7 +1211,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.ctrans.uz/storage/cars/RNQBVoacpvXjimNtBxZfZDfJN00HVDL6N7XQAM4l.webp"));
         sendPhoto.setCaption("""
-                LI Auto L7
+                🚙LI Auto L7
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 42.8
@@ -1233,7 +1233,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/hYabLzhJzyKeKAmbXydaT5kgK7za47MAZLOQzwO6.webp"));
         sendPhoto.setCaption("""
-                LI Auto L9
+                🚙LI Auto L9
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 44.5
@@ -1253,7 +1253,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/tpG5urfPNaVYhLY7sEkYmfBYIo63zuWsa88nOq4U.webp"));
         sendPhoto.setCaption("""
-                IM Motors LS7
+                🚙IM Motors LS7
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 100
@@ -1274,7 +1274,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/BgJZKJoWenpHEV6sbSeLRzWFmKYN2E9QcxqyFyvM.webp"));
         sendPhoto.setCaption("""
-                Geometry M6
+               🚙Geometry M6
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 70
@@ -1295,7 +1295,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/jGQVsR2nxeEmeBVuOd07Uo3OffAFU9Ptj5HBw4sU.webp"));
         sendPhoto.setCaption("""
-                LI Auto L8
+                🚙LI Auto L8
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 42.8
@@ -1316,7 +1316,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/feyQk6GFzkFU4u0IB9KKaVHgHdsOrUdbRLCeRFv7.webp"));
         sendPhoto.setCaption("""
-                Avatr 11
+                🚙Avatr 11
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 116,79
@@ -1337,7 +1337,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/mFaMd0SDGOiNIRMzXrbHKdyKlkoXN5zRqAVK1Obv.webp"));
         sendPhoto.setCaption("""
-                HiPhi X
+                🚙HiPhi X
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 94,3
@@ -1358,7 +1358,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/Rio4OVECZKtP6rATA0xAmwk66swm7pt9i5JmEPLU.webp"));
         sendPhoto.setCaption("""
-                LI Auto One
+                🚙LI Auto One
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 40.5
@@ -1379,7 +1379,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/tS5di4emmprxFcaSAEvu7KeqU8nV2cJpt0WbHTB5.webp"));
         sendPhoto.setCaption("""
-                Lynk&Co 09EM-P
+                🚙Lynk&Co 09EM-P
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 40
@@ -1398,7 +1398,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/sh3Tmy6GCsarJzred5lUMaLxgNM6sECxsApeFUX9.webp"));
         sendPhoto.setCaption("""
-                Chevrolet Seeker
+                🚙Chevrolet Seeker
                 Характеристики:
                 
                 ✅Объем: 1.5
@@ -1421,7 +1421,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/qrSJ9LUiyqxQm3akh3668mKbbe3Z094IG7pZx8hp.webp"));
         sendPhoto.setCaption("""
-                BYD Song L
+                🚙BYD Song L
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 87
@@ -1442,7 +1442,7 @@ public class MyBotServiceRus {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/WGKjCPUUUdL9MdB4AAiLMM0AXSU5TfGwTJ6bZa5F.webp"));
         sendPhoto.setCaption("""
-                BYD Yangwang U8
+                🚙BYD Yangwang U8
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 49.05
@@ -1468,7 +1468,7 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/XZBuWOU3s2lQzubkw5PZvNlQ9hR64GhnZk1EUprF.webp"));
 
         sendPhoto.setCaption("""
-                BYD Seagull
+                🚗BYD Seagull
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 38,88
@@ -1490,7 +1490,7 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/sK0hrrHnCtspCoUUmPlwubE3LzhselJYdTiYv4wu.webp"));
 
         sendPhoto.setCaption("""
-                BYD Dolphin
+                🚗BYD Dolphin
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 44.9
@@ -1512,7 +1512,7 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/wTDQ0xMwIBQvDR2sba11CvPrgEVcaidi66kZuNYq.webp"));
 
         sendPhoto.setCaption("""
-                BYD E2
+                🚗BYD E2
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 43,2
@@ -1534,7 +1534,7 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/dBUAaOFl9cQbMGsGart96nB5723xCec8KApGXTmz.webp"));
 
         sendPhoto.setCaption("""
-                Changan BenBen E-Star
+                🚗Changan BenBen E-Star
                 Характеристики:
                 
                 ✅Тип топлива: Электрический
@@ -1552,6 +1552,8 @@ public class MyBotServiceRus {
                 """);
         return sendPhoto;
     }
+
+
     //Miniven
 
 
@@ -1564,7 +1566,7 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile(""));
 
         sendPhoto.setCaption("""
-                Denza D9
+                🚐Denza D9
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 103,36
@@ -1585,7 +1587,7 @@ public class MyBotServiceRus {
         sendPhoto.setPhoto(new InputFile(""));
 
         sendPhoto.setCaption("""
-                Zeekr009
+                🚐Zeekr009
                 Характеристики:
                 
                 ✅Емкость батареи, кВт: 822
