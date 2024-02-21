@@ -1038,5 +1038,216 @@ public class MyBotServiceUz {
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
-
+    public SendPhoto LI_Auto_L7(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/RNQBVoacpvXjimNtBxZfZDfJN00HVDL6N7XQAM4l.webp"));
+        sendPhoto.setCaption("<b>Li Auto L7</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Batareya quvvati, kVt: 42.8\n" +
+                "✅Quvvat zahirasi, km: 1315\n" +
+                "✅Tezlashuv 0-100 km, sek: 5.3\n" +
+                "✅Joylar soni: 5\n" +
+                "✅Quvvat: 330 kVt / 620 Nm\n" +
+                "✅Maksimal tezlik, km/soat: 180"
+        );
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+    public SendPhoto Li_Auto_L9(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/hYabLzhJzyKeKAmbXydaT5kgK7za47MAZLOQzwO6.webp"));
+        sendPhoto.setCaption("<b>Li Auto L9</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Batareya quvvati, kVt: 44.5\n" +
+                "✅Zaxira quvvati, km: 1100\n" +
+                "✅Tezlashuv 0-100 km, sek: 5.3\n" +
+                "✅Joylar soni: 6\n" +
+                "✅Quvvat: 330 kVt / 620 Nm\n" +
+                "✅Maksimal tezlik, km/soat: 180"
+        );
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+    public SendPhoto IM_Motors_LS7(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/tpG5urfPNaVYhLY7sEkYmfBYIo63zuWsa88nOq4U.webp"));
+        sendPhoto.setCaption("<b>IM Motors LS7</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Batareya quvvati, kVt: 100\n" +
+                "✅Zaxira quvvati, km: 625\n" +
+                "✅Tezlashuv 0-100 km, sek: 4,5\n" +
+                "✅Joylar soni: 5\n" +
+                "✅Quvvat: 425kVt / 578Nm\n" +
+                "✅Maksimal tezlik, km/soat: 200\n" +
+                "✅Haydovchi blok: Toʻliq"
+        );
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+    public SendPhoto Geometry_M6(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/BgJZKJoWenpHEV6sbSeLRzWFmKYN2E9QcxqyFyvM.webp"));
+        sendPhoto.setCaption("<b>Geometry M6</b>\n\n" +
+                "<b>Xususiyatlari:</b>\n" +
+                "✅Batareya quvvati, kVt: 70\n" +
+                "✅Zaxira quvvati, km: 580\n" +
+                "✅Tezlashuv 0-100 km, sek: 6,9\n" +
+                "✅Joylar soni: 5\n" +
+                "✅Quvvat: 150kVt / 204Nm\n" +
+                "✅Maksimal tezlik, km/soat: 150\n" +
+                "✅Haydovchi blok: Old"
+        );
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+    public SendPhoto Li_Auto_L8(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/jGQVsR2nxeEmeBVuOd07Uo3OffAFU9Ptj5HBw4sU.webp"));
+        sendPhoto.setCaption("""
+                <b>Li Auto L8</b>
+                <b>Xususiyatlari:</b>
+                ✅Batareya quvvati, kVt: 42.8
+                ✅Quvvat zahirasi (NEDC), km: 1315
+                ✅Tezlashuv 0-100 km, sek: 5.5
+                ✅Joylar soni: 5
+                ✅Quvvat, kVt/hp: 449
+                ✅Maksimal tezlik, km/soat: 180
+                ✅Haydovchi blok: To'liq
+        """);
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+    public SendPhoto Avatr_11(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/s49VX9zJ9P2TKBPShY707aDH2GGDP2cwFZHmmXtL.webp"));
+        sendPhoto.setCaption("""
+                <b>Avatr 11</b>
+                <b>Xususiyatlari:</b>
+                ✅Batareya quvvati, kVt: 116,79
+                ✅Zaxira quvvati, km: 680
+                ✅Tezlashuv 0-100 km, sek: 4,5
+                ✅Joylar soni: 4
+                ✅Quvvat: 425kVt / 578 Nm
+                ✅Maksimal tezlik, km/soat: 200
+                ✅Haydovchi blok: Toʻliq"
+        """);
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+    public SendPhoto HiPhi_X(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/mFaMd0SDGOiNIRMzXrbHKdyKlkoXN5zRqAVK1Obv.webp"));
+        sendPhoto.setCaption("""
+                <b>HiPhi X</b>
+                <b>Xususiyatlari:</b>
+                ✅Batareya quvvati, kVt: 94,3
+                ✅Zaxira quvvati, km: 550
+                ✅Tezlashuv 0-100 km, sek: 4
+                ✅Joylar soni: 4
+                ✅Quvvat: 440kVt / 598Nm
+                ✅Maksimal tezlik, km/soat: 200
+                ✅Haydovchi blok: Toʻliq"
+        """);
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+    public SendPhoto Li_Auto_One(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/Rio4OVECZKtP6rATA0xAmwk66swm7pt9i5JmEPLU.webp"));
+        sendPhoto.setCaption("""
+                <b>Li Auto One</b>
+                <b>Xususiyatlari:</b>
+                ✅Batareya quvvati, kVt: 40.5
+                ✅Zaxira quvvati, km: 890
+                ✅Tezlashuv 0-100 km, sek: 6.5
+                ✅Joylar soni: 5
+                ✅Quvvat: 244kVt / 552Nm
+                ✅Maksimal tezlik, km/soat: 172
+                ✅Haydovchi blok: Toʻliq"
+        """);
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+    public SendPhoto Lynk_Co_09EMP(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/tS5di4emmprxFcaSAEvu7KeqU8nV2cJpt0WbHTB5.webp"));
+        sendPhoto.setCaption("""
+                <b>Lynk&Co 09EM-P</b>
+                
+                <b>Xususiyatlari:</b>
+                ✅Batareya quvvati, kVt: 40
+                ✅Tezlashuv 0-100 km, sek: 5.9
+                ✅Joylar soni: 5
+                ✅Quvvat, kVt/hp: 540
+                ✅Haydovchi blok: To'liq
+                """);
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+    public SendPhoto Chevrolet_Seeker(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/sh3Tmy6GCsarJzred5lUMaLxgNM6sECxsApeFUX9.webp"));
+        sendPhoto.setCaption("""
+                <b>Chevrolet Seeker</b>
+                
+                <b>Xususiyatlari:</b>
+                ✅Ovoz balandligi: 1.5
+                ✅Quti: O'zgaruvchan tezlikli haydovchi
+                ✅Iste'mol: 6.6
+                ✅Joylar soni: 5
+                ✅Quvvat, kVt/hp: 184/135
+                ✅Maksimal tezlik, km/soat: 205
+                ✅Haydovchi blok: Old
+                """);
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+    public SendPhoto BYD_Song_L(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/qrSJ9LUiyqxQm3akh3668mKbbe3Z094IG7pZx8hp.webp"));
+        sendPhoto.setCaption("""
+                <b>BYD Song L</b>
+                
+                <b>Xususiyatlari:</b>
+                ✅Batareya quvvati, kVt: 87
+                ✅Zaxira quvvati, km: 602
+                ✅Tezlashuv 0-100 km, sek: 4,3
+                ✅Joylar soni: 5
+                ✅Quvvat: 380kVt /517Nm
+                ✅Maksimal tezlik, km/soat: 200
+                ✅Haydovchi blok: Toʻliq
+                """);
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+    public SendPhoto BYD_Yangwang_U8(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/WGKjCPUUUdL9MdB4AAiLMM0AXSU5TfGwTJ6bZa5F.webp"));
+        sendPhoto.setCaption("""
+                <b>BYD Yangwang U8</b>
+                
+                <b>Xususiyatlari:</b>
+                ✅Batareya quvvati, kVt: 49.05
+                ✅Zaxira quvvati, km: 405
+                ✅Tezlashuv 0-100 km, sek: 3.6
+                ✅Joylar soni: 5
+                ✅Quvvat: 880kVt / 1280Nm
+                ✅Maksimal tezlik, km/soat: 280
+                ✅Haydovchi blok: Toʻliq
+                """);
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
 }
