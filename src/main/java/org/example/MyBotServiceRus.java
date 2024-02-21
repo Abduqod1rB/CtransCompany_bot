@@ -492,16 +492,19 @@ public class MyBotServiceRus {
         KeyboardButton button1 = new KeyboardButton();
         KeyboardButton button2 = new KeyboardButton();
         KeyboardButton button3 = new KeyboardButton();
+        KeyboardButton button4 = new KeyboardButton();
 
-        button.setText("\uD83D\uDE97");
-        button1.setText("\uD83D\uDE97");
-        button2.setText("\uD83D\uDE97");
-        button3.setText("⬅️\uFE0FНазад");
+        button.setText("\uD83D\uDE97BYD Seagull");
+        button1.setText("\uD83D\uDE97BYD Dolphin");
+        button2.setText("\uD83D\uDE97BYD E2");
+        button3.setText("\uD83D\uDE97Changan BenBen E-Star");
+        button4.setText("⬅️Назад");
 
         row.add(button);
         row.add(button1);
         row1.add(button2);
-        row2.add(button3);
+        row1.add(button3);
+        row2.add(button4);
 
         rowList.add(row);
         rowList.add(row1);

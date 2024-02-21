@@ -219,14 +219,14 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/images/content/about-01.webp"));
-        sendPhoto.setCaption("<b>BIZ HAQIMIZDA</b>\n" +
-                "<b>Butun dunyo bo'ylab logistika xizmatlari sohasida tajriba</b>\n" +
-                "\n" +
-                "Biz butun dunyo bo'ylab eng yaxshi yuk tashish va transport bitimlarini taqdim etishdan faxrlanamiz." +
-                " \n" +
-                "✅100%Kompensatsiya          ✅Onlayn kuzatish\n" +
-                "✅Tajribali jamoa            ✅Yuklarni sug'urta qilish\n" +
-                "✅24/7 qo'llab-quvvatlash    ✅Xavfsiz omborxona");
+        sendPhoto.setCaption("""
+                BIZ HAQIMIZDA
+                
+                Butun dunyo bo'ylab logistika xizmatlari sohasida tajriba biz butun dunyo bo'ylab eng yaxshi yuk tashish va transport bitimlarini taqdim etishdan faxrlanamiz.
+                
+                ✅100%Kompensatsiya          ✅Onlayn kuzatish
+                ✅Tajribali jamoa            ✅Yuklarni sug'urta qilish
+                ✅24/7 qo'llab-quvvatlash    ✅Xavfsiz omborxona""");
 
         return sendPhoto;
     }
@@ -244,17 +244,18 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://hips.hearstapps.com/hmg-prod/images/volvo-45-6464dc2d84b25.jpg"));
-        sendPhoto.setCaption("<b>Avtomobil transporti</b>\n" +
-                "Avtomobil transportida yuk tashish transport xizmatlari bozorining eng muhim tarkibiy qismi bo'lib, aynan shu yo'nalish yuklarni jo'natuvchidan oluvchiga tashish sohasida yetakchi hisoblanadi.\n" +
-                "\n" +
-                "Boshqa transport turlari bilan taqqoslaganda, bugungi kunda avtotransport jiddiy ustuvor yo'nalish bo'lib qolmoqda. Avtotransport yuklarining afzalliklari orasida:\n" +
-                "\n" +
-                "•manevr qobiliyati;\n" +
-                "•logistika kompaniyasi uchun eng foydali marshrutlarni amalga oshirish uchun keng imkoniyatlar;\n" +
-                "•yetkazib berish tezligi;\n" +
-                "•tashiladigan tovarlarning keng assortimenti;\n" +
-                "•bir nechta kompaniyalarning posilkalarini birlashtirgan holda, guruhli yo'l yuklarini shakllantirish;\n" +
-                "•yukning og'irligi, formati va o'lchamlari, yonuvchan tovarlar va tez buziladigan mahsulotlarning mavjudligi kabi omillarni hisobga olgan holda transport vositalarining katta tanlovi;");
+        sendPhoto.setCaption("""
+                
+                Avtomobil transportida yuk tashish transport xizmatlari bozorining eng muhim tarkibiy qismi bo'lib, aynan shu yo'nalish yuklarni jo'natuvchidan oluvchiga tashish sohasida yetakchi hisoblanadi.
+
+                Boshqa transport turlari bilan taqqoslaganda, bugungi kunda avtotransport jiddiy ustuvor yo'nalish bo'lib qolmoqda. Avtotransport yuklarining afzalliklari orasida:
+
+                •manevr qobiliyati;
+                •logistika kompaniyasi uchun eng foydali marshrutlarni amalga oshirish uchun keng imkoniyatlar;
+                •yetkazib berish tezligi;
+                •tashiladigan tovarlarning keng assortimenti;
+                •bir nechta kompaniyalarning posilkalarini birlashtirgan holda, guruhli yo'l yuklarini shakllantirish;
+                •yukning og'irligi, formati va o'lchamlari, yonuvchan tovarlar va tez buziladigan mahsulotlarning mavjudligi kabi omillarni hisobga olgan holda transport vositalarining katta tanlovi;""");
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
@@ -274,41 +275,30 @@ public class MyBotServiceUz {
 
         return sendPhoto;
     }
-    //    public SendPhoto havotransporti(Long chatId){
-//        SendPhoto sendPhoto = new SendPhoto();
-//        sendPhoto.setChatId(chatId);
-//        sendPhoto.setPhoto(new InputFile("https://wallpaperset.com/w/full/c/6/a/249472.jpg"));
-//        sendPhoto.setCaption("<b>Havo transporti</b>\n" +
-//                "CTRANS katta o'lchamlari va og'irligi bo'lgan keng turdagi tovarlarni havo orqali tashishni taklif qiladi. Xitoy-O'zbekiston bilan havo transporti ko'pchilik o'zbekistonliklarning tanlovidir. Biz sizga eng qisqa vaqt ichida tez, xavfsiz va sifatli tashishni kafolatlaymiz.\n" +
-//                "\n" +
-//                "CTRANS xodimlari har bir mahsulotga ehtiyotkorlik bilan munosabatda bo'lishadi va tashishni nazorat qilishadi. Biz bilan mahsulotlaringiz xavfsiz va sog'lom yetib kelishiga amin bo'lishingiz mumkin.");
-//        sendPhoto.setParseMode(ParseMode.HTML);
-//        return sendPhoto;
-//    }
-
-    public SendPhoto dengiztransporti(Long chatId){
+        public SendPhoto havotransportiUz(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://img.freepik.com/premium-photo/view-from-ship-with-cargo-going-by-sea-cargo-port_124507-55067.jpg"));
-        sendPhoto.setCaption("<b>Dengiz transporti</b>\n" +
-                "Temir yo'l transporti CTRANS kompaniyasining asosiy faoliyat yo'nalishlaridan biridir. Kompaniya kerakli tonnajdagi konteynerlarda ham, barcha turdagi vagonlarda ham yuk tashishni amalga oshiradi.\n" +
-                "\n" +
-                "Konteynerda tashish yuklarni qayta yuklamasdan yetkazib berish imkonini beradi. Bu hajmni sezilarli darajada kamaytiradi va oraliq yuklash va tushirish operatsiyalari tezligini oshiradi.\n" +
-                "\n" +
-                "Agar siz past transport xarajatlarini qadrlasangiz, temir yo'l transporti ajoyib tanlovdir. Bu holatda past narx yuqori yuk ko'tarish qobiliyatiga bog'liq.");
+        sendPhoto.setPhoto(new InputFile("https://wallpaperset.com/w/full/c/6/a/249472.jpg"));
+        sendPhoto.setCaption("""
+                
+                CTRANS katta o'lchamlari va og'irligi bo'lgan keng turdagi tovarlarni havo orqali tashishni taklif qiladi. Xitoy-O'zbekiston bilan havo transporti ko'pchilik o'zbekistonliklarning tanlovidir. Biz sizga eng qisqa vaqt ichida tez, xavfsiz va sifatli tashishni kafolatlaymiz.
+
+                CTRANS xodimlari har bir mahsulotga ehtiyotkorlik bilan munosabatda bo'lishadi va tashishni nazorat qilishadi. Biz bilan mahsulotlaringiz xavfsiz va sog'lom yetib kelishiga amin bo'lishingiz mumkin.""");
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
-    public SendPhoto temiryoltransporti(Long chatId){
+
+    public SendPhoto temiryoltransportiUz(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://img.freepik.com/premium-photo/large-containers-with-cargo-delivered-by-cargo-train-railway-station_124507-35363.jpg"));
-        sendPhoto.setCaption("<b>Temiryo'l transporti</b>\n" +
-                "Temir yo'l transporti CTRANS kompaniyasining asosiy faoliyat yo'nalishlaridan biridir. Kompaniya kerakli tonnajdagi konteynerlarda ham, barcha turdagi vagonlarda ham yuk tashishni amalga oshiradi.\n" +
-                "\n" +
-                "Konteynerda tashish yuklarni qayta yuklamasdan yetkazib berish imkonini beradi. Bu hajmni sezilarli darajada kamaytiradi va oraliq yuklash va tushirish operatsiyalari tezligini oshiradi.\n" +
-                "\n" +
-                "Agar siz past transport xarajatlarini qadrlasangiz, temir yo'l transporti ajoyib tanlovdir. Bu holatda past narx yuqori yuk ko'tarish qobiliyatiga bog'liq.");
+        sendPhoto.setCaption("""
+                
+                Temir yo'l transporti CTRANS kompaniyasining asosiy faoliyat yo'nalishlaridan biridir. Kompaniya kerakli tonnajdagi konteynerlarda ham, barcha turdagi vagonlarda ham yuk tashishni amalga oshiradi.
+
+                Konteynerda tashish yuklarni qayta yuklamasdan yetkazib berish imkonini beradi. Bu hajmni sezilarli darajada kamaytiradi va oraliq yuklash va tushirish operatsiyalari tezligini oshiradi.
+
+                Agar siz past transport xarajatlarini qadrlasangiz, temir yo'l transporti ajoyib tanlovdir. Bu holatda past narx yuqori yuk ko'tarish qobiliyatiga bog'liq.""");
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
@@ -843,7 +833,6 @@ public class MyBotServiceUz {
                 ✅Maksimal tezlik, km/soat: 190
                 ✅Haydovchi blok: orqa"""
         );
-        sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
     public SendPhoto Zeekr_007(Long chatId){
@@ -1076,14 +1065,15 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/RNQBVoacpvXjimNtBxZfZDfJN00HVDL6N7XQAM4l.webp"));
-        sendPhoto.setCaption("<b>Li Auto L7</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Batareya quvvati, kVt: 42.8\n" +
-                "✅Quvvat zahirasi, km: 1315\n" +
-                "✅Tezlashuv 0-100 km, sek: 5.3\n" +
-                "✅Joylar soni: 5\n" +
-                "✅Quvvat: 330 kVt / 620 Nm\n" +
-                "✅Maksimal tezlik, km/soat: 180"
+        sendPhoto.setCaption("""
+                Li Auto L7
+                
+                ✅Batareya quvvati, kVt: 42.8
+                ✅Quvvat zahirasi, km: 1315
+                ✅Tezlashuv 0-100 km, sek: 5.3
+                ✅Joylar soni: 5
+                ✅Quvvat: 330 kVt / 620 Nm
+                ✅Maksimal tezlik, km/soat: 180"""
         );
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
@@ -1092,14 +1082,15 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/hYabLzhJzyKeKAmbXydaT5kgK7za47MAZLOQzwO6.webp"));
-        sendPhoto.setCaption("<b>Li Auto L9</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Batareya quvvati, kVt: 44.5\n" +
-                "✅Zaxira quvvati, km: 1100\n" +
-                "✅Tezlashuv 0-100 km, sek: 5.3\n" +
-                "✅Joylar soni: 6\n" +
-                "✅Quvvat: 330 kVt / 620 Nm\n" +
-                "✅Maksimal tezlik, km/soat: 180"
+        sendPhoto.setCaption("""
+                Li Auto L9
+
+                ✅Batareya quvvati, kVt: 44.5
+                ✅Zaxira quvvati, km: 1100
+                ✅Tezlashuv 0-100 km, sek: 5.3
+                ✅Joylar soni: 6
+                ✅Quvvat: 330 kVt / 620 Nm
+                ✅Maksimal tezlik, km/soat: 180"""
         );
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
@@ -1108,15 +1099,16 @@ public class MyBotServiceUz {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/tpG5urfPNaVYhLY7sEkYmfBYIo63zuWsa88nOq4U.webp"));
-        sendPhoto.setCaption("<b>IM Motors LS7</b>\n\n" +
-                "<b>Xususiyatlari:</b>\n" +
-                "✅Batareya quvvati, kVt: 100\n" +
-                "✅Zaxira quvvati, km: 625\n" +
-                "✅Tezlashuv 0-100 km, sek: 4,5\n" +
-                "✅Joylar soni: 5\n" +
-                "✅Quvvat: 425kVt / 578Nm\n" +
-                "✅Maksimal tezlik, km/soat: 200\n" +
-                "✅Haydovchi blok: Toʻliq"
+        sendPhoto.setCaption("""
+                IM Motors LS7
+              
+                ✅Batareya quvvati, kVt: 100
+                ✅Zaxira quvvati, km: 625
+                ✅Tezlashuv 0-100 km, sek: 4,5
+                ✅Joylar soni: 5
+                ✅Quvvat: 425kVt / 578Nm
+                ✅Maksimal tezlik, km/soat: 200
+                ✅Haydovchi blok: Toʻliq"""
         );
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
@@ -1126,16 +1118,15 @@ public class MyBotServiceUz {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/BgJZKJoWenpHEV6sbSeLRzWFmKYN2E9QcxqyFyvM.webp"));
         sendPhoto.setCaption("""
-                <b>Geometry M6</b>
+                Geometry M6
                 
-                "<b>Xususiyatlari:</b>
-                "✅Batareya quvvati, kVt: 70
-                "✅Zaxira quvvati, km: 580
-                "✅Tezlashuv 0-100 km, sek: 6,9
-                "✅Joylar soni: 5
-                "✅Quvvat: 150kVt / 204Nm
-                "✅Maksimal tezlik, km/soat: 150
-                "✅Haydovchi blok: Old
+                ✅Batareya quvvati, kVt: 70
+                ✅Zaxira quvvati, km: 580
+                ✅Tezlashuv 0-100 km, sek: 6,9
+                ✅Joylar soni: 5
+                ✅Quvvat: 150kVt / 204Nm
+                ✅Maksimal tezlik, km/soat: 150
+                ✅Haydovchi blok: Old
                 """);
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
@@ -1145,9 +1136,8 @@ public class MyBotServiceUz {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/jGQVsR2nxeEmeBVuOd07Uo3OffAFU9Ptj5HBw4sU.webp"));
         sendPhoto.setCaption("""
-                <b>Li Auto L8</b>
+                Li Auto L8
                 
-                <b>Xususiyatlari:</b>
                 ✅Batareya quvvati, kVt: 42.8
                 ✅Quvvat zahirasi (NEDC), km: 1315
                 ✅Tezlashuv 0-100 km, sek: 5.5
@@ -1164,9 +1154,8 @@ public class MyBotServiceUz {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/s49VX9zJ9P2TKBPShY707aDH2GGDP2cwFZHmmXtL.webp"));
         sendPhoto.setCaption("""
-                <b>Avatr 11</b>
+                Avatr 11
                 
-                <b>Xususiyatlari:</b>
                 ✅Batareya quvvati, kVt: 116,79
                 ✅Zaxira quvvati, km: 680
                 ✅Tezlashuv 0-100 km, sek: 4,5
@@ -1183,9 +1172,8 @@ public class MyBotServiceUz {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/mFaMd0SDGOiNIRMzXrbHKdyKlkoXN5zRqAVK1Obv.webp"));
         sendPhoto.setCaption("""
-                <b>HiPhi X</b>
+                HiPhi X
                 
-                <b>Xususiyatlari:</b>
                 ✅Batareya quvvati, kVt: 94,3
                 ✅Zaxira quvvati, km: 550
                 ✅Tezlashuv 0-100 km, sek: 4
@@ -1202,9 +1190,8 @@ public class MyBotServiceUz {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/Rio4OVECZKtP6rATA0xAmwk66swm7pt9i5JmEPLU.webp"));
         sendPhoto.setCaption("""
-                <b>Li Auto One</b>
+                Li Auto One
                 
-                <b>Xususiyatlari:</b>
                 ✅Batareya quvvati, kVt: 40.5
                 ✅Zaxira quvvati, km: 890
                 ✅Tezlashuv 0-100 km, sek: 6.5
@@ -1221,9 +1208,8 @@ public class MyBotServiceUz {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/tS5di4emmprxFcaSAEvu7KeqU8nV2cJpt0WbHTB5.webp"));
         sendPhoto.setCaption("""
-                <b>Lynk&Co 09EM-P</b>
+                Lynk&Co 09EM-P
                 
-                <b>Xususiyatlari:</b>
                 ✅Batareya quvvati, kVt: 40
                 ✅Tezlashuv 0-100 km, sek: 5.9
                 ✅Joylar soni: 5
@@ -1238,9 +1224,8 @@ public class MyBotServiceUz {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/sh3Tmy6GCsarJzred5lUMaLxgNM6sECxsApeFUX9.webp"));
         sendPhoto.setCaption("""
-                <b>Chevrolet Seeker</b>
+                Chevrolet Seeker
                 
-                <b>Xususiyatlari:</b>
                 ✅Ovoz balandligi: 1.5
                 ✅Quti: O'zgaruvchan tezlikli haydovchi
                 ✅Iste'mol: 6.6
@@ -1257,9 +1242,8 @@ public class MyBotServiceUz {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/qrSJ9LUiyqxQm3akh3668mKbbe3Z094IG7pZx8hp.webp"));
         sendPhoto.setCaption("""
-                <b>BYD Song L</b>
+                BYD Song L
                 
-                <b>Xususiyatlari:</b>
                 ✅Batareya quvvati, kVt: 87
                 ✅Zaxira quvvati, km: 602
                 ✅Tezlashuv 0-100 km, sek: 4,3
@@ -1276,9 +1260,8 @@ public class MyBotServiceUz {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/WGKjCPUUUdL9MdB4AAiLMM0AXSU5TfGwTJ6bZa5F.webp"));
         sendPhoto.setCaption("""
-                <b>BYD Yangwang U8</b>
+                BYD Yangwang U8
                 
-                <b>Xususiyatlari:</b>
                 ✅Batareya quvvati, kVt: 49.05
                 ✅Zaxira quvvati, km: 405
                 ✅Tezlashuv 0-100 km, sek: 3.6
