@@ -290,7 +290,7 @@ public class MyBotServiceRus {
         button12.setText("Neta S");
         button13.setText("Neta Gt");
         button14.setText("Zeeker 007");
-        button15.setText("⬅️\uFE0FНазад");
+        button15.setText("⬅️Назад");
 
         row.add(button);
         row.add(button1);
