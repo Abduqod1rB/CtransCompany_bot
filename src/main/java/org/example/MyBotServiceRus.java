@@ -219,6 +219,44 @@ public class MyBotServiceRus {
         return sendMessage;
     }
 
+    public SendMessage deliveryTimeUz(Long chatId){
+
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Выберите нужную вам категорию.");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+        KeyboardRow row = new KeyboardRow();
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardRow row2 = new KeyboardRow();
+
+        KeyboardButton button = new KeyboardButton();
+        KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
+        KeyboardButton button3 = new KeyboardButton();
+
+        button.setText("✈\uFE0F Воздушный транспорт");
+        button1.setText("\uD83D\uDE98 Транспортное средство");
+        button2.setText("\uD83D\uDE88 Железнодорожный транспорт");
+        button3.setText("⬅\uFE0FНазад");
+
+        row.add(button);
+        row.add(button1);
+        row1.add(button2);
+        row2.add(button3);
+
+        rowList.add(row);
+        rowList.add(row1);
+        rowList.add(row2);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendMessage;
+    }
+
 
     public SendPhoto aboutUsRus(Long chatId) {
 
