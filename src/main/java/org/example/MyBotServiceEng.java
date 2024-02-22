@@ -273,8 +273,8 @@ public class MyBotServiceEng {
         KeyboardButton button1 = new KeyboardButton();
         KeyboardButton button2 = new KeyboardButton();
 
-        button.setText("Denza D9");
-        button1.setText("Zeeker 009");
+        button.setText("🚐 Denza D9");
+        button1.setText("🚐 Zeeker 009");
         button2.setText("⬅️ Back");
 
         row.add(button);
@@ -309,10 +309,10 @@ public class MyBotServiceEng {
         KeyboardButton button3 = new KeyboardButton();
         KeyboardButton button4 = new KeyboardButton();
 
-        button.setText("BYD Seagull");
-        button1.setText("BYD Dolphin");
-        button2.setText("BYD E2");
-        button3.setText("Changan BenBen E-Star");
+        button.setText("🚗 BYD Seagull");
+        button1.setText("🚗 BYD Dolphin");
+        button2.setText("🚗 BYD E2");
+        button3.setText("🚗 Changan BenBen E-Star");
         button4.setText("⬅️ Back");
 
         row.add(button);
@@ -367,21 +367,21 @@ public class MyBotServiceEng {
         KeyboardButton button14 = new KeyboardButton();
         KeyboardButton button15 = new KeyboardButton();
 
-        button.setText("BYD Seal");
-        button1.setText("BYD Han");
-        button2.setText("Chevrolet Monza 1.5L Atmo");
-        button3.setText("Chevrolet Monza 1.3L Turbo");
-        button4.setText("Honda Crider 1.0L Turbo");
-        button5.setText("LeapMotor C01");
-        button6.setText("HiPhi Z");
-        button7.setText("IM Motors L7");
-        button8.setText("Geometry G6");
-        button9.setText("BMW i3 eDrive40");
-        button10.setText("BMW i4 eDrive35");
-        button11.setText("BMW i5 eDrive40");
-        button12.setText("Neta S");
-        button13.setText("Neta Gt");
-        button14.setText("Zeeker 007");
+        button.setText("🏎 BYD Seal");
+        button1.setText("🏎 BYD Han");
+        button2.setText("🏎 Chevrolet Monza 1.5L Atmo");
+        button3.setText("🏎 Chevrolet Monza 1.3L Turbo");
+        button4.setText("🏎 Honda Crider 1.0L Turbo");
+        button5.setText("🏎 LeapMotor C01");
+        button6.setText("🏎 HiPhi Z");
+        button7.setText("🏎 IM Motors L7");
+        button8.setText("🏎 Geometry G6");
+        button9.setText("🏎 BMW i3 eDrive40");
+        button10.setText("🏎 BMW i4 eDrive35");
+        button11.setText("🏎 BMW i5 eDrive40");
+        button12.setText("🏎 Neta S");
+        button13.setText("🏎 Neta Gt");
+        button14.setText("🏎 Zeeker 007");
         button15.setText("⬅️ Back");
 
         row.add(button);
@@ -466,29 +466,29 @@ public class MyBotServiceEng {
         KeyboardButton button22 = new KeyboardButton();
         KeyboardButton button23 = new KeyboardButton();
 
-        button.setText("BYD Song Plus Champion Edition");
-        button1.setText("BYD Tang EV");
-        button2.setText("BYD Yuan Plus EV");
-        button3.setText("Zeeker 001");
-        button4.setText("Zeeker X");
-        button5.setText("LeapMotor C11");
-        button6.setText("Geely Geometry E");
-        button7.setText("Denza N7");
-        button8.setText("HiPhi Y");
-        button9.setText("NIO ES8");
-        button10.setText("NIO EC7");
-        button11.setText("LI Auto L7");
-        button12.setText("LI Auto L9");
-        button13.setText("IM Motors LS7");
-        button14.setText("Geometry M6");
-        button15.setText("LI Auto L8");
-        button16.setText("Avatr 11");
-        button17.setText("HiPhi X");
-        button18.setText("LI Auto One");
-        button19.setText("Lynk&Co 09EM-P");
-        button20.setText("Chevrolet Seeker");
-        button21.setText("BYD Song L");
-        button22.setText("BYD Yangwang U8");
+        button.setText("🚙 BYD Song Plus Champion Edition");
+        button1.setText("🚙 BYD Tang EV");
+        button2.setText("🚙 BYD Yuan Plus EV");
+        button3.setText("🚙 Zeeker 001");
+        button4.setText("🚙 Zeeker X");
+        button5.setText("🚙 LeapMotor C11");
+        button6.setText("🚙 Geely Geometry E");
+        button7.setText("🚙 Denza N7");
+        button8.setText("🚙 HiPhi Y");
+        button9.setText("🚙 NIO ES8");
+        button10.setText("🚙 NIO EC7");
+        button11.setText("🚙 LI Auto L7");
+        button12.setText("🚙 LI Auto L9");
+        button13.setText("🚙 IM Motors LS7");
+        button14.setText("🚙 Geometry M6");
+        button15.setText("🚙 LI Auto L8");
+        button16.setText("🚙 Avatr 11");
+        button17.setText("🚙 HiPhi X");
+        button18.setText("🚙 LI Auto One");
+        button19.setText("🚙 Lynk&Co 09EM-P");
+        button20.setText("🚙 Chevrolet Seeker");
+        button21.setText("🚙 BYD Song L");
+        button22.setText("🚙 BYD Yangwang U8");
         button23.setText("⬅️ Back");
 
         row.add(button);
