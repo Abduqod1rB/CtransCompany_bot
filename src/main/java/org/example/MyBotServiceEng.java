@@ -1523,7 +1523,7 @@ public class MyBotServiceEng {
     public SendPhoto havotransportiEng(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://api.360tv.ru/get_resized/-95SAJCmVKUbkPUC2f6RxCyVqbk=/1080x607/filters:focal(0.5:0.5):format(webp)/YXJ0aWNsZXMvaW1hZ2UvMjAyNC8xLzI1NjM3ODQ5NTA5ODc2NTQuanBn.webp"));
+        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1x25EB5oIG4yV1-ygGPif8pM3GYg0NshxnU4iw8mWRt7CWM5M"));
         sendPhoto.setCaption("CTRANS offers air transportation of a wide range of goods with large dimensions and weight. Air transportation China-Uzbekistan is the choice of most Uzbeks. We guarantee you fast, safe, and high-quality transportation in the shortest possible time.\n" +
                 "\n" +
                 "CTRANS employees carefully treat and control the transportation of each product. With us, you can be sure that your goods will arrive safe and sound.");

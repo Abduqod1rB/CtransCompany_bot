@@ -559,7 +559,7 @@ public class MyBotServiceRus {
     public SendPhoto havotransportiRus(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://api.360tv.ru/get_resized/-95SAJCmVKUbkPUC2f6RxCyVqbk=/1080x607/filters:focal(0.5:0.5):format(webp)/YXJ0aWNsZXMvaW1hZ2UvMjAyNC8xLzI1NjM3ODQ5NTA5ODc2NTQuanBn.webp"));
+        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1x25EB5oIG4yV1-ygGPif8pM3GYg0NshxnU4iw8mWRt7CWM5M"));
         sendPhoto.setCaption("""
                 Компания CTRANS предлагает авиаперевозки широкого спектра товаров с большими габаритами и весом. Авиаперевозки Китай-Узбекистан выбор большинства Узбекистанцев. Мы гарантируем вам быструю, безопасную, и качественную перевозку за минимальный срок.
 

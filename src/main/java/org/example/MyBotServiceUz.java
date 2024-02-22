@@ -331,7 +331,7 @@ public class MyBotServiceUz {
     public SendPhoto havotransportiUz(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://wallpaperset.com/w/full/c/6/a/249472.jpg"));
+        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1x25EB5oIG4yV1-ygGPif8pM3GYg0NshxnU4iw8mWRt7CWM5M"));
         sendPhoto.setCaption("""
                                 
                 CTRANS katta o'lchamlari va og'irligi bo'lgan keng turdagi tovarlarni havo orqali tashishni taklif qiladi. Xitoy-O'zbekiston bilan havo transporti ko'pchilik o'zbekistonliklarning tanlovidir. Biz sizga eng qisqa vaqt ichida tez, xavfsiz va sifatli tashishni kafolatlaymiz.
