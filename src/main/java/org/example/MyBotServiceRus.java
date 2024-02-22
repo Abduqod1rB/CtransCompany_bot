@@ -219,7 +219,7 @@ public class MyBotServiceRus {
         return sendMessage;
     }
 
-    public SendMessage deliveryTimeUz(Long chatId){
+    public SendMessage deliveryTimeRus(Long chatId){
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -236,9 +236,9 @@ public class MyBotServiceRus {
         KeyboardButton button2 = new KeyboardButton();
         KeyboardButton button3 = new KeyboardButton();
 
-        button.setText("✈\uFE0F Воздушный транспорт");
-        button1.setText("\uD83D\uDE98 Транспортное средство");
-        button2.setText("\uD83D\uDE88 Железнодорожный транспорт");
+        button.setText("✈\uFE0F  Воздушный транспорт");
+        button1.setText("\uD83D\uDE98  Транспортное средство");
+        button2.setText("\uD83D\uDE88  Железнодорожный транспорт");
         button3.setText("⬅\uFE0FНазад");
 
         row.add(button);

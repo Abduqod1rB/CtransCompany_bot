@@ -1356,7 +1356,27 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
+            if(text.equals("⏰Yetkazib berish muddati")){
+                try {
+                    execute(myBotServiceUz.deliveryTimeUz(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("⏰Срок доставки")){
+                try {
+                    execute(myBotServiceRus.deliveryTimeRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("⏰Delivery time")){
+                try {
+                    execute(myBotServiceEng.deliveryTimeEng(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
 
 
             if(text.equals("\uD83E\uDDEEKalkulyator")){
