@@ -235,6 +235,44 @@ public class MyBotServiceEng {
         return sendMessage;
     }
 
+    public SendMessage deliveryTimeEng(Long chatId){
+
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Choose the category you need.");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+        KeyboardRow row = new KeyboardRow();
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardRow row2 = new KeyboardRow();
+
+        KeyboardButton button = new KeyboardButton();
+        KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
+        KeyboardButton button3 = new KeyboardButton();
+
+        button.setText("✈️  Air transport");
+        button1.setText("\uD83D\uDE98  Auto transportation");
+        button2.setText("\uD83D\uDE88  Railway transportation");
+        button3.setText("⬅️Back");
+
+        row.add(button);
+        row.add(button1);
+        row1.add(button2);
+        row2.add(button3);
+
+        rowList.add(row);
+        rowList.add(row1);
+        rowList.add(row2);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendMessage;
+    }
+
     public SendPhoto aboutUsEng(Long chatId) {
 
         SendPhoto sendPhoto = new SendPhoto();
