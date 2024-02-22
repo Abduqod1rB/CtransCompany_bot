@@ -559,7 +559,7 @@ public class MyBotServiceRus {
     public SendPhoto havotransportiRus(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1x25EB5oIG4yV1-ygGPif8pM3GYg0NshxnU4iw8mWRt7CWM5M"));
+        sendPhoto.setPhoto(new InputFile("https://img.freepik.com/premium-photo/airplane-in-the-sky_1013690-70.jpg"));
         sendPhoto.setCaption("""
                 Компания CTRANS предлагает авиаперевозки широкого спектра товаров с большими габаритами и весом. Авиаперевозки Китай-Узбекистан выбор большинства Узбекистанцев. Мы гарантируем вам быструю, безопасную, и качественную перевозку за минимальный срок.
 
@@ -584,7 +584,7 @@ public class MyBotServiceRus {
     public SendPhoto railwayTransportationRus(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7EI3DngKarj1R1HwVvbhjoGzmDIrSBj1OvdnLkYnlu37ZUjMF"));
+        sendPhoto.setPhoto(new InputFile("https://34travel.me/media/posts/57f25911c5573-train.jpg"));
         sendPhoto.setCaption("""
                 Железнодорожные перевозки — одно из главных направлений деятельности CTRANS. Компанией осуществляется транспортировка как контейнерами нужного тоннажа, так и всеми видами вагона. 
                                

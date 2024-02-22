@@ -1523,7 +1523,7 @@ public class MyBotServiceEng {
     public SendPhoto havotransportiEng(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1x25EB5oIG4yV1-ygGPif8pM3GYg0NshxnU4iw8mWRt7CWM5M"));
+        sendPhoto.setPhoto(new InputFile("https://img.freepik.com/premium-photo/airplane-in-the-sky_1013690-70.jpg"));
         sendPhoto.setCaption("CTRANS offers air transportation of a wide range of goods with large dimensions and weight. Air transportation China-Uzbekistan is the choice of most Uzbeks. We guarantee you fast, safe, and high-quality transportation in the shortest possible time.\n" +
                 "\n" +
                 "CTRANS employees carefully treat and control the transportation of each product. With us, you can be sure that your goods will arrive safe and sound.");
@@ -1557,7 +1557,7 @@ public class MyBotServiceEng {
     public SendPhoto railwayTransportation(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7EI3DngKarj1R1HwVvbhjoGzmDIrSBj1OvdnLkYnlu37ZUjMF"));
+        sendPhoto.setPhoto(new InputFile("https://34travel.me/media/posts/57f25911c5573-train.jpg"));
         sendPhoto.setCaption("""
 
                 Rail transportation is one of the main activities of CTRANS. The company carries out transportation both in containers of the required tonnage and in all types of wagons.                    
