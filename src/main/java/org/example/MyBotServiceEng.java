@@ -1557,7 +1557,7 @@ public class MyBotServiceEng {
     public SendPhoto railwayTransportation(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://34travel.me/media/posts/57f25911c5573-train.jpg"));
+        sendPhoto.setPhoto(new InputFile("https://media.licdn.com/dms/image/C5622AQFC11sDRuGtfw/feedshare-shrink_800/0/1648805405802?e=2147483647&v=beta&t=6ru64usETOA39N_RYAOslVNhvpIIc4r4r_BRz8Ws_SY"));
         sendPhoto.setCaption("""
 
                 Rail transportation is one of the main activities of CTRANS. The company carries out transportation both in containers of the required tonnage and in all types of wagons.                    
