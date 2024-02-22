@@ -1536,7 +1536,7 @@ public class MyBotServiceEng {
     public SendPhoto autoTransportationEng(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDsXg7vSpcNXJi0JIR5i2zfNXzawFxcAWNbJG3ojAqmvaNcmB5"));
+        sendPhoto.setPhoto(new InputFile("https://www.arrowtruck.com/wp-content/uploads/2023/02/2_Arrow-Truck-Sales_Comparing-The-Different-Semi-Truck-and-Trailer-Types_IMAGE1.jpg"));
         sendPhoto.setCaption("""
                 Cargo transportation by road is the most important component of the transport services market, and it is this direction that is considered the leader in the field of transportation of goods from the sender to the recipient.
                 

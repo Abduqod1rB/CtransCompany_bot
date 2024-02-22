@@ -570,7 +570,7 @@ public class MyBotServiceRus {
     public SendPhoto avtomobiltransportiRus(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDsXg7vSpcNXJi0JIR5i2zfNXzawFxcAWNbJG3ojAqmvaNcmB5"));
+        sendPhoto.setPhoto(new InputFile("https://www.arrowtruck.com/wp-content/uploads/2023/02/2_Arrow-Truck-Sales_Comparing-The-Different-Semi-Truck-and-Trailer-Types_IMAGE1.jpg"));
         sendPhoto.setCaption("""
                 Грузоперевозки автомобильным транспортом являются важнейшей составной рынка транспортных услуг, причем именно это направление считается лидером в сфере транспортировки  грузов от отправителя к получателю
 
