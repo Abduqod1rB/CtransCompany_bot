@@ -1038,9 +1038,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
-            //E N G L I S H SEDAN
-
             if (text.equals("🏎 BYD Seal")){
                 try {
                     execute(myBotServiceEng.bydSeal(chatId));
@@ -1345,11 +1342,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
-            //E N G I L E S H HATCHBACK
-
-            //E N G I L E S H MINIVAN
-
             if (text.equals("🚐 Denza D9")){
                 try {
                     execute(myBotServiceEng.denzaD9(chatId));
@@ -1364,8 +1356,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
-            //E N G I L E S H MINIVAN
 
 
 
