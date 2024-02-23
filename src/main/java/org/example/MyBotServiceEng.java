@@ -1628,7 +1628,7 @@ public class MyBotServiceEng {
                 (Auto Transport) Your order will <b>arrive in 15-20 days</b>
                 Contact the manager to place an order
                 """);
-
+        sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
 
@@ -1641,7 +1641,7 @@ public class MyBotServiceEng {
                 (Railway Transport) Your order will <b>arrive in 20-30 days</b>
                 Contact the manager to place an order
                 """);
-
+        sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
 
