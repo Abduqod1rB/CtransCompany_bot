@@ -1,5 +1,6 @@
 package org.example;
 
+import org.telegram.telegrambots.meta.api.methods.ParseMode;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.methods.send.SendPhoto;
 import org.telegram.telegrambots.meta.api.objects.InputFile;
@@ -1553,7 +1554,44 @@ public class MyBotServiceRus {
 
 
 
+    public SendPhoto deliveryTimeAirRus(Long chatId){
 
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://img.freepik.com/premium-photo/airplane-in-the-sky_1013690-70.jpg"));
+        sendPhoto.setCaption("""
+                (Авиатранспорт) Ваш заказ будет доставлен в течение <b>5-10 дней</b>
+                Для заказа свяжитесь с менеджером
+                """);
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+
+    public SendPhoto deliveryTimeAutoRus(Long chatId){
+
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://www.arrowtruck.com/wp-content/uploads/2023/02/2_Arrow-Truck-Sales_Comparing-The-Different-Semi-Truck-and-Trailer-Types_IMAGE1.jpg"));
+        sendPhoto.setCaption("""
+                (Автомобильный транспорт) Ваш заказ <b>прибудет через 15-20 дней</b>
+                Для заказа свяжитесь с менеджером
+                """);
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+
+    public SendPhoto deliveryTimeRailwayRus(Long chatId){
+
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://media.licdn.com/dms/image/C5622AQFC11sDRuGtfw/feedshare-shrink_800/0/1648805405802?e=2147483647&v=beta&t=6ru64usETOA39N_RYAOslVNhvpIIc4r4r_BRz8Ws_SY"));
+        sendPhoto.setCaption("""
+                (Ж/д транспорт) Ваш заказ прибудет в течение <b>20-30 дней</b>
+                Для заказа свяжитесь с менеджером
+                """);
+        sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
 
 
 
