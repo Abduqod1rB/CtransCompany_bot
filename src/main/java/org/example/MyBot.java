@@ -1377,6 +1377,69 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
+            if(text.equals("✈️  Havo transporti")){
+                try {
+                    execute(myBotServiceUz.deliveryTimeAirUz(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("\uD83D\uDE98  Avto transport")){
+                try {
+                    execute(myBotServiceUz.deliveryTimeAutoUz(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("\uD83D\uDE88  Temir yo'l transporti")){
+                try {
+                    execute(myBotServiceUz.deliveryTimeRailwayUz(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("✈️  Воздушный транспорт")){
+                try {
+                    execute(myBotServiceRus.deliveryTimeAirRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("\uD83D\uDE98  Транспортное средство")){
+                try {
+                    execute(myBotServiceRus.deliveryTimeAutoRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("\uD83D\uDE88  Железнодорожный транспорт")){
+                try {
+                    execute(myBotServiceRus.deliveryTimeRailwayRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("✈️  Air transport")){
+                try {
+                    execute(myBotServiceEng.deliveryTimeAirEng(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("\uD83D\uDE98  Auto transportation")){
+                try {
+                    execute(myBotServiceEng.deliveryTimeAutoEng(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("\uD83D\uDE88  Railway transportation")){
+                try {
+                    execute(myBotServiceEng.deliveryTimeRailwayEng(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
 
 
 

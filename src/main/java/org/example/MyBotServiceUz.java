@@ -243,7 +243,7 @@ public class MyBotServiceUz {
         KeyboardButton button2 = new KeyboardButton();
         KeyboardButton button3 = new KeyboardButton();
 
-        button.setText("✈\uFE0F  Havo transporti");
+        button.setText("✈️  Havo transporti");
         button1.setText("\uD83D\uDE98  Avto transport");
         button2.setText("\uD83D\uDE88  Temir yo'l transporti");
         button3.setText("⬅️Orqaga");
