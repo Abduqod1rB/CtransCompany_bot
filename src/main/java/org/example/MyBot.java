@@ -24,20 +24,20 @@ public class MyBot extends TelegramLongPollingBot {
         if (update.hasMessage() && update.getMessage().hasText()) {
             Long chatId = update.getMessage().getChatId();
             String text = update.getMessage().getText();
-            String userName =update.getMessage().getFrom().getFirstName();
+            String userName = update.getMessage().getFrom().getFirstName();
             int id = DB.IdFinder(userName);
 
             if (text.equals("/start")) {
-                if(id == -1){
-                    DB.addUser(userName,"uz","start", "-1");
+                if (id == -1) {
+                    DB.addUser(userName, "uz", "start", "-1");
                     try {
                         execute(myBotService.languangeMenu(chatId));
                     } catch (TelegramApiException e) {
                         throw new RuntimeException(e);
                     }
-                }else {
+                } else {
                     String language = DB.users.get(id).getCurrentLanguage();
-                    switch (language){
+                    switch (language) {
                         case "uz" -> {
                             try {
                                 execute(myBotServiceUz.asosiyMenuUz(chatId));
@@ -88,32 +88,29 @@ public class MyBot extends TelegramLongPollingBot {
                     }
                 }
             }
-            if(text.equals("\uD83D\uDCACIzoh qoldirish")){
+            if (text.equals("\uD83D\uDCACIzoh qoldirish")) {
                 try {
                     execute(myBotServiceUz.izohQoldirishUz(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
                 DB.users.get(id).setCurrentPosition("comment");
-            }
-            else if(text.equals("\uD83D\uDCACОставить комментарий")){
+            } else if (text.equals("\uD83D\uDCACОставить комментарий")) {
                 try {
                     execute(myBotServiceRus.izohQoldirishRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
-                 DB.users.get(id).setCurrentPosition("comment");
-            }
-            else if(text.equals("\uD83D\uDCACLeave a comment")){
-                 try {
-                     execute(myBotServiceEng.izohQoldirishEng(chatId));
-                 } catch (TelegramApiException e) {
-                     throw new RuntimeException(e);
-                 }
-                 DB.users.get(id).setCurrentPosition("comment");
-            }
-            else if(DB.users.get(id).getCurrentPosition().equals("comment")){
-                switch (DB.users.get(id).getCurrentLanguage()){
+                DB.users.get(id).setCurrentPosition("comment");
+            } else if (text.equals("\uD83D\uDCACLeave a comment")) {
+                try {
+                    execute(myBotServiceEng.izohQoldirishEng(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+                DB.users.get(id).setCurrentPosition("comment");
+            } else if (DB.users.get(id).getCurrentPosition().equals("comment")) {
+                switch (DB.users.get(id).getCurrentLanguage()) {
                     case "uz" -> {
                         try {
                             execute(myBotServiceUz.izohQabulQilindiUz(chatId));
@@ -143,21 +140,21 @@ public class MyBot extends TelegramLongPollingBot {
                 DB.users.get(id).setCurrentPosition("start");
             }
 
-            if(text.equals("⬅️Orqaga")){
+            if (text.equals("⬅️Orqaga")) {
                 try {
                     execute(myBotServiceUz.asosiyMenuUz(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("⬅️Назад")){
+            if (text.equals("⬅️Назад")) {
                 try {
                     execute(myBotServiceRus.asosiyMenuRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("⬅️Back")){
+            if (text.equals("⬅️Back")) {
                 try {
                     execute(myBotServiceEng.asosiyMenuEng(chatId));
                 } catch (TelegramApiException e) {
@@ -165,29 +162,29 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
 
-            if(text.equals("⬅️ Orqaga")){
+            if (text.equals("⬅️ Orqaga")) {
                 try {
                     execute(myBotServiceUz.xitoydanmashinalar(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("⬅️ Назад")){
+            if (text.equals("⬅️ Назад")) {
                 try {
                     execute(myBotServiceRus.carsFromChinaRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("⬅️ Back")){
+            if (text.equals("⬅️ Back")) {
                 try {
-                    execute(myBotServiceEng.carsFromChinaEng( chatId));
+                    execute(myBotServiceEng.carsFromChinaEng(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
 
-            if(text.equals("\uD83D\uDE9AXizmatlar")){
+            if (text.equals("\uD83D\uDE9AXizmatlar")) {
                 try {
                     execute(myBotServiceUz.xizmatlar(chatId));
                 } catch (TelegramApiException e) {
@@ -195,532 +192,532 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
 
-            if(text.equals("\uD83D\uDE9AУслуги")){
+            if (text.equals("\uD83D\uDE9AУслуги")) {
                 try {
                     execute(myBotServiceRus.xizmatlarRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE9AServices")){
+            if (text.equals("\uD83D\uDE9AServices")) {
                 try {
                     execute(myBotServiceEng.servicesEng(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("✈️ Havo transporti")){
+            if (text.equals("✈️ Havo transporti")) {
                 try {
                     execute(myBotServiceUz.havotransporti(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("✈️ Авиаперевозки")){
+            if (text.equals("✈️ Авиаперевозки")) {
                 try {
                     execute(myBotServiceRus.havotransportiRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("✈\uFE0F Air transportation")){
+            if (text.equals("✈\uFE0F Air transportation")) {
                 try {
                     execute(myBotServiceEng.havotransportiEng(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE98 Avtomobil transporti")){
+            if (text.equals("\uD83D\uDE98 Avtomobil transporti")) {
                 try {
                     execute(myBotServiceUz.avtomobiltransporti(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE98 Автоперевозки")){
+            if (text.equals("\uD83D\uDE98 Автоперевозки")) {
                 try {
                     execute(myBotServiceRus.avtomobiltransportiRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE98 Auto transportation")){
+            if (text.equals("\uD83D\uDE98 Auto transportation")) {
                 try {
                     execute(myBotServiceEng.autoTransportationEng(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE88 Temir yo'l transporti")){
+            if (text.equals("\uD83D\uDE88 Temir yo'l transporti")) {
                 try {
                     execute(myBotServiceUz.railwayTransportationUz(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE88 Железнодорожные перевозки")){
+            if (text.equals("\uD83D\uDE88 Железнодорожные перевозки")) {
                 try {
                     execute(myBotServiceRus.railwayTransportationRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE88 Railway transportation")){
+            if (text.equals("\uD83D\uDE88 Railway transportation")) {
                 try {
                     execute(myBotServiceEng.railwayTransportation(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Yivu va Guanchjou da ombor xizmatlari")){
+            if (text.equals("Yivu va Guanchjou da ombor xizmatlari")) {
                 try {
                     execute(myBotServiceUz.werehouseUz(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Складовые услуги в Иу и Гуанчжоу")){
+            if (text.equals("Складовые услуги в Иу и Гуанчжоу")) {
                 try {
                     execute(myBotServiceRus.werehouseRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Werehouse services in Yiwu and Gungzhou")){
+            if (text.equals("Werehouse services in Yiwu and Gungzhou")) {
                 try {
                     execute(myBotServiceEng.werehouseEng(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Bojxona rasmiylashtiruvi xizmatlari")){
+            if (text.equals("Bojxona rasmiylashtiruvi xizmatlari")) {
                 try {
                     execute(myBotServiceUz.ccsUz(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Услуги таможеннего оформления")){
+            if (text.equals("Услуги таможеннего оформления")) {
                 try {
                     execute(myBotServiceRus.ccsRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Customs Clearance services")){
+            if (text.equals("Customs Clearance services")) {
                 try {
                     execute(myBotServiceEng.ccsEng(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE99Xitoydan mashinalar")){
+            if (text.equals("\uD83D\uDE99Xitoydan mashinalar")) {
                 try {
                     execute(myBotServiceUz.xitoydanmashinalar(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE99Авто из Китая")){
+            if (text.equals("\uD83D\uDE99Авто из Китая")) {
                 try {
                     execute(myBotServiceRus.carsFromChinaRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE99Cars from China")){
+            if (text.equals("\uD83D\uDE99Cars from China")) {
                 try {
                     execute(myBotServiceEng.carsFromChinaEng(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Sedan")){
+            if (text.equals("Sedan")) {
                 try {
                     execute(myBotServiceUz.sedanUz(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Krossover")){
+            if (text.equals("Krossover")) {
                 try {
                     execute(myBotServiceUz.crossoverUz(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Xetchbek")){
+            if (text.equals("Xetchbek")) {
                 try {
                     execute(myBotServiceUz.hatchBackUz(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Mikroavtobus")){
+            if (text.equals("Mikroavtobus")) {
                 try {
                     execute(myBotServiceUz.minivanUz(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Седан")){
+            if (text.equals("Седан")) {
                 try {
                     execute(myBotServiceRus.sedanRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Кросовер")){
+            if (text.equals("Кросовер")) {
                 try {
                     execute(myBotServiceRus.crossoverRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Хетчбек")){
+            if (text.equals("Хетчбек")) {
                 try {
                     execute(myBotServiceRus.xetchBackRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Минивэн")){
+            if (text.equals("Минивэн")) {
                 try {
                     execute(myBotServiceRus.minivanRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Sedąn")){
+            if (text.equals("Sedąn")) {
                 try {
                     execute(myBotServiceEng.sedanEng(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Crossover")){
+            if (text.equals("Crossover")) {
                 try {
                     execute(myBotServiceEng.crossoverEng(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Hatchback")){
+            if (text.equals("Hatchback")) {
                 try {
                     execute(myBotServiceEng.hatchBackEng(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Minivan")){
+            if (text.equals("Minivan")) {
                 try {
                     execute(myBotServiceEng.minivanEng(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("BYD Seal")){
+            if (text.equals("BYD Seal")) {
                 try {
                     execute(myBotServiceUz.BYD_SEAL(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("BYD Han")){
+            if (text.equals("BYD Han")) {
                 try {
                     execute(myBotServiceUz.BYD_HAN(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Chevrolet Monza 1.5L Atmo")){
+            if (text.equals("Chevrolet Monza 1.5L Atmo")) {
                 try {
                     execute(myBotServiceUz.Chevrolet_Monza15(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Chevrolet Monza 1.3L Turbo")){
+            if (text.equals("Chevrolet Monza 1.3L Turbo")) {
                 try {
                     execute(myBotServiceUz.Chevrolet_Monza13(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Honda Crider 1.0L Turbo")){
+            if (text.equals("Honda Crider 1.0L Turbo")) {
                 try {
                     execute(myBotServiceUz.Honda_Crider10_Turo(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("LeapMotor C01")){
+            if (text.equals("LeapMotor C01")) {
                 try {
                     execute(myBotServiceUz.LeapMotor_C01(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("HiPhi Z")){
+            if (text.equals("HiPhi Z")) {
                 try {
                     execute(myBotServiceUz.HiPhi_Z(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("IM Motors L7")){
+            if (text.equals("IM Motors L7")) {
                 try {
                     execute(myBotServiceUz.IM_Motors_L7(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Geometry G6")){
+            if (text.equals("Geometry G6")) {
                 try {
                     execute(myBotServiceUz.Geometry_G6(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("BMW i3 eDrive40")){
+            if (text.equals("BMW i3 eDrive40")) {
                 try {
                     execute(myBotServiceUz.BMW_i3_eDrive40(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("BMW i4 eDrive35")){
+            if (text.equals("BMW i4 eDrive35")) {
                 try {
                     execute(myBotServiceUz.BMW_i4_eDrive35(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("BMW i5 eDrive40")){
+            if (text.equals("BMW i5 eDrive40")) {
                 try {
                     execute(myBotServiceUz.BMW_i5_eDrive40(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Neta S")){
+            if (text.equals("Neta S")) {
                 try {
                     execute(myBotServiceUz.Neta_S(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Neta Gt")){
+            if (text.equals("Neta Gt")) {
                 try {
                     execute(myBotServiceUz.Neta_Gt(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Zeeker 007")){
+            if (text.equals("Zeeker 007")) {
                 try {
                     execute(myBotServiceUz.Zeekr_007(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("BYD Song Plus Champion Edition")){
+            if (text.equals("BYD Song Plus Champion Edition")) {
                 try {
                     execute(myBotServiceUz.BYD_Song_Plus_Champion_Edition(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("BYD Tang EV")){
+            if (text.equals("BYD Tang EV")) {
                 try {
                     execute(myBotServiceUz.BYD_Tang_EV(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("BYD Yuan Plus EV")){
+            if (text.equals("BYD Yuan Plus EV")) {
                 try {
                     execute(myBotServiceUz.BYD_Yuan_Plus_EV(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Zeeker 001")){
+            if (text.equals("Zeeker 001")) {
                 try {
                     execute(myBotServiceUz.Zeekr_001(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Zeeker X")){
+            if (text.equals("Zeeker X")) {
                 try {
                     execute(myBotServiceUz.Zeekr_X(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("LeapMotor C11")){
+            if (text.equals("LeapMotor C11")) {
                 try {
                     execute(myBotServiceUz.LeapMotor_C11(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Geely Geometry E")){
+            if (text.equals("Geely Geometry E")) {
                 try {
                     execute(myBotServiceUz.Geely_Geometry_E(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Denza N7")){
+            if (text.equals("Denza N7")) {
                 try {
                     execute(myBotServiceUz.Denza_N7(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("HiPhi Y")){
+            if (text.equals("HiPhi Y")) {
                 try {
                     execute(myBotServiceUz.HiPhi_Y(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("NIO ES8")){
+            if (text.equals("NIO ES8")) {
                 try {
                     execute(myBotServiceUz.NIO_ES8(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("NIO EC7")){
+            if (text.equals("NIO EC7")) {
                 try {
                     execute(myBotServiceUz.NIO_EC7(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("LI Auto L7")){
+            if (text.equals("LI Auto L7")) {
                 try {
                     execute(myBotServiceUz.LI_Auto_L7(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("LI Auto L9")){
+            if (text.equals("LI Auto L9")) {
                 try {
                     execute(myBotServiceUz.Li_Auto_L9(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("IM Motors LS7")){
+            if (text.equals("IM Motors LS7")) {
                 try {
                     execute(myBotServiceUz.IM_Motors_LS7(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Geometry M6")){
+            if (text.equals("Geometry M6")) {
                 try {
                     execute(myBotServiceUz.Geometry_M6(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("LI Auto L8")){
+            if (text.equals("LI Auto L8")) {
                 try {
                     execute(myBotServiceUz.Li_Auto_L8(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Avatr 11")){
+            if (text.equals("Avatr 11")) {
                 try {
                     execute(myBotServiceUz.Avatr_11(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("HiPhi X")){
+            if (text.equals("HiPhi X")) {
                 try {
                     execute(myBotServiceUz.HiPhi_X(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("LI Auto One")){
+            if (text.equals("LI Auto One")) {
                 try {
                     execute(myBotServiceUz.Li_Auto_One(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Lynk&Co 09EM-P")){
+            if (text.equals("Lynk&Co 09EM-P")) {
                 try {
                     execute(myBotServiceUz.Lynk_Co_09EMP(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Chevrolet Seeker")){
+            if (text.equals("Chevrolet Seeker")) {
                 try {
                     execute(myBotServiceUz.Chevrolet_Seeker(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("BYD Song L")){
+            if (text.equals("BYD Song L")) {
                 try {
                     execute(myBotServiceUz.BYD_Song_L(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("BYD Yangwang U8")){
+            if (text.equals("BYD Yangwang U8")) {
                 try {
                     execute(myBotServiceUz.BYD_Yangwang_U8(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("BYD Seagull")){
+            if (text.equals("BYD Seagull")) {
                 try {
                     execute(myBotServiceUz.BYD_Segaull(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("BYD Dolphin")){
+            if (text.equals("BYD Dolphin")) {
                 try {
                     execute(myBotServiceUz.BYD_Dolphin(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("BYD E2")){
+            if (text.equals("BYD E2")) {
                 try {
                     execute(myBotServiceUz.BYD_E2(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Changan BenBen E-Star")){
+            if (text.equals("Changan BenBen E-Star")) {
                 try {
                     execute(myBotServiceUz.Changan_BenBen_E_Star(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Denza D9")){
+            if (text.equals("Denza D9")) {
                 try {
                     execute(myBotServiceUz.Denza_D9(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("Zeeker 009")){
+            if (text.equals("Zeeker 009")) {
                 try {
                     execute(myBotServiceUz.Zeekr_009(chatId));
                 } catch (TelegramApiException e) {
@@ -730,413 +727,413 @@ public class MyBot extends TelegramLongPollingBot {
 
             ///////////////////////////////////////////
 
-            if(text.equals("\uD83D\uDE97BYD Seal")){
+            if (text.equals("\uD83D\uDE97BYD Seal")) {
                 try {
                     execute(myBotServiceRus.bydSealRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE97BYD Han")){
+            if (text.equals("\uD83D\uDE97BYD Han")) {
                 try {
                     execute(myBotServiceRus.bydHanRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE97Chevrolet Monza 1.5L Atmo")){
+            if (text.equals("\uD83D\uDE97Chevrolet Monza 1.5L Atmo")) {
                 try {
                     execute(myBotServiceRus.chevroletMonzaAtmoRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE97Chevrolet Monza 1.3L Turbo")){
+            if (text.equals("\uD83D\uDE97Chevrolet Monza 1.3L Turbo")) {
                 try {
                     execute(myBotServiceRus.chevroletMonzaTurboRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE97Honda Crider 1.0L Turbo")){
+            if (text.equals("\uD83D\uDE97Honda Crider 1.0L Turbo")) {
                 try {
                     execute(myBotServiceRus.HondaCriderTurboRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE97LeapMotor C01")){
+            if (text.equals("\uD83D\uDE97LeapMotor C01")) {
                 try {
                     execute(myBotServiceRus.leapMotorC01Rus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE97HiPhi Z")){
+            if (text.equals("\uD83D\uDE97HiPhi Z")) {
                 try {
                     execute(myBotServiceRus.HiPhiZRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE97IM Motors L7")){
+            if (text.equals("\uD83D\uDE97IM Motors L7")) {
                 try {
                     execute(myBotServiceRus.IMMotorsLS7Rus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE97Geometry G6")){
+            if (text.equals("\uD83D\uDE97Geometry G6")) {
                 try {
                     execute(myBotServiceRus.geometryG6Rus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE97BMW i3 eDrive40")){
+            if (text.equals("\uD83D\uDE97BMW i3 eDrive40")) {
                 try {
                     execute(myBotServiceRus.bmwi3eDrive40Rus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE97BMW i4 eDrive35")){
+            if (text.equals("\uD83D\uDE97BMW i4 eDrive35")) {
                 try {
                     execute(myBotServiceRus.bmwi4eDrive35Rus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE97BMW i5 eDrive40")){
+            if (text.equals("\uD83D\uDE97BMW i5 eDrive40")) {
                 try {
                     execute(myBotServiceRus.bmwi5eDrive40Rus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE97Neta S")){
+            if (text.equals("\uD83D\uDE97Neta S")) {
                 try {
                     execute(myBotServiceRus.netaSRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE97Neta Gt")){
+            if (text.equals("\uD83D\uDE97Neta Gt")) {
                 try {
                     execute(myBotServiceRus.netaGtRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE97Zeeker 007")){
+            if (text.equals("\uD83D\uDE97Zeeker 007")) {
                 try {
                     execute(myBotServiceRus.zeeker007Rus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE99BYD Song Plus Champion Edition")){
+            if (text.equals("\uD83D\uDE99BYD Song Plus Champion Edition")) {
                 try {
                     execute(myBotServiceRus.BYDSongPlusChampionEditionRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE99BYD Tang EV")){
+            if (text.equals("\uD83D\uDE99BYD Tang EV")) {
                 try {
                     execute(myBotServiceRus.BYDTangEVRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE99BYD Yuan Plus EV")){
+            if (text.equals("\uD83D\uDE99BYD Yuan Plus EV")) {
                 try {
                     execute(myBotServiceRus.BYDYuanPlusEVRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE99Zeeker 001")){
+            if (text.equals("\uD83D\uDE99Zeeker 001")) {
                 try {
                     execute(myBotServiceRus.Zeekr001Rus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE99Zeeker X")){
+            if (text.equals("\uD83D\uDE99Zeeker X")) {
                 try {
                     execute(myBotServiceRus.ZeekrXRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE99LeapMotor C11")){
+            if (text.equals("\uD83D\uDE99LeapMotor C11")) {
                 try {
                     execute(myBotServiceRus.LeapMotorC11Rus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE99Geely Geometry E")){
+            if (text.equals("\uD83D\uDE99Geely Geometry E")) {
                 try {
                     execute(myBotServiceRus.GeelyGeometryERus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE99Denza N7")){
+            if (text.equals("\uD83D\uDE99Denza N7")) {
                 try {
                     execute(myBotServiceRus.DenzaN7Rus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE99HiPhi Y")){
+            if (text.equals("\uD83D\uDE99HiPhi Y")) {
                 try {
                     execute(myBotServiceRus.HiPhiYRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE99NIO ES8")){
+            if (text.equals("\uD83D\uDE99NIO ES8")) {
                 try {
                     execute(myBotServiceRus.NIOES8Rus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE99NIO EC7")){
+            if (text.equals("\uD83D\uDE99NIO EC7")) {
                 try {
                     execute(myBotServiceRus.NIOEC7Rus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE99LI Auto L7")){
+            if (text.equals("\uD83D\uDE99LI Auto L7")) {
                 try {
                     execute(myBotServiceRus.LIAutoL7Rus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE99LI Auto L9")){
+            if (text.equals("\uD83D\uDE99LI Auto L9")) {
                 try {
                     execute(myBotServiceRus.LIAutoL9Rus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE99IM Motors LS7")){
+            if (text.equals("\uD83D\uDE99IM Motors LS7")) {
                 try {
                     execute(myBotServiceRus.IMMotorsLS7Rus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE99Geometry M6")){
+            if (text.equals("\uD83D\uDE99Geometry M6")) {
                 try {
                     execute(myBotServiceRus.GeometryM6Rus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE99LI Auto L8")){
+            if (text.equals("\uD83D\uDE99LI Auto L8")) {
                 try {
                     execute(myBotServiceRus.LIAutoL8Rus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE99Avatr 11")){
+            if (text.equals("\uD83D\uDE99Avatr 11")) {
                 try {
                     execute(myBotServiceRus.Avatr11Rus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE99HiPhi X")){
+            if (text.equals("\uD83D\uDE99HiPhi X")) {
                 try {
                     execute(myBotServiceRus.HiPhiXRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE99LI Auto One")){
+            if (text.equals("\uD83D\uDE99LI Auto One")) {
                 try {
                     execute(myBotServiceRus.LIAutoOneRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE99Lynk&Co 09EM-P")){
+            if (text.equals("\uD83D\uDE99Lynk&Co 09EM-P")) {
                 try {
                     execute(myBotServiceRus.LynkCo09EMPRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE99Chevrolet Seeker")){
+            if (text.equals("\uD83D\uDE99Chevrolet Seeker")) {
                 try {
                     execute(myBotServiceRus.ChevroletSeekerRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE99BYD Song L")){
+            if (text.equals("\uD83D\uDE99BYD Song L")) {
                 try {
                     execute(myBotServiceRus.BYDSongLRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE99BYD Yangwang U8")){
+            if (text.equals("\uD83D\uDE99BYD Yangwang U8")) {
                 try {
                     execute(myBotServiceRus.BYDYangwangU8Rus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE97BYD Seagull")){
+            if (text.equals("\uD83D\uDE97BYD Seagull")) {
                 try {
                     execute(myBotServiceRus.BYDSeagullRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE97BYD Dolphin")){
+            if (text.equals("\uD83D\uDE97BYD Dolphin")) {
                 try {
                     execute(myBotServiceRus.BYDDolphinRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE97BYD E2")){
+            if (text.equals("\uD83D\uDE97BYD E2")) {
                 try {
                     execute(myBotServiceRus.BYDE2Rus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE97Changan BenBen E-Star")){
+            if (text.equals("\uD83D\uDE97Changan BenBen E-Star")) {
                 try {
                     execute(myBotServiceRus.ChanganBenBenEStarRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE90Denza D9")){
+            if (text.equals("\uD83D\uDE90Denza D9")) {
                 try {
                     execute(myBotServiceRus.DenzaD9Rus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE90Zeeker 009")){
+            if (text.equals("\uD83D\uDE90Zeeker 009")) {
                 try {
                     execute(myBotServiceRus.Zeekr009Rus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🏎 BYD Seal")){
+            if (text.equals("🏎 BYD Seal")) {
                 try {
                     execute(myBotServiceEng.bydSeal(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🏎 BYD Han")){
+            if (text.equals("🏎 BYD Han")) {
                 try {
                     execute(myBotServiceEng.bydHan(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🏎 Chevrolet Monza 1.5L Atmo")){
+            if (text.equals("🏎 Chevrolet Monza 1.5L Atmo")) {
                 try {
                     execute(myBotServiceEng.chevroletMonzaAtmo(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🏎 Chevrolet Monza 1.3L Turbo")){
+            if (text.equals("🏎 Chevrolet Monza 1.3L Turbo")) {
                 try {
                     execute(myBotServiceEng.chevroletMonzaTurbo(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🏎 Honda Crider 1.0L Turbo")){
+            if (text.equals("🏎 Honda Crider 1.0L Turbo")) {
                 try {
                     execute(myBotServiceEng.HondaCriderTurbo(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🏎 LeapMotor C01")){
+            if (text.equals("🏎 LeapMotor C01")) {
                 try {
                     execute(myBotServiceEng.leapMotorC01(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🏎 HiPhi Z")){
+            if (text.equals("🏎 HiPhi Z")) {
                 try {
                     execute(myBotServiceEng.HiPhiZ(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🏎 IM Motors L7")){
+            if (text.equals("🏎 IM Motors L7")) {
                 try {
                     execute(myBotServiceEng.imMotorsL7(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🏎 Geometry G6")){
+            if (text.equals("🏎 Geometry G6")) {
                 try {
                     execute(myBotServiceEng.geometryG6(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🏎 BMW i3 eDrive40")){
+            if (text.equals("🏎 BMW i3 eDrive40")) {
                 try {
                     execute(myBotServiceEng.bmwi3eDrive40(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🏎 BMW i4 eDrive35")){
+            if (text.equals("🏎 BMW i4 eDrive35")) {
                 try {
                     execute(myBotServiceEng.bmwi4eDrive35(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🏎 BMW i5 eDrive40")){
+            if (text.equals("🏎 BMW i5 eDrive40")) {
                 try {
                     execute(myBotServiceEng.bmwi5eDrive40(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🏎 Neta S")){
+            if (text.equals("🏎 Neta S")) {
                 try {
                     execute(myBotServiceEng.netaS(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🏎 Neta Gt")){
+            if (text.equals("🏎 Neta Gt")) {
                 try {
                     execute(myBotServiceEng.netaGt(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🏎 Zeeker 007")){
+            if (text.equals("🏎 Zeeker 007")) {
                 try {
                     execute(myBotServiceEng.zeeker007(chatId));
                 } catch (TelegramApiException e) {
@@ -1148,161 +1145,161 @@ public class MyBot extends TelegramLongPollingBot {
 
             //E N G I L E S H CROSSOVER
 
-            if (text.equals("🚙 BYD Song Plus Champion Edition")){
+            if (text.equals("🚙 BYD Song Plus Champion Edition")) {
                 try {
                     execute(myBotServiceEng.bydSongPlusChampionEdition(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🚙 BYD Tang EV")){
+            if (text.equals("🚙 BYD Tang EV")) {
                 try {
                     execute(myBotServiceEng.bydTengEV(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🚙 BYD Yuan Plus EV")){
+            if (text.equals("🚙 BYD Yuan Plus EV")) {
                 try {
                     execute(myBotServiceEng.bydYuanPlusEV(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🚙 Zeeker 001")){
+            if (text.equals("🚙 Zeeker 001")) {
                 try {
                     execute(myBotServiceEng.zeekr001(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🚙 Zeeker X")){
+            if (text.equals("🚙 Zeeker X")) {
                 try {
                     execute(myBotServiceEng.zeekrX(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🚙 LeapMotor C11")){
+            if (text.equals("🚙 LeapMotor C11")) {
                 try {
                     execute(myBotServiceEng.leapMotorC11(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🚙 Geely Geometry E")){
+            if (text.equals("🚙 Geely Geometry E")) {
                 try {
                     execute(myBotServiceEng.GeelyGeometryE(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🚙 Denza N7")){
+            if (text.equals("🚙 Denza N7")) {
                 try {
                     execute(myBotServiceEng.denzaN7(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🚙 HiPhi Y")){
+            if (text.equals("🚙 HiPhi Y")) {
                 try {
                     execute(myBotServiceEng.hiPhiY(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🚙 NIO ES8")){
+            if (text.equals("🚙 NIO ES8")) {
                 try {
                     execute(myBotServiceEng.nioES8(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🚙 NIO ES7")){
+            if (text.equals("🚙 NIO ES7")) {
                 try {
                     execute(myBotServiceEng.nioEC7(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🚙 LI Auto L7")){
+            if (text.equals("🚙 LI Auto L7")) {
                 try {
                     execute(myBotServiceEng.liAutoL7(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🚙 LI Auto L9")){
+            if (text.equals("🚙 LI Auto L9")) {
                 try {
                     execute(myBotServiceEng.liAutoL9(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🚙 IM Motors LS7")){
+            if (text.equals("🚙 IM Motors LS7")) {
                 try {
                     execute(myBotServiceEng.IMMotorsLS7(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🚙 Geometry M6")){
+            if (text.equals("🚙 Geometry M6")) {
                 try {
                     execute(myBotServiceEng.geometryM6(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🚙 LI Auto L8")){
+            if (text.equals("🚙 LI Auto L8")) {
                 try {
                     execute(myBotServiceEng.lIAutoL8(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🚙 Avatr 11")){
+            if (text.equals("🚙 Avatr 11")) {
                 try {
                     execute(myBotServiceEng.avatr11(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🚙 HiPhi X")){
+            if (text.equals("🚙 HiPhi X")) {
                 try {
                     execute(myBotServiceEng.hiPhiX(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🚙 LI Auto One")){
+            if (text.equals("🚙 LI Auto One")) {
                 try {
                     execute(myBotServiceEng.lIAutoOne(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🚙 Lynk&Co 09EM-P")){
+            if (text.equals("🚙 Lynk&Co 09EM-P")) {
                 try {
                     execute(myBotServiceEng.lynkCo09EMP(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🚙 Chevrolet Seeker")){
+            if (text.equals("🚙 Chevrolet Seeker")) {
                 try {
                     execute(myBotServiceEng.chevroletSeeker(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🚙 BYD Song L")){
+            if (text.equals("🚙 BYD Song L")) {
                 try {
                     execute(myBotServiceEng.bydSongL(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🚙 BYD Yangwang U8")){
+            if (text.equals("🚙 BYD Yangwang U8")) {
                 try {
                     execute(myBotServiceEng.bydYangwangU8(chatId));
                 } catch (TelegramApiException e) {
@@ -1314,197 +1311,195 @@ public class MyBot extends TelegramLongPollingBot {
 
             //E N G I L E S H HATCHBACK
 
-            if (text.equals("🚗 BYD Seagull")){
+            if (text.equals("🚗 BYD Seagull")) {
                 try {
                     execute(myBotServiceEng.bydSeagull(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🚗 BYD Dolphin")){
+            if (text.equals("🚗 BYD Dolphin")) {
                 try {
                     execute(myBotServiceEng.bydDolphin(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🚗 BYD E2")){
+            if (text.equals("🚗 BYD E2")) {
                 try {
                     execute(myBotServiceEng.bydE2(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🚗 Changan BenBen E-Star")){
+            if (text.equals("🚗 Changan BenBen E-Star")) {
                 try {
                     execute(myBotServiceEng.changanBenBenEStar(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🚐 Denza D9")){
+            if (text.equals("🚐 Denza D9")) {
                 try {
                     execute(myBotServiceEng.denzaD9(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("🚐 Zeeker 009")){
+            if (text.equals("🚐 Zeeker 009")) {
                 try {
                     execute(myBotServiceEng.zeekr009(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("⏰Yetkazib berish muddati")){
+            if (text.equals("⏰Yetkazib berish muddati")) {
                 try {
                     execute(myBotServiceUz.deliveryTimeUz(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("⏰Срок доставки")){
+            if (text.equals("⏰Срок доставки")) {
                 try {
                     execute(myBotServiceRus.deliveryTimeRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("⏰Delivery time")){
+            if (text.equals("⏰Delivery time")) {
                 try {
                     execute(myBotServiceEng.deliveryTimeEng(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("✈️  Havo transporti")){
+            if (text.equals("✈️  Havo transporti")) {
                 try {
                     execute(myBotServiceUz.deliveryTimeAirUz(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE98  Avto transport")){
+            if (text.equals("\uD83D\uDE98  Avto transport")) {
                 try {
                     execute(myBotServiceUz.deliveryTimeAutoUz(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE88  Temir yo'l transporti")){
+            if (text.equals("\uD83D\uDE88  Temir yo'l transporti")) {
                 try {
                     execute(myBotServiceUz.deliveryTimeRailwayUz(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("✈️  Воздушный транспорт")){
+            if (text.equals("✈️  Воздушный транспорт")) {
                 try {
                     execute(myBotServiceRus.deliveryTimeAirRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE98  Транспортное средство")){
+            if (text.equals("\uD83D\uDE98  Транспортное средство")) {
                 try {
                     execute(myBotServiceRus.deliveryTimeAutoRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE88  Железнодорожный транспорт")){
+            if (text.equals("\uD83D\uDE88  Железнодорожный транспорт")) {
                 try {
                     execute(myBotServiceRus.deliveryTimeRailwayRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("✈️  Air transport")){
+            if (text.equals("✈️  Air transport")) {
                 try {
                     execute(myBotServiceEng.deliveryTimeAirEng(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE98  Auto transportation")){
+            if (text.equals("\uD83D\uDE98  Auto transportation")) {
                 try {
                     execute(myBotServiceEng.deliveryTimeAutoEng(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83D\uDE88  Railway transportation")){
+            if (text.equals("\uD83D\uDE88  Railway transportation")) {
                 try {
                     execute(myBotServiceEng.deliveryTimeRailwayEng(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83E\uDDEEKalkulyator")){
+            if (text.equals("\uD83E\uDDEEKalkulyator")) {
                 try {
                     execute(myBotServiceUz.kankulator(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83E\uDDEEКалькулятор")){
+            if (text.equals("\uD83E\uDDEEКалькулятор")) {
                 try {
                     execute(myBotServiceRus.kanlkulyatorRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("\uD83E\uDDEECalculator")){
+            if (text.equals("\uD83E\uDDEECalculator")) {
                 try {
                     execute(myBotServiceEng.kanlkulyatorEng(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("ℹ️Biz haqimizda")){
+            if (text.equals("ℹ️Biz haqimizda")) {
                 try {
                     execute(myBotServiceUz.aboutUsUz(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("ℹ️О нас")){
+            if (text.equals("ℹ️О нас")) {
                 try {
                     execute(myBotServiceRus.aboutUsRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("ℹ️About Us")){
+            if (text.equals("ℹ️About Us")) {
                 try {
                     execute(myBotServiceEng.aboutUsEng(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("⚙️Sozlamalar")){
+            if (text.equals("⚙️Sozlamalar")) {
                 try {
                     execute(myBotServiceUz.sozlamalar(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("⚙️Настройки")){
+            if (text.equals("⚙️Настройки")) {
                 try {
                     execute(myBotServiceRus.settingsRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("⚙️Settings")){
+            if (text.equals("⚙️Settings")) {
                 try {
                     execute(myBotServiceEng.settingsEng(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
-            }
-
-            else if(text.equals("✈️Havo transporti")){
+            } else if (text.equals("✈️Havo transporti")) {
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
                 sendMessage.setText("Yukning og'irligi (kg): ");
@@ -1515,8 +1510,7 @@ public class MyBot extends TelegramLongPollingBot {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-            }
-            else if(text.equals("✈️️Авиаперевозки")){
+            } else if (text.equals("✈️️Авиаперевозки")) {
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
                 sendMessage.setText("Вес груза (кг): ");
@@ -1527,8 +1521,7 @@ public class MyBot extends TelegramLongPollingBot {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-            }
-            else if(text.equals("✈️Air transport")){
+            } else if (text.equals("✈️Air transport")) {
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
                 sendMessage.setText("Cargo weight (kg): ");
@@ -1539,8 +1532,7 @@ public class MyBot extends TelegramLongPollingBot {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-            }
-            else if(text.equals("\uD83D\uDE88Temir yo'l transporti")){
+            } else if (text.equals("\uD83D\uDE88Temir yo'l transporti")) {
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
                 sendMessage.setText("Yukning og'irligi (kg): ");
@@ -1551,8 +1543,7 @@ public class MyBot extends TelegramLongPollingBot {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-            }
-            else if(text.equals("\uD83D\uDE88Железнодорожные перевозки")){
+            } else if (text.equals("\uD83D\uDE88Железнодорожные перевозки")) {
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
                 sendMessage.setText("Вес груза (кг): ");
@@ -1563,8 +1554,7 @@ public class MyBot extends TelegramLongPollingBot {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-            }
-            else if(text.equals("\uD83D\uDE88Railway transport")){
+            } else if (text.equals("\uD83D\uDE88Railway transport")) {
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
                 sendMessage.setText("Cargo weight (kg): ");
@@ -1575,8 +1565,7 @@ public class MyBot extends TelegramLongPollingBot {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-            }
-            else if(text.equals("\uD83D\uDE98Avtomobil transporti")){
+            } else if (text.equals("\uD83D\uDE98Avtomobil transporti")) {
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
                 sendMessage.setText("Yukning og'irligi (kg): ");
@@ -1587,8 +1576,7 @@ public class MyBot extends TelegramLongPollingBot {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-            }
-            else if(text.equals("\uD83D\uDE98Автоперевозки")){
+            } else if (text.equals("\uD83D\uDE98Автоперевозки")) {
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
                 sendMessage.setText("Вес груза (кг): ");
@@ -1599,8 +1587,7 @@ public class MyBot extends TelegramLongPollingBot {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-            }
-            else if(text.equals("\uD83D\uDE98Car transports")){
+            } else if (text.equals("\uD83D\uDE98Car transports")) {
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
                 sendMessage.setText("Cargo weight (kg): ");
@@ -1611,22 +1598,21 @@ public class MyBot extends TelegramLongPollingBot {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-            }
-            else if(DB.users.get(id).getCurrentPosition().equals("kg")){
+            } else if (DB.users.get(id).getCurrentPosition().equals("kg")) {
                 String currLan = DB.users.get(id).getCurrentLanguage();
 
-                try{
+                try {
                     SendMessage sendMessage = new SendMessage();
                     sendMessage.setChatId(chatId);
                     DB.users.get(id).setKg(Double.parseDouble(text));
                     DB.users.get(id).setCurrentPosition("volume");
-                    switch (currLan){
+                    switch (currLan) {
                         case "uz" -> sendMessage.setText("Yuk hajmi (m3): ");
                         case "ru" -> sendMessage.setText("Вес груза (кг): ");
                         case "en" -> sendMessage.setText("Cargo weight (kg): ");
                     }
                     execute(sendMessage);
-                }catch (Exception e){
+                } catch (Exception e) {
                     SendMessage sendMessage = new SendMessage();
                     sendMessage.setChatId(chatId);
                     sendMessage.setText("Butun sonda kiriting");
@@ -1636,8 +1622,7 @@ public class MyBot extends TelegramLongPollingBot {
                         throw new RuntimeException(ex);
                     }
                 }
-            }
-            else if(DB.users.get(id).getCurrentPosition().equals("volume")){
+            } else if (DB.users.get(id).getCurrentPosition().equals("volume")) {
                 String currLan = DB.users.get(id).getCurrentLanguage();
                 try {
                     SendMessage sendMessage = new SendMessage();
@@ -1646,24 +1631,24 @@ public class MyBot extends TelegramLongPollingBot {
                     double volume = DB.users.get(id).getVolume(), kg = DB.users.get(id).getKg();
                     String sendType = DB.users.get(id).getSendType();
                     double price = 0;
-                    switch (sendType){
+                    switch (sendType) {
                         case "Air" -> price = 0;
                         case "RailWay" -> price = Costs.priceRailWay(kg, volume);
                         case "Car" -> price = Costs.priceCar(kg, volume);
                     }
                     price = (double) Math.round(price * 100.0) / 100.0;
-                    switch (currLan){
-                        case "uz" ->{
+                    switch (currLan) {
+                        case "uz" -> {
                             sendMessage.setText("Narxi: " + price + "💲");
                             execute(sendMessage);
                             execute(myBotServiceUz.asosiyMenuUz(chatId));
                         }
-                        case "ru" ->{
+                        case "ru" -> {
                             sendMessage.setText("Цена: " + price + "💲");
                             execute(sendMessage);
                             execute(myBotServiceRus.asosiyMenuRus(chatId));
                         }
-                        case "en" ->{
+                        case "en" -> {
                             sendMessage.setText("Price: " + price + "💲");
                             execute(sendMessage);
                             execute(myBotServiceEng.asosiyMenuEng(chatId));
@@ -1671,8 +1656,7 @@ public class MyBot extends TelegramLongPollingBot {
                     }
                     DB.users.get(id).setCurrentPosition("start");
 
-
-                }catch (Exception e){
+                } catch (Exception e) {
                     SendMessage sendMessage = new SendMessage();
                     sendMessage.setChatId(chatId);
                     sendMessage.setText("Butun sonda kiriting");
@@ -1682,12 +1666,8 @@ public class MyBot extends TelegramLongPollingBot {
                         throw new RuntimeException(ex);
                     }
                 }
-
             }
-
-
         }
-
         if (update.hasMessage() && update.getMessage().hasContact()) {
             SendMessage sendMessage = new SendMessage();
             Long chatId = update.getMessage().getChatId();
@@ -1726,7 +1706,6 @@ public class MyBot extends TelegramLongPollingBot {
             }
         }
     }
-
     @Override
     public String getBotUsername() {
         return "CtransCompany_bot";
@@ -1737,4 +1716,3 @@ public class MyBot extends TelegramLongPollingBot {
         return "6750077771:AAHZhiNfwfEvM95P1LHl2HRPl9aDRaPgWTA";
     }
 }
-
