@@ -1,5 +1,6 @@
 package org.example;
 
+import org.telegram.telegrambots.meta.api.methods.ParseMode;
 import org.telegram.telegrambots.meta.api.methods.send.SendMediaGroup;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.methods.send.SendPhoto;
@@ -1609,13 +1610,12 @@ public class MyBotServiceEng {
 
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile());
+        sendPhoto.setPhoto(new InputFile("https://img.freepik.com/premium-photo/airplane-in-the-sky_1013690-70.jpg"));
         sendPhoto.setCaption("""
-                
-                
-                
+                (Air Transport) Your order will <b>arrive in 5-10 days</b>
+                Contact the manager to place an order
                 """);
-
+        sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
 
@@ -1623,11 +1623,10 @@ public class MyBotServiceEng {
 
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile());
+        sendPhoto.setPhoto(new InputFile("https://www.arrowtruck.com/wp-content/uploads/2023/02/2_Arrow-Truck-Sales_Comparing-The-Different-Semi-Truck-and-Trailer-Types_IMAGE1.jpg"));
         sendPhoto.setCaption("""
-                
-                
-                
+                (Auto Transport) Your order will <b>arrive in 15-20 days</b>
+                Contact the manager to place an order
                 """);
 
         return sendPhoto;
@@ -1637,11 +1636,10 @@ public class MyBotServiceEng {
 
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile());
+        sendPhoto.setPhoto(new InputFile("https://media.licdn.com/dms/image/C5622AQFC11sDRuGtfw/feedshare-shrink_800/0/1648805405802?e=2147483647&v=beta&t=6ru64usETOA39N_RYAOslVNhvpIIc4r4r_BRz8Ws_SY"));
         sendPhoto.setCaption("""
-                
-                
-                
+                (Railway Transport) Your order will <b>arrive in 20-30 days</b>
+                Contact the manager to place an order
                 """);
 
         return sendPhoto;
