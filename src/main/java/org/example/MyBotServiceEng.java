@@ -1605,4 +1605,46 @@ public class MyBotServiceEng {
 
     //---Servis yakunlanish---\\
 
+    public SendPhoto deliveryTimeAirEng(Long chatId){
+
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile());
+        sendPhoto.setCaption("""
+                
+                
+                
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto deliveryTimeAutoEng(Long chatId){
+
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile());
+        sendPhoto.setCaption("""
+                
+                
+                
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto deliveryTimeRailwayEng(Long chatId){
+
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile());
+        sendPhoto.setCaption("""
+                
+                
+                
+                """);
+
+        return sendPhoto;
+    }
+
 }
