@@ -1381,6 +1381,10 @@ public class MyBotServiceEng {
     }
 
 
+    //---Krossover yakunlanish---\\
+
+    //---Hatchback boshlanish---\\
+
     public SendPhoto bydSeagull(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -1465,6 +1469,11 @@ public class MyBotServiceEng {
 
         return sendPhoto;
     }
+
+    //---Hatchback yakunlanish---\\
+
+
+    //---Minivan boshlanish---\\
 
     public SendPhoto denzaD9(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
