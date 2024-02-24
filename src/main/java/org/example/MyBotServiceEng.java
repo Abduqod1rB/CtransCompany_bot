@@ -1606,13 +1606,16 @@ public class MyBotServiceEng {
 
     //---Servis yakunlanish---\\
 
+    //---Delivery Time---\\
+
     public SendPhoto deliveryTimeAirEng(Long chatId){
 
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://img.freepik.com/premium-photo/airplane-in-the-sky_1013690-70.jpg"));
         sendPhoto.setCaption("""
-                (Air Transport) Your order will <b>arrive in 5-10 days</b>
+                (Air Transport) Your order will 
+                <b>arrive in 5-10 days</b>
                 Contact the manager to place an order
                 """);
         sendPhoto.setParseMode(ParseMode.HTML);
@@ -1625,7 +1628,8 @@ public class MyBotServiceEng {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.arrowtruck.com/wp-content/uploads/2023/02/2_Arrow-Truck-Sales_Comparing-The-Different-Semi-Truck-and-Trailer-Types_IMAGE1.jpg"));
         sendPhoto.setCaption("""
-                (Auto Transport) Your order will <b>arrive in 15-20 days</b>
+                (Auto Transport) Your order will 
+                <b>arrive in 15-20 days</b>
                 Contact the manager to place an order
                 """);
         sendPhoto.setParseMode(ParseMode.HTML);
@@ -1638,11 +1642,44 @@ public class MyBotServiceEng {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://media.licdn.com/dms/image/C5622AQFC11sDRuGtfw/feedshare-shrink_800/0/1648805405802?e=2147483647&v=beta&t=6ru64usETOA39N_RYAOslVNhvpIIc4r4r_BRz8Ws_SY"));
         sendPhoto.setCaption("""
-                (Railway Transport) Your order will <b>arrive in 20-30 days</b>
+                (Railway Transport) Your order will
+                <b>arrive in 20-30 days</b>
                 Contact the manager to place an order
                 """);
         sendPhoto.setParseMode(ParseMode.HTML);
         return sendPhoto;
     }
+
+    //---Delivery Time---\\
+
+    //---Contact Us---\\
+
+    public SendMessage contactUsEng(Long chatId){
+
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("choose a way to ☎️contact us");
+
+        //Telefon orqali, Telegram orqali, Manzilga borib
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+        KeyboardRow row = new KeyboardRow();
+        KeyboardRow row1 = new KeyboardRow();
+
+        KeyboardButton button = new KeyboardButton();
+        KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
+        KeyboardButton button3 = new KeyboardButton();
+
+        button.setText("Telefon raqam orqali");
+        button1.setText("Telegram orqali");
+        button2.setText("Manzilga borish");
+        button3.setText("⬅️Back");
+
+        return sendMessage;
+    }
+
+    //---Contact Us---\\
 
 }

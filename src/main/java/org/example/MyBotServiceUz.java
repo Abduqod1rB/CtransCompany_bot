@@ -1545,7 +1545,8 @@ public class MyBotServiceUz {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://img.freepik.com/premium-photo/airplane-in-the-sky_1013690-70.jpg"));
         sendPhoto.setCaption("""
-                (Havo transporti) Buyurtmangiz <b>5-10 kun ichida yetib keladi</b>
+                (Havo transporti) Buyurtmangiz 
+                <b>5-10 kun ichida yetib keladi</b>
                 Buyurtma berish uchun menejer bilan bog'laning
                 """);
         sendPhoto.setParseMode(ParseMode.HTML);
@@ -1558,7 +1559,8 @@ public class MyBotServiceUz {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.arrowtruck.com/wp-content/uploads/2023/02/2_Arrow-Truck-Sales_Comparing-The-Different-Semi-Truck-and-Trailer-Types_IMAGE1.jpg"));
         sendPhoto.setCaption("""
-                (Avtomobil transporti) Buyurtmangiz <b>15-20 kun ichida yetib keladi</b>
+                (Avtomobil transporti) Buyurtmangiz
+                <b>15-20 kun ichida yetib keladi</b>
                 Buyurtma berish uchun menejer bilan bog'laning
                 """);
         sendPhoto.setParseMode(ParseMode.HTML);
@@ -1571,7 +1573,8 @@ public class MyBotServiceUz {
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://media.licdn.com/dms/image/C5622AQFC11sDRuGtfw/feedshare-shrink_800/0/1648805405802?e=2147483647&v=beta&t=6ru64usETOA39N_RYAOslVNhvpIIc4r4r_BRz8Ws_SY"));
         sendPhoto.setCaption("""
-                (Temir yo'l transporti) Buyurtmangiz <b>20-30 kun ichida keladi</b>
+                (Temir yo'l transporti) Buyurtmangiz
+                <b>20-30 kun ichida keladi</b>
                 Buyurtma berish uchun menejer bilan bog'laning
                 """);
         sendPhoto.setParseMode(ParseMode.HTML);
