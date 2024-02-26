@@ -1,6 +1,7 @@
 package org.example;
 
 import org.telegram.telegrambots.meta.api.methods.ParseMode;
+import org.telegram.telegrambots.meta.api.methods.send.SendLocation;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.methods.send.SendPhoto;
 import org.telegram.telegrambots.meta.api.objects.InputFile;
@@ -1630,7 +1631,7 @@ public class MyBotServiceRus {
         KeyboardButton button3 = new KeyboardButton();
 
         button.setText("📞По номеру телефона");
-        button1.setText("📲Через Телеграм");
+        button1.setText("📲Связь через Telegram или по электронной почте");
         button2.setText("🏃🏼‍♂️Перейти по адресу");
         button3.setText("⬅️Назад");
 
@@ -1647,5 +1648,40 @@ public class MyBotServiceRus {
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
 
         return sendMessage;
+    }
+
+    public SendMessage byPhoneNumberRus(Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("""
+                Связаться с нами
+                CTRANS – искусство логистики
+                
+                📞 Номер телефона: +998 (99) 110 22 22
+                """);
+        return sendMessage;
+    }
+
+    public SendMessage contactViaTelegramOrEmailRus(Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("""
+                Связаться с нами
+                CTRANS – искусство логистики
+                
+                📲Телеграм: <a href="https://t.me/ctrans_uz">МЕНЕДЖЕР CTRANS</a>
+                📩Электронная почта: info@ctrans.uz
+                """);
+        sendMessage.setParseMode(ParseMode.HTML);
+        return sendMessage;
+    }
+
+    public SendLocation goToAddressRus(Long chatId){
+        SendLocation sendLocation = new SendLocation();
+        sendLocation.setChatId(chatId);
+        sendLocation.setLongitude(69.210584);
+        sendLocation.setLatitude(41.314611);
+
+        return sendLocation;
     }
 }

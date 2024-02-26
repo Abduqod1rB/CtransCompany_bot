@@ -5,6 +5,7 @@ package org.example;
  */
 
 import org.telegram.telegrambots.meta.api.methods.ParseMode;
+import org.telegram.telegrambots.meta.api.methods.send.SendLocation;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.methods.send.SendPhoto;
 import org.telegram.telegrambots.meta.api.objects.InputFile;
@@ -1617,7 +1618,7 @@ public class MyBotServiceUz {
         KeyboardButton button3 = new KeyboardButton();
 
         button.setText("📞Telefon raqam orqali");
-        button1.setText("📲Telegram orqali");
+        button1.setText("📲Telegram yoki elektron pochta orqali bog'laning");
         button2.setText("🏃🏼‍♂️Manzilga borish");
         button3.setText("⬅️Orqaga");
 
@@ -1634,5 +1635,39 @@ public class MyBotServiceUz {
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
 
         return sendMessage;
+    }
+    public SendMessage byPhoneNumberUz(Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("""
+                Biz bilan bog'lanish
+                CTRANS - logistika san'ati
+                
+                📞 Telefon raqami: +998 (99) 110 22 22
+                """);
+        return sendMessage;
+    }
+
+    public SendMessage contactViaTelegramOrEmailUz(Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("""
+                Biz bilan bog'lanish
+                CTRANS - logistika san'ati
+                
+                📲Telegram: <a href="https://t.me/ctrans_uz">CTRANS MENEJER</a>
+                📩Elektron pochta: info@ctrans.uz
+                """);
+        sendMessage.setParseMode(ParseMode.HTML);
+        return sendMessage;
+    }
+
+    public SendLocation goToAddressUz(Long chatId){
+        SendLocation sendLocation = new SendLocation();
+        sendLocation.setChatId(chatId);
+        sendLocation.setLongitude(69.210584);
+        sendLocation.setLatitude(41.314611);
+
+        return sendLocation;
     }
 }

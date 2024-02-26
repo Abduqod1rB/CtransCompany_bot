@@ -1589,6 +1589,48 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
+            if (text.equals("📞Telefon raqam orqali")){
+                try {
+                    execute(myBotServiceUz.byPhoneNumberUz(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (text.equals("📲Telegram yoki elektron pochta orqali bog'laning")){
+                try {
+                    execute(myBotServiceUz.contactViaTelegramOrEmailUz(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (text.equals("🏃🏼‍♂️Manzilga borish")){
+                try {
+                    execute(myBotServiceUz.goToAddressUz(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (text.equals("📞По номеру телефона")){
+                try {
+                    execute(myBotServiceRus.byPhoneNumberRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (text.equals("📲Связь через Telegram или по электронной почте")){
+                try {
+                    execute(myBotServiceRus.contactViaTelegramOrEmailRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (text.equals("🏃🏼‍♂️Перейти по адресу")){
+                try {
+                    execute(myBotServiceRus.goToAddressRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
             if (text.equals("📞By phone number")){
                 try {
                     execute(myBotServiceEng.byPhoneNumberEng(chatId));
@@ -1598,7 +1640,7 @@ public class MyBot extends TelegramLongPollingBot {
             }
             if (text.equals("📲Contact via Telegram or email")){
                 try {
-                    execute(myBotServiceEng.contactViaTelegramOrEmail(chatId));
+                    execute(myBotServiceEng.contactViaTelegramOrEmailEng(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }

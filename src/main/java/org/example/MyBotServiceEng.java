@@ -1724,7 +1724,7 @@ public class MyBotServiceEng {
         return sendMessage;
     }
 
-    public SendMessage contactViaTelegramOrEmail(Long chatId){
+    public SendMessage contactViaTelegramOrEmailEng(Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
         sendMessage.setText("""
@@ -1740,6 +1740,7 @@ public class MyBotServiceEng {
 
     public SendLocation goToAddressEng(Long chatId){
         SendLocation sendLocation = new SendLocation();
+        sendLocation.setChatId(chatId);
         sendLocation.setLongitude(69.210584);
         sendLocation.setLatitude(41.314611);
 
