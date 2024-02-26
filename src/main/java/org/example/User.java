@@ -16,7 +16,6 @@ public class User {
     private String firstName;
     private String phoneNumber;
     private Positions currentPosition;
-
     private String currentLanguage;
     private double kg;
     private double volume;

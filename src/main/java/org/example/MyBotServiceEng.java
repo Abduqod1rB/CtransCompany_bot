@@ -610,6 +610,27 @@ public class MyBotServiceEng {
 
         return sendMessage;
     }
+    public SendMessage NomerAlmashtirEng(Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Number change");
+        ReplyKeyboardMarkup reply = new ReplyKeyboardMarkup();
+        KeyboardRow row = new KeyboardRow();
+        KeyboardRow row1 = new KeyboardRow();
+        ArrayList<KeyboardRow> rowList = new ArrayList<>();
+        KeyboardButton button = new KeyboardButton();
+        button.setText("☎️ Send phone number");
+        row.add(button);
+        rowList.add(row);
+        KeyboardButton button1 = new KeyboardButton();
+        button1.setText("⬅️Back");
+        row1.add(button1);
+        rowList.add(row1);
+        reply.setResizeKeyboard(true);
+        reply.setKeyboard(rowList);
+        sendMessage.setReplyMarkup(reply);
+        return sendMessage;
+    }
 
     //---Sedan boshlanish---\\
 

@@ -1467,9 +1467,37 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
+            if(text.equals("\uD83C\uDDF7\uD83C\uDDFAИзменить язык")){
+                try {
+                    execute(myBotService.languangeMenu(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("\uD83C\uDDFA\uD83C\uDDF8Change language")){
+                try {
+                    execute(myBotService.languangeMenu(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
             if(text.equals("☎️Telefon raqamini alashtirish")){
                 try {
                     execute(myBotServiceUz.NomerAlmashtirUz(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("☎️Изменить номер телефона")){
+                try {
+                    execute(myBotServiceRus.NomerAlmashtirRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("☎️change phone number")){
+                try {
+                    execute(myBotServiceEng.NomerAlmashtirEng(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
@@ -1479,6 +1507,28 @@ public class MyBot extends TelegramLongPollingBot {
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
                 sendMessage.setText("O'zgartirmoqchi bo'lgan raqamingizni kiriting");
+                try {
+                    execute(sendMessage);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("☎️ Отправить номер телефона")){
+                DB.users.get(id).setCurrentPosition(Positions.CHANGE_NUMBER);
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.setChatId(chatId);
+                sendMessage.setText("Введите номер, который хотите изменить");
+                try {
+                    execute(sendMessage);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("☎️ Send phone number")){
+                DB.users.get(id).setCurrentPosition(Positions.CHANGE_NUMBER);
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.setChatId(chatId);
+                sendMessage.setText("Enter the number you want to change");
                 try {
                     execute(sendMessage);
                 } catch (TelegramApiException e) {

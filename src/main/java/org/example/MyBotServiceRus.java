@@ -663,6 +663,28 @@ public class MyBotServiceRus {
 
         return sendMessage;
     }
+    public SendMessage NomerAlmashtirRus(Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Изменение номера");
+        ReplyKeyboardMarkup reply = new ReplyKeyboardMarkup();
+        KeyboardRow row = new KeyboardRow();
+        KeyboardRow row1 = new KeyboardRow();
+        ArrayList<KeyboardRow> rowList = new ArrayList<>();
+        KeyboardButton button = new KeyboardButton();
+        button.setText("☎️ Отправить номер телефона");
+        row.add(button);
+        rowList.add(row);
+        KeyboardButton button1 = new KeyboardButton();
+        button1.setText("⬅️Назад");
+        row1.add(button1);
+        rowList.add(row1);
+        reply.setResizeKeyboard(true);
+        reply.setKeyboard(rowList);
+        sendMessage.setReplyMarkup(reply);
+        return sendMessage;
+    }
+
     public SendPhoto bydSealRus(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
