@@ -252,7 +252,7 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-            if (text.equals("✈\uFE0F Air transportation")) {
+            if (text.equals("✈️ Air transportation")) {
                 try {
                     execute(myBotServiceEng.havotransportiEng(chatId));
                 } catch (TelegramApiException e) {
@@ -1474,7 +1474,7 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-            if(text.equals("☎\uFE0F Telefon raqamni yuborish")){
+            if(text.equals("☎️ Telefon raqamni yuborish")){
                 DB.users.get(id).setCurrentPosition(Positions.CHANGE_NUMBER);
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
