@@ -1520,6 +1520,27 @@ public class MyBot extends TelegramLongPollingBot {
                     }
                 }
             }
+            if (text.equals("☎️Biz bilan bog'lanish")){
+                try {
+                    execute(myBotServiceUz.contactUsUz(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (text.equals("☎️Наши контакты")){
+                try {
+                    execute(myBotServiceRus.contactUsRus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (text.equals("☎️Contact us")){
+                try {
+                    execute(myBotServiceEng.contactUsEng(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
             if (text.equals("\uD83E\uDDEEKalkulyator")) {
                 try {
                     execute(myBotServiceUz.kankulator(chatId));

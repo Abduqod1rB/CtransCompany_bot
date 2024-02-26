@@ -1660,8 +1660,6 @@ public class MyBotServiceEng {
         sendMessage.setChatId(chatId);
         sendMessage.setText("choose a way to ☎️contact us");
 
-        //Telefon orqali, Telegram orqali, Manzilga borib
-
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         List<KeyboardRow> rowList = new ArrayList<>();
         KeyboardRow row = new KeyboardRow();
@@ -1672,10 +1670,22 @@ public class MyBotServiceEng {
         KeyboardButton button2 = new KeyboardButton();
         KeyboardButton button3 = new KeyboardButton();
 
-        button.setText("Telefon raqam orqali");
-        button1.setText("Telegram orqali");
-        button2.setText("Manzilga borish");
+        button.setText("📞By phone number");
+        button1.setText("📲Via Telegram");
+        button2.setText("🏃🏼‍♂️Go to address");
         button3.setText("⬅️Back");
+
+        row.add(button);
+        row.add(button1);
+        row.add(button2);
+        row1.add(button3);
+
+        rowList.add(row);
+        rowList.add(row1);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
 
         return sendMessage;
     }
