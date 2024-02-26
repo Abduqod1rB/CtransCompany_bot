@@ -641,7 +641,7 @@ public class MyBotServiceRus {
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("⚙️Настройки");
+        sendMessage.setText("⚙️Выберите настройку");
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         List<KeyboardRow> rowList = new ArrayList<>();
 

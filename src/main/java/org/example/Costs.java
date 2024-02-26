@@ -10,7 +10,6 @@ public class Costs {
 
     public static HashMap<Integer,Integer> RailWaySmallAmount = new HashMap<>();
     public static HashMap<Integer,Double> RailWayBigAmount = new HashMap<>();
-
     public static HashMap<Integer,Integer> CarSmallAmount = new HashMap<>();
     public static HashMap<Integer,Double> CarBigAmount = new HashMap<>();
 

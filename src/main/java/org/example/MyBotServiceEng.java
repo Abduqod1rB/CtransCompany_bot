@@ -584,7 +584,7 @@ public class MyBotServiceEng {
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("⚙️Settings");
+        sendMessage.setText("⚙️Choose a setting");
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         List<KeyboardRow> rowList = new ArrayList<>();
 

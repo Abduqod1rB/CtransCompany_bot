@@ -389,11 +389,32 @@ public class MyBotServiceUz {
 
         return sendPhoto;
     }
+    public SendMessage NomerAlmashtirUz(Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Nomer almashtirish");
+        ReplyKeyboardMarkup reply = new ReplyKeyboardMarkup();
+        KeyboardRow row = new KeyboardRow();
+        KeyboardRow row1 = new KeyboardRow();
+        ArrayList<KeyboardRow> rowList = new ArrayList<>();
+        KeyboardButton button = new KeyboardButton();
+        button.setText("☎️ Telefon raqamni yuborish");
+        row.add(button);
+        rowList.add(row);
+        KeyboardButton button1 = new KeyboardButton();
+        button1.setText("⬅️Orqaga");
+        row1.add(button1);
+        rowList.add(row1);
+        reply.setResizeKeyboard(true);
+        reply.setKeyboard(rowList);
+        sendMessage.setReplyMarkup(reply);
+        return sendMessage;
+    }
 
     public SendMessage sozlamalar(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("⚙️Sozlamalar");
+        sendMessage.setText("⚙️Sozlamani tanlang");
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         KeyboardRow row1 = new KeyboardRow();
         KeyboardRow row2 = new KeyboardRow();

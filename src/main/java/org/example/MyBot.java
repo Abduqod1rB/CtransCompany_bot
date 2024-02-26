@@ -29,7 +29,7 @@ public class MyBot extends TelegramLongPollingBot {
 
             if (text.equals("/start")) {
                 if (id == -1) {
-                    DB.addUser(userName, "uz", "start", "-1");
+                    DB.addUser(userName, "uz", Positions.START, "-1");
                     try {
                         execute(myBotService.languangeMenu(chatId));
                     } catch (TelegramApiException e) {
@@ -64,28 +64,58 @@ public class MyBot extends TelegramLongPollingBot {
             }
             switch (text) {
                 case "Uzbek tili\uD83C\uDDFA\uD83C\uDDFF" -> {
-                    try {
-                        DB.users.get(id).setCurrentLanguage("uz");
-                        execute(myBotServiceUz.kontaktYuborishUz(chatId));
-                    } catch (TelegramApiException e) {
-                        throw new RuntimeException(e);
+                    if(DB.users.get(id).getCurrentPosition() == Positions.START){
+                        try {
+                            DB.users.get(id).setCurrentLanguage("uz");
+                            execute(myBotServiceUz.kontaktYuborishUz(chatId));
+                        } catch (TelegramApiException e) {
+                            throw new RuntimeException(e);
+                        }
+                    }else{
+                        try {
+                            DB.users.get(id).setCurrentLanguage("uz");
+                            execute(myBotServiceUz.asosiyMenuUz(chatId));
+                        } catch (TelegramApiException e) {
+                            throw new RuntimeException(e);
+                        }
                     }
+
                 }
                 case "Русский язык\uD83C\uDDF7\uD83C\uDDFA" -> {
-                    try {
-                        DB.users.get(id).setCurrentLanguage("ru");
-                        execute(myBotServiceRus.kontaktYuborishRus(chatId));
-                    } catch (TelegramApiException e) {
-                        throw new RuntimeException(e);
+                    if(DB.users.get(id).getCurrentPosition() == Positions.START){
+                        try {
+                            DB.users.get(id).setCurrentLanguage("ru");
+                            execute(myBotServiceRus.kontaktYuborishRus(chatId));
+                        } catch (TelegramApiException e) {
+                            throw new RuntimeException(e);
+                        }
+                    }else {
+                        try {
+                            DB.users.get(id).setCurrentLanguage("ru");
+                            execute(myBotServiceRus.asosiyMenuRus(chatId));
+                        } catch (TelegramApiException e) {
+                            throw new RuntimeException(e);
+                        }
                     }
+
                 }
                 case "English languange\uD83C\uDDFA\uD83C\uDDF8" -> {
-                    try {
-                        DB.users.get(id).setCurrentLanguage("en");
-                        execute(myBotServiceEng.kontaktYuborishEng(chatId));
-                    } catch (TelegramApiException e) {
-                        throw new RuntimeException(e);
+                    if(DB.users.get(id).getCurrentPosition() == Positions.START){
+                        try {
+                            DB.users.get(id).setCurrentLanguage("en");
+                            execute(myBotServiceEng.kontaktYuborishEng(chatId));
+                        } catch (TelegramApiException e) {
+                            throw new RuntimeException(e);
+                        }
+                    }else {
+                        try {
+                            DB.users.get(id).setCurrentLanguage("en");
+                            execute(myBotServiceEng.asosiyMenuEng(chatId));
+                        } catch (TelegramApiException e) {
+                            throw new RuntimeException(e);
+                        }
                     }
+
                 }
             }
             if (text.equals("\uD83D\uDCACIzoh qoldirish")) {
@@ -94,22 +124,22 @@ public class MyBot extends TelegramLongPollingBot {
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
-                DB.users.get(id).setCurrentPosition("comment");
-            } else if (text.equals("\uD83D\uDCACОставить комментарий")) {
+                DB.users.get(id).setCurrentPosition(Positions.COMMENT);
+            } else if (text.equals("\uD83D\uDCACНаписать комментарий")) {
                 try {
                     execute(myBotServiceRus.izohQoldirishRus(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
-                DB.users.get(id).setCurrentPosition("comment");
+                DB.users.get(id).setCurrentPosition(Positions.COMMENT);
             } else if (text.equals("\uD83D\uDCACLeave a comment")) {
                 try {
                     execute(myBotServiceEng.izohQoldirishEng(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
-                DB.users.get(id).setCurrentPosition("comment");
-            } else if (DB.users.get(id).getCurrentPosition().equals("comment")) {
+                DB.users.get(id).setCurrentPosition(Positions.COMMENT);
+            } else if (DB.users.get(id).getCurrentPosition() == Positions.COMMENT && !(text.equals("⬅️Orqaga") || text.equals("⬅️Назад") || text.equals("⬅️Back")))    {
                 switch (DB.users.get(id).getCurrentLanguage()) {
                     case "uz" -> {
                         try {
@@ -137,10 +167,12 @@ public class MyBot extends TelegramLongPollingBot {
                     }
                 }
                 // get comment
-                DB.users.get(id).setCurrentPosition("start");
+                DB.users.get(id).setCurrentPosition(Positions.MENU);
+
             }
 
             if (text.equals("⬅️Orqaga")) {
+                DB.users.get(id).setCurrentPosition(Positions.MENU);
                 try {
                     execute(myBotServiceUz.asosiyMenuUz(chatId));
                 } catch (TelegramApiException e) {
@@ -148,6 +180,7 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
             if (text.equals("⬅️Назад")) {
+                DB.users.get(id).setCurrentPosition(Positions.MENU);
                 try {
                     execute(myBotServiceRus.asosiyMenuRus(chatId));
                 } catch (TelegramApiException e) {
@@ -155,6 +188,7 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
             if (text.equals("⬅️Back")) {
+                DB.users.get(id).setCurrentPosition(Positions.MENU);
                 try {
                     execute(myBotServiceEng.asosiyMenuEng(chatId));
                 } catch (TelegramApiException e) {
@@ -1140,11 +1174,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
-            //E N G I L E S H SEDAN
-
-            //E N G I L E S H CROSSOVER
-
             if (text.equals("🚙 BYD Song Plus Champion Edition")) {
                 try {
                     execute(myBotServiceEng.bydSongPlusChampionEdition(chatId));
@@ -1306,11 +1335,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
-            //E N G I L E S H CROSSOVER
-
-            //E N G I L E S H HATCHBACK
-
             if (text.equals("🚗 BYD Seagull")) {
                 try {
                     execute(myBotServiceEng.bydSeagull(chatId));
@@ -1437,6 +1461,65 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
+            if(text.equals("\uD83C\uDDFA\uD83C\uDDFFTilni almashtirish")){
+
+                try {
+                    execute(myBotService.languangeMenu(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("☎️Telefon raqamini alashtirish")){
+                try {
+                    execute(myBotServiceUz.NomerAlmashtirUz(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if(text.equals("☎\uFE0F Telefon raqamni yuborish")){
+                DB.users.get(id).setCurrentPosition(Positions.CHANGE_NUMBER);
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.setChatId(chatId);
+                sendMessage.setText("O'zgartirmoqchi bo'lgan raqamingizni kiriting");
+                try {
+                    execute(sendMessage);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            else if(DB.users.get(id).getCurrentPosition() == Positions.CHANGE_NUMBER){
+                String lan = DB.users.get(id).getCurrentLanguage();
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.setChatId(chatId);
+                String res = DB.isValidPhoneNumber(text, lan, id);
+                sendMessage.setText(res);
+                try {
+                    execute(sendMessage);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+                if(res.equals("Muvaffaqiyatli o'zgardi")){
+                    try {
+                        execute(myBotServiceUz.asosiyMenuUz(chatId));
+                    } catch (TelegramApiException e) {
+                        throw new RuntimeException(e);
+                    }
+                }
+                if(res.equals("Успешно изменено")){
+                    try {
+                        execute(myBotServiceRus.asosiyMenuRus(chatId));
+                    } catch (TelegramApiException e) {
+                        throw new RuntimeException(e);
+                    }
+                }
+                if(res.equals("successfully changed")){
+                    try {
+                        execute(myBotServiceEng.asosiyMenuEng(chatId));
+                    } catch (TelegramApiException e) {
+                        throw new RuntimeException(e);
+                    }
+                }
+            }
             if (text.equals("\uD83E\uDDEEKalkulyator")) {
                 try {
                     execute(myBotServiceUz.kankulator(chatId));
@@ -1503,7 +1586,7 @@ public class MyBot extends TelegramLongPollingBot {
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
                 sendMessage.setText("Yukning og'irligi (kg): ");
-                DB.users.get(id).setCurrentPosition("kg");
+                DB.users.get(id).setCurrentPosition(Positions.KG);
                 DB.users.get(id).setSendType("Air");
                 try {
                     execute(sendMessage);
@@ -1514,7 +1597,7 @@ public class MyBot extends TelegramLongPollingBot {
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
                 sendMessage.setText("Вес груза (кг): ");
-                DB.users.get(id).setCurrentPosition("kg");
+                DB.users.get(id).setCurrentPosition(Positions.KG);
                 DB.users.get(id).setSendType("Air");
                 try {
                     execute(sendMessage);
@@ -1525,7 +1608,7 @@ public class MyBot extends TelegramLongPollingBot {
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
                 sendMessage.setText("Cargo weight (kg): ");
-                DB.users.get(id).setCurrentPosition("kg");
+                DB.users.get(id).setCurrentPosition(Positions.KG);
                 DB.users.get(id).setSendType("Air"); // type
                 try {
                     execute(sendMessage);
@@ -1536,7 +1619,7 @@ public class MyBot extends TelegramLongPollingBot {
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
                 sendMessage.setText("Yukning og'irligi (kg): ");
-                DB.users.get(id).setCurrentPosition("kg");
+                DB.users.get(id).setCurrentPosition(Positions.KG);
                 DB.users.get(id).setSendType("RailWay");
                 try {
                     execute(sendMessage);
@@ -1547,7 +1630,7 @@ public class MyBot extends TelegramLongPollingBot {
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
                 sendMessage.setText("Вес груза (кг): ");
-                DB.users.get(id).setCurrentPosition("kg");
+                DB.users.get(id).setCurrentPosition(Positions.KG);
                 DB.users.get(id).setSendType("RailWay");
                 try {
                     execute(sendMessage);
@@ -1558,7 +1641,7 @@ public class MyBot extends TelegramLongPollingBot {
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
                 sendMessage.setText("Cargo weight (kg): ");
-                DB.users.get(id).setCurrentPosition("kg");
+                DB.users.get(id).setCurrentPosition(Positions.KG);
                 DB.users.get(id).setSendType("RailWay"); // type
                 try {
                     execute(sendMessage);
@@ -1569,7 +1652,7 @@ public class MyBot extends TelegramLongPollingBot {
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
                 sendMessage.setText("Yukning og'irligi (kg): ");
-                DB.users.get(id).setCurrentPosition("kg");
+                DB.users.get(id).setCurrentPosition(Positions.KG);
                 DB.users.get(id).setSendType("Car");
                 try {
                     execute(sendMessage);
@@ -1580,7 +1663,7 @@ public class MyBot extends TelegramLongPollingBot {
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
                 sendMessage.setText("Вес груза (кг): ");
-                DB.users.get(id).setCurrentPosition("kg");
+                DB.users.get(id).setCurrentPosition(Positions.KG);
                 DB.users.get(id).setSendType("Car");
                 try {
                     execute(sendMessage);
@@ -1591,21 +1674,21 @@ public class MyBot extends TelegramLongPollingBot {
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
                 sendMessage.setText("Cargo weight (kg): ");
-                DB.users.get(id).setCurrentPosition("kg");
+                DB.users.get(id).setCurrentPosition(Positions.KG);
                 DB.users.get(id).setSendType("Car"); // type
                 try {
                     execute(sendMessage);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-            } else if (DB.users.get(id).getCurrentPosition().equals("kg")) {
+            } else if (DB.users.get(id).getCurrentPosition() == Positions.KG) {
                 String currLan = DB.users.get(id).getCurrentLanguage();
 
                 try {
                     SendMessage sendMessage = new SendMessage();
                     sendMessage.setChatId(chatId);
                     DB.users.get(id).setKg(Double.parseDouble(text));
-                    DB.users.get(id).setCurrentPosition("volume");
+                    DB.users.get(id).setCurrentPosition(Positions.VOLUME);
                     switch (currLan) {
                         case "uz" -> sendMessage.setText("Yuk hajmi (m3): ");
                         case "ru" -> sendMessage.setText("Вес груза (кг): ");
@@ -1622,7 +1705,7 @@ public class MyBot extends TelegramLongPollingBot {
                         throw new RuntimeException(ex);
                     }
                 }
-            } else if (DB.users.get(id).getCurrentPosition().equals("volume")) {
+            } else if (DB.users.get(id).getCurrentPosition() == Positions.VOLUME) {
                 String currLan = DB.users.get(id).getCurrentLanguage();
                 try {
                     SendMessage sendMessage = new SendMessage();
@@ -1632,7 +1715,7 @@ public class MyBot extends TelegramLongPollingBot {
                     String sendType = DB.users.get(id).getSendType();
                     double price = 0;
                     switch (sendType) {
-                        case "Air" -> price = 0;
+                        case "Air" -> price = 0;/////////////////////
                         case "RailWay" -> price = Costs.priceRailWay(kg, volume);
                         case "Car" -> price = Costs.priceCar(kg, volume);
                     }
@@ -1654,7 +1737,7 @@ public class MyBot extends TelegramLongPollingBot {
                             execute(myBotServiceEng.asosiyMenuEng(chatId));
                         }
                     }
-                    DB.users.get(id).setCurrentPosition("start");
+                    DB.users.get(id).setCurrentPosition(Positions.MENU);
 
                 } catch (Exception e) {
                     SendMessage sendMessage = new SendMessage();
@@ -1676,7 +1759,7 @@ public class MyBot extends TelegramLongPollingBot {
             int id = DB.IdFinder(update.getMessage().getFrom().getFirstName());
             String phoneNumber = update.getMessage().getContact().getPhoneNumber();
             DB.users.get(id).setPhoneNumber(phoneNumber);
-
+            DB.users.get(id).setCurrentPosition(Positions.MENU);
             String language = DB.users.get(id).getCurrentLanguage();
             switch (language){
                 case "uz" -> {

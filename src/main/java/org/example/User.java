@@ -15,7 +15,8 @@ import lombok.*;
 public class User {
     private String firstName;
     private String phoneNumber;
-    private String currentPosition;
+    private Positions currentPosition;
+
     private String currentLanguage;
     private double kg;
     private double volume;

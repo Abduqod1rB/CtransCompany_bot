@@ -13,6 +13,7 @@ public class Main {
         TelegramBotsApi telegramBotsApi = new TelegramBotsApi(DefaultBotSession.class);
         telegramBotsApi.registerBot(new MyBot());
         Costs.fill();
+        DB.fillCodes();
         System.out.println("Run...");
     }
 }

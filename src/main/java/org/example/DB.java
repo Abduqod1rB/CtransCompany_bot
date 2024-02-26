@@ -5,10 +5,15 @@ package org.example;
  */
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.regex.Pattern;
 
 public class DB {
 
 
+    static HashMap<String, Set<String>> codes = new HashMap<>();
 
     static ArrayList<User> users = new ArrayList<>(); //[name, curr_pos, curr_language]
 
@@ -30,7 +35,7 @@ public class DB {
         return -1;
     }
 
-    static void addUser(String name, String curr_lan, String curr_pos, String phoneNumber) {
+    static void addUser(String name, String curr_lan, Positions curr_pos, String phoneNumber) {
         User newUser = new User(name, curr_lan, curr_pos, phoneNumber, 0, 0, "");
         int index = 0;
         int l = 0, r = users.size() - 1;
@@ -53,6 +58,162 @@ public class DB {
         for(User user : users){
             System.out.println(user);
         }
+    }
+
+    static void fillCodes(){
+        Set<String> uzb = new HashSet<>();
+        uzb.add("33");
+        uzb.add("88");
+        uzb.add("90");
+        uzb.add("91");
+        uzb.add("93");
+        uzb.add("94");
+        uzb.add("95");
+        uzb.add("97");
+        uzb.add("98");
+        uzb.add("99");
+         // 998 -> 88, 90, ...
+        codes.put("998", uzb);
+
+        Set<String> rus = new HashSet<>();
+        rus.add("495");
+        rus.add("499");
+        rus.add("812");
+        rus.add("952");
+        rus.add("383");
+        rus.add("395");
+        rus.add("913");
+        codes.put("7", rus);
+
+        Set<String> usa = new HashSet<>();
+        usa.add("212");
+        usa.add("718");
+        usa.add("312");
+        usa.add("313");
+        usa.add("404");
+        usa.add("713");
+        usa.add("415");
+        usa.add("206");
+        codes.put("1", usa);
+
+    }
+
+
+    public static String isValidPhoneNumber(String phoneNumber, String lan, int id) {
+        try{
+            long k = Long.parseLong(phoneNumber.substring(1));
+            if(phoneNumber.contains("+998")){
+                //+998 - xx - aaa - bb - bb
+                String countryCode = phoneNumber.substring(4, 6);
+                if(phoneNumber.length() == 13){
+                    if(codes.get("998").contains(countryCode)){
+                        users.get(id).setPhoneNumber(phoneNumber);
+                        users.get(id).setCurrentPosition(Positions.MENU);
+                        switch (lan){
+                            case "uz" -> {
+                                return "Muvaffaqiyatli o'zgardi";
+                            }
+                            case "ru" -> {
+                                return "Успешно изменено";
+                            }
+                            case "en" -> {
+                                return "successfully changed";
+                            }
+                        }
+                    }
+                    switch (lan){
+                        case "uz" -> {
+                            return "Bunday kod yo'q";
+                        }
+                        case "ru" -> {
+                            return "Нет такого кода";
+                        }
+                        case "en" -> {
+                            return "There is no such code";
+                        }
+                    }
+                }
+                switch (lan){
+                    case "uz" -> {
+                        return "Raqam ko'rinishi +998*********";
+                    }
+                    case "ru" -> {
+                        return "Отображение номера +998***********";
+                    }
+                    case "en" -> {
+                        return "Autobrajenie number +998*********";
+                    }
+                }
+            }
+            if(phoneNumber.contains("+7")) {
+                String counrtyCode = phoneNumber.substring(2, 5);
+                if (phoneNumber.length() == 11) {
+                    if (codes.get("7").contains(counrtyCode)) {
+                        users.get(id).setPhoneNumber(phoneNumber);
+                        users.get(id).setCurrentPosition(Positions.MENU);
+                        switch (lan) {
+                            case "uz" -> {
+                                return "Muvaffaqiyatli o'zgardi";
+                            }
+                            case "ru" -> {
+                                return "Успешно изменено";
+                            }
+                            case "en" -> {
+                                return "successfully changed";
+                            }
+                        }
+                    }
+                    switch (lan) {
+                        case "uz" -> {
+                            return "Raqam ko'rinishi +998*********";
+                        }
+                        case "ru" -> {
+                            return "Отображение номера +998***********";
+                        }
+                        case "en" -> {
+                            return "Autobrajenie number +998*********";
+                        }
+                    }
+                }
+            }
+            if(phoneNumber.contains("+1")) {
+                String counrtyCode = phoneNumber.substring(2, 5);
+                if (phoneNumber.length() == 12) {
+                    if (codes.get("1").contains(counrtyCode)) {
+                        users.get(id).setPhoneNumber(phoneNumber);
+                        users.get(id).setCurrentPosition(Positions.MENU);
+                        switch (lan) {
+                            case "uz" -> {
+                                return "Muvaffaqiyatli o'zgardi";
+                            }
+                            case "ru" -> {
+                                return "Успешно изменено";
+                            }
+                            case "en" -> {
+                                return "successfully changed";
+                            }
+                        }
+                    }
+                    switch (lan) {
+                        case "uz" -> {
+                            return "Raqam ko'rinishi +998*********";
+                        }
+                        case "ru" -> {
+                            return "Отображение номера +998***********";
+                        }
+                        case "en" -> {
+                            return "Autobrajenie number +998*********";
+                        }
+                    }
+                }
+            }
+
+
+        }catch (Exception e){
+            return "Raqam faqat sonlardan tashkil topgan bo'lishi kerak";
+        }
+
+        return "";
     }
 
 }
