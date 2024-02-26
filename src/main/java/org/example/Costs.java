@@ -57,7 +57,7 @@ public class Costs {
         AirWaySmallAmount.put(910,320);
         AirWaySmallAmount.put(1000,370);
         kg = 1500;
-        double AirPrice = 0.35;
+        double AirPrice = 0.85;
         for(int i = 0; i < 18; i++){
             AirWayBigAmount.put(kg, AirPrice);
             kg += 500;

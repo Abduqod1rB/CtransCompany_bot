@@ -51,13 +51,14 @@ public class DB {
 
         users.add(index, newUser);
     }
-    static void getUser(){
-        for(User user : users){
+
+    static void getUser() {
+        for (User user : users) {
             System.out.println(user);
         }
     }
 
-    static void fillCodes(){
+    static void fillCodes() {
         Set<String> uzb = new HashSet<>();
         uzb.add("33");
         uzb.add("88");
@@ -69,7 +70,7 @@ public class DB {
         uzb.add("97");
         uzb.add("98");
         uzb.add("99");
-         // 998 -> 88, 90, ...
+        // 998 -> 88, 90, ...
         codes.put("998", uzb);
 
         Set<String> rus = new HashSet<>();
@@ -97,16 +98,16 @@ public class DB {
 
 
     public static String isValidPhoneNumber(String phoneNumber, String lan, int id) {
-        try{
+        try {
             long k = Long.parseLong(phoneNumber.substring(1));
-            if(phoneNumber.contains("+998")){
+            if (phoneNumber.contains("+998")) {
                 //+998 - xx - aaa - bb - bb
                 String countryCode = phoneNumber.substring(4, 6);
-                if(phoneNumber.length() == 13){
-                    if(codes.get("998").contains(countryCode)){
+                if (phoneNumber.length() == 13) {
+                    if (codes.get("998").contains(countryCode)) {
                         users.get(id).setPhoneNumber(phoneNumber);
                         users.get(id).setCurrentPosition(Positions.MENU);
-                        switch (lan){
+                        switch (lan) {
                             case "uz" -> {
                                 return "Muvaffaqiyatli o'zgardi";
                             }
@@ -118,7 +119,7 @@ public class DB {
                             }
                         }
                     }
-                    switch (lan){
+                    switch (lan) {
                         case "uz" -> {
                             return "Bunday kod yo'q";
                         }
@@ -130,7 +131,7 @@ public class DB {
                         }
                     }
                 }
-                switch (lan){
+                switch (lan) {
                     case "uz" -> {
                         return "Raqam ko'rinishi +998*********";
                     }
@@ -142,7 +143,7 @@ public class DB {
                     }
                 }
             }
-            if(phoneNumber.contains("+7")) {
+            if (phoneNumber.contains("+7")) {
                 String counrtyCode = phoneNumber.substring(2, 5);
                 if (phoneNumber.length() == 11) {
                     if (codes.get("7").contains(counrtyCode)) {
@@ -173,7 +174,7 @@ public class DB {
                     }
                 }
             }
-            if(phoneNumber.contains("+1")) {
+            if (phoneNumber.contains("+1")) {
                 String counrtyCode = phoneNumber.substring(2, 5);
                 if (phoneNumber.length() == 12) {
                     if (codes.get("1").contains(counrtyCode)) {
@@ -206,10 +207,31 @@ public class DB {
             }
 
 
-        }catch (Exception e){
-            return "Raqam faqat sonlardan tashkil topgan bo'lishi kerak";
+        } catch (Exception e) {
+            switch (lan) {
+                case "uz" -> {
+                    return "Raqam faqat sonlardan tashkil topgan bo'lishi kerak";
+                }
+                case "ru" -> {
+                    return "Номер должен состоять только из цифр";
+                }
+                case "en" -> {
+                    return "The number must consist of numbers only";
+                }
+            }
         }
-        return "";
+        switch (lan) {
+            case "uz" -> {
+                return "Raqamni togri kiriting";
+            }
+            case "ru" -> {
+                return "Введите правильный номер";
+            }
+            case "en" -> {
+                return "Enter the correct number";
+            }
+        }
+        return phoneNumber;
     }
-
 }
+

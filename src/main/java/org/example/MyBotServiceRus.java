@@ -651,7 +651,7 @@ public class MyBotServiceRus {
 
         button.setText("\uD83C\uDDF7\uD83C\uDDFAИзменить язык");
         button1.setText("☎️Изменить номер телефона");
-        button2.setText("⬅️ Назад");
+        button2.setText("⬅️Назад");
         row.add(button);
         row.add(button1);
         row1.add(button2);
