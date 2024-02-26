@@ -1,6 +1,7 @@
 package org.example;
 
 import org.telegram.telegrambots.meta.api.methods.ParseMode;
+import org.telegram.telegrambots.meta.api.methods.send.SendLocation;
 import org.telegram.telegrambots.meta.api.methods.send.SendMediaGroup;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.methods.send.SendPhoto;
@@ -1679,7 +1680,7 @@ public class MyBotServiceEng {
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("choose a way to ☎️contact us");
+        sendMessage.setText("choose a way to contact us");
 
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         List<KeyboardRow> rowList = new ArrayList<>();
@@ -1692,7 +1693,7 @@ public class MyBotServiceEng {
         KeyboardButton button3 = new KeyboardButton();
 
         button.setText("📞By phone number");
-        button1.setText("📲Via Telegram");
+        button1.setText("📲Contact via Telegram or email");
         button2.setText("🏃🏼‍♂️Go to address");
         button3.setText("⬅️Back");
 
@@ -1709,6 +1710,40 @@ public class MyBotServiceEng {
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
 
         return sendMessage;
+    }
+
+    public SendMessage byPhoneNumberEng(Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("""
+                Contact us
+                CTRANS is the art of logistics
+                
+                📞 Phone number: +998 (99) 110 22 22
+                """);
+        return sendMessage;
+    }
+
+    public SendMessage contactViaTelegramOrEmail(Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("""
+                Contact us
+                CTRANS is the art of logistics
+                
+                📲Manager's Telegram: <a href="https://t.me/ctrans_uz">CTRANS MANAGER</a>
+                📩Email: info@ctrans.uz
+                """);
+        sendMessage.setParseMode(ParseMode.HTML);
+        return sendMessage;
+    }
+
+    public SendLocation goToAddressEng(Long chatId){
+        SendLocation sendLocation = new SendLocation();
+        sendLocation.setLongitude(69.210584);
+        sendLocation.setLatitude(41.314611);
+
+        return sendLocation;
     }
 
     //---Contact Us---\\
