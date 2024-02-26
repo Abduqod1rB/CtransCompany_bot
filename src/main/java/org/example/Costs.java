@@ -32,7 +32,6 @@ public class Costs {
             RailWayPrice += 0.05;
         }
 
-
         CarSmallAmount.put(150,140);
         CarSmallAmount.put(200,160);
         CarSmallAmount.put(300,180);
@@ -48,6 +47,39 @@ public class Costs {
             kg += 500;
             CarPrice += 0.05;
         }
+
+        AirWaySmallAmount.put(160,180);
+        AirWaySmallAmount.put(210,190);
+        AirWaySmallAmount.put(310,210);
+        AirWaySmallAmount.put(410,220);
+        AirWaySmallAmount.put(510,250);
+        AirWaySmallAmount.put(710,270);
+        AirWaySmallAmount.put(910,320);
+        AirWaySmallAmount.put(1000,370);
+        kg = 1500;
+        double AirPrice = 0.35;
+        for(int i = 0; i < 18; i++){
+            AirWayBigAmount.put(kg, AirPrice);
+            kg += 500;
+            RailWayPrice += 0.05;
+        }
+    }
+
+    public static double priceAir(double kg, double volume){
+        if(kg <= 1000){
+            for (int key : AirWaySmallAmount.keySet()) {
+                if(kg < key){
+                    return AirWaySmallAmount.get(key) * volume;
+                }
+            }
+        }else{
+            for(int key : AirWayBigAmount.keySet()){
+                if(kg < key){
+                    return AirWayBigAmount.get(key) * kg;
+                }
+            }
+        }
+        return 0;
     }
 
     public static double priceRailWay(double kg, double volume){

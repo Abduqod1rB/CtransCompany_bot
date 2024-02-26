@@ -9,8 +9,6 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
-import java.awt.font.TextMeasurer;
-
 
 public class MyBot extends TelegramLongPollingBot {
     private final MyBotService myBotService = new MyBotService();
@@ -1736,7 +1734,7 @@ public class MyBot extends TelegramLongPollingBot {
                     String sendType = DB.users.get(id).getSendType();
                     double price = 0;
                     switch (sendType) {
-                        case "Air" -> price = 0;/////////////////////
+                        case "Air" -> price = Costs.priceAir(kg,volume);
                         case "RailWay" -> price = Costs.priceRailWay(kg, volume);
                         case "Car" -> price = Costs.priceCar(kg, volume);
                     }

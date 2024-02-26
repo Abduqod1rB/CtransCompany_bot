@@ -997,8 +997,6 @@ public class MyBotServiceUz {
         return sendPhoto;
     }
 
-    //C R O S S O V E R
-
     public SendPhoto BYD_Song_Plus_Champion_Edition(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);

@@ -76,7 +76,7 @@ public class MyBotServiceRus {
         KeyboardButton button1 = new KeyboardButton();
 
         button1.setRequestContact(true);
-        button1.setText("☎️\uFE0FОтправить номер телефона");
+        button1.setText("☎️Отправить номер телефона");
         row1.add(button1);
         rows.add(row1);
 
@@ -126,7 +126,7 @@ public class MyBotServiceRus {
         KeyboardButton button1 = new KeyboardButton();
         KeyboardButton button2 = new KeyboardButton();
         KeyboardButton button3 = new KeyboardButton();
-        button.setText("✈️\uFE0FАвиаперевозки");
+        button.setText("✈️Авиаперевозки");
         button1.setText("\uD83D\uDE88Железнодорожные перевозки");
         button2.setText("\uD83D\uDE98Автоперевозки");
         button3.setText("⬅️Назад");
@@ -632,10 +632,6 @@ public class MyBotServiceRus {
 
         return sendPhoto;
     }
-
-
-
-
 
     public SendMessage settingsRus (Long chatId){
 
@@ -1277,8 +1273,8 @@ public class MyBotServiceRus {
                 
                 ✅Емкость батареи, кВт: 42.8
                 ✅Разгон 0-100 км, сек: 5.5
-                ✅Мощность, кВт/л.с: 449        
-                ✅Привод: Полный         
+                ✅Мощность, кВт/л.с: 449
+                ✅Привод: Полный
                 ✅Запас хода (NEDC), км: 1315
                 ✅Количество мест: 5
                 ✅Максимальная скорость, км/ч: 180
@@ -1296,8 +1292,8 @@ public class MyBotServiceRus {
                 
                 ✅Емкость батареи, кВт: 116,79
                 ✅Разгон 0-100 км, сек: 4,5
-                ✅Мощность: 425кВт / 578 Нм        
-                ✅Привод: Полный         
+                ✅Мощность: 425кВт / 578 Нм
+                ✅Привод: Полный
                 ✅Запас хода, км: 680
                 ✅Количество мест: 4
                 ✅Максимальная скорость, км/ч: 200
@@ -1452,8 +1448,8 @@ public class MyBotServiceRus {
                 
                 ✅Емкость батареи, кВт: 44.9
                 ✅Разгон 0-100 км, сек: 7,5
-                ✅Мощность, кВт/л.с: 130/177      
-                ✅Привод: Передний  
+                ✅Мощность, кВт/л.с: 130/177
+                ✅Привод: Передний
                 ✅Запас хода (NEDC), км: 401
                 ✅Количество мест: 5
                 ✅Максимальная скорость, км/ч: 160
@@ -1493,7 +1489,7 @@ public class MyBotServiceRus {
                 ✅Тип топлива: Электрический
                 ✅Габариты: 3770*1650*1570
                 ✅Максимальная мощность (л.с.): 75
-                ✅Максимальная скорость (км / ч): 101  
+                ✅Максимальная скорость (км / ч): 101
                 ✅Диапазон NEDC (км): 310
                 ✅Количество дверей: 5
                 ✅Общая мощность аккумулятора кВт: 31,95
@@ -1543,7 +1539,7 @@ public class MyBotServiceRus {
                 ✅Емкость батареи, кВт: 822
                 ✅Разгон 0-100 км, сек: 140
                 ✅Мощность, кВт/л.с: 400/544
-                ✅Привод: Полный 
+                ✅Привод: Полный
                 ✅Запас хода (NEDC), км: 4,5
                 ✅Количество мест: 6
                 ✅Максимальная скорость, км/ч: 190

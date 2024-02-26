@@ -8,11 +8,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.regex.Pattern;
 
 public class DB {
-
-
     static HashMap<String, Set<String>> codes = new HashMap<>();
 
     static ArrayList<User> users = new ArrayList<>(); //[name, curr_pos, curr_language]
@@ -212,7 +209,6 @@ public class DB {
         }catch (Exception e){
             return "Raqam faqat sonlardan tashkil topgan bo'lishi kerak";
         }
-
         return "";
     }
 
