@@ -1634,9 +1634,9 @@ public class MyBotServiceEng {
 
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://img.freepik.com/premium-photo/airplane-in-the-sky_1013690-70.jpg"));
+        sendPhoto.setPhoto(new InputFile("https://i.pinimg.com/736x/e8/c2/83/e8c283070fa6524e9c9bf3b300ca566c.jpg"));
         sendPhoto.setCaption("""
-                (Air Transport) Your order will 
+                (Air Transport) Your order will
                 <b>arrive in 5-10 days</b>
                 Contact the manager to place an order
                 """);
