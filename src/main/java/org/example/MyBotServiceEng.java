@@ -598,7 +598,7 @@ public class MyBotServiceEng {
 
         button.setText("\uD83C\uDDFA\uD83C\uDDF8Change language");
         button1.setText("☎️change phone number");
-        button2.setText("⬅️ Back");
+        button2.setText("⬅️Back");
         row.add(button);
         row.add(button1);
         row1.add(button2);
