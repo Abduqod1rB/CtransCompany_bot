@@ -1577,7 +1577,7 @@ public class MyBotServiceRus {
 
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://img.freepik.com/premium-photo/airplane-in-the-sky_1013690-70.jpg"));
+        sendPhoto.setPhoto(new InputFile("https://i.pinimg.com/originals/6d/a8/db/6da8db98776af35093db2051a3df992b.jpg"));
         sendPhoto.setCaption("""
                 (Авиатранспорт) Ваш заказ будет доставлен в течение
                 <b>5-10 дней</b>

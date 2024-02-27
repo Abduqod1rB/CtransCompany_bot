@@ -1563,9 +1563,9 @@ public class MyBotServiceUz {
 
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://img.freepik.com/premium-photo/airplane-in-the-sky_1013690-70.jpg"));
+        sendPhoto.setPhoto(new InputFile("https://i.pinimg.com/originals/50/92/84/509284a7a4d625127ac2494435f25be3.jpg"));
         sendPhoto.setCaption("""
-                (Havo transporti) Buyurtmangiz 
+                (Havo transporti) Buyurtmangiz
                 <b>5-10 kun ichida yetib keladi</b>
                 Buyurtma berish uchun menejer bilan bog'laning
                 """);
