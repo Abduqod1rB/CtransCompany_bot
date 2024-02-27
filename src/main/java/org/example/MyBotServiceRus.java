@@ -264,7 +264,7 @@ public class MyBotServiceRus {
 
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(new File("D:\\My_Telegram_bots\\CTRANS_bot\\image\\aboutUs.png")));
+        sendPhoto.setPhoto(new InputFile(new File("https://i.pinimg.com/originals/25/0a/0a/250a0a09147092994b1d0fa9f1b00f52.jpg")));
         sendPhoto.setCaption("""
                 О НАС
                 Опыт работы в сфере логистических услуг по всему миру.

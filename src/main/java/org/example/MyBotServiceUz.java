@@ -269,7 +269,7 @@ public class MyBotServiceUz {
 
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/images/content/about-01.webp"));
+        sendPhoto.setPhoto(new InputFile("https://i.pinimg.com/originals/57/a7/42/57a742497032f27e3d7d3d1312d5ab9c.jpg"));
         sendPhoto.setCaption("""
                 BIZ HAQIMIZDA
                                 
