@@ -1648,9 +1648,9 @@ public class MyBotServiceEng {
 
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://www.arrowtruck.com/wp-content/uploads/2023/02/2_Arrow-Truck-Sales_Comparing-The-Different-Semi-Truck-and-Trailer-Types_IMAGE1.jpg"));
+        sendPhoto.setPhoto(new InputFile("https://i.pinimg.com/originals/e5/6b/7e/e56b7e1a1cbcea821b22c9f523a39b05.jpg"));
         sendPhoto.setCaption("""
-                (Auto Transport) Your order will 
+                (Auto Transport) Your order will
                 <b>arrive in 15-20 days</b>
                 Contact the manager to place an order
                 """);
@@ -1662,7 +1662,7 @@ public class MyBotServiceEng {
 
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://media.licdn.com/dms/image/C5622AQFC11sDRuGtfw/feedshare-shrink_800/0/1648805405802?e=2147483647&v=beta&t=6ru64usETOA39N_RYAOslVNhvpIIc4r4r_BRz8Ws_SY"));
+        sendPhoto.setPhoto(new InputFile("https://i.pinimg.com/originals/14/e4/bc/14e4bc59ff10e12459557d8c373acb13.jpg"));
         sendPhoto.setCaption("""
                 (Railway Transport) Your order will
                 <b>arrive in 20-30 days</b>

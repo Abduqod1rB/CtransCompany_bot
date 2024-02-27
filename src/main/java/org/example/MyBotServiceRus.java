@@ -1591,7 +1591,7 @@ public class MyBotServiceRus {
 
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://www.arrowtruck.com/wp-content/uploads/2023/02/2_Arrow-Truck-Sales_Comparing-The-Different-Semi-Truck-and-Trailer-Types_IMAGE1.jpg"));
+        sendPhoto.setPhoto(new InputFile("https://i.pinimg.com/originals/74/3d/20/743d205df123be14b4e900e5770fc1c2.jpg"));
         sendPhoto.setCaption("""
                 (Автомобильный транспорт) Ваш заказ
                 <b>прибудет через 15-20 дней</b>
@@ -1605,7 +1605,7 @@ public class MyBotServiceRus {
 
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://media.licdn.com/dms/image/C5622AQFC11sDRuGtfw/feedshare-shrink_800/0/1648805405802?e=2147483647&v=beta&t=6ru64usETOA39N_RYAOslVNhvpIIc4r4r_BRz8Ws_SY"));
+        sendPhoto.setPhoto(new InputFile("https://i.pinimg.com/originals/77/ac/2e/77ac2e917940d10a9c8ca66996743eda.jpg"));
         sendPhoto.setCaption("""
                 (Ж/д транспорт) Ваш заказ прибудет в течение
                 <b>20-30 дней</b>
