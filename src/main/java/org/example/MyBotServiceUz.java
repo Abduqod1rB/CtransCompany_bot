@@ -274,10 +274,14 @@ public class MyBotServiceUz {
                 BIZ HAQIMIZDA
                                 
                 Butun dunyo bo'ylab logistika xizmatlari sohasida tajriba biz butun dunyo bo'ylab eng yaxshi yuk tashish va transport bitimlarini taqdim etishdan faxrlanamiz.
-                                
-                ✅100%Kompensatsiya          ✅Onlayn kuzatish
-                ✅Tajribali jamoa            ✅Yuklarni sug'urta qilish
-                ✅24/7 qo'llab-quvvatlash    ✅Xavfsiz omborxona""");
+                
+                ✅100%Kompensatsiya
+                ✅Tajribali jamoa
+                ✅24/7 qo'llab-quvvatlash
+                ✅Onlayn kuzatish
+                ✅Yuklarni sug'urta qilish
+                ✅Xavfsiz omborxona
+                """);
 
         return sendPhoto;
     }
