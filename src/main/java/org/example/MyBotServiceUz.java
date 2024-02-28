@@ -269,15 +269,19 @@ public class MyBotServiceUz {
 
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/images/content/about-01.webp"));
+        sendPhoto.setPhoto(new InputFile("https://i.pinimg.com/originals/57/a7/42/57a742497032f27e3d7d3d1312d5ab9c.jpg"));
         sendPhoto.setCaption("""
                 BIZ HAQIMIZDA
                                 
                 Butun dunyo bo'ylab logistika xizmatlari sohasida tajriba biz butun dunyo bo'ylab eng yaxshi yuk tashish va transport bitimlarini taqdim etishdan faxrlanamiz.
-                                
-                ✅100%Kompensatsiya          ✅Onlayn kuzatish
-                ✅Tajribali jamoa            ✅Yuklarni sug'urta qilish
-                ✅24/7 qo'llab-quvvatlash    ✅Xavfsiz omborxona""");
+                
+                ✅100%Kompensatsiya
+                ✅Tajribali jamoa
+                ✅24/7 qo'llab-quvvatlash
+                ✅Onlayn kuzatish
+                ✅Yuklarni sug'urta qilish
+                ✅Xavfsiz omborxona
+                """);
 
         return sendPhoto;
     }
@@ -1577,7 +1581,7 @@ public class MyBotServiceUz {
 
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://www.arrowtruck.com/wp-content/uploads/2023/02/2_Arrow-Truck-Sales_Comparing-The-Different-Semi-Truck-and-Trailer-Types_IMAGE1.jpg"));
+        sendPhoto.setPhoto(new InputFile("https://i.pinimg.com/originals/52/1f/a9/521fa9413c8184e0639e48e0aba8e5da.jpg"));
         sendPhoto.setCaption("""
                 (Avtomobil transporti) Buyurtmangiz
                 <b>15-20 kun ichida yetib keladi</b>
@@ -1591,7 +1595,7 @@ public class MyBotServiceUz {
 
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://media.licdn.com/dms/image/C5622AQFC11sDRuGtfw/feedshare-shrink_800/0/1648805405802?e=2147483647&v=beta&t=6ru64usETOA39N_RYAOslVNhvpIIc4r4r_BRz8Ws_SY"));
+        sendPhoto.setPhoto(new InputFile("https://i.pinimg.com/originals/e3/36/9d/e3369d0d0482dae1f457c3f8e88a992e.jpg"));
         sendPhoto.setCaption("""
                 (Temir yo'l transporti) Buyurtmangiz
                 <b>20-30 kun ichida keladi</b>

@@ -264,7 +264,7 @@ public class MyBotServiceRus {
 
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(new File("D:\\My_Telegram_bots\\CTRANS_bot\\image\\aboutUs.png")));
+        sendPhoto.setPhoto(new InputFile(new File("https://i.pinimg.com/originals/25/0a/0a/250a0a09147092994b1d0fa9f1b00f52.jpg")));
         sendPhoto.setCaption("""
                 О НАС
                 Опыт работы в сфере логистических услуг по всему миру.
@@ -272,9 +272,13 @@ public class MyBotServiceRus {
                 Мы гордимся тем, что предоставляем лучшие
                 предложения по доставке и транспортировке по всему миру.
                 
-                ✅100 % Компенсации ✅Поддержка 24/7
-                ✅Опытная команда  ✅Страхование грузов
-                ✅Поддержка 24/7      ✅Безопасный склад""");
+                ✅100 % Компенсации
+                ✅Опытная команда
+                ✅Поддержка 24/7
+                ✅Онлайн-отслеживание
+                ✅Страхование грузов
+                ✅Безопасный склад
+                """);
         return sendPhoto;
     }
 
@@ -1591,7 +1595,7 @@ public class MyBotServiceRus {
 
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://www.arrowtruck.com/wp-content/uploads/2023/02/2_Arrow-Truck-Sales_Comparing-The-Different-Semi-Truck-and-Trailer-Types_IMAGE1.jpg"));
+        sendPhoto.setPhoto(new InputFile("https://i.pinimg.com/originals/74/3d/20/743d205df123be14b4e900e5770fc1c2.jpg"));
         sendPhoto.setCaption("""
                 (Автомобильный транспорт) Ваш заказ
                 <b>прибудет через 15-20 дней</b>
@@ -1605,7 +1609,7 @@ public class MyBotServiceRus {
 
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://media.licdn.com/dms/image/C5622AQFC11sDRuGtfw/feedshare-shrink_800/0/1648805405802?e=2147483647&v=beta&t=6ru64usETOA39N_RYAOslVNhvpIIc4r4r_BRz8Ws_SY"));
+        sendPhoto.setPhoto(new InputFile("https://i.pinimg.com/originals/77/ac/2e/77ac2e917940d10a9c8ca66996743eda.jpg"));
         sendPhoto.setCaption("""
                 (Ж/д транспорт) Ваш заказ прибудет в течение
                 <b>20-30 дней</b>
