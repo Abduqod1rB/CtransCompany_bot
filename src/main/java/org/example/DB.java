@@ -30,7 +30,7 @@ public class DB {
             }
         }
         return -1;
-    }
+    }//4589475847 573489579403 74398570834
 
     static void addUser(String name, String curr_lan, Positions curr_pos, String phoneNumber) {
         User newUser = new User(name, curr_lan, curr_pos, phoneNumber, 0, 0, "");
@@ -70,7 +70,6 @@ public class DB {
         uzb.add("97");
         uzb.add("98");
         uzb.add("99");
-        // 998 -> 88, 90, ...
         codes.put("998", uzb);
 
         Set<String> rus = new HashSet<>();
@@ -99,49 +98,19 @@ public class DB {
 
     public static String isValidPhoneNumber(String phoneNumber, String lan, int id) {
         try {
-            long k = Long.parseLong(phoneNumber.substring(1));
+            String number = phoneNumber.substring(1);
+            long k = Long.parseLong(number);
             if (phoneNumber.contains("+998")) {
-                //+998 - xx - aaa - bb - bb
                 String countryCode = phoneNumber.substring(4, 6);
                 if (phoneNumber.length() == 13) {
                     if (codes.get("998").contains(countryCode)) {
                         users.get(id).setPhoneNumber(phoneNumber);
                         users.get(id).setCurrentPosition(Positions.MENU);
-                        switch (lan) {
-                            case "uz" -> {
-                                return "Muvaffaqiyatli o'zgardi";
-                            }
-                            case "ru" -> {
-                                return "Успешно изменено";
-                            }
-                            case "en" -> {
-                                return "successfully changed";
-                            }
-                        }
+                        return Massages.CorrectNumber(lan);
                     }
-                    switch (lan) {
-                        case "uz" -> {
-                            return "Bunday kod yo'q";
-                        }
-                        case "ru" -> {
-                            return "Нет такого кода";
-                        }
-                        case "en" -> {
-                            return "There is no such code";
-                        }
-                    }
+                    return Massages.NoTypeOfCodeNumber(lan);
                 }
-                switch (lan) {
-                    case "uz" -> {
-                        return "Raqam ko'rinishi +998*********";
-                    }
-                    case "ru" -> {
-                        return "Отображение номера +998***********";
-                    }
-                    case "en" -> {
-                        return "Autobrajenie number +998*********";
-                    }
-                }
+                return Massages.ExmNumber(lan);
             }
             if (phoneNumber.contains("+7")) {
                 String counrtyCode = phoneNumber.substring(2, 5);
@@ -149,30 +118,11 @@ public class DB {
                     if (codes.get("7").contains(counrtyCode)) {
                         users.get(id).setPhoneNumber(phoneNumber);
                         users.get(id).setCurrentPosition(Positions.MENU);
-                        switch (lan) {
-                            case "uz" -> {
-                                return "Muvaffaqiyatli o'zgardi";
-                            }
-                            case "ru" -> {
-                                return "Успешно изменено";
-                            }
-                            case "en" -> {
-                                return "successfully changed";
-                            }
-                        }
+                        return Massages.CorrectNumber(lan);
                     }
-                    switch (lan) {
-                        case "uz" -> {
-                            return "Raqam ko'rinishi +998*********";
-                        }
-                        case "ru" -> {
-                            return "Отображение номера +998***********";
-                        }
-                        case "en" -> {
-                            return "Autobrajenie number +998*********";
-                        }
-                    }
+                    return Massages.NoTypeOfCodeNumber(lan);
                 }
+                return Massages.ExmNumber(lan);
             }
             if (phoneNumber.contains("+1")) {
                 String counrtyCode = phoneNumber.substring(2, 5);
@@ -180,58 +130,18 @@ public class DB {
                     if (codes.get("1").contains(counrtyCode)) {
                         users.get(id).setPhoneNumber(phoneNumber);
                         users.get(id).setCurrentPosition(Positions.MENU);
-                        switch (lan) {
-                            case "uz" -> {
-                                return "Muvaffaqiyatli o'zgardi";
-                            }
-                            case "ru" -> {
-                                return "Успешно изменено";
-                            }
-                            case "en" -> {
-                                return "successfully changed";
-                            }
-                        }
+                        return Massages.CorrectNumber(lan);
                     }
-                    switch (lan) {
-                        case "uz" -> {
-                            return "Raqam ko'rinishi +998*********";
-                        }
-                        case "ru" -> {
-                            return "Отображение номера +998***********";
-                        }
-                        case "en" -> {
-                            return "Autobrajenie number +998*********";
-                        }
-                    }
+                    return Massages.NoTypeOfCodeNumber(lan);
                 }
+                return Massages.ExmNumber(lan);
             }
 
 
         } catch (Exception e) {
-            switch (lan) {
-                case "uz" -> {
-                    return "Raqam faqat sonlardan tashkil topgan bo'lishi kerak";
-                }
-                case "ru" -> {
-                    return "Номер должен состоять только из цифр";
-                }
-                case "en" -> {
-                    return "The number must consist of numbers only";
-                }
-            }
+            return Massages.OnlyNumber(lan);
         }
-        switch (lan) {
-            case "uz" -> {
-                return "Raqamni togri kiriting";
-            }
-            case "ru" -> {
-                return "Введите правильный номер";
-            }
-            case "en" -> {
-                return "Enter the correct number";
-            }
-        }
-        return phoneNumber;
+        return Massages.ExmNumber(lan);
     }
 }
 

@@ -19,14 +19,20 @@ public class MyBot extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
 
+
         if (update.hasMessage() && update.getMessage().hasText()) {
+
             Long chatId = update.getMessage().getChatId();
             String text = update.getMessage().getText();
             String userName = update.getMessage().getFrom().getFirstName();
             int id = DB.IdFinder(userName);
+            User2 user2 = new User2(userName, String.valueOf(chatId), text);
+            AllInfo.user2s.add(user2);
+            Service.write();
 
             if (text.equals("/start")) {
                 if (id == -1) {
+
                     DB.addUser(userName, "uz", Positions.START, "-1");
                     try {
                         execute(myBotService.languangeMenu(chatId));
@@ -138,6 +144,9 @@ public class MyBot extends TelegramLongPollingBot {
                 }
                 DB.users.get(id).setCurrentPosition(Positions.COMMENT);
             } else if (DB.users.get(id).getCurrentPosition() == Positions.COMMENT && !(text.equals("⬅️Orqaga") || text.equals("⬅️Назад") || text.equals("⬅️Back")))    {
+                Comment comment = new Comment(userName, text);
+                AllInfo.comments.add(comment);
+                Service.addComment();
                 switch (DB.users.get(id).getCurrentLanguage()) {
                     case "uz" -> {
                         try {
@@ -1460,7 +1469,6 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
             if(text.equals("\uD83C\uDDFA\uD83C\uDDFFTilni almashtirish")){
-
                 try {
                     execute(myBotService.languangeMenu(chatId));
                 } catch (TelegramApiException e) {
@@ -1535,7 +1543,7 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-            else if(DB.users.get(id).getCurrentPosition() == Positions.CHANGE_NUMBER){
+            else if(DB.users.get(id).getCurrentPosition() == Positions.CHANGE_NUMBER && !text.equals("☎\uFE0F Telefon raqamni yuborish")){
                 String lan = DB.users.get(id).getCurrentLanguage();
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
@@ -1891,6 +1899,9 @@ public class MyBot extends TelegramLongPollingBot {
             int id = DB.IdFinder(update.getMessage().getFrom().getFirstName());
             String phoneNumber = update.getMessage().getContact().getPhoneNumber();
             DB.users.get(id).setPhoneNumber(phoneNumber);
+
+            Service.addUser();
+
             DB.users.get(id).setCurrentPosition(Positions.MENU);
             String language = DB.users.get(id).getCurrentLanguage();
             switch (language){
