@@ -541,6 +541,7 @@ public class MyBotServiceUz {
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         List<KeyboardRow> rowList = new ArrayList<>();
 
+        KeyboardRow row = new KeyboardRow();
         KeyboardRow row1 = new KeyboardRow();
         KeyboardRow row2 = new KeyboardRow();
         KeyboardRow row3 = new KeyboardRow();
@@ -553,8 +554,8 @@ public class MyBotServiceUz {
         KeyboardRow row10 = new KeyboardRow();
         KeyboardRow row11 = new KeyboardRow();
         KeyboardRow row12 = new KeyboardRow();
-        KeyboardRow row13 = new KeyboardRow();
 
+        KeyboardButton button = new KeyboardButton();
         KeyboardButton button1 = new KeyboardButton();
         KeyboardButton button2 = new KeyboardButton();
         KeyboardButton button3 = new KeyboardButton();
@@ -580,55 +581,57 @@ public class MyBotServiceUz {
         KeyboardButton button23 = new KeyboardButton();
         KeyboardButton button24 = new KeyboardButton();
 
-        button1.setText("BYD Song Plus Champion Edition");
-        button2.setText("BYD Tang EV");
-        button3.setText("BYD Yuan Plus EV");
-        button4.setText("Zeeker 001");
-        button5.setText("Zeeker X");
-        button6.setText("LeapMotor C11");
-        button7.setText("Geely Geometry E");
-        button8.setText("Denza N7");
-        button9.setText("HiPhi Y");
-        button10.setText("NIO ES8");
-        button11.setText("NIO EC7");
-        button12.setText("LI Auto L7");
-        button13.setText("LI Auto L9");
-        button14.setText("IM Motors LS7");
-        button15.setText("Geometry M6");
-        button16.setText("LI Auto L8");
-        button17.setText("Avatr 11");
-        button18.setText("HiPhi X");
-        button19.setText("LI Auto One");
-        button20.setText("Lynk&Co 09EM-P");
-        button21.setText("Chevrolet Seeker");
-        button22.setText("BYD Song L");
-        button23.setText("BYD Yangwang U8");
+        button.setText("BYD Song Plus Champion Edition");
+        button1.setText("BYD Tang EV");
+        button2.setText("BYD Yuan Plus EV");
+        button3.setText("Zeeker 001");
+        button4.setText("Zeeker X");
+        button5.setText("LeapMotor C11");
+        button6.setText("Geely Geometry E");
+        button7.setText("Denza N7");
+        button8.setText("HiPhi Y");
+        button9.setText("NIO ES8");
+        button10.setText("NIO EC7");
+        button11.setText("LI Auto L7");
+        button12.setText("LI Auto L9");
+        button13.setText("IM Motors LS7");
+        button14.setText("Geometry M6");
+        button15.setText("LI Auto L8");
+        button16.setText("Avatr 11");
+        button17.setText("HiPhi X");
+        button18.setText("LI Auto One");
+        button19.setText("Lynk&Co 09EM-P");
+        button20.setText("Chevrolet Seeker");
+        button21.setText("BYD Song L");
+        button22.setText("BYD Yangwang U8");
+        button23.setText("Jishi 01");
         button24.setText("⬅️ Orqaga");
 
-        row1.add(button1);
+        row.add(button);
+        row.add(button1);
         row1.add(button2);
-        row2.add(button3);
+        row1.add(button3);
         row2.add(button4);
-        row3.add(button5);
+        row2.add(button5);
         row3.add(button6);
-        row4.add(button7);
+        row3.add(button7);
         row4.add(button8);
-        row5.add(button9);
+        row4.add(button9);
         row5.add(button10);
-        row6.add(button11);
+        row5.add(button11);
         row6.add(button12);
-        row7.add(button13);
+        row6.add(button13);
         row7.add(button14);
-        row8.add(button15);
+        row7.add(button15);
         row8.add(button16);
-        row9.add(button17);
+        row8.add(button17);
         row9.add(button18);
-        row10.add(button19);
+        row9.add(button19);
         row10.add(button20);
-        row11.add(button21);
+        row10.add(button21);
         row11.add(button22);
-        row12.add(button23);
-        row13.add(button24);
+        row11.add(button23);
+        row12.add(button24);
 
         rowList.add(row1);
         rowList.add(row2);
@@ -642,7 +645,6 @@ public class MyBotServiceUz {
         rowList.add(row10);
         rowList.add(row11);
         rowList.add(row12);
-        rowList.add(row13);
 
         replyKeyboardMarkup.setKeyboard(rowList);
         replyKeyboardMarkup.setResizeKeyboard(true);
@@ -1439,6 +1441,26 @@ public class MyBotServiceUz {
                 ✅Haydovchi blok: Toʻliq
                 """);
         sendPhoto.setParseMode(ParseMode.HTML);
+        return sendPhoto;
+    }
+
+    public SendPhoto jishi01Uz(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/KASLuRQVVa2soNQQH3qFki4MeBCemCudXyq7Mk8Q.webp"));
+        sendPhoto.setCaption("""
+                🚙Jishi 01
+                
+                ✅Batareya quvvati, kVt: 56
+                ✅Tezlashuv 0-100 km, sek: 5.5
+                ✅Quvvat: 204kVt / 340Nm
+                ✅Haydovchi: To'liq
+                ✅Quvvat zahirasi, km: 235
+                ✅O'rinlar soni: 6 ta
+                ✅Maksimal tezlik, km/soat: 190
+                
+                """);
+
         return sendPhoto;
     }
 

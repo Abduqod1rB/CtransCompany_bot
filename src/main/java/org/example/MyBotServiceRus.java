@@ -415,6 +415,7 @@ public class MyBotServiceRus {
         KeyboardButton button21 = new KeyboardButton();
         KeyboardButton button22 = new KeyboardButton();
         KeyboardButton button23 = new KeyboardButton();
+        KeyboardButton button24 = new KeyboardButton();
 
         button.setText("\uD83D\uDE99BYD Song Plus Champion Edition");
         button1.setText("\uD83D\uDE99BYD Tang EV");
@@ -439,7 +440,8 @@ public class MyBotServiceRus {
         button20.setText("\uD83D\uDE99Chevrolet Seeker");
         button21.setText("\uD83D\uDE99BYD Song L");
         button22.setText("\uD83D\uDE99BYD Yangwang U8");
-        button23.setText("⬅️ Назад");
+        button23.setText("\uD83D\uDE99Jishi 01");
+        button24.setText("⬅️ Назад");
 
 
         row.add(button);
@@ -465,7 +467,8 @@ public class MyBotServiceRus {
         row10.add(button20);
         row10.add(button21);
         row11.add(button22);
-        row12.add(button23);
+        row11.add(button23);
+        row12.add(button24);
 
         rowList.add(row);
         rowList.add(row1);
@@ -1441,6 +1444,28 @@ public class MyBotServiceRus {
 
         return sendPhoto;
     }
+
+    public SendPhoto jishi01Rus(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/KASLuRQVVa2soNQQH3qFki4MeBCemCudXyq7Mk8Q.webp"));
+        sendPhoto.setCaption("""
+                🚙Jishi 01
+                
+                ✅Емкость батареи, кВт: 56
+                ✅Разгон 0-100 км, сек: 5.5
+                ✅Мощность: 204кВт / 340Нм
+                ✅Привод: Полный
+                ✅Запас хода, км: 235
+                ✅Количество мест: 6
+                ✅Максимальная скорость, км/ч: 190
+                
+                """);
+
+        return sendPhoto;
+    }
+
+
 
 
                                         //Хетчбек

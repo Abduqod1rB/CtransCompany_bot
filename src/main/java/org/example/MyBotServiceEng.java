@@ -505,6 +505,7 @@ public class MyBotServiceEng {
         KeyboardButton button21 = new KeyboardButton();
         KeyboardButton button22 = new KeyboardButton();
         KeyboardButton button23 = new KeyboardButton();
+        KeyboardButton button24 = new KeyboardButton();
 
         button.setText("🚙 BYD Song Plus Champion Edition");
         button1.setText("🚙 BYD Tang EV");
@@ -529,7 +530,8 @@ public class MyBotServiceEng {
         button20.setText("🚙 Chevrolet Seeker");
         button21.setText("🚙 BYD Song L");
         button22.setText("🚙 BYD Yangwang U8");
-        button23.setText("⬅️ Back");
+        button23.setText("🚙 Jishi 01");
+        button24.setText("⬅️ Back");
 
         row.add(button);
         row.add(button1);
@@ -554,7 +556,8 @@ public class MyBotServiceEng {
         row10.add(button20);
         row10.add(button21);
         row11.add(button22);
-        row12.add(button23);
+        row11.add(button23);
+        row12.add(button24);
 
         rowList.add(row);
         rowList.add(row1);
@@ -1397,6 +1400,26 @@ public class MyBotServiceEng {
                 ✅Power reserve, km: 405
                 ✅Number of seats: 5
                 ✅Maximum speed, km/h: 280
+                
+                """);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto jishi01Eng(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/KASLuRQVVa2soNQQH3qFki4MeBCemCudXyq7Mk8Q.webp"));
+        sendPhoto.setCaption("""
+                🚙Jishi 01
+                
+                ✅Battery capacity, kW: 56
+                ✅Acceleration 0-100 km, sec: 5.5
+                ✅Power: 204kW / 340Nm
+                ✅Drive: Full
+                ✅Power reserve, km: 235
+                ✅Number of seats: 6
+                ✅Maximum speed, km/h: 190
                 
                 """);
 

@@ -723,6 +723,13 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
+            if (text.equals("Jishi 01")){
+                try {
+                    execute(myBotServiceUz.jishi01Uz(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
             if (text.equals("BYD Seagull")) {
                 try {
                     execute(myBotServiceUz.BYD_Segaull(chatId));
@@ -1034,6 +1041,13 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
+            if (text.equals("\uD83D\uDE99Jishi 01")){
+                try {
+                    execute(myBotServiceRus.jishi01Rus(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
             if (text.equals("\uD83D\uDE97BYD Seagull")) {
                 try {
                     execute(myBotServiceRus.BYDSeagullRus(chatId));
@@ -1338,6 +1352,13 @@ public class MyBot extends TelegramLongPollingBot {
             if (text.equals("🚙 BYD Yangwang U8")) {
                 try {
                     execute(myBotServiceEng.bydYangwangU8(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (text.equals("🚙 Jishi 01")){
+                try {
+                    execute(myBotServiceEng.jishi01Eng(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
