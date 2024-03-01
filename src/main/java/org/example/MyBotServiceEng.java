@@ -279,7 +279,7 @@ public class MyBotServiceEng {
 
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(new File("https://i.pinimg.com/originals/5c/e3/b9/5ce3b9d4ec0468f7fac20377e82dae09.jpg")));
+        sendPhoto.setPhoto(new InputFile("https://i.pinimg.com/originals/5c/e3/b9/5ce3b9d4ec0468f7fac20377e82dae09.jpg"));
         sendPhoto.setCaption("""
         ABOUT US
         
