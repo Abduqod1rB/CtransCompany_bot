@@ -1417,7 +1417,7 @@ public class MyBotServiceUz {
                 ✅Zaxira quvvati, km: 602
                 ✅Tezlashuv 0-100 km, sek: 4,3
                 ✅Joylar soni: 5
-                ✅Quvvat: 380kVt /517Nm
+                ✅Quvvat: 380kVt / 517Nm
                 ✅Maksimal tezlik, km/soat: 200
                 ✅Haydovchi blok: Toʻliq
                 """);
