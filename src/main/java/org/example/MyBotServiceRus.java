@@ -1564,7 +1564,7 @@ public class MyBotServiceRus {
     public SendPhoto DenzaD9Rus(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/luIEwx6z593gfrDOISORICB0o3mVocArTzIhirPJ.webp "));
 
         sendPhoto.setCaption("""
                 🚐Denza D9
