@@ -1838,7 +1838,7 @@ public class MyBot extends TelegramLongPollingBot {
                 DB.users.get(id).setCurrentPosition(Positions.KG);
                 DB.users.get(id).setSendType("Car"); // type
                 try {
-                    execute(sendMessage);
+                    execute(sendMessage); 
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
