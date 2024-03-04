@@ -123,6 +123,7 @@ public class MyBotServiceRus {
         List<KeyboardRow> rows = new ArrayList<>();
         KeyboardRow row = new KeyboardRow();
         KeyboardRow row1 = new KeyboardRow();
+        KeyboardRow row2 = new KeyboardRow();
         KeyboardButton button = new KeyboardButton();
         KeyboardButton button1 = new KeyboardButton();
         KeyboardButton button2 = new KeyboardButton();
@@ -134,9 +135,10 @@ public class MyBotServiceRus {
         row.add(button);
         row.add(button1);
         row1.add(button2);
-        row1.add(button3);
+        row2.add(button3);
         rows.add(row);
         rows.add(row1);
+        rows.add(row2);
         replyKeyboardMarkUp.setKeyboard(rows);
         replyKeyboardMarkUp.setResizeKeyboard(true);
         sendMessage.setReplyMarkup(replyKeyboardMarkUp);
