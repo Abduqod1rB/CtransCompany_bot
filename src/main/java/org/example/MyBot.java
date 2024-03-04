@@ -1752,7 +1752,7 @@ public class MyBot extends TelegramLongPollingBot {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-            } else if (text.equals("✈️️Авиаперевозки")) {
+            } else if (text.equals("✈️Авиаперевозки")) {
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
                 sendMessage.setText("Вес груза (кг): ");
