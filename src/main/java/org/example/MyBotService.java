@@ -16,7 +16,7 @@ public class MyBotService {
     public SendMessage languangeMenu(Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("\uD83C\uDDFA\uD83C\uDDFFTilni tanlang" + "\n" + "\uD83C\uDDF7\uD83C\uDDFAВыберите язык" + "\n" + "\uD83C\uDDFA\uD83C\uDDF8Choose languange");
+        sendMessage.setText("\uD83C\uDDFA\uD83C\uDDFFTilni tanlang" + "\n" + "\uD83C\uDDF7\uD83C\uDDFAВыберите язык" + "\n" + "\uD83C\uDDFA\uD83C\uDDF8Choose language");
         ReplyKeyboardMarkup reply = new ReplyKeyboardMarkup();
         List<KeyboardRow> rowList = new ArrayList<>();
         KeyboardRow row = new KeyboardRow();
@@ -29,7 +29,7 @@ public class MyBotService {
         button1.setText("Русский язык\uD83C\uDDF7\uD83C\uDDFA");
         row.add(button1);
         KeyboardButton button2 = new KeyboardButton();
-        button2.setText("English languange\uD83C\uDDFA\uD83C\uDDF8");
+        button2.setText("English language\uD83C\uDDFA\uD83C\uDDF8");
         row1.add(button2);
         rowList.add(row1);
         reply.setKeyboard(rowList);

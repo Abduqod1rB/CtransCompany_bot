@@ -101,7 +101,7 @@ public class MyBot extends TelegramLongPollingBot {
                     }
 
                 }
-                case "English languange\uD83C\uDDFA\uD83C\uDDF8" -> {
+                case "English language\uD83C\uDDFA\uD83C\uDDF8" -> {
                     if(DB.users.get(id).getCurrentPosition() == Positions.START){
                         try {
                             DB.users.get(id).setCurrentLanguage("en");
