@@ -1829,7 +1829,7 @@ public class MyBot extends TelegramLongPollingBot {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-            } else if (text.equals("\uD83D\uDE98Car transports")) {
+            } else if (text.equals("\uD83D\uDE98Auto transport")) {
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
                 sendMessage.setText("Cargo weight (kg): ");

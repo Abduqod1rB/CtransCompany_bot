@@ -132,7 +132,7 @@ public class MyBotServiceEng {
         KeyboardButton button3 = new KeyboardButton();
         button.setText("✈️Air transport");
         button1.setText("\uD83D\uDE88Railway transport");
-        button2.setText("\uD83D\uDE98Car transports");
+        button2.setText("\uD83D\uDE98Auto transport");
         button3.setText("⬅️Back");
 
         row.add(button);
