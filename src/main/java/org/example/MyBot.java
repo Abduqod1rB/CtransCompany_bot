@@ -37,6 +37,7 @@ public class MyBot extends TelegramLongPollingBot {
                     } catch (TelegramApiException e) {
                         throw new RuntimeException(e);
                     }
+
                 } else {
                     String language = DB.users.get(id).getCurrentLanguage();
                     switch (language) {
