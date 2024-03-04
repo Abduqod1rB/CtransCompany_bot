@@ -1850,8 +1850,8 @@ public class MyBot extends TelegramLongPollingBot {
                     DB.users.get(id).setCurrentPosition(Positions.VOLUME);
                     switch (currLan) {
                         case "uz" -> sendMessage.setText("Yuk hajmi (m3): ");
-                        case "ru" -> sendMessage.setText("Вес груза (кг): ");
-                        case "en" -> sendMessage.setText("Cargo weight (kg): ");
+                        case "ru" -> sendMessage.setText("объем груза (м3): ");
+                        case "en" -> sendMessage.setText("cargo volume (m3): ");
                     }
                     execute(sendMessage);
                 } catch (Exception e) {
