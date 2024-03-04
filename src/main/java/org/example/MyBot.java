@@ -18,8 +18,6 @@ public class MyBot extends TelegramLongPollingBot {
 
     @Override
     public void onUpdateReceived(Update update) {
-
-
         if (update.hasMessage() && update.getMessage().hasText()) {
 
             Long chatId = update.getMessage().getChatId();
@@ -1838,7 +1836,7 @@ public class MyBot extends TelegramLongPollingBot {
                 DB.users.get(id).setCurrentPosition(Positions.KG);
                 DB.users.get(id).setSendType("Car"); // type
                 try {
-                    execute(sendMessage); 
+                    execute(sendMessage);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
