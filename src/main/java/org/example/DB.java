@@ -61,6 +61,7 @@ public class DB {
     static void fillCodes() {
         Set<String> uzb = new HashSet<>();
         uzb.add("33");
+        uzb.add("55");
         uzb.add("88");
         uzb.add("90");
         uzb.add("91");
