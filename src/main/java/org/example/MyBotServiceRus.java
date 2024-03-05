@@ -137,6 +137,7 @@ public class MyBotServiceRus {
         row1.add(button2);
         row2.add(button3);
         rows.add(row);
+
         rows.add(row1);
         rows.add(row2);
         replyKeyboardMarkUp.setKeyboard(rows);
