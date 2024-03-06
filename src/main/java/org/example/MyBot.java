@@ -1903,10 +1903,14 @@ public class MyBot extends TelegramLongPollingBot {
                     }
                     DB.users.get(id).setCurrentPosition(Positions.MENU);
 
-                } catch (Exception e) {
+                }catch (Exception e) {
                     SendMessage sendMessage = new SendMessage();
                     sendMessage.setChatId(chatId);
-                    sendMessage.setText("Butun sonda kiriting");
+                    switch (currLan){
+                        case "uz" -> sendMessage.setText("Butun sonda kiriting");
+                        case "ru" -> sendMessage.setText("Введите ц елое число");
+                        case "en" -> sendMessage.setText("Enter an integer");
+                    }
                     try {
                         execute(sendMessage);
                     } catch (TelegramApiException ex) {

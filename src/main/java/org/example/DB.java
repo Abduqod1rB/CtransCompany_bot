@@ -95,8 +95,6 @@ public class DB {
         codes.put("1", usa);
 
     }
-
-
     public static String isValidPhoneNumber(String phoneNumber, String lan, int id) {
         try {
             String number = phoneNumber.substring(1);
