@@ -10,6 +10,6 @@ public class Main {
         telegramBotsApi.registerBot(new MyBot());
         Costs.fill();
         DB.fillCodes();
-        System.out.println("Run....");
+        System.out.println("Run...");
     }
 }

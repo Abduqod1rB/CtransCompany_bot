@@ -13,7 +13,6 @@ public class MyBot extends TelegramLongPollingBot {
     private final MyBotServiceUz myBotServiceUz = new MyBotServiceUz();
     private final MyBotServiceRus myBotServiceRus = new MyBotServiceRus();
     private final MyBotServiceEng myBotServiceEng = new MyBotServiceEng();
-
     @Override
     public void onUpdateReceived(Update update) {
         if (update.hasMessage() && update.getMessage().hasText()) {
