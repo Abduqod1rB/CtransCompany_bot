@@ -996,14 +996,6 @@ public class MyBotServiceRus {
         return sendPhoto;
     }
 
-
-
-                 //Krossover
-
-
-
-
-
     public SendPhoto BYDSongPlusChampionEditionRus(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -1586,7 +1578,7 @@ public class MyBotServiceRus {
     public SendPhoto Zeekr009Rus(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
+        sendPhoto.setPhoto(new InputFile("https://ctrans.uz/storage/cars/GyyaoLBYPQ04jO39mIy4obm1fKUwvNb7zwMOrgxf.webp"));
 
         sendPhoto.setCaption("""
                 🚐Zeekr009
