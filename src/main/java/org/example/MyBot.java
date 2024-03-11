@@ -1559,7 +1559,7 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-            else if(DB.users.get(id).getCurrentPosition() == Positions.CHANGE_NUMBER && !text.equals("☎\uFE0F Telefon raqamni yuborish")){
+            else if(DB.users.get(id).getCurrentPosition() == Positions.CHANGE_NUMBER && !(text.equals("☎\uFE0F Telefon raqamni yuborish") || text.equals("☎\uFE0F Отправить номер телефона") || text.equals("☎\uFE0F Send phone number"))){
                 String lan = DB.users.get(id).getCurrentLanguage();
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
