@@ -20,6 +20,9 @@ public class User {
     private double kg;
     private double volume;
     private String sendType;
+    private double moneyAmount;
+    private String fromCurr;
+    private String toCurr;
 
     @Override
     public String toString() {

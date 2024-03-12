@@ -27,7 +27,7 @@ public class MyBot extends TelegramLongPollingBot {
             if (text.equals("/start")) {
                 if (id == -1) {
 
-                    DB.addUser(userName, "uz", Positions.START, "-1");
+                    DB.addUser(userName);
                     try {
                         execute(myBotService.languangeMenu(chatId));
                     } catch (TelegramApiException e) {
@@ -1914,6 +1914,111 @@ public class MyBot extends TelegramLongPollingBot {
                     }
                 }
             }
+            if(text.equals("\uD83C\uDFDBValyuta kursi")){
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.setChatId(chatId);
+                sendMessage.setText("Ayirboshlash uchun valyuta kodini kiriting: ");
+                DB.users.get(id).setCurrentPosition(Positions.FROM_CURR);
+                try {
+                    execute(sendMessage);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            else if(text.equals("\uD83C\uDFDBКурсы валют")){
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.setChatId(chatId);
+                sendMessage.setText("Введите код валюты для обмена: ");
+                DB.users.get(id).setCurrentPosition(Positions.FROM_CURR);
+                try {
+                    execute(sendMessage);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            else if(text.equals("\uD83C\uDFDBCurrency rates")){
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.setChatId(chatId);
+                sendMessage.setText("Enter the currency code to convert from: ");
+                DB.users.get(id).setCurrentPosition(Positions.FROM_CURR);
+                try {
+                    execute(sendMessage);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            else if(DB.users.get(id).getCurrentPosition() == Positions.FROM_CURR ){
+                DB.users.get(id).setFromCurr(text);
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.setChatId(chatId);
+                String lan = DB.users.get(id).getCurrentLanguage();
+                switch (lan){
+                    case "uz" -> sendMessage.setText("Ayirboshlash uchun valyuta kodini kiriting: ");
+                    case "ru" -> sendMessage.setText("Введите код валюты для обмена: ");
+                    case "en" -> sendMessage.setText("Enter the currency code to convert from: ");
+                }
+                try {
+                    execute(sendMessage);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+                DB.users.get(id).setCurrentPosition(Positions.TO_CURR);
+            }else if(DB.users.get(id).getCurrentPosition() == Positions.TO_CURR){
+                DB.users.get(id).setToCurr(text);
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.setChatId(chatId);
+                String lan = DB.users.get(id).getCurrentLanguage();
+                switch (lan){
+                    case "uz" -> sendMessage.setText("Pul miqdorini kiriting: ");
+                    case "ru" -> sendMessage.setText("Введите сумму: ");
+                    case "en" -> sendMessage.setText("Enter the amount: ");
+                }
+                try {
+                    execute(sendMessage);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+                DB.users.get(id).setCurrentPosition(Positions.AMOUNT);
+            }else if(DB.users.get(id).getCurrentPosition() == Positions.AMOUNT){
+
+                String currLan = DB.users.get(id).getCurrentLanguage();
+                try{
+                    SendMessage sendMessage = new SendMessage();
+                    sendMessage.setChatId(chatId);
+                    double amount = Double.parseDouble(text);
+                    DB.users.get(id).setMoneyAmount(amount);
+                    double res = Converter.convertCurrency(amount, DB.users.get(id).getFromCurr(), DB.users.get(id).getToCurr());
+                    if(res != -1){
+                        switch (currLan){
+                            case "uz" -> sendMessage.setText(amount + " " + DB.users.get(id).getFromCurr() + " ga teng " + res + " " + DB.users.get(id).getToCurr());
+                            case "ru" -> sendMessage.setText(amount + " " + DB.users.get(id).getFromCurr() + " равно " + res + " " + DB.users.get(id).getToCurr());
+                            case "en" -> sendMessage.setText(amount + " " + DB.users.get(id).getFromCurr() + " is equal to " + res + " " + DB.users.get(id).getToCurr());
+                        }
+                        DB.users.get(id).setCurrentPosition(Positions.MENU);
+                    }else{
+                        switch (currLan){
+                            case "uz" -> sendMessage.setText("Valyuta kodini to'gri kiriting");
+                            case "ru" -> sendMessage.setText("Введите ц елое число " + res);
+                            case "en" -> sendMessage.setText("Enter an integer " + res);
+                        }
+                    }
+                    execute(sendMessage);
+                }catch (Exception e){
+                    SendMessage sendMessage = new SendMessage();
+                    sendMessage.setChatId(chatId);
+                    switch (currLan){
+                        case "uz" -> sendMessage.setText("Butun sonda kiriting");
+                        case "ru" -> sendMessage.setText("Введите ц елое число");
+                        case "en" -> sendMessage.setText("Enter an integer");
+                    }
+                    try {
+                        execute(sendMessage);
+                    } catch (TelegramApiException ex) {
+                        throw new RuntimeException(ex);
+                    }
+                }
+            }
+
         }
         if (update.hasMessage() && update.getMessage().hasContact()) {
             SendMessage sendMessage = new SendMessage();

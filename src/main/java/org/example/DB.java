@@ -32,8 +32,8 @@ public class DB {
         return -1;
     }//4589475847 573489579403 74398570834
 
-    static void addUser(String name, String curr_lan, Positions curr_pos, String phoneNumber) {
-        User newUser = new User(name, curr_lan, curr_pos, phoneNumber, 0, 0, "");
+    static void addUser(String name) {
+        User newUser = new User(name, "uz", Positions.START, "-1", 0, 0, "", 0, "", "");
         int index = 0;
         int l = 0, r = users.size() - 1;
 
