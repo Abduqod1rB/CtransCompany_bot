@@ -135,8 +135,6 @@ public class DB {
                 }
                 return Massages.ExmNumber(lan);
             }
-
-
         } catch (Exception e) {
             return Massages.OnlyNumber(lan);
         }

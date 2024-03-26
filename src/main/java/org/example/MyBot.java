@@ -1953,7 +1953,7 @@ public class MyBot extends TelegramLongPollingBot {
                 sendMessage.setChatId(chatId);
                 String lan = DB.users.get(id).getCurrentLanguage();
                 switch (lan){
-                    case "uz" -> sendMessage.setText("Ayirboshlash uchun valyuta kodini kiriting: ");
+                    case "uz" -> sendMessage.setText("Ayirboshlash uchun valyuta kodini kiriting:");
                     case "ru" -> sendMessage.setText("Введите код валюты для обмена: ");
                     case "en" -> sendMessage.setText("Enter the currency code to convert from: ");
                 }
